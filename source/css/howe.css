@@ -1,0 +1,199 @@
+/* Global styles */
+
+/* Color palette 
+- main color: #172A54 rgb(34, 62, 122)
+- secondary color: #2D4561 rgb(35, 57, 82)
+- accent color: #FC6701 rgb(252, 103, 1)
+- Light accent color: #FFBB04 rgb(255, 187, 4)
+- text clor: #FAFAFA
+
+*/
+
+/* Hero styles */
+.hero{
+    width: 100%;
+    min-height: 65rem;
+    height: 90vh;
+    background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url("../images/porshe.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+main .main-message{
+    transform: translateY(20%) !important;
+}
+
+/* Subtitle styles */
+.subtitle{
+    position: relative;
+    margin-bottom: -5rem;
+}
+
+#timeline{
+    font-family: 'Nunito', sans-serif;
+}
+
+.timeline{
+    position: relative;
+    margin: 0 auto;
+    margin-top: -8rem;
+    padding: 40px 0;
+    width: 1000px;
+    box-sizing: border-box;
+}
+
+.timeline:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #c5c5c5;
+}
+
+.timeline ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+.timeline ul li{
+    list-style: none;
+    position: relative;
+    width:50%;
+    padding: 20px 40px;
+    box-shadow: border-box;
+}
+
+.timeline ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.timeline ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.content{
+    padding-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: rgba(252, 103, 1, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(252, 103, 1, .2);
+}
+
+.timeline ul li:nth-child(even):before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: rgba(252, 103, 1, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(252, 103, 1, .2);
+}
+
+.timeline ul li h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 2.3rem;
+    padding-bottom: 1.3rem;
+    letter-spacing: 1.2px;
+    font-family: 'Aldrich', sans-serif;
+    color: rgba(252, 103, 1, 1);
+}
+
+.timeline ul li p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.timeline ul li .time h4{
+    margin: 0;
+    padding: 0;
+    font-size: 1.9rem;
+}
+
+.timeline ul li:nth-child(odd) .time{
+    position: absolute;
+    top: 12px;
+    right: -120px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgba(252, 103, 1, 1);
+    color: white;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(252, 103, 1, .3);
+}
+
+.timeline ul li:nth-child(even) .time{
+    position: absolute;
+    top: 12px;
+    left: -120px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgba(252, 103, 1, 1);
+    color: white;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(252, 103, 1, .3);
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px){
+    .timeline {
+        width: 100%;
+    } 
+}
+
+@media (max-width: 767px){
+
+    .timeline {
+        width: 100%;
+        padding-bottom: 0; 
+    } 
+
+    .timeline:before{
+        left: 20px;
+    }
+
+    .timeline ul li:nth-child(odd){
+        width: 100%;
+        text-align: left;
+        padding: 50px;
+        padding-bottom: 50px;
+    }
+    .timeline ul li:nth-child(even){
+        width: 100%;
+        text-align: left;
+        padding: 50px;
+        padding-bottom: 50px;
+    }
+
+    .timeline li:nth-child(odd):before, 
+    .timeline li:nth-child(even):before{
+        top: -18px !important;
+        left: 16px !important;  
+    }
+
+    .timeline li:nth-child(odd) .time,
+    .timeline li:nth-child(even) .time{
+        top: -30px !important;
+        left: 50px !important;
+        max-width: 100px;
+        right: inherit !important;
+    }
+}

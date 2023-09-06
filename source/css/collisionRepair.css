@@ -1,0 +1,240 @@
+/* Color palette 
+- main color: #172A54 rgb(34, 62, 122)
+- secondary color: #2D4561 rgb(35, 57, 82)
+- accent color: #FC6701 rgb(252, 103, 1)
+- Light accent color: #FFBB04 rgb(255, 187, 4)
+- text clor: #FAFAFA
+*/
+
+p{
+    font-size: 1.8rem;
+}
+
+/* Hero styles */
+.hero{
+    width: 100%;
+    min-height: 65rem;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url("../images/bmw.jpg") center no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    position: relative;
+}
+
+/* info section */
+.collision-info .title-heading{
+    margin-bottom: 4.5rem;
+}
+
+
+.info-icon-row{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    padding: 0 5%;
+}
+
+.icon-row{
+    font-size: 2rem;
+    color: #fc6701;
+    margin: auto 0;
+    opacity: 1;
+    animation: spin .5s forwards;
+    animation-delay: 0.2s;
+}
+
+.icon-row i{
+    padding-right: 1.4rem;
+}
+
+.icon-row-desc{
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+.icon-row-desc strong{
+    background-color: white;
+    padding: 0 0.3rem;
+    transition: all 650ms;
+}
+
+.icon-row-desc:hover > strong{
+    background-color: #fc6701;
+    color: white;
+}
+
+.faq .question{
+    margin-bottom: 6rem;
+}
+
+.headline-small{
+    font-size: 3rem;
+    font-family: 'Aldrich', sans-serif;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .7);
+}
+
+.question .headline-small{
+    margin: 1rem 0;
+}
+
+.line {
+    width: 100%;
+    max-width: 30rem;
+    height: .25rem;
+    background-color: #fc6701;
+    margin-bottom: 1rem;
+    position: relative;
+    opacity: 0;
+    animation: grow 2s forwards;
+    animation-delay: .9s;
+}
+
+.left-info,
+.right-info{
+    position: relative;
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.left-info .col-8{
+    width: 66%;
+    float: left;
+    padding-right: 20px ;
+    margin: auto 0;
+    margin-right: 2rem;
+}
+
+.left-info .col-4{
+    width: 33%;
+    padding: 10px;
+    margin: auto 0;
+}
+
+.col-4 img{
+        width: 100%;
+        object-fit: contain;
+}
+
+.right-info .col-8{
+    width: 66%;
+    float: right;
+    padding-right: 20px;
+    margin: auto 0;
+}
+
+.right-info .col-4{
+    width: 33%;
+    float: left;
+    padding: 10px;
+    margin: auto 0;
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 800px){
+    .left-info,
+    .right-info{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-info .col-8{
+        width: 100%;
+    }
+
+    .left-info .col-4{
+        width: 100%;
+    }
+
+    .col-4 img{
+            width: 100%;
+            object-fit: contain;
+    }
+
+    .right-info .col-8{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .right-info .col-4{
+        width: 100%;
+    }
+
+    .hero-collision .sub-headline{
+        font-size: 5.4rem;
+    }
+    
+}
+
+
+
+
+/* Footer Styles */
+#custom-footer {
+    background: #2d3e64; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 40px 0; /* Adjust the padding as needed */
+}
+
+.container-footer {
+    /* Add styles for the container if needed */
+}
+
+.widget {
+    text-align: center;
+    margin-bottom: 30px; /* Adjust the margin as needed */
+}
+
+.widget h4 {
+    font-size: 18px; /* Adjust the font size as needed */
+    text-transform: uppercase;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo h3 {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.footer-btm {
+    margin-top: 30px; /* Adjust the margin as needed */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Top border for the footer bottom section */
+    padding-top: 20px; /* Adjust the padding as needed */
+}
+
+.copyright {
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.footer-socials {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-socials li {
+    display: inline-block;
+    margin-right: 15px; /* Adjust the margin as needed */
+}
+
+.footer-socials a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+/* Add more styles as needed for specific elements within your footer */
