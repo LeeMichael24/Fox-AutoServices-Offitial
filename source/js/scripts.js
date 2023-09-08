@@ -418,9 +418,7 @@ for (var i = 0; i < iconBx.length; i++) {
       ],
     });
   }
-	
 
-})(jQuery);
 
 // Espera a que el documento esté completamente cargado
 document.addEventListener("DOMContentLoaded", function() {
@@ -433,6 +431,22 @@ document.addEventListener("DOMContentLoaded", function() {
         infinite: true // Habilita el bucle infinito
     });
 });
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+	const mobileDropdownMenu = document.querySelector('.mobile-dropdown-menu');
+	const customTabs = document.querySelector('.custom-tabs');
+  
+	mobileDropdownMenu.addEventListener('click', () => {
+	  customTabs.classList.toggle('active');
+	});
+  });
+  
+	
+
+})(jQuery);
+
+
 
 
 

@@ -279,6 +279,11 @@
     grid-gap: 2.5rem;
     margin-bottom: 2rem;
 }
+@media (max-height: 768px) {
+    .testimonial-text-box{
+        margin-top: 200px;
+    }
+}
 
 .adventure-grid p{
     color: rgba(0, 0, 0, .7);
@@ -316,9 +321,15 @@
         display: none;
     }
     .about{
-        height: 80vh;
+        height: 90vh;
     }
   }
+  @media max-width: 993px) {
+    .about{
+        height: 100vh;
+    }
+  }
+
   .about-content {
     padding: 20px 0px 0px 80px;
   }
@@ -352,6 +363,12 @@
 .about{
     height: 100vh;
     background-color: #eee;
+}
+@media (min-width: 1920px) {
+    .about{
+        height: 70vh;
+        background-color: #eee;
+    }
 }
 .bg-about{
     margin-top: 40px;
@@ -575,11 +592,6 @@
 }
 
 @media screen and (min-width: 470px){
-    .testimonials::before{
-        height: 9.4rem;
-        background: url("images/wave-medium-reversed.png");
-        background-size: cover;
-    }
 
     .follow-work::before{
         height: 9.4rem;
@@ -589,10 +601,6 @@
 }
 
 @media screen and (min-width: 700px){
-    
-    .testimonial{
-        top: 65%;
-    }
 
     .price .price-table{  
         margin: 1.5rem 0.5rem;
@@ -658,8 +666,6 @@
 
     .testimonials::before{
         height: 22.7rem;
-        background: url("images/wave-large-reversed.png");
-        background-size: cover;
     }
 
     .follow-work{
@@ -671,11 +677,6 @@
         flex-direction: row;
     }
 
-    .follow-work::before{
-        height: 22.7rem;
-        background: url("images/wave-large.png");
-        background-size: cover;
-    }
 }
 
 @media screen and (min-width: 1200px){
@@ -1313,8 +1314,6 @@ h6,
 
 
 
-
-/* testimonials */
 
 
 
