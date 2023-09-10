@@ -444,6 +444,38 @@ document.addEventListener("DOMContentLoaded", function() {
   
 	
 
+
+
+
+  //hero start services tabs
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.querySelector('.menu-icon');
+    const menu = document.querySelector('.custom-tabs');
+    const tabContents = document.querySelectorAll('.service-box');
+
+    menuIcon.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+
+    const tabLinks = document.querySelectorAll('.custom-tabs a');
+    tabLinks.forEach(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault();
+            const selectedService = event.target.getAttribute('href');
+            tabContents.forEach(content => {
+                content.classList.remove('show', 'active');
+            });
+            document.querySelector(selectedService).classList.add('show', 'active');
+            menu.classList.remove('active');
+        });
+    });
+    
+    // Mostrar el primer servicio por defecto al cargar la página
+    document.querySelector('#Service1').classList.add('show', 'active');
+});
+
+  //hero end services tabs
+
 })(jQuery);
 
 

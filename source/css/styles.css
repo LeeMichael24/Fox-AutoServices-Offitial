@@ -317,7 +317,8 @@
         height: 90vh;
     }
   }
-  @media max-width: 993px) {
+
+  @media (max-width: 993px) {
     .about{
         height: 100vh;
     }

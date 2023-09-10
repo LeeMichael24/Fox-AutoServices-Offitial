@@ -289,9 +289,7 @@ nav{
     position: relative;
 }
 
-@media (max-width: 768px) {
 
-}
 
 .clients{
     margin-top: -40px;
@@ -1030,98 +1028,261 @@ font-size: 13px;
 
 /* Services Tabs start */
 /* Services Tabs start */
-.service-tab-section {
-    position: relative;
-    height: 100vh;
+/* Sidebar menu none */
+/* Desktop */
+/* Sidebar menu */
+.main-container{
+    padding: 5rem;
     width: 100%;
+    height: 140vh; 
+    margin-top: -40px;
+  }
+  .desktop-menu{
+    margin-top: 15px;
   }
   
-  .service-tab-section .outer-box {
-    position: relative;
-    z-index: 1;
+  #sidebar {
+    width: 390px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 100px;
   }
   
-  .section {
-    padding: 100px 0;
+  #sidebar ul {
+    list-style-type: none;
+    padding: 1rem;
   }
   
-  @media (max-width: 768px) {
-    .menu-icon {
-      display: block;
-      cursor: pointer;
-      /* Añade estilos para el ícono o el texto del menú aquí */
-    }
+  #sidebar li.activeDesk {
+    background: white;
+    scale: 1.05;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-weight:bolder
   }
-  
-  @media (min-width: 769px) {
-    .menu-icon {
-      display: none; /* Oculta el ícono del menú en vistas más grandes */
-    }
+  #sidebar li.activeDesk::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px; /* Ancho de la línea vertical */
+    height: 100%;
+    background-color: #FC6701; /* Color de la línea vertical */
+    border-radius: 8px;
   }
-  
-  .mauri {
-    font-family: "Exo";
-    font-size: large;
-    font-weight: bold;
-    background-color: #e12454;
-    padding: 16px;
-    color: white;
+  #sidebar li.activeDesk a, #sidebar li.activeDesk a:hover {
+    background: white;
     border-radius: 8px;
   }
   
-  .tabs .nav-tabs > li,
-  .tabs .nav-pills > li {
-    margin-bottom: 5px;
+  #sidebar li a {
+    text-decoration: none;
+    color: #2b6cb0;
+    display: block;
+    padding: 3px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 17px;
+    margin-bottom: 15px;
   }
   
-  .tabs .nav-tabs {
-    text-align: center;
-    border-bottom: 0;
-    margin-bottom: 10px;
+  #sidebar li:hover {
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
   }
-  
-  .tabs .nav-tabs li:not(:last-child) {
-    margin-right: 5px;
-  }
-  
-  .tabs .nav-tabs li a {
-    text-transform: capitalize;
-    font-size: 16px;
-    padding: 14px 18px;
-    font-weight: 100;
-    color: #000000;
-    font-family: "Roboto";
-  }
-  
-  .tabs .nav-tabs li a.active,
-  .tabs .nav-tabs li a:hover {
-    color: #fff;
-    background: #e12454;
-    border: 2px solid #e12454;
-  }
-  
-  .tab-content {
-    position: relative;
+  #informacion-servicio {
     width: 100%;
-    z-index: 99;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .custom-tabs {
-    float: left;
-    white-space: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    width: 20%;
+  
+  #iframe-servicio{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
   }
+  
+  @media (min-width: 1920px) {
+    .main-container{
+        padding: 5rem;
+        width: 100%;
+        height: 103vh; 
+      }
+  }
+  /* END Sidebar menu */
+  
+  /* Mobile */
   @media (max-width: 768px) {
-    .nav-tabs.custom-tabs {
-        display: none; /* Oculta los botones en dispositivos móviles */
+    /* Ocultar el menú de escritorio en dispositivos móviles */
+    .main-container {
+      flex-direction: column;
+      padding: 0;
+      padding-top: 30px;
+      position: relative;
+  
     }
-}
+  
+    #iframe-servicio{
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 5px;
+      border: none;
+      display: block;
+    }
+    .desktop-menu {
+      position: relative;
+      margin-bottom: 10px;
+    }
+    #sidebar{
+      display: none;
+    }
+  
+    .dropdown-button {
+      padding: 10px;
+      background-color: #ffffff;
+      color: #2b6cb0;
+      border: none;
+      font-weight: bolder;
+      width: 100%;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      z-index: 2;
+      border-radius: 8px;
+      height: 60px;
+    }
+    .dropdown-button:hover{
+      border-radius: 8px 8px 0 0;
+    }
+    
+    .dropdown-button span {
+      flex: 1;
+      text-align: left;
+      margin-right: 10px;
+    }
+  
+    .mobile-menu {
+      display: relative;
+      padding: 1rem;
+      list-style: none;
+      position: relative;
+      margin-top: -20px;
+      position: relative;
+    }
+  
+    .dropdown-content {
+      display: none;
+      margin-top: -28px;
+      padding: 1.5rem;
+      width: 91.5%;
+      color: #2b6cb0;
+      list-style: none;
+      background-color: #f1f1f1;
+      margin-left: 16px;
+      top: 20px;
+      left: 0;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 0 0 8px 8px;
+      cursor: pointer;
+      max-height: 300px;
+      overflow: auto;
+      position: absolute;
+      top: 100%; /* Ajustar según el diseño de tu página */
+      left: 0;
+      display: none;
+    }
+  
+    .dropdown-content li a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #2b6cb0;
+      font-weight: bold;
+      text-align: left;
+    }
+    .dropdown-content li:hover {
+      background-color: white;
+      border-radius: 8px;
+    }
+    .dropdown-content.open{
+      display: block;
+    }
+    .mobile-section{
+      flex-direction: column;
+    }
+    .mobile-section > * {
+      width: 100%;
+    }
+    
+    /* Mostrar el dropdown menu en dispositivos móviles */
+    .dropdown.open .dropdown-content {
+      display: block;
+    }
+  
+    /* Estilos adicionales para ocupar todo el ancho de la pantalla */
+    .mobile-section {
+      flex-direction: column;
+    }
+    
+    .mobile-section > * {
+      width: 100%;
+    }
+  }
+  
+  /* Estilos para dispositivos con ancho mínimo de 693px */
+  @media (min-width: 770px) {
+    /* Ocultar el menú móvil en dispositivos de escritorio */
+    .mobile-menu {
+      display: none;
+    }
+    .dropdown-button {
+      font-size: 20px;
+    }
+    
+    /* Mostrar el menú de escritorio en dispositivos de escritorio */
+    .desktop-menu {
+      display: block;
+    }
+  }
+  
+  .text-services-1{
+    font-size: 30px;
+    text-align: center;
+  }
+  .section-title-service{
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: -30px;
+  }
+  @media (max-width: 770px) {
+    .text-services-1{
+        font-size: 20px;
+        text-align: center;
+      }
+      .section-title-service{
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: -30px;
+      }
+  }
+  /* END Sidebar menu none */
 /* Services Tabs END */
 
-
-.color-title-fox{
-    color: #FC6701;
-}
 /*# sourceMappingURL=global.css.map */
