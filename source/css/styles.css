@@ -160,14 +160,15 @@
     justify-content: center;
     /* cursor: pointer; */
     z-index: 1;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
     border-radius: 8px;
     transition: transform 0.3s;
 }
 
 .activities-grid-item:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.07);
+    box-shadow: rgba(201, 138, 28, 0.2) 0px 7px 29px 0px;
 }
 
 
