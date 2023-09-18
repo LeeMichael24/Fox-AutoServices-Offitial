@@ -1226,6 +1226,7 @@ nav{
       z-index: 2;
       border-radius: 8px;
       height: 60px;
+      font-size: 16px;
     }
     .dropdown-button:hover{
       border-radius: 8px 8px 0 0;
@@ -1276,6 +1277,7 @@ nav{
       color: #2b6cb0;
       font-weight: bold;
       text-align: left;
+      font-size: 15px;
     }
     .dropdown-content li:hover {
       background-color: white;
