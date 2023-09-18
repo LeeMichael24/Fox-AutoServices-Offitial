@@ -24,12 +24,12 @@
 
 <body>
     <!-- Start preload -->
-    <!-- <div class="loading-overlay text-center">
+    <div class="loading-overlay text-center">
         <div class="loader">
             <div class="loader-div">
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- Navbar -->
     <header>
@@ -88,7 +88,7 @@
             <li>
                 <span class="fab-label">Make Appointment</span>
                 <div class="fab-icon-holder">
-                    <a href="#"><i class="icon ion-md-calendar"></i></a>
+                    <a onclick="AutoOps.show()"><i class="icon ion-md-calendar"></i></a>
                 </div>
             </li>
             <li>
@@ -425,7 +425,7 @@
             </div>
         </section> -->
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer id="custom-footer" class="footer section" style="background: #2d3e64">
         <div class="container container-footer">
             <div class="row">
@@ -433,10 +433,8 @@
                     <div class="widget">
                         <h4 class="text-capitalize mb-4 text-white">Company</h4>
                         <ul class="list-unstyled footer-menu lh-35">
-                            <li><a href="services.html" class="text-white">Terms & Conditions</a></li>
-                            <li><a href="services.html" class="text-white">Privacy Policy</a></li>
-                            <li><a href="services.html" class="text-white">Support</a></li>
-                            <li><a href="services.html" class="text-white">FAQ</a></li>
+                            <li><a href="terms&conditions.html" class="text-white">Terms & Conditions</a></li>
+                            <li><a href="privacy-policy.html" class="text-white">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
@@ -444,8 +442,9 @@
                     <div class="widget">
                         <h4 class="text-capitalize mb-4 text-white">Quick Links</h4>
                         <ul class="list-unstyled footer-menu lh-35">
-                            <li><a href="about.html" class="text-white">About</a></li>
-                            <li><a href="service.html" class="text-white">Services</a></li>
+                            <li><a href="index.html" class="text-white">Home</a></li>
+                            <li><a href="services.html" class="text-white">Services</a></li>
+                            <li><a href="gallery.html" class="text-white">Gallery</a></li>
                             <li><a onclick="AutoOps.show()" class="text-white">Contact</a></li>
                         </ul>
                     </div>
@@ -475,12 +474,12 @@
                     </div>
                     <div class="col-lg-6 text-left text-lg-right">
                         <ul class="list-inline footer-socials">
-                            <li class="list-inline-item"><a href="https://www.facebook.com" class="text-white"><i
+                            <li class="list-inline-item"><a href="https://www.facebook.com/TheFOXAuto" class="text-white"><i
                                         class="fab fa-facebook-f mr-2 text-white"></i>Facebook</a></li>
-                            <li class="list-inline-item"><a href="https://twitter.com" class="text-white"><i
-                                        class="fab fa-twitter mr-2 text-white"></i>Twitter</a>
+                            <li class="list-inline-item"><a href="https://www.google.com/search?client=firefox-b-d&sca_esv=565110899&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AM9HkKlhdDA5AVtqwkHUaaNFacBs18l4fA:1694654084797&q=fox+auto+services+md&rflfq=1&num=10&rllag=39170807,-76889889,23804&ved=2ahUKEwjA-va19qiBAxVXQTABHS5yDL0QtgN6BAgfEAg#rlfi=hd:;si:10421666208944834514,l,ChRmb3ggYXV0byBzZXJ2aWNlcyBtZEj93_GI57OAgAhaKBAAEAEQAhgAGAEYAhgDIhRmb3ggYXV0byBzZXJ2aWNlcyBtZDICZW6SAQ5hdXRvX2JvZHlfc2hvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VNdGJrbFFSWEIzUlJBQqoBXQoIL20vMDRycmQQASoVIhFmb3ggYXV0byBzZXJ2aWNlcygAMh4QASIaBha8UxqTVUnxj51w3Sc0kHCKN0-S-VrWSQ4yGBACIhRmb3ggYXV0byBzZXJ2aWNlcyBtZA;mv:[[39.176808099999995,-76.58071939999999],[39.1648067,-77.1990598]]" class="text-white"><i
+                                        class="fab fa-google mr-2 text-white"></i>Google</a>
                             </li>
-                            <li class="list-inline-item"><a href="https://www.instagram.com/" class="text-white"><i
+                            <li class="list-inline-item"><a href="https://www.instagram.com/foxautoservices/?fbclid=IwAR2dWGpzfs5mZ6-0p5EhbVSMJ08gI0A-ACYdIXqV8_c6b9Z9o9Nood0Qj_s" class="text-white"><i
                                         class="fab fa-instagram mr-2 text-white"></i>Instagram</a>
                             </li>
                         </ul>
@@ -491,8 +490,7 @@
     </footer>
 
 
-    <!-- Jquery -->
-    <script src="plugins/jqueyy/jquey-3.4.1.js"></script>
+
     <!-- Scrollreveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Bootstrap -->
@@ -500,15 +498,14 @@
     <script src="plugins/bootstrap/bootstrap.min.js"></script>
     <!-- Own scripts -->
     <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(window).on("load", function () {
-            $(" .loading-overlay .loader").fadeOut(850, function () {
-                $("body").css("overflow", "auto");
-                $(this).parent().fadeOut(450,
-                    function () {
-                        $(this).remove();
-                    });
-            });
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".loading-overlay").fadeOut(450, function () {
+                    $(this).remove();
+                });
+            }, 200); // Ajusta el tiempo de espera según tus necesidades
         });
     </script>
     <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"

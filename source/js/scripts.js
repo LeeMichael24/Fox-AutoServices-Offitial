@@ -480,6 +480,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+let customSlideIndex = 1;
+showCustomSlide(customSlideIndex);
+
+function changeCustomSlide(n) {
+  showCustomSlide(customSlideIndex += n);
+}
+
+function showCustomSlide(n) {
+  let customSlides = document.getElementsByClassName("custom-carousel-slide");
+  if (n > customSlides.length) {
+    customSlideIndex = 1;
+  }
+  if (n < 1) {
+    customSlideIndex = customSlides.length;
+  }
+  for (let i = 0; i < customSlides.length; i++) {
+    customSlides[i].style.display = "none";
+  }
+  customSlides[customSlideIndex - 1].style.display = "block";
+}
+
+
 
 
 
