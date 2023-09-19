@@ -119,8 +119,8 @@
 
     <!-- Hero Video Section -->
     <section class="hero-video-home">
-        <video autoplay loop muted plays-inline class="hero-video-commercial">
-            <source src="images/video/HeroVideoCommercial720.mp4" type="video/mp4">
+        <video id="videoPlayer" autoplay loop muted plays-inline class="hero-video-commercial">
+            <source src="https://raw.githubusercontent.com/LeeMichael24/Fox-multiMedia/main/Videos/HeroVideoCommercial720.mp4?token=GHSAT0AAAAAACHZP4XCQBF7RVT6N7WGNOUSZIJ2XFQ" type="video/mp4">
         </video>
 
         <div class="content-hero-home animate-bottom">
@@ -132,7 +132,6 @@
         </div>
     </section>
     <!-- hero end video -->
-
 
 
     <!-- Services -->
@@ -622,22 +621,6 @@
     </script>
     <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
         src="https://portal.autoops.com/portal-scripts.js"></script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var video = document.querySelector(".hero-video-commercial");
-
-            // Agrega la ruta del video de GitHub al src
-            video.src = 'images/video/HeroVideoCommercial720.mp4'; // Cambia la ruta a tu video en GitHub
-
-            // Escuchar el evento "canplaythrough" para saber cuando el video está completamente cargado
-            video.addEventListener("canplaythrough", function () {
-                // Comienza a reproducir el video automáticamente
-                video.play();
-            });
-        });
-
-    </script>
 
 </body>
 
