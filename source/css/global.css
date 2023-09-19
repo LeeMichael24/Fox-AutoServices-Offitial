@@ -195,9 +195,7 @@ header{
     top: 0;
     left: 0;
     z-index: 10000;
-    opacity: 0.8;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transition: opacity 0.3s ease-in-out;
 }
 
 /* Hero Video */
@@ -268,6 +266,7 @@ header{
 @media screen and (min-width: 1500px){
   .content-hero-home{
     margin-bottom: 10%;
+    margin-left: 7%;
   }
   .content-hero-home h1 {
     font-size: 4.5rem;
@@ -282,20 +281,18 @@ header{
     margin-bottom: 1rem;
   }
   .content-hero-home button{
-    padding: 3rem 3rem;
+    padding: 2rem 2rem;
     margin-top: 25px;
     border: none;
     background: #FC6701;
     border-radius: 8px;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #fff;
   }
 }
 /* END her video */
 
-.floating-header.visible {
-  opacity: 1; /* Mostrar el encabezado con opacidad completa cuando se hace "floating" */
-}
+
 .nav-container{
     position: absolute;
     left: 0;
@@ -666,9 +663,7 @@ nav{
     color: #FC6701;
     background-color: transparent;
 }
-
 /* Footer Styles */
-
 
 
 

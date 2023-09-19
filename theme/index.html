@@ -38,15 +38,15 @@
 
 <body>
     <!-- Start preload -->
-    <!-- <div class="loading-overlay">
+    <div class="loading-overlay">
         <div class="loader">
             <div class="loader-div">
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- Navbar -->
-    <header class="floating-header">
+    <header>
         <div class="container">
             <nav class="nav-container">
                 <div class="nav-brand">
@@ -117,14 +117,10 @@
     </div>
 
 
-    <!-- Hero Section -->
-
-
+    <!-- Hero Video Section -->
     <section class="hero-video-home">
         <video autoplay loop muted plays-inline class="hero-video-commercial">
-            <source
-                src="https://raw.githubusercontent.com/LeeMichael24/Fox-multiMedia/main/Videos/HeroVideoCommercial720.mp4?token=GHSAT0AAAAAACDZEL52SKHDNO37L6WSEE2EZIJX5FQ"
-                type="video/mp4">
+            <source src="images/video/HeroVideoCommercial720.mp4" type="video/mp4">
         </video>
 
         <div class="content-hero-home animate-bottom">
@@ -135,6 +131,9 @@
             <button class="animate-bottom">Book Our Services Today</button>
         </div>
     </section>
+    <!-- hero end video -->
+
+
 
     <!-- Services -->
     <section class=" mb-5" id="services">
@@ -620,33 +619,23 @@
                 }
             }
         }).mount();
-
-
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector(".floating-header");
-            if (window.scrollY > 5) { // Ajusta el valor según sea necesario
-                header.classList.add("visible");
-            } else {
-                header.classList.remove("visible");
-            }
-        });
     </script>
     <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
         src="https://portal.autoops.com/portal-scripts.js"></script>
 
     <script>
-document.addEventListener("DOMContentLoaded", function() {
-    var video = document.querySelector(".hero-video-commercial");
+        document.addEventListener("DOMContentLoaded", function () {
+            var video = document.querySelector(".hero-video-commercial");
 
-    // Agrega la ruta del video de GitHub al src
-    video.src = "https://raw.githubusercontent.com/LeeMichael24/Fox-multiMedia/main/Videos/HeroVideoCommercial720.mp4?token=GHSAT0AAAAAACDZEL52SKHDNO37L6WSEE2EZIJX5FQ"; // Cambia la ruta a tu video en GitHub
+            // Agrega la ruta del video de GitHub al src
+            video.src = 'images/video/HeroVideoCommercial720.mp4'; // Cambia la ruta a tu video en GitHub
 
-    // Escuchar el evento "canplaythrough" para saber cuando el video está completamente cargado
-    video.addEventListener("canplaythrough", function() {
-        // Comienza a reproducir el video automáticamente
-        video.play();
-    });
-});
+            // Escuchar el evento "canplaythrough" para saber cuando el video está completamente cargado
+            video.addEventListener("canplaythrough", function () {
+                // Comienza a reproducir el video automáticamente
+                video.play();
+            });
+        });
 
     </script>
 
