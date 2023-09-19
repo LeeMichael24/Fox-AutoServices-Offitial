@@ -503,21 +503,16 @@ function showCustomSlide(n) {
 
 
 
-
-window.addEventListener("load", function() {
+document.addEventListener("DOMContentLoaded", function() {
   var video = document.querySelector(".hero-video-commercial");
-  var heroSection = document.querySelector(".hero-video-home");
 
-  // Escuchar el evento "loadedmetadata" para el video
-  video.addEventListener("loadedmetadata", function() {
-      // Cambiar la imagen de fondo por el video
-      heroSection.style.backgroundImage = "none"; // Eliminar la imagen de fondo
-      video.style.display = "block"; // Mostrar el video
-      video.play(); // Iniciar la reproducción del video
-  });
-  
-  // Escuchar el evento "ended" para el video (cuando finalice)
-  video.addEventListener("ended", function() {
-      // Puedes agregar aquí alguna acción cuando el video finalice, si es necesario
+  // Agrega la ruta local del video al src
+  video.src = "ruta_del_video/video.mp4"; // Cambia la ruta a tu video local
+
+  // Escuchar el evento "canplaythrough" para saber cuando el video está completamente cargado
+  video.addEventListener("canplaythrough", function() {
+      // Comienza a reproducir el video automáticamente
+      video.play();
   });
 });
+

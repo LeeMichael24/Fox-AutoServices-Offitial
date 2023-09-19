@@ -503,17 +503,11 @@ function showCustomSlide(n) {
 
 
 
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function() {
   var video = document.querySelector(".hero-video-commercial");
 
   // Agrega la ruta local del video al src
-  video.src = "https://raw.githubusercontent.com/LeeMichael24/Fox-multiMedia/main/Videos/HeroVideoCommercial720.mp4?token=GHSAT0AAAAAACHZP4XCQBF7RVT6N7WGNOUSZIJ2XFQ"; // Cambia la ruta a tu video local
+  video.src = "ruta_del_video/video.mp4"; // Cambia la ruta a tu video local
 
   // Escuchar el evento "canplaythrough" para saber cuando el video está completamente cargado
   video.addEventListener("canplaythrough", function() {

@@ -1515,99 +1515,67 @@ nav{
 
 /* bg Why Choosing US */
 
-.bg-about {
+/* .bg-about {
   position: absolute;
   content: "";
   left: 0px;
   top: 0px;
   width: 45%;
   min-height: 650px;
-  background: url("images/realImages/whyChoosingUs.jpeg") 50% 50%;
+  background-image: url("../images/realImages/whyChoosingUs.jpeg");
   background-size: cover;
   border-radius: 5px;
+} */
+
+.section-about-us{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: #002bff;
+}
+.about-us-container{
+  align-items: center;
 }
 
-@media (max-width: 992px) {
-  .bg-about{
-      display: none;
+.box{
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  align-items: center;
+}
+.box img {
+  background-position: cover;
+}
+.section-about-us h3{
+  font-size: 2.5rem;
+  color: #fc6701;
+
+}
+.section-about-us h1{
+  font-size: 3.5rem;
+
+}
+.section-about-us button{
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #FC6701;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .section-about-us{
+    display: flex;
   }
-  .about{
-      height: 90vh;
+  .box {
+      width: 100%; /* En pantallas más pequeñas, los div ocuparán el 100% del ancho */
   }
-}
 
-@media (max-width: 993px) {
-  .about{
-      height: 100vh;
-  }
 }
-
-.about-content {
-  padding: 20px 0px 0px 80px;
-}
-
-.content-title{
-  color: #FC6701;
-}
-.about-content h4 {
-  font-weight: 600;
-}
-.about-content h4:before {
-  font-family: "Themify";
-  content: "\e66d";
-  font-size: 30px;
-  position: absolute;
-  top: 8px;
-  left: -65px;
-  font-weight: 700;
-}
-.about-sec-gap{
-  margin: 0px;
-  margin-top: -210px;
-}
-
-@media (max-width: 768px) {
-  .about-sec-gap{
-    margin-top: 50px;
-    padding: 20px;
-  }
-}
-.about{
-  height: 100vh;
-  background-color: #eee;
-}
-@media (min-width: 1920px) {
-  .about{
-      height: 70vh;
-      background-color: #eee;
-  }
-}
-.bg-about{
-  margin-top: 40px;
-}
-.about-item h1{
-  font-size: 36px;
-  font-weight: bold;
-}
-.about-item p{
-  font-size: 20px;
-}
-.content-tittle {
-  font-size: 36px;
-  font-weight: bold;
-}
-.about-sec-gap-1 {
-  margin: 2rem;
-  margin-top: -30px
-}
-
-.about-sec-top{
-  margin-top: -80px;
-  margin-bottom: -70px;
-}
-.price .title-heading{
-  margin-bottom: 5rem;
-}
-
 /* bg Why Choosing US END*/
+
+
 /*# sourceMappingURL=global.css.map */
