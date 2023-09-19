@@ -137,7 +137,7 @@
         </div>
     </section> -->
 
-    <section class="hero-section">
+    <section class="hero-section-services">
         <div class="hero-content animate-top">
             <h1 class="hero-title">Our Services</h1>
             <p class="hero-description">Explore our range of automative services</p>
@@ -147,7 +147,7 @@
 
     <!--Start about us area-->
     <section class="section-title-service" id="services-redic">
-        <h1 class="animate-bottom text-services-1">Discover Your Vehicle's Full Potential!
+        <h1 class="animate-bottom text-services-1 p-1">Discover Your Vehicle's Full Potential!
             Explore Our Range of Expert Services.</h1>
     </section>
     <!-- Sidebar nav -->
@@ -426,6 +426,15 @@
                     $(this).remove();
                 });
             }, 200); // Ajusta el tiempo de espera según tus necesidades
+        });
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector(".floating-header");
+            if (window.scrollY > 5) { // Ajusta el valor según sea necesario
+                header.classList.add("visible");
+            } else {
+                header.classList.remove("visible");
+            }
         });
     </script>
     <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"

@@ -1,0 +1,517 @@
+X-Frame-Options: ALLOWALL<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox Auto Service | Request Estimate</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- Own styles -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/requestEstimate.css">
+    <!-- icon -->
+    <link rel="shortcut icon" href="icons/fas.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Start preload -->
+    <div class="loading-overlay text-center">
+        <div class="loader">
+            <div class="loader-div">
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <nav class="nav-container">
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="images/fas_neonthorizontal.png" alt="Fox Auto Services">
+                    </a>
+                </div>
+
+                <div class="menu-icons open">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+
+                <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link current">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="collision-repair.html" class="nav-link">Collision Repair</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="request-estimate.html" class="nav-link">Request an estimate</a>
+                    </li>
+                    <button type="button" class="button-85" role="button" onclick="AutoOps.show()">
+                        Book Service Now
+                    </button>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- FAB -->
+    <div class="fab-container">
+        <div class="main-fab fab-icon-holder">
+            <i class="icon ion-md-help"></i>
+        </div>
+        <ul class="fab-options">
+            <li>
+                <span class="fab-label"> Request Estimate</span>
+                <div class="fab-icon-holder">
+                    <a href="request-estimate.html"><i class="icon ion-md-mail"></i></a>
+                </div>
+            </li>
+            <li>
+                <span class="fab-label">Make Appointment</span>
+                <div class="fab-icon-holder">
+                    <a onclick="AutoOps.show()"><i class="icon ion-md-calendar"></i></a>
+                </div>
+            </li>
+            <li>
+                <span class="fab-label">Get Directions</span>
+                <div class="fab-icon-holder">
+                    <a target="_blank"
+                        href="https://www.google.com/maps/dir//'39.1764631,-76.6135502'/@39.1764631,-76.6157389,17z/data=!4m6!4m5!1m0!1m3!2m2!1d-76.6135502!2d39.1764631"><i
+                            class="icon ion-md-navigate"></i></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="main-message">
+                <h3>Get started with us and</h3>
+                <h1 class="accent-text">Request an estimate</h1>
+                <div class="cta">
+                    <a href="#first-steps" class="btn">Start</a>
+                </div>
+                <div class="down-icon">
+                    <i class="icon-btn icon ion-md-arrow-dropdown-circle"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section class="form" id="first-steps">
+        <div class="container">
+            <div class="title-heading animate-top">
+                <h1>Auto body Repairs estimate form</h1>
+                <p>Our specialized staff will review your repairs and contact you with a detailed estimate based on
+                    the information entered below, so plpease make sure to be the most accurate posible with all the
+                    repairs that you need so the estimate can be more precise.
+                </p>
+            </div>
+            <form class="formulario" method=POST id="formulario" action="#" enctype=multipart/form-data>
+                <div class="formulario__label animate-top">
+                    <h3 class="headline-form">Customers Information</h3>
+                    <div class="line-form"></div>
+                </div>
+                <div class="space"></div>
+                <!-- Grupo: First Name -->
+                <div class="formulario__grupo animate-top" id="grupo__usuario">
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input " name="nombre" id="nombre"
+                            placeholder="First Name*" required>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+                <!-- Grupo: Last Name -->
+                <div class="formulario__grupo animate-top" id="grupo__nombre">
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input " name="apellido" id="apellido"
+                            placeholder="Last Name*">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+                <!-- Grupo: Email -->
+                <div class="formulario__grupo animate-top" id="grupo__correo">
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input " name="correo" id="correo"
+                            placeholder="Your Email*" required>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+                <!-- Grupo: Phone Number -->
+                <div class="formulario__grupo animate-top" id="grupo__telefono">
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input " name="telefono" id="telefono"
+                            placeholder="Phone Number*" required>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+                <!-- Grupo: Street Address -->
+                <div class="formulario__grupo animate-top" id="grupo__direccion">
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input " name="direccion" id="direccion"
+                            placeholder="Street Address*">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+                <!-- Grupo: zip-code -->
+                <div class="formulario__grupo animate-top" id="grupo__zip">
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input " name="zip-code" id="zip-code"
+                            placeholder="ZIP Code*" required>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+                <div class="formulario__label animate-top">
+                    <h3 class="headline-form">Vehicule Information</h3>
+                    <div class="line-form"></div>
+                </div>
+                <div class="space"></div>
+
+                <!-- Grupo: Select Year -->
+                <div class="formulario__grupo animate-top" id="grupo__anio">
+                    <div class="formulario__grupo-input">
+                        <select id="anio" name="anio" class="formulario__input ">
+                            <option value="null">- Select year -</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2014">2013</option>
+                            <option value="2014">2012</option>
+                            <option value="2014">2011</option>
+                            <option value="2001 - 2010">2001 - 2010</option>
+                            <option value="1991 - 2000">1991 - 2000</option>
+                            <option value="1981 - 1990">1981 - 1990</option>
+                            <option value="1971 - 1980">1971 - 1980</option>
+                            <option value="1961 - 1970">1961 - 1970</option>
+                            <option value="1950 - 1960">1950 - 1960</option>
+
+                            <option value="other">Other</option>
+                        </select>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+                <!-- Grupo: Select Make -->
+                <div class="formulario__grupo animate-top" id="grupo__marca">
+                    <div class="formulario__grupo-input">
+                        <select id="make" name="make" class="formulario__input ">
+                            <option value="null">- Select Make -</option>
+                            <option value="Acura">Acura</option>
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Buick">Buick</option>
+                            <option value="Cadillac">Cadillac</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Chrysler">Chrysler</option>
+                            <option value="Dodge">Dodge</option>
+                            <option value="Eagle">Eagle</option>
+                            <option value="Ferrari">Ferrari</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Geo">Geo</option>
+                            <option value="GMC">GMC</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Hummer">Hummer</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="Infiniti">Infiniti</option>
+                            <option value="Isuzu">Isuzu</option>
+                            <option value="Jaguar">Jaguar</option>
+                            <option value="Jeep">Jeep</option>
+                            <option value="Kia">Kia</option>
+                            <option value="Lamborghini">Lamborghini</option>
+                            <option value="Land Rover">Land Rover</option>
+                            <option value="Lexus">Lexus</option>
+                            <option value="Lincoln">Lincoln</option>
+                            <option value="Lotus">Lotus</option>
+                            <option value="Mazda">Mazda</option>
+                            <option value="Mercedes-Benz">Mercedes-Benz</option>
+                            <option value="Mercury">Mercury</option>
+                            <option value="Mitsubishi">Mitsubishi</option>
+                            <option value="Nissan USA">Nissan USA</option>
+                            <option value="Oldsmobile">Oldsmobile</option>
+                            <option value="Peugeot">Peugeot</option>
+                            <option value="Pontiac">Pontiac</option>
+                            <option value="Porsche">Porsche</option>
+                            <option value="Saab">Saab</option>
+                            <option value="Saturn">Saturn</option>
+                            <option value="Subaru">Subaru</option>
+                            <option value="Suzuki">Suzuki</option>
+                            <option value="Toyota (USA)">Toyota (USA)</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="Volvo">Volvo</option>
+                            <option value="other">other</option>
+                        </select>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+                <!-- Grupo: Select Model -->
+                <div class="formulario__grupo animate-top" id="grupo__modelo">
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input " name="modelo" id="modelo"
+                            placeholder="Enter Model*" required>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+                <!-- Grupo: VIN -->
+                <div class="formulario__grupo animate-top" id="grupo__vin">
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input " name="vin" id="vin"
+                            placeholder="Vehicule Identification Number (VIN)*" required>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+                <div class="formulario__label animate-top">
+                    <h3 class="headline-form">Dent Damage Information</h3>
+                    <div class="line-form"></div>
+                </div>
+                <div class="space"></div>
+
+                <!-- Grupo: Number of Dent -->
+                <div class="formulario__grupo animate-top" id="grupo__dents">
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input " name="dents" id="dents"
+                            placeholder="Enter number of Dents*" required>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+                <!-- Grupo: Approx Size -->
+                <div class="formulario__grupo animate-top" id="grupo__tamanio">
+                    <div class="formulario__grupo-input">
+                        <input type="number" min="0" max="1000" class="formulario__input " name="tamanio" id="tamanio"
+                            placeholder="Approx. Size of all dents in cm*" required>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+                <div class="formulario__grupo formulario_subgrupo">
+                    <div class="col-8 animate-right">
+                        <div class="formulario__label">
+                            <h3 class="headline-form">Damaged Locations</h3>
+                            <div class="line-form"></div>
+                        </div>
+                        <!-- Grupo: Damaged Locations -->
+                        <div class="formulario__partes" id="grupo__partes">
+                            <label class="formulario__label">
+                                <input class="formulario__checkbox" type="checkbox" name="frontBumber" id="frontBumber">
+                                <p>A. Front Bumper.</p>
+                            </label>
+                            <label class="formulario__label">
+                                <input class="formulario__checkbox" type="checkbox" name="hood" id="hood">
+                                <p>B. Hood.</p>
+                            </label>
+                            <label class="formulario__label">
+                                <input class="formulario__checkbox" type="checkbox" name="fender" id="fender">
+                                <p>C. Fender.</p>
+                            </label>
+                            <label class="formulario__label">
+                                <input class="formulario__checkbox" type="checkbox" name="roof" id="roof">
+                                <p>D. Roof.</p>
+                            </label>
+                            <label class="formulario__label">
+                                <input class="formulario__checkbox" type="checkbox" name="door" id="door">
+                                <p>E. Door.</p>
+                            </label>
+                            <label class="formulario__label">
+                                <input class="formulario__checkbox" type="checkbox" name="quarterPanel"
+                                    id="quarterPanel">
+                                <p>F. Quarter Panel.</p>
+                            </label>
+                            <label class="formulario__label">
+                                <input class="formulario__checkbox" type="checkbox" name="trunk" id="trunk">
+                                <p>G. Trunk / Liftgate.</p>
+                            </label>
+                            <label class="formulario__label">
+                                <input class="formulario__checkbox" type="checkbox" name="rearBumper" id="rearBumper">
+                                <p>H. Rear Bumper.</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-4 animate-left">
+                        <img src="images/damage-locations.jpg" alt="Posible Damaged Locations">
+                    </div>
+                </div>
+
+                <!-- Grupo: Damage Cause. -->
+                <div class="formulario__grupo cause animate-top" id="grupo__cause">
+                    <div class="formulario__label">
+                        <h3 class="headline-form">Damage Cause</h3>
+                        <div class="line-form"></div>
+                    </div>
+                    <div class="formulario__grupo-input">
+                        <textarea class="formulario__input " id="cause" name="cause"
+                            placeholder="Damage Cause."></textarea>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                </div>
+
+                <!-- Grupo: Images -->
+                <div class="formulario__grupo images animate-top" id="grupo__imagenes">
+                    <div class="formulario__label">
+                        <h3 class="headline-form">Send us your Photos</h3>
+                        <div class="line-form"></div>
+                    </div>
+                    <div class="images-info">
+                        <h5 class="headline-xsmall">Upload Photos of the dents in your car</h5>
+                        <p class="">
+                            If you have a digital picture of the vehicle's damage, please browse to the location of
+                            the
+                            image on your computer and upload for our review.
+
+                            To ensure that your images reach our shop, we ask that you please keep your images' file
+                            size below 1MB. You may need to set the image quality on your phone lower, or resize
+                            your
+                            images before sending here.<br><br>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="formulario__grupo-input">
+                            <div class="image-preview" id="imagePreview">
+                                <img src="" alt="Image Preview" class="image-preview__image">
+                                <span class="image-preview__default-text ">Image 1 Preview</span>
+                            </div>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            <input type="file" name="image1" id="image1" class="inputfile">
+                            <label for="image1">Upload Image 1</label>
+                        </div>
+                        <div class="formulario__grupo-input">
+                            <div class="image-preview2" id="imagePreview2">
+                                <img src="" alt="Image Preview" class="image-preview__image2">
+                                <span class="image-preview__default-text2 ">Image 2 Preview</span>
+                            </div>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            <input type="file" name="image2" id="image2" class="inputfile2">
+                            <label for="image2">Upload Image 2</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar animate-top">
+                    <button type="submit" name="submit" id="submit" class="cta btn">Send Request</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado
+                        exitosamente!
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="custom-footer" class="footer section" style="background: #2d3e64">
+        <div class="container container-footer">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+                    <div class="widget">
+                        <h4 class="text-capitalize mb-4 text-white">Company</h4>
+                        <ul class="list-unstyled footer-menu lh-35">
+                            <li><a href="terms&conditions.html" class="text-white">Terms & Conditions</a></li>
+                            <li><a href="privacy-policy.html" class="text-white">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 text-center">
+                    <div class="widget">
+                        <h4 class="text-capitalize mb-4 text-white">Quick Links</h4>
+                        <ul class="list-unstyled footer-menu lh-35">
+                            <li><a href="index.html" class="text-white">Home</a></li>
+                            <li><a href="services.html" class="text-white">Services</a></li>
+                            <li><a href="gallery.html" class="text-white">Gallery</a></li>
+                            <li><a onclick="AutoOps.show()" class="text-white">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center">
+                    <div class="widget">
+                        <div class="logo mb-4 text-white">
+                            <h3>Fox <span>Auto</span> Services</h3>
+                        </div>
+                        <h6><a href="mailto:support@gmail.com" class="text-white">admin@foxautoservices.com</a></h6>
+                        <a href="tel:+23-345-67890"><span class="text-color h4">+1 410-304-3109</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 text-center">
+                    <div class="widget">
+                        <img src="images/fas_neonthorizontal.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-btm pt-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="copyright text-white">
+                            Copyright &copy; 2023, Designed &amp; Developed by <a href="https://github.com/LeeMichael24"
+                                class="text-white">WebGenius Solutions</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-left text-lg-right">
+                        <ul class="list-inline footer-socials">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/TheFOXAuto" class="text-white"><i
+                                        class="fab fa-facebook-f mr-2 text-white"></i>Facebook</a></li>
+                            <li class="list-inline-item"><a href="https://www.google.com/search?client=firefox-b-d&sca_esv=565110899&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AM9HkKlhdDA5AVtqwkHUaaNFacBs18l4fA:1694654084797&q=fox+auto+services+md&rflfq=1&num=10&rllag=39170807,-76889889,23804&ved=2ahUKEwjA-va19qiBAxVXQTABHS5yDL0QtgN6BAgfEAg#rlfi=hd:;si:10421666208944834514,l,ChRmb3ggYXV0byBzZXJ2aWNlcyBtZEj93_GI57OAgAhaKBAAEAEQAhgAGAEYAhgDIhRmb3ggYXV0byBzZXJ2aWNlcyBtZDICZW6SAQ5hdXRvX2JvZHlfc2hvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VNdGJrbFFSWEIzUlJBQqoBXQoIL20vMDRycmQQASoVIhFmb3ggYXV0byBzZXJ2aWNlcygAMh4QASIaBha8UxqTVUnxj51w3Sc0kHCKN0-S-VrWSQ4yGBACIhRmb3ggYXV0byBzZXJ2aWNlcyBtZA;mv:[[39.176808099999995,-76.58071939999999],[39.1648067,-77.1990598]]" class="text-white"><i
+                                        class="fab fa-google mr-2 text-white"></i>Google</a>
+                            </li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/foxautoservices/?fbclid=IwAR2dWGpzfs5mZ6-0p5EhbVSMJ08gI0A-ACYdIXqV8_c6b9Z9o9Nood0Qj_s" class="text-white"><i
+                                        class="fab fa-instagram mr-2 text-white"></i>Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Own scripts -->
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".loading-overlay").fadeOut(450, function () {
+                    $(this).remove();
+                });
+            }, 200); // Ajusta el tiempo de espera según tus necesidades
+        });
+    </script>
+    <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
+        src="https://portal.autoops.com/portal-scripts.js"></script>
+</body>
+
+</html>

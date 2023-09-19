@@ -103,7 +103,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
+<!--     <section class="hero" id="hero">
         <div class="container">
             <div class="main-message">
                 <h3>Just got into your first accident and don’t know what to do?</h3>
@@ -120,7 +120,15 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    <!-- Hero Section -->
+    <section class="hero-section-collision">
+        <div class="hero-content animate-top">
+            <h1 class="hero-title">Collision Repair</h1>
+            <p class="hero-description">Precision Collision Repair: Restoring Vehicles to Their Pristine State</p>
+        </div>
     </section>
+
 
     <!-- First text section -->
     <section class="collision-info">
@@ -506,6 +514,15 @@
                     $(this).remove();
                 });
             }, 200); // Ajusta el tiempo de espera según tus necesidades
+        });
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector(".floating-header");
+            if (window.scrollY > 5) { // Ajusta el valor según sea necesario
+                header.classList.add("visible");
+            } else {
+                header.classList.remove("visible");
+            }
         });
     </script>
     <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"

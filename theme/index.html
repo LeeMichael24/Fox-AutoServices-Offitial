@@ -45,15 +45,15 @@
 
 <body>
     <!-- Start preload -->
-    <div class="loading-overlay">
+    <!-- <div class="loading-overlay">
         <div class="loader">
             <div class="loader-div">
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Navbar -->
-    <header>
+    <header class="floating-header">
         <div class="container">
             <nav class="nav-container">
                 <div class="nav-brand">
@@ -125,84 +125,23 @@
 
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div id="container-banner" class="container">
-            <div class="main-message animate-bottom">
-                <h1 class="accent-text animate-left">Expert Car Repairs and Services | Your Trusted Car Doctors
-                </h1>
-                <p class="animate-bottom">We specialize in diagnosing and healing all your car woes, ensuring your
-                    vehicle runs smoothly on the
-                    road. Quality repairs, affordable prices, and unparalleled expertise. Book an appointment now and
-                    experience the precision care your car deserves!</p>
-                <div class="cta animate-bottom">
-                    <a onclick="AutoOps.show()" class="btn">Book Our Service Today</a>
-                </div>
-            </div>
+
+
+    <section class="hero-video-home">
+        <video autoplay loop muted plays-inline class="hero-video-commercial">
+            <source
+                src="https://raw.githubusercontent.com/LeeMichael24/Fox-multiMedia/main/Videos/HeroVideoCommercial720.mp4?token=GHSAT0AAAAAACDZEL52SKHDNO37L6WSEE2EZIJX5FQ"
+                type="video/mp4">
+        </video>
+
+        <div class="content-hero-home animate-bottom">
+            <h1 class="animate-left">EXPERT CAR REPAIRS AND SERVICES | YOUR TRUSTED CAR DOCTORS</h1>
+            <p class="animate-bottom">We specialize in diagnosing and healing all your car woes, ensuring your vehicle
+                runs smoothly on the road. Quality repairs, affordable prices, and unparalleled expertise. Book an
+                appointment now and experience the precision care your car deserves!</p>
+            <button class="animate-bottom">Book Our Services Today</button>
         </div>
     </section>
-
-
-
-    <!-- Client Slide Logo -->
-
-    <!-- <section class="section clients mb-5">
-
-        <div class="container">
-            <div class="row clients-logo">
-                <div class="col-lg-2">
-                    <div class="client-thumb">
-                        <img src="images/logoGoogle.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="client-thumb">
-                        <img src="images/logoGoogle.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="client-thumb">
-                        <img src="images/logoGoogle.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="client-thumb">
-                        <img src="images/logoGoogle.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="client-thumb">
-                        <img src="images/logoGoogle.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="client-thumb">
-                        <img src="images/logoGoogle.png"" class=" img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="client-thumb">
-                        <img src="images/logoGoogle.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="client-thumb">
-                        <img src="images/logoGoogle.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="client-thumb">
-                        <img src="images/logoGoogle.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="client-thumb">
-                        <img src="images/logoGoogle.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- END Client Slide Logo -->
 
     <!-- Services -->
     <section class=" mb-5" id="services">
@@ -627,13 +566,16 @@
                     </div>
                     <div class="col-lg-6 text-left text-lg-right">
                         <ul class="list-inline footer-socials">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/TheFOXAuto" class="text-white"><i
-                                        class="fab fa-facebook-f mr-2 text-white"></i>Facebook</a></li>
-                            <li class="list-inline-item"><a href="https://www.google.com/search?client=firefox-b-d&sca_esv=565110899&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AM9HkKlhdDA5AVtqwkHUaaNFacBs18l4fA:1694654084797&q=fox+auto+services+md&rflfq=1&num=10&rllag=39170807,-76889889,23804&ved=2ahUKEwjA-va19qiBAxVXQTABHS5yDL0QtgN6BAgfEAg#rlfi=hd:;si:10421666208944834514,l,ChRmb3ggYXV0byBzZXJ2aWNlcyBtZEj93_GI57OAgAhaKBAAEAEQAhgAGAEYAhgDIhRmb3ggYXV0byBzZXJ2aWNlcyBtZDICZW6SAQ5hdXRvX2JvZHlfc2hvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VNdGJrbFFSWEIzUlJBQqoBXQoIL20vMDRycmQQASoVIhFmb3ggYXV0byBzZXJ2aWNlcygAMh4QASIaBha8UxqTVUnxj51w3Sc0kHCKN0-S-VrWSQ4yGBACIhRmb3ggYXV0byBzZXJ2aWNlcyBtZA;mv:[[39.176808099999995,-76.58071939999999],[39.1648067,-77.1990598]]" class="text-white"><i
-                                        class="fab fa-google mr-2 text-white"></i>Google</a>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/TheFOXAuto"
+                                    class="text-white"><i class="fab fa-facebook-f mr-2 text-white"></i>Facebook</a>
                             </li>
-                            <li class="list-inline-item"><a href="https://www.instagram.com/foxautoservices/?fbclid=IwAR2dWGpzfs5mZ6-0p5EhbVSMJ08gI0A-ACYdIXqV8_c6b9Z9o9Nood0Qj_s" class="text-white"><i
-                                        class="fab fa-instagram mr-2 text-white"></i>Instagram</a>
+                            <li class="list-inline-item"><a
+                                    href="https://www.google.com/search?client=firefox-b-d&sca_esv=565110899&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AM9HkKlhdDA5AVtqwkHUaaNFacBs18l4fA:1694654084797&q=fox+auto+services+md&rflfq=1&num=10&rllag=39170807,-76889889,23804&ved=2ahUKEwjA-va19qiBAxVXQTABHS5yDL0QtgN6BAgfEAg#rlfi=hd:;si:10421666208944834514,l,ChRmb3ggYXV0byBzZXJ2aWNlcyBtZEj93_GI57OAgAhaKBAAEAEQAhgAGAEYAhgDIhRmb3ggYXV0byBzZXJ2aWNlcyBtZDICZW6SAQ5hdXRvX2JvZHlfc2hvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VNdGJrbFFSWEIzUlJBQqoBXQoIL20vMDRycmQQASoVIhFmb3ggYXV0byBzZXJ2aWNlcygAMh4QASIaBha8UxqTVUnxj51w3Sc0kHCKN0-S-VrWSQ4yGBACIhRmb3ggYXV0byBzZXJ2aWNlcyBtZA;mv:[[39.176808099999995,-76.58071939999999],[39.1648067,-77.1990598]]"
+                                    class="text-white"><i class="fab fa-google mr-2 text-white"></i>Google</a>
+                            </li>
+                            <li class="list-inline-item"><a
+                                    href="https://www.instagram.com/foxautoservices/?fbclid=IwAR2dWGpzfs5mZ6-0p5EhbVSMJ08gI0A-ACYdIXqV8_c6b9Z9o9Nood0Qj_s"
+                                    class="text-white"><i class="fab fa-instagram mr-2 text-white"></i>Instagram</a>
                             </li>
                         </ul>
                     </div>
@@ -666,7 +608,7 @@
             }, 200); // Ajusta el tiempo de espera según tus necesidades
         });
     </script>
-    
+
 
 
     <script>
@@ -685,9 +627,36 @@
                 }
             }
         }).mount();
+
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector(".floating-header");
+            if (window.scrollY > 5) { // Ajusta el valor según sea necesario
+                header.classList.add("visible");
+            } else {
+                header.classList.remove("visible");
+            }
+        });
     </script>
     <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
         src="https://portal.autoops.com/portal-scripts.js"></script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    var video = document.querySelector(".hero-video-commercial");
+
+    // Agrega la ruta del video de GitHub al src
+    video.src = "https://raw.githubusercontent.com/LeeMichael24/Fox-multiMedia/main/Videos/HeroVideoCommercial720.mp4?token=GHSAT0AAAAAACDZEL52SKHDNO37L6WSEE2EZIJX5FQ"; // Cambia la ruta a tu video en GitHub
+
+    // Escuchar el evento "canplaythrough" para saber cuando el video está completamente cargado
+    video.addEventListener("canplaythrough", function() {
+        // Comienza a reproducir el video automáticamente
+        video.play();
+    });
+});
+
+    </script>
+
 </body>
 
 </html>

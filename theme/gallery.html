@@ -114,23 +114,14 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="container">
-            <div class="main-message animate-top">
-                <h3>Fox Auto Services</h3>
-                <h1 class="accent-text"> work gallery</h1>
-                <p>When work is handled by knowledge professionals with the upmost precision and the proper equipment
-                    the outcome there cannot be other than a perfect quality. That's why we pride ourselves under our
-                    core values of: Knowledge - Precision - Quality</p>
-                <div class="cta">
-                    <a href="#first-steps" class="btn">Our work</a>
-                </div>
-                <div class="down-icon">
-                    <i class="icon-btn icon ion-md-arrow-dropdown-circle"></i>
-                </div>
-            </div>
+    <section class="hero-section-gallery">
+        <div class="hero-content animate-top">
+            <h1 class="hero-title">Work Gallery</h1>
+            <p class="hero-description">Discover a Showcase of Our Impressive Portfolio</p>
         </div>
     </section>
+
+    
 
     <!-- Gallery of images -->
     <section class="gallery-section" id="first-steps">
@@ -289,6 +280,15 @@
             type: 'image',
             gallery: {
                 enabled: true
+            }
+        });
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector(".floating-header");
+            if (window.scrollY > 5) { // Ajusta el valor según sea necesario
+                header.classList.add("visible");
+            } else {
+                header.classList.remove("visible");
             }
         });
     </script>
