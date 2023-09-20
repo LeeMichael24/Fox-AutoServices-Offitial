@@ -507,7 +507,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var video = document.querySelector(".hero-video-commercial");
 
   // Agrega la ruta local del video al src
-  video.src = "ruta_del_video/video.mp4"; // Cambia la ruta a tu video local
+  video.src = ""; // Cambia la ruta a tu video local
 
   // Escuchar el evento "canplaythrough" para saber cuando el video está completamente cargado
   video.addEventListener("canplaythrough", function() {

@@ -505,7 +505,7 @@ nav{
     max-width: 800px;
     margin: 0 auto;
     padding: 60px 0; /* Espaciado superior e inferior para pantallas móviles */
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .hero-title{
     color: #FC6701;
@@ -515,7 +515,9 @@ nav{
   @media (min-width: 1024px) {
     .hero-section-services {
       padding: 100px 0; /* Espaciado superior e inferior para pantallas de escritorio */
+      height: 50vh;
     }
+    
     .hero-section-gallery {
       padding: 100px 0; /* Espaciado superior e inferior para pantallas de escritorio */
     }
@@ -1546,7 +1548,7 @@ nav{
   width: 100%;
   display: flex;
   flex-wrap: wrap-reverse;
-  background-color: #002bff;
+  background-color: #002aff0b;
 }
 .about-us-container{
   align-items: center;
@@ -1563,13 +1565,16 @@ nav{
   background-position: cover;
 }
 .section-about-us h3{
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   color: #fc6701;
 
 }
 .section-about-us h1{
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 
+}
+.section-about-us p {
+  font-size: 20px;
 }
 .section-about-us button{
   padding: 1rem 2rem;
@@ -1578,6 +1583,17 @@ nav{
   text-decoration: none;
   border-radius: 5px;
   font-size: 13px;
+  border: none;
+}
+.section-about-us button:hover{
+  color: white;
+  background-color: #2b6cb0;
+}
+.section-about-us button a{
+  text-decoration: none;
+}
+.box img{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 
