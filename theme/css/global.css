@@ -1,3 +1,14 @@
+/* Global styles */
+
+/* Color palette 
+- main color: #172A54 rgb(34, 62, 122)
+- secondary color: #2D4561 rgb(35, 57, 82)
+- accent color: #FC6701 rgb(252, 103, 1)
+- Light accent color: #FFBB04 rgb(255, 187, 4)
+- text color: #FAFAFA
+*/
+
+
 *,
 *::before,
 *::after{
@@ -1578,11 +1589,11 @@ nav{
 .section-about-us h3{
   font-size: 3rem;
   color: #fc6701;
-
+  font-family: 'Aldrich', sans-serif;
 }
 .section-about-us h1{
   font-size: 4rem;
-
+  font-family: 'Aldrich', sans-serif;
 }
 .section-about-us p {
   font-size: 20px;
@@ -1709,6 +1720,7 @@ nav{
   height: 110vh;
   padding: 0 8%;
   text-align: center;
+  padding-top: 30px;
 }
 .container-services h3 {
   font-family: 'Aldrich', sans-serif;
@@ -1745,7 +1757,7 @@ nav{
   transition: transform 0.5s, background 0.5s;
 }
 .services-home:hover{
-  background: #0056b3;
+  background: #172a54c4;
   color: white;
   transform: scale(1.05);
 }
@@ -1783,7 +1795,6 @@ nav{
     height: -moz-fit-content;
     height: fit-content;
     margin-bottom: 50px;
-    margin-top: 20px;
   }
 }
 @media (min-width: 1500px) {
