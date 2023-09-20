@@ -475,7 +475,7 @@ nav{
     font-family: 'Aldrich', sans-serif;
     background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/gallery/5A5A9302.png'); /* Reemplaza con tu imagen de héroe */
     background-size: cover;
-    background-position: 40% 20%;
+    background-position: 50% 60%;
     background-attachment: fixed;
     color: #fff;
     height: 50vh;
@@ -1013,19 +1013,37 @@ nav{
   }
 
   .bg-color-cta{
-    width: 100%;
-    background: white;
+    width: 70%;
+    height: 30vh;
+    background: #2d3e64;
     justify-content: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin: 0 auto;
     border-radius: 8px;
+  }
+  .bg-color-cta span {
+    color: #FC6701;
+  }
+  .bg-color-cta h2 {
+    color: white;
   }
 
 
   #cont-form-footer > a{
     text-decoration: none;
   }
+  #cont-form-footer {
+    padding: 1rem;
+  }
 
+  @media (max-width: 768px) {
+    .bg-color-cta {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
 
 
 
@@ -1590,8 +1608,10 @@ nav{
   color: white;
   background-color: #2b6cb0;
 }
-.section-about-us button a{
+.a-about{
+  color: white;
   text-decoration: none;
+  list-style: none;
 }
 .box img{
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -1609,3 +1629,79 @@ nav{
 }
 /* bg Why Choosing US END*/
 
+
+/* carousel section start */
+.section-slider-container{
+  height: auto;
+  text-align: center;
+}
+.section-slider-container h2{
+  font-family: 'Aldrich', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.section-slider-container p{
+  font-family: 'Aldrich', sans-serif;
+  color: black;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+  .wrapper-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18vh;
+  }
+
+  .slider-images-container{
+    height: 110%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+  }
+
+  .slider-images-container .slider-track-custom{
+    -webkit-animation: scroll 30s linear infinite;
+    animation: scroll 30s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+
+  .slider-images-container .slide-image{
+    height: 100px;
+    width: 250px;
+  }
+  .slider-images-container .slide-image{
+    height: 100px;
+    width: 250px;
+  }
+  .slider-images-container .slide-image img{
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px solid crimson;
+  }
+
+  @-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+/* carousel section media end */
