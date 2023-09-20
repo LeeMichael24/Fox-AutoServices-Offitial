@@ -473,18 +473,19 @@ nav{
   }
 .hero-section-gallery {
     font-family: 'Aldrich', sans-serif;
-    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/workGallery.jpg'); /* Reemplaza con tu imagen de héroe */
+    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/gallery/5A5A9302.png'); /* Reemplaza con tu imagen de héroe */
     background-size: cover;
     background-position: 40% 20%;
     background-attachment: fixed;
     color: #fff;
+    height: 50vh;
     text-align: center;
   }
 .hero-section-collision {
     font-family: 'Aldrich', sans-serif;
     background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.518) 0%, rgba(35, 57, 82, 0.659) 100%) ,url('../images/collisionRepairHero.jpg'); /* Reemplaza con tu imagen de héroe */
     background-size: cover;
-    background-position: 50% 60%;
+    background-position: 50% 10%;
     background-attachment: fixed;
     color: #fff;
     height: 58vh;
