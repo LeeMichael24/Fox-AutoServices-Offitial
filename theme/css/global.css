@@ -1983,6 +1983,11 @@ nav{
     height: 20%;
   }
 }
+@media (min-width: 1500px) {
+  .social-media-testi img{
+  width: 5%;
+  height: 20%;
+}}
 /* testimonials official end */
 
 /*# sourceMappingURL=global.css.map */
