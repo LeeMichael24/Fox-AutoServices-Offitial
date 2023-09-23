@@ -1762,6 +1762,9 @@ nav{
 .p-margin-section{
   margin-bottom: 50px;
 }
+.container-services a{
+  text-decoration: none;
+}
 /* .container-services h1::after{
   content: '';
   background: #002bff;
@@ -1781,6 +1784,7 @@ nav{
   background: transparent;
   transition: transform 0.5s, background 0.5s;
 }
+
 .services-home:hover{
   background: #172a54c4;
   color: white;

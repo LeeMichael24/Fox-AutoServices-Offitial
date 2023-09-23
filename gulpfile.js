@@ -39,6 +39,14 @@ gulp.task("html:build", function () {
         basepath: path.src.incdir,
       })
     )
+    .pipe(
+      comments(`
+    WEBSITE: https://themefisher.com
+    TWITTER: https://twitter.com/themefisher
+    FACEBOOK: https://www.facebook.com/themefisher
+    GITHUB: https://github.com/themefisher/
+    `)
+    )
     .pipe(gulp.dest(path.build.dirDev))
     .pipe(
       bs.reload({
@@ -54,6 +62,14 @@ gulp.task("css:build", function () {
     .pipe(sourcemaps.init())
     .pipe(autoprefixer())
     .pipe(sourcemaps.write("/"))
+    .pipe(
+      comments(`
+    WEBSITE: https://themefisher.com
+    TWITTER: https://twitter.com/themefisher
+    FACEBOOK: https://www.facebook.com/themefisher
+    GITHUB: https://github.com/themefisher/
+    `)
+    )
     .pipe(gulp.dest(path.build.dirDev + "css/"))
     .pipe(
       bs.reload({
@@ -78,6 +94,14 @@ gulp.task("js:build", function () {
     )
     .pipe(jshint.reporter("jshint-stylish"))
     .on("error", gutil.log)
+    .pipe(
+      comments(`
+  WEBSITE: https://themefisher.com
+  TWITTER: https://twitter.com/themefisher
+  FACEBOOK: https://www.facebook.com/themefisher
+  GITHUB: https://github.com/themefisher/
+  `)
+    )
     .pipe(gulp.dest(path.build.dirDev + "js/"))
     .pipe(
       bs.reload({
