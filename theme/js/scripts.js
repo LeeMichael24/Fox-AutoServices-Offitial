@@ -396,6 +396,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Agrega la ruta local del video al src
   video.src = "images/video/videoOficial.mp4"; // Cambia la ruta a tu video local
   video.src = "images/video/videoOficial.ogg"; // Cambia la ruta a tu video local
+  video.src = "images/video/videoOficial.webm"; // Cambia la ruta a tu video local
 
   // Escuchar el evento "canplaythrough" para saber cuando el video está completamente cargado
   video.addEventListener("canplaythrough", function() {
