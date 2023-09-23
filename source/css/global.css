@@ -1042,15 +1042,15 @@ nav{
 
   .bg-color-cta{
     width: 70%;
-    height: 30vh;
-    background: #2d3e64f4;
+    height: 25vh;
+    background: #000000e5;
     justify-content: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin: 0 auto;
     border-radius: 8px;
   }
   .bg-color-cta span {
-    color: #FC6701;
+    color: #2dea0c;
   }
   .bg-color-cta h2 {
     color: white;
@@ -1603,6 +1603,9 @@ nav{
   display: flex;
   flex-wrap: wrap-reverse;
   background-color: #002aff0b;
+  padding: 0;
+  height: fit-content;
+  align-items: center;
 }
 .about-us-container{
   align-items: center;
@@ -1617,6 +1620,14 @@ nav{
 }
 .box img {
   background-position: cover;
+}
+.box-image{
+  padding: 0;
+}
+.box-text-container{
+  align-items: center;
+  margin: 0 auto !important;
+  padding-left: 6rem;
 }
 .section-about-us h3{
   font-size: 3rem;
@@ -1660,7 +1671,15 @@ nav{
   .box {
       width: 100%; /* En pantallas más pequeñas, los div ocuparán el 100% del ancho */
   }
+  .box-text-container{
+    padding-left: 2.5rem;
+  }
+}
 
+@media screen and (min-width: 1500px) {
+  .box-text-container{
+    padding-left: 9rem;
+  }
 }
 /* bg Why Choosing US END*/
 
@@ -1806,7 +1825,7 @@ nav{
 .services-home:hover{
   background: #172a54c4;
   color: white;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 .services-home i {
   font-size: 40px;
