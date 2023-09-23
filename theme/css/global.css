@@ -15,7 +15,9 @@
 - text color: #FAFAFA
 */
 
-
+container{
+  max-width: 390px;
+}
 *,
 *::before,
 *::after{
@@ -1040,7 +1042,6 @@ nav{
     justify-content: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin: 0 auto;
-    border-radius: 8px;
   }
   .bg-color-cta span {
     color: #2dea0c;
