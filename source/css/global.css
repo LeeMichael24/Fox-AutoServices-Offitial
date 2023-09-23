@@ -414,6 +414,16 @@ nav{
     margin-left: -1.5rem;
 }
 
+
+.price-table{
+  height: 70vh !important;
+}
+@media screen and (max-width: 950px){
+  .price-table{
+    height: 80vh !important;
+  }
+}
+
 .menu-icons i{
     font-size: 3.5rem;
     color: #fafafa;
@@ -1014,12 +1024,19 @@ nav{
 
 
 /* this part is above the footer */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   
     #cont-form-footer > div{
       justify-content: center;
       margin: 0 auto;
       text-align: center;
+      margin-left: 0;
+    }
+    #cont-form-footer{
+      padding: 0;
+    }
+    .bg-color-cta{
+      height: fit-content !important;
     }
   }
 
@@ -1044,7 +1061,7 @@ nav{
     text-decoration: none;
   }
   #cont-form-footer {
-    padding: 1rem;
+    padding: 2rem;
   }
 
   @media (max-width: 768px) {
@@ -1670,6 +1687,7 @@ nav{
     align-items: center;
     justify-content: center;
     height: 18vh;
+    margin-top: 40px;
   }
 
   .slider-images-container{
@@ -1678,6 +1696,7 @@ nav{
     overflow: hidden;
     position: relative;
     width: 80%;
+    margin-top: 40px;
   }
 
   .slider-images-container .slider-track-custom{
@@ -1695,7 +1714,6 @@ nav{
     width: 80%;
     height: 100px;
     border-radius: 10px;
-    border: 2px solid crimson;
   }
 
   @-webkit-keyframes scroll {
@@ -1834,3 +1852,152 @@ nav{
   }
 }
 /* Services section home start end */
+
+
+
+/* testimonials official start */
+.testimonial-section {
+  background-color: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%);
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url(../images/gallery/Photo\ Nov\ 02\,\ 8\ 35\ 54\ AM-min.jpg) center no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  background-position: center center;
+  background-attachment: fixed;
+  gap: 60px;
+}
+
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-media-testi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.social-media-testi img{
+  width: 20%;
+  height: 20%;
+}
+
+.testimonial-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-box:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-content {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.quote-icon {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.testimonial-link-google {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.testimonial-link-google:hover {
+  color: #0056b3;
+}
+
+.testimonial-link-instagram {
+  text-decoration: none;
+  color: #e4405f;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.testimonial-link-instagram:hover {
+  color: #b52040;
+}
+
+
+.testimonial-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.testimonial-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.quote-icon {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.testimonial-author {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Estilo para el testimonio actual */
+.testimonial-box.active {
+  display: block;
+}
+
+
+
+@media (max-width: 768px) {
+  .testimonial-section {
+    height: fit-content;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .testimonial-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .social-media-testi img{
+    width: 20%;
+    height: 20%;
+  }
+}
+@media (max-width: 968px) {
+  .social-media-testi img{
+    width: 10%;
+    height: 20%;
+  }
+}
+/* testimonials official end */
