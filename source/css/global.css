@@ -1710,8 +1710,14 @@ section{
 }
 /* Services section home start end */
 
-
-
+@media (max-width: 768px) {
+  .mobile-section-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
 /* testimonials official start */
 .testimonial-section {
   background-color: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%);
@@ -1723,7 +1729,7 @@ section{
   justify-content: center;
 
   position: relative;
-  background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url(../images/gallery/Photo\ Nov\ 02\,\ 8\ 35\ 54\ AM-min.jpg) center no-repeat;
+  background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url(../images/gallery/ejemplo4.jpg) center no-repeat;
   background-size: cover;
   box-sizing: border-box;
   background-position: center center;

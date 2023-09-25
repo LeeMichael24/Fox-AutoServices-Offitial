@@ -10,9 +10,12 @@
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.css">
-        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!--Font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <!-- Own styles -->
@@ -30,59 +33,63 @@
             </div>
         </div>
     </div>
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
-    <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
 
-        <!-- Logo -->
-      <a class="navbar-brand" href="index.html"><img src="images/fas_neonthorizontal.png" alt="Fox Auto Services"></a>
-      
-      <!-- Toggle BTN-->
-      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html"><img src="images/fas_neonthorizontal.png"
+                    alt="Fox Auto Services"></a>
 
-      <!-- SideBar -->
-      <div class="sidebar-nav-header offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!-- Toggle BTN-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- Sidebar Header -->
-        <div class="offcanvas-header text-white border-bottom">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
+            <!-- SideBar -->
+            <div class="sidebar-nav-header offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
 
-        <!-- Sidebar Body -->
-        <div id="prueba-section" class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item mx-2 active">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item mx-2 active">
-              <a class="nav-link" href="gallery.html">About Us</a>
-            </li>
-            <li class="nav-item mx-2 active">
-              <a class="nav-link" href="collision-repair.html">Collision Repair</a>
-            </li>
-            <li class="nav-item mx-2 active">
-              <a class="nav-link" href="request-estimate.html">Request an Estimate</a>
-            </li>
-            <li class="nav-item mx-2 btn-85 button-85 active">
-              <a class="nav-link"  onclick="AutoOps.show()">Book Service Today</a>
-            </li>
-          </ul>
-          <!-- Button special -->
-          <!-- <div class="d-flex justify-content-center align-items-center gap-3 ">
+                <!-- Sidebar Header -->
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Sidebar Body -->
+                <div id="prueba-section" class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2 active">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item mx-2 active">
+                            <a class="nav-link" href="gallery.html">About Us</a>
+                        </li>
+                        <li class="nav-item mx-2 active">
+                            <a class="nav-link" href="collision-repair.html">Collision Repair</a>
+                        </li>
+                        <li class="nav-item mx-2 active">
+                            <a class="nav-link" href="request-estimate.html">Request an Estimate</a>
+                        </li>
+                        <li class="nav-item mx-2 btn-85 button-85 active">
+                            <a class="nav-link" onclick="AutoOps.show()">Book Service Today</a>
+                        </li>
+                    </ul>
+                    <!-- Button special -->
+                    <!-- <div class="d-flex justify-content-center align-items-center gap-3 ">
             <a type="button" class=" text-white" role="button" onclick="AutoOps.show()">Book Service Today</a>
             <a  class=" text-white" role="button" onclick="AutoOps.show()">Book Service Today</a>
           </div> -->
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav>
-<!-- navbar NED -->
+    </nav>
+    <!-- navbar NED -->
 
     <!-- FAB -->
     <div class="fab-container">
@@ -114,7 +121,7 @@
     </div>
 
     <!-- Hero Section -->
-<!--     <section class="hero" id="hero">
+    <!--     <section class="hero" id="hero">
         <div class="container">
             <div class="main-message">
                 <h3>Just got into your first accident and don’t know what to do?</h3>
@@ -493,13 +500,16 @@
                     </div>
                     <div class="col-lg-6 text-left text-lg-right">
                         <ul class="list-inline footer-socials">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/TheFOXAuto" class="text-white"><i
-                                        class="fab fa-facebook-f mr-2 text-white"></i>Facebook</a></li>
-                            <li class="list-inline-item"><a href="https://www.google.com/search?client=firefox-b-d&sca_esv=565110899&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AM9HkKlhdDA5AVtqwkHUaaNFacBs18l4fA:1694654084797&q=fox+auto+services+md&rflfq=1&num=10&rllag=39170807,-76889889,23804&ved=2ahUKEwjA-va19qiBAxVXQTABHS5yDL0QtgN6BAgfEAg#rlfi=hd:;si:10421666208944834514,l,ChRmb3ggYXV0byBzZXJ2aWNlcyBtZEj93_GI57OAgAhaKBAAEAEQAhgAGAEYAhgDIhRmb3ggYXV0byBzZXJ2aWNlcyBtZDICZW6SAQ5hdXRvX2JvZHlfc2hvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VNdGJrbFFSWEIzUlJBQqoBXQoIL20vMDRycmQQASoVIhFmb3ggYXV0byBzZXJ2aWNlcygAMh4QASIaBha8UxqTVUnxj51w3Sc0kHCKN0-S-VrWSQ4yGBACIhRmb3ggYXV0byBzZXJ2aWNlcyBtZA;mv:[[39.176808099999995,-76.58071939999999],[39.1648067,-77.1990598]]" class="text-white"><i
-                                        class="fab fa-google mr-2 text-white"></i>Google</a>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/TheFOXAuto"
+                                    class="text-white"><i class="fab fa-facebook-f mr-2 text-white"></i>Facebook</a>
                             </li>
-                            <li class="list-inline-item"><a href="https://www.instagram.com/foxautoservices/?fbclid=IwAR2dWGpzfs5mZ6-0p5EhbVSMJ08gI0A-ACYdIXqV8_c6b9Z9o9Nood0Qj_s" class="text-white"><i
-                                        class="fab fa-instagram mr-2 text-white"></i>Instagram</a>
+                            <li class="list-inline-item"><a
+                                    href="https://www.google.com/search?client=firefox-b-d&sca_esv=565110899&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AM9HkKlhdDA5AVtqwkHUaaNFacBs18l4fA:1694654084797&q=fox+auto+services+md&rflfq=1&num=10&rllag=39170807,-76889889,23804&ved=2ahUKEwjA-va19qiBAxVXQTABHS5yDL0QtgN6BAgfEAg#rlfi=hd:;si:10421666208944834514,l,ChRmb3ggYXV0byBzZXJ2aWNlcyBtZEj93_GI57OAgAhaKBAAEAEQAhgAGAEYAhgDIhRmb3ggYXV0byBzZXJ2aWNlcyBtZDICZW6SAQ5hdXRvX2JvZHlfc2hvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VNdGJrbFFSWEIzUlJBQqoBXQoIL20vMDRycmQQASoVIhFmb3ggYXV0byBzZXJ2aWNlcygAMh4QASIaBha8UxqTVUnxj51w3Sc0kHCKN0-S-VrWSQ4yGBACIhRmb3ggYXV0byBzZXJ2aWNlcyBtZA;mv:[[39.176808099999995,-76.58071939999999],[39.1648067,-77.1990598]]"
+                                    class="text-white"><i class="fab fa-google mr-2 text-white"></i>Google</a>
+                            </li>
+                            <li class="list-inline-item"><a
+                                    href="https://www.instagram.com/foxautoservices/?fbclid=IwAR2dWGpzfs5mZ6-0p5EhbVSMJ08gI0A-ACYdIXqV8_c6b9Z9o9Nood0Qj_s"
+                                    class="text-white"><i class="fab fa-instagram mr-2 text-white"></i>Instagram</a>
                             </li>
                         </ul>
                     </div>
@@ -537,7 +547,7 @@
         });
     </script>
     <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
-    src="https://portal.autoops.com/portal-scripts.js"></script>
+        src="https://portal.autoops.com/portal-scripts.js"></script>
 </body>
 
 </html>
