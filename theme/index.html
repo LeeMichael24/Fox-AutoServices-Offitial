@@ -15,6 +15,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fox Auto Service | Home</title>
 
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo/fas.ico">
 
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
@@ -23,6 +25,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.css">
     <!-- Glide pricing cards-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
     <!--Our own stylesheet-->
@@ -30,8 +33,6 @@
     <!-- font-awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <!-- icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo/fas.ico">
 
 
 
@@ -39,12 +40,12 @@
 
 <body>
     <!-- Start preload -->
-    <div class="loading-overlay">
+    <!-- <div class="loading-overlay">
         <div class="loader">
             <div class="loader-div">
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
         <div class="container">
@@ -235,7 +236,7 @@
 
     <!-- Begin Adventure section -->
 
-    <section class="section-about-us">
+    <section class="section-about-us mt-5">
         <di class="box box-image">
             <!-- <img src="images/realImages/whyChoosingUs.png" alt="whyChoosingUs"> -->
             <div id="carouselExampleCaptions" class="carousel slide">
@@ -614,75 +615,83 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer id="custom-footer" class="footer section" style="background: #2d3e64">
-        <div class="container container-footer">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 text-center">
-                    <div class="widget">
-                        <h4 class="text-capitalize mb-4 text-white">Company</h4>
-                        <ul class="list-unstyled footer-menu lh-35">
-                            <li><a href="terms&conditions.html" class="text-white">Terms & Conditions</a></li>
-                            <li><a href="privacy-policy.html" class="text-white">Privacy Policy</a></li>
-                        </ul>
+    <!-- Footer Start -->
+    <div class="container-fluid footer position-relative bg-color-footer text-white-50 py-5 wow fadeIn"
+        data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5 py-5">
+                <div class="col-lg-6 pe-lg-5">
+                    <a href="index.html" class="navbar-brand">
+                        <img class="mb-0 mt-0" src="images/fas_neonthorizontal.png" alt="">
+                    </a>
+                    <p class="fs-5 mb-4">Fox Auto Services - Where Expertise Meets Excellence. Your Premier Destination
+                        for Automotive Solutions."</p>
+                    <p><i class="fa fa-map-marker-alt me-2"></i><a
+                            href="https://www.google.com/search?client=firefox-b-d&sca_esv=565110899&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AM9HkKlhdDA5AVtqwkHUaaNFacBs18l4fA:1694654084797&q=fox+auto+services+md&rflfq=1&num=10&rllag=39170807,-76889889,23804&ved=2ahUKEwjA-va19qiBAxVXQTABHS5yDL0QtgN6BAgfEAg#rlfi=hd:;si:10421666208944834514,l,ChRmb3ggYXV0byBzZXJ2aWNlcyBtZEj93_GI57OAgAhaKBAAEAEQAhgAGAEYAhgDIhRmb3ggYXV0byBzZXJ2aWNlcyBtZDICZW6SAQ5hdXRvX2JvZHlfc2hvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VNdGJrbFFSWEIzUlJBQqoBXQoIL20vMDRycmQQASoVIhFmb3ggYXV0byBzZXJ2aWNlcygAMh4QASIaBha8UxqTVUnxj51w3Sc0kHCKN0-S-VrWSQ4yGBACIhRmb3ggYXV0byBzZXJ2aWNlcyBtZA;mv:[[39.176808099999995,-76.58071939999999],[39.1648067,-77.1990598]]">129-A
+                            Roesler, Glen Burnie, MD 21060</a></p>
+                    <p><i class="fa fa-phone-alt me-2"></i><a href="tel:+23-345-67890">+012 345 67890</a></p>
+                    <p><i class="fa fa-envelope me-2"></i><a
+                            href="mailto:admin@foxautoservices.com">admin@foxautoservices.com</a></p>
+                    <div class="d-flex mt-4">
+                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.google.com/search?client=firefox-b-d&q=fox+auto+services+md#rlimm=10421666208944834514"><i class="fab fa-google"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.facebook.com/TheFOXAuto/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.yelp.com/biz/fox-auto-services-glen-burnie"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.instagram.com/foxautoservices/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-6 text-center">
-                    <div class="widget">
-                        <h4 class="text-capitalize mb-4 text-white">Quick Links</h4>
-                        <ul class="list-unstyled footer-menu lh-35">
-                            <li><a href="index.html" class="text-white">Home</a></li>
-                            <li><a href="services.html" class="text-white">Services</a></li>
-                            <li><a href="gallery.html" class="text-white">Gallery</a></li>
-                            <li><a onclick="AutoOps.show()" class="text-white">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center">
-                    <div class="widget">
-                        <div class="logo mb-4 text-white">
-                            <h3>Fox <span>Auto</span> Services</h3>
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="row g-5">
+                        <div class="col-sm-6">
+                            <h4 class="text-light mb-4">Quick Links</h4>
+                            <a class="btn btn-link" href="gallery.html">About Us</a>
+                            <a class="btn btn-link" href="">Contact Us</a>
+                            <a class="btn btn-link" href="services.html">Our Services</a>
+                            <a class="btn btn-link" href="terms&conditions.html">Terms & Condition</a>
+                            <a class="btn btn-link" href="privacy-policy.html">Support</a>
                         </div>
-                        <h6><a style="font-size: 15px;" href="mailto:support@gmail.com"
-                                class="text-white">admin@foxautoservices.com</a></h6>
-                        <a style="font-size: 15px;" href="tel:+23-345-67890"><span class="text-color h4">+1
-                                410-304-3109</span></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-6 text-center">
-                    <div class="widget">
-                        <img src="images/fas_neonthorizontal.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="footer-btm pt-4">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="copyright text-white">
-                            Copyright &copy; 2023, Designed &amp; Developed by <a href="https://github.com/LeeMichael24"
-                                class="text-white">WebGenius Solutions</a>
+                        <div class="col-sm-6">
+                            <h4 class="text-light mb-4">Popular Links</h4>
+                            <a class="btn btn-link" href="gallery.html">About Us</a>
+                            <a class="btn btn-link" href="">Collision Repair</a>
+                            <a class="btn btn-link" href="services.html">Our Services</a>
+                            <a class="btn btn-link" href="">Request an Estimate</a>
+                            <a class="btn btn-link" href="">Support</a>
                         </div>
-                    </div>
-                    <div class="col-lg-6 text-left text-lg-right">
-                        <ul class="list-inline footer-socials">
-                            <li class="list-inline-item"><a style="font-size: 15px;"
-                                    href="https://www.facebook.com/TheFOXAuto" class="text-white"><i
-                                        class="fab fa-facebook-f mr-2 text-white"></i>Facebook</a>
-                            </li>
-                            <li class="list-inline-item"><a style="font-size: 15px;"
-                                    href="https://www.google.com/search?client=firefox-b-d&sca_esv=565110899&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AM9HkKlhdDA5AVtqwkHUaaNFacBs18l4fA:1694654084797&q=fox+auto+services+md&rflfq=1&num=10&rllag=39170807,-76889889,23804&ved=2ahUKEwjA-va19qiBAxVXQTABHS5yDL0QtgN6BAgfEAg#rlfi=hd:;si:10421666208944834514,l,ChRmb3ggYXV0byBzZXJ2aWNlcyBtZEj93_GI57OAgAhaKBAAEAEQAhgAGAEYAhgDIhRmb3ggYXV0byBzZXJ2aWNlcyBtZDICZW6SAQ5hdXRvX2JvZHlfc2hvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VNdGJrbFFSWEIzUlJBQqoBXQoIL20vMDRycmQQASoVIhFmb3ggYXV0byBzZXJ2aWNlcygAMh4QASIaBha8UxqTVUnxj51w3Sc0kHCKN0-S-VrWSQ4yGBACIhRmb3ggYXV0byBzZXJ2aWNlcyBtZA;mv:[[39.176808099999995,-76.58071939999999],[39.1648067,-77.1990598]]"
-                                    class="text-white"><i class="fab fa-google mr-2 text-white"></i>Google</a>
-                            </li>
-                            <li class="list-inline-item"><a style="font-size: 15px;"
-                                    href="https://www.instagram.com/foxautoservices/?fbclid=IwAR2dWGpzfs5mZ6-0p5EhbVSMJ08gI0A-ACYdIXqV8_c6b9Z9o9Nood0Qj_s"
-                                    class="text-white"><i class="fab fa-instagram mr-2 text-white"></i>Instagram</a>
-                            </li>
-                        </ul>
+                        <div class="col-sm-12">
+                            <h4 class="text-light mb-4">Newsletter</h4>
+                            <div class="w-100">
+                                <div class="input-group">
+                                    <input type="text" class="form-control border-0 py-3 px-4"
+                                        style="background: rgba(255, 255, 255, .1);"
+                                        placeholder="Your Email Address"><button class="btn btn-primary px-4">Sign
+                                        Up</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; <a href="#">Fox Auto Services</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    <p class="mb-0">Designed by <a href="https://github.com/WebGenius-Solutions">WebGenius Solutions</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
 
 
 
@@ -723,6 +732,7 @@
     </script>
     <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
         src="https://portal.autoops.com/portal-scripts.js"></script>
+    <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
 
 </body>
 
