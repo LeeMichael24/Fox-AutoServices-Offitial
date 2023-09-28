@@ -1,5 +1,5 @@
 // Funcion expression to select elements
-const selectElement = (s) => document.querySelector(s);
+/* const selectElement = (s) => document.querySelector(s); */
 
 //Open menu on click
 selectElement(".open").addEventListener("click", () => {
@@ -140,3 +140,13 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
+//Escribir automatico en home palabra "Experience"
+const typed = new Typed(".typed", {
+  strings: ["DOCTOR", "MEDIC", "NURSE", "HEALTH"],
+  typeSpeed: 95,
+  startDelay: 300,
+  backSpeed: 95,
+  backDelay: 2000,
+  loop: true,
+});
