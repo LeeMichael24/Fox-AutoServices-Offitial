@@ -43,11 +43,11 @@ p{
     font-size: 1.6rem;
 }
 
-img{
+/* img{
     width: 100%;
     max-width: 100%;
     height: auto;
-}
+} */
 
 section{
     padding: 5rem 0;
@@ -433,7 +433,7 @@ section{
   }
 .hero-section-gallery {
     font-family: 'Aldrich', sans-serif;
-    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/gallery/5A5A9302.png'); /* Reemplaza con tu imagen de héroe */
+    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/gallery/gallery-section.jpg'); /* Reemplaza con tu imagen de héroe */
     background-size: cover;
     background-position: 50% 60%;
     background-attachment: fixed;
@@ -976,10 +976,13 @@ section{
     font-size: 18px;
     font-weight: 600;
 }
-
+.navbar-brand img{
+  width: 165px;
+}
 .widget > img {
     width: 500px;
 }
+
 
 #custom-footer .footer-menu li {
     margin-bottom: 10px;
@@ -2124,3 +2127,73 @@ section{
 .bg-color-footer{
   background-color: #2d3e64;
 }
+
+
+
+/* Work Gallery start */
+.gallery-section-title{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 3.6rem;
+  letter-spacing: 1.2px;  
+  color: rgba(0, 0, 0, .7);
+}
+
+.gallery-section h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 3.6rem;
+  letter-spacing: 1.2px;  
+  color: rgba(0, 0, 0, .7);
+}
+.border{
+  width: 260px;
+  height: 4px;
+  background: rgba(252, 103, 1, 1);
+  margin: 25px auto;
+}
+.row-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem !important;
+}
+
+@media (max-width: 768px) {
+  .row-gallery {
+    padding: 1.1rem !important;
+  }
+}
+
+
+/* Create four equal columns that sits next to each other */
+.column-gallery {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column-gallery img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column-gallery {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-gallery {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* end Gallery */
