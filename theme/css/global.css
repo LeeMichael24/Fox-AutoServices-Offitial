@@ -413,15 +413,6 @@ section{
 
 
 
-.price-table{
-  height: 70vh !important;
-}
-@media screen and (max-width: 950px){
-  .price-table{
-    height: 80vh !important;
-  }
-}
-
 .menu-icons i{
     font-size: 3.5rem;
     color: #fafafa;
@@ -1672,13 +1663,13 @@ section{
 }
 
 
-.testimonial-container {
+/* .testimonial-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
-}
+} */
 
 .social-media-testi{
   display: flex;
@@ -1693,7 +1684,7 @@ section{
 }
 
 .testimonial-box {
-  background-color: #ffffff;
+  background-color: transparent;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -1803,10 +1794,62 @@ section{
   width: 5%;
   height: 20%;
 }}
+
+/* Estilos para la sección de testimonios */
+.testimonials {
+  background-color: transparent;
+  padding: 50px 0;
+  text-align: center;
+  width: 50%;
+}
+
+/* Estilos para los testimonios individuales */
+.testimonial {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 20px;
+  max-width: 500px;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.testimonial a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.testimonial a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .testimonials {
+    width: 100%;
+  }
+}
+
+
 /* testimonials official end */
 
 
 /* Start price */
+.price-table{
+  height: 70vh !important;
+}
+@media screen and (max-width: 950px){
+  .price-table{
+    height: 80vh !important;
+  }
+}
+
 .price{
   padding: 5rem 0;
 }
