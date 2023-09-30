@@ -13,8 +13,11 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Glide pricing cards-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
     <!--Scroll reveal CDN-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -35,59 +38,63 @@
             </div>
         </div>
     </div>
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
-    <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
 
-        <!-- Logo -->
-      <a class="navbar-brand" href="index.html"><img src="images/fas_neonthorizontal.png" alt="Fox Auto Services"></a>
-      
-      <!-- Toggle BTN-->
-      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html"><img src="images/fas_neonthorizontal.png"
+                    alt="Fox Auto Services"></a>
 
-      <!-- SideBar -->
-      <div class="sidebar-nav-header offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!-- Toggle BTN-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- Sidebar Header -->
-        <div class="offcanvas-header text-white border-bottom">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
+            <!-- SideBar -->
+            <div class="sidebar-nav-header offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
 
-        <!-- Sidebar Body -->
-        <div id="prueba-section" class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item mx-2 active">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item mx-2 active">
-              <a class="nav-link" href="gallery.html">About Us</a>
-            </li>
-            <li class="nav-item mx-2 active">
-              <a class="nav-link" href="collision-repair.html">Collision Repair</a>
-            </li>
-            <li class="nav-item mx-2 active">
-              <a class="nav-link" href="request-estimate.html">Request an Estimate</a>
-            </li>
-            <li class="nav-item mx-2 btn-85 button-85 active">
-              <a class="nav-link"  onclick="AutoOps.show()">Book Service Today</a>
-            </li>
-          </ul>
-          <!-- Button special -->
-          <!-- <div class="d-flex justify-content-center align-items-center gap-3 ">
+                <!-- Sidebar Header -->
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Sidebar Body -->
+                <div id="prueba-section" class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2 active">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item mx-2 active">
+                            <a class="nav-link" href="gallery.html">About Us</a>
+                        </li>
+                        <li class="nav-item mx-2 active">
+                            <a class="nav-link" href="collision-repair.html">Collision Repair</a>
+                        </li>
+                        <li class="nav-item mx-2 active">
+                            <a class="nav-link" href="request-estimate.html">Request an Estimate</a>
+                        </li>
+                        <li class="nav-item mx-2 btn-85 button-85 active">
+                            <a class="nav-link" onclick="AutoOps.show()">Book Service Today</a>
+                        </li>
+                    </ul>
+                    <!-- Button special -->
+                    <!-- <div class="d-flex justify-content-center align-items-center gap-3 ">
             <a type="button" class=" text-white" role="button" onclick="AutoOps.show()">Book Service Today</a>
             <a  class=" text-white" role="button" onclick="AutoOps.show()">Book Service Today</a>
           </div> -->
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav>
-<!-- navbar NED -->
+    </nav>
+    <!-- navbar NED -->
 
     <!-- FAB -->
     <div class="fab-container">
@@ -126,7 +133,7 @@
         </div>
     </section>
 
-    
+
 
     <!-- Gallery of images -->
     <section class="gallery-section" id="first-steps">
@@ -173,34 +180,94 @@
             <p style="color: white;">Read what people are saying about us on the most popular social media platforms.
             </p>
             <div class="social-media-testi">
-                <img src="images/yelp.png" alt="yelp-image">
+                <img src="images/yelp.png" href="https://www.yelp.com/biz/fox-auto-services-glen-burnie"
+                    alt="yelp-image">
                 <img src="images/facebook.png" alt="yelp-image">
-                <img src="images/logoGoogle.png" alt="yelp-image">
+                <img src="images/logoGoogle.png"
+                    href="https://www.google.com/maps/place/Fox+Auto+Services/@39.1761652,-76.6164144,17z/data=!4m8!3m7!1s0x89b7fd40f7f97315:0x90a132335fd947d2!8m2!3d39.1761652!4d-76.6138448!9m1!1b1!16s%2Fg%2F11mtsksw_y?hl=es-419&entry=ttu"
+                    alt="yelp-image">
                 <img src="images/instaLogo.png" alt="yelp-image">
             </div>
         </div>
-        <div class="testimonial-container">
-            <div class="testimonial-box">
-                <div class="testimonial-content">
-                    <img src="images/perfil1.png" alt="quote icon" class="quote-icon">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget suscipit mauris. Pellentesque
-                        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."</p>
-                    <p class="testimonial-author">- John Doe, <a
-                            href="https://www.yelp.com/biz/fox-auto-services-glen-burnie"
-                            class="testimonial-link-google">Google</a></p>
+        <div class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="title-heading animate-top">
+                    <h1 style="color: white;">What Our <strong class="color-title-fox">Customers Say</strong> </h1>
+                </div>
+
+                <div class="glide-testi">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="testimonial">
+                                    <p>"I can't believe the transformation my car underwent with Fox Auto Services'
+                                        Premium Plus Detail. It looks and smells brand new! I highly recommend their
+                                        services." - <a
+                                            href="https://www.yelp.com/biz/fox-auto-services-glen-burnie">John D.</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="testimonial">
+                                    <p>"Fox Auto Services took care of a stubborn engine issue that no one else could
+                                        diagnose. Their expertise saved me time and money. Thanks, Fox Auto Services!" -
+                                        <a href="https://g.co/kgs/nnA51g">Emily S.</a></p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="testimonial">
+                                    <p>"I've been a loyal customer for years. Fox Auto Services' attention to detail and
+                                        professionalism never cease to impress me. Their Basic Detail service keeps my
+                                        car looking great." - <a href="https://g.co/kgs/9wvkDd">Michael L.</a></p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="testimonial">
+                                    <p>"I had my car's exterior waxed at Fox Auto Services, and the shine lasted for
+                                        months. Their quality service keeps me coming back." - <a
+                                            href="https://g.co/kgs/n9vvKA">Emily W.</a></p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="testimonial">
+                                    <p>"I appreciate Fox Auto Services' honesty. They never try to upsell unnecessary
+                                        services and only recommend what's best for my car." - <a
+                                            href="https://g.co/kgs/rmBD55">Robert M.</a></p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="testimonial">
+                                    <p>"I had a major engine repair done at Fox Auto Services, and the results were
+                                        fantastic. My car runs smoother than ever." - <a
+                                            href="https://www.facebook.com/TheFOXAuto/">Susan K.</a></p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="testimonial">
+                                    <p>"Fox Auto Services' team is friendly and knowledgeable. They answer all my
+                                        car-related questions, and I trust their expertise." - <a
+                                            href="https://g.co/kgs/1AP94G">Daniel B.</a></p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="testimonial">
+                                    <p>"I recently had my car detailed at Fox Auto Services, and it looked brand new.
+                                        Their meticulous work exceeded my expectations." - <a
+                                            href="https://www.instagram.com/foxautoservices/">Rachel P.</a></p>
+                                </div>
+                            </li>
+                            <!-- Agrega más testimonios aquí -->
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                                class="fa fa-angle-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                                class="fa fa-angle-right"></i></button>
+                    </div>
                 </div>
             </div>
-            <div class="testimonial-box">
-                <div class="testimonial-content">
-                    <img src="images/perfil1.png" alt="quote icon" class="quote-icon">
-                    <p>"Quisque vitae enim eget libero accumsan tincidunt. Nullam quis maximus elit, vel varius ligula.
-                        Vivamus bibendum nec odio ut laoreet."</p>
-                    <p class="testimonial-author">- Jane Smith, <a
-                            href="https://www.google.com/search?q=fox+auto+services+md&client=firefox-b-d&sca_esv=567911214&sxsrf=AM9HkKnNel1pXaqlgqcmj15Ke9zUCOL7sw%3A1695515014926&ei=hoEPZYiQOIPl5NoPotyBgAQ&ved=0ahUKEwiI67PR_cGBAxWDMlkFHSJuAEAQ4dUDCA8&uact=5&oq=fox+auto+services+md&gs_lp=Egxnd3Mtd2l6LXNlcnAiFGZveCBhdXRvIHNlcnZpY2VzIG1kMgQQIxgnMgYQABgWGB4yBhAAGBYYHki4CVCaBliqCHABeAGQAQCYAbQBoAG8A6oBAzAuM7gBA8gBAPgBAcICBxAjGLADGCfCAgoQABhHGNYEGLADwgIHEAAYExiABMICCBAAGBYYHhgT4gMEGAAgQYgGAZAGBA&sclient=gws-wiz-serp#lrd=0x89b7fd40f7f97315:0x90a132335fd947d2,1,,,,"
-                            class="testimonial-link-instagram">Instagram</a></p>
-                </div>
-            </div>
-            <!-- Agrega más testimonios aquí -->
+        </div>
         </div>
     </section>
 
@@ -223,10 +290,16 @@
                     <p><i class="fa fa-envelope me-2"></i><a
                             href="mailto:admin@foxautoservices.com">admin@foxautoservices.com</a></p>
                     <div class="d-flex mt-4">
-                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.google.com/search?client=firefox-b-d&q=fox+auto+services+md#rlimm=10421666208944834514"><i class="fab fa-google"></i></a>
-                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.facebook.com/TheFOXAuto/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.yelp.com/biz/fox-auto-services-glen-burnie"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.instagram.com/foxautoservices/"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2"
+                            href="https://www.google.com/search?client=firefox-b-d&q=fox+auto+services+md#rlimm=10421666208944834514"><i
+                                class="fab fa-google"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.facebook.com/TheFOXAuto/"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2"
+                            href="https://www.yelp.com/biz/fox-auto-services-glen-burnie"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2"
+                            href="https://www.instagram.com/foxautoservices/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6 ps-lg-5">
@@ -265,6 +338,11 @@
     </div>
     <!-- Footer End -->
 
+    
+    
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.js"></script>
     <!-- Own scripts -->
     <script src="js/scripts.js"></script>
     <!-- Bootstrap -->
@@ -300,7 +378,58 @@
             }
         });
     </script>
-        <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            autoplay: 2500,
+            startAt: 0,
+            perView: 3,
+            focusAt: 'center',
+            breakpoints: {
+                768: {
+                    perView: 2,
+                },
+                570: {
+                    perView: 1
+                },
+                1440: {
+                    perView: 3
+                },
+                1920: {
+                    perView: 3
+                },
+                390: {
+                    perView: 1
+                }
+            }
+        }).mount();
+
+        new Glide('.glide-testi', {
+            type: 'carousel',
+            autoplay: 2500,
+            startAt: 0,
+            perView: 1,
+            focusAt: 'center',
+            breakpoints: {
+                768: {
+                    perView: 2,
+                },
+                570: {
+                    perView: 1
+                },
+                1440: {
+                    perView: 3
+                },
+                1920: {
+                    perView: 3
+                },
+                400: {
+                    perView: 1
+                }
+            }
+        }).mount();
+    </script>
+    <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
         src="https://portal.autoops.com/portal-scripts.js"></script>
 </body>
 
