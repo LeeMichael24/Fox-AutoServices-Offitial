@@ -464,7 +464,17 @@ section{
     font-family: 'Aldrich', sans-serif;
     background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/RequestAnEstimate.jpg'); /* Reemplaza con tu imagen de héroe */
     background-size: cover;
-    background-position: 50% 250%;
+    background-position: 50% 150%;
+    background-attachment: fixed;
+    color: #fff;
+    height: 55vh;
+    text-align: center;
+  }
+  .hero-section-how-we-do-it{
+    font-family: 'Aldrich', sans-serif;
+    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/gallery/ejemplo12.jpg'); /* Reemplaza con tu imagen de héroe */
+    background-size: cover;
+    background-position: 50% 75%;
     background-attachment: fixed;
     color: #fff;
     height: 55vh;
@@ -485,9 +495,21 @@ section{
   @media (min-width: 1024px) {
     .hero-section-services {
       padding: 100px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-      height: 50vh;
+      height: 45vh;
     }
-    
+    .hero-section-gallery {
+      height: 45vh;
+
+    }
+    .hero-section-collision {
+      height: 45vh;
+    }
+    .hero-section-estimate {
+      height: 45vh;
+    }
+    .hero-section-how-we-do-it{
+      height: 45vh;
+    }
     .hero-section-gallery {
       padding: 100px 0; /* Espaciado superior e inferior para pantallas de escritorio */
     }
@@ -505,6 +527,7 @@ section{
       font-size: 28px;
       margin-bottom: 30px;
     }
+
   }
   
   /* Estilos para tamaños de pantalla medianos (tabletas, etc.) */
