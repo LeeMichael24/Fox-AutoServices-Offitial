@@ -80,11 +80,12 @@ section{
     text-transform: uppercase;
 }
 
-.title-heading h1{
+.title-heading > h1{
+    font-size: 4rem;
     font-family: 'Aldrich', sans-serif;
     text-transform: uppercase;
-    font-size: 3.4rem;
     margin: .5rem 0 1rem;
+    color: black;
 }
 
 .title-heading p{
@@ -1653,7 +1654,8 @@ section{
   padding: 50px 0;
   text-align: center;
   display: flex;
-  height: 70vh;
+  height: -moz-fit-content;
+  height: fit-content;
   align-items: center;
   justify-content: center;
 
@@ -1803,7 +1805,6 @@ section{
 /* Estilos para la sección de testimonios */
 .testimonials {
   background-color: transparent;
-  padding: 50px 0;
   text-align: center;
   width: 50%;
 }
@@ -1946,14 +1947,14 @@ section{
 }
 
 .glide__arrows .glide__arrow{
-  background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%);;
+  background: #FC6701;
   border: none;
   width: 35px;
   height: 35px;
   text-align: center;
   line-height: 35px;
   border-radius: 15%;
-  color: #ec8c0d;
+  color: #ffffff;
   font-size: 22px;
   outline: none;
   margin-right: 15px;
@@ -2000,6 +2001,19 @@ section{
   float: left;
   width: 100%;
 }
+@media (max-width: 992px) {
+  .btn-how-we-do-it{
+    margin-top: 20px !important;
+  }
+  .how-we-do-it .btn{
+    margin-top: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .how-we-do-it-image > img{
+    background-size: contain;
+  }
+}
 
 .info-item{
   display: flex;
@@ -2025,7 +2039,6 @@ section{
 }
 
 .how-we-do-it-image{
-  position: relative;
   margin: 0 auto;
   width: 100%;
 }
@@ -2048,7 +2061,6 @@ section{
 
   .how-we-do-it-image{
       float: right;
-      margin-top: 10%;
       margin-bottom: 4rem;
       width: 43%;
   }
