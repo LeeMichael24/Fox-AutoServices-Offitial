@@ -1362,6 +1362,7 @@ section{
 /* Service carousell WhyChossingUs start */
 .carousel-item > img {
  background-size: cover;
+ width: 100%;
 }
 .carousel-control-nex{
   background-color: transparent;
@@ -2024,6 +2025,11 @@ section{
 }
 
 .how-we-do-it-image{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+.how-we-do-it-image > img{
   position: relative;
   margin: 0 auto;
   width: 100%;
