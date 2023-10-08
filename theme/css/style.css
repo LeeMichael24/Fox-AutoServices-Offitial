@@ -131,9 +131,12 @@ section{
 .fab-container{
     position: fixed;
     bottom: 3rem;
-    right: 2.5rem;
+    right: 2.5rem !important;
     z-index: 9999;
     cursor: pointer;
+}
+.faq-2{
+  bottom: 12rem !important;
 }
 
 .fab-icon-holder{
@@ -983,6 +986,18 @@ section{
 .widget > img {
     width: 500px;
 }
+.nav-item ul li a{
+  justify-content: center;
+  color: white;
+  margin-left: 10px;
+  font-size: 17px;
+}
+.dropdown-menu{
+  justify-content: center;
+  background-color: #284880;
+  width: 170px;
+  height: 50px;
+}
 
 
 #custom-footer .footer-menu li {
@@ -1667,6 +1682,7 @@ section{
 .h1-faq{
   font-size: 3.8rem;
   text-align: center;
+  margin-bottom: 5rem !important;
 }
 @media (min-width: 1500px) {
   .container-services{
@@ -1691,6 +1707,7 @@ section{
 .section-FAQ{
   width: 100%;
   padding: 10rem;
+  padding-top: 3.5rem;
   display: flex;
   flex-direction: column;
 }
