@@ -53,7 +53,7 @@
         </div>
     </div>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
         <div class="container">
 
             <!-- Logo -->
@@ -860,6 +860,17 @@
                 }
             }
         }).mount();
+
+        $(document).ready(function () {
+            // Cuando se desplaza, verifica la posición
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) { // Cambia 100 por la distancia en píxeles en la que deseas que ocurra el cambio
+                    $('#navbar').css('background', 'linear-gradient(135deg, rgba(34, 62, 122, 0.8) 0%, rgba(35, 57, 82, 0.8) 100%)'); /* Opacidad del 80% */
+                } else {
+                    $('#navbar').css('background', 'linear-gradient(135deg, rgba(34, 62, 122, 1) 0%, rgba(35, 57, 82, 1) 100%)'); /* Opacidad al 100% */
+                }
+            });
+        });
     </script>
     <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
         src="https://portal.autoops.com/portal-scripts.js"></script>
