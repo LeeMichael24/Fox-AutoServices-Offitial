@@ -1633,7 +1633,7 @@ section{
 .services-home:hover{
   background: #1c3364c4;
   color: white;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .services-home2:hover{
   transform: scale(1.3);

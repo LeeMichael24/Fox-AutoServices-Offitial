@@ -40,18 +40,19 @@
     <!-- font-awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <!-- icon -->
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
     <!-- Start preload -->
-    <div class="loading-overlay">
+    <!-- <div class="loading-overlay">
         <div class="loader">
             <div class="loader-div">
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
         <div class="container">
@@ -170,11 +171,15 @@
         </video>
 
         <div class="content-hero-home animate-bottom">
-            <h1 class="animate-left">EXPERT CAR REPAIRS AND SERVICES | YOUR TRUSTED CAR DOCTOR</h1>
-            <p class="animate-bottom">We specialize in diagnosing and healing all your car woes, ensuring your vehicle
+            <h1 data-aos="fade-up"
+            data-aos-anchor-placement="top-center" data-aos-duration="1000">EXPERT CAR REPAIRS AND
+                SERVICES | YOUR TRUSTED CAR DOCTOR</h1>
+            <p data-aos="fade-up"
+            data-aos-anchor-placement="top-center" data-aos-duration="1000">We specialize in diagnosing and healing all your car woes, ensuring your vehicle
                 runs smoothly on the road. Quality repairs, affordable prices, and unparalleled expertise. Book an
                 appointment now and experience the precision care your car deserves!</p>
-            <button class="animate-bottom" onclick="AutoOps.show()">Book Our Services Today</button>
+            <button onclick="AutoOps.show()" data-aos="zoom-in" data-aos-duration="1100">Book Our
+                Services Today</button>
         </div>
     </section>
     <!-- hero end video -->
@@ -183,11 +188,14 @@
     <!-- Services -->
     <!-- Services section start -->
     <section class="container-services mt-5">
-        <h3 class="animate-bottom" id="typed">Discover</h3>
-        <h1 class="animate-bottom">Our services</h1>
-        <p class="p-margin-section animate-bottom">All our work is done by knowledgeable and specialized staff.</p>
+        <h3 class="animate-bottom" id="typed" data-aos="fade-up"
+        data-aos-anchor-placement="top-center" data-aos-duration="700">Discover</h3>
+        <h1 class="animate-bottom" data-aos="fade-up"
+        data-aos-anchor-placement="top-center" data-aos-duration="800">Our services</h1>
+        <p class="p-margin-section animate-bottom" data-aos="fade-up"
+        data-aos-anchor-placement="top-center" data-aos-duration="900">All our work is done by knowledgeable and specialized staff.</p>
         <div class="row-sevices-container">
-            <div class="services-home">
+            <div class="services-home" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1100">
                 <a style="color: inherit;" href="services.html">
                     <i class="fa-solid fa-code-compare"></i>
                     <h2>Transmission Services</h2>
@@ -195,7 +203,7 @@
                         experts are here to keep your transmission in top shape.</p>
                 </a>
             </div>
-            <div class="services-home ">
+            <div class="services-home" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1100">
                 <a style="color: inherit;" href="services.html">
                     <i class="fa-solid fa-car-burst"></i>
                     <h2>Collision Repair</h2>
@@ -204,7 +212,7 @@
                         estimates with $50 Scan diagnostics and assessment.</p>
                 </a>
             </div>
-            <div class="services-home">
+            <div class="services-home" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1100">
                 <a style="color: inherit;" href="services.html">
                     <i class="fa-solid fa-screwdriver-wrench"></i>
                     <h2>Exhaust System Repair</h2>
@@ -214,7 +222,7 @@
                         on the road with enhanced efficiency.</p>
                 </a>
             </div>
-            <div class="services-home ">
+            <div class="services-home" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1100">
                 <a style="color: inherit;" href="services.html">
                     <i class="fa-solid fa-bolt-lightning"></i>
                     <h2>Electrical System Repair</h2>
@@ -222,7 +230,7 @@
                         problems in your vehicle.</p>
                 </a>
             </div>
-            <div class="services-home ">
+            <div class="services-home" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <a style="color: inherit;" href="services.html">
                     <i class="fa-solid fa-truck-monster"></i>
                     <h2>Wheel Alignment</h2>
@@ -230,7 +238,7 @@
                         service ensures your vehicle tracks straight and true.</p>
                 </a>
             </div>
-            <div class="services-home ">
+            <div class="services-home" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <a style="color: inherit;" href="services.html">
                     <i class="fa-brands fa-searchengin"></i>
                     <h2>Diagnostics for Check Engine Lights</h2>
@@ -238,7 +246,7 @@
                         identifies issues, so you can get back on the road worry-free.</p>
                 </a>
             </div>
-            <div class="services-home ">
+            <div class="services-home" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <a style="color: inherit;" href="services.html">
                     <i class="fa-solid fa-laptop-medical"></i>
                     <h2>Computer Diagnostics</h2>
@@ -247,7 +255,7 @@
                         performance and your peace of mind.</p>
                 </a>
             </div>
-            <div class="services-home ">
+            <div class="services-home" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <a style="color: inherit;" href="services.html">
                     <i class="fa-solid fa-award"></i>
                     <h2>Expert Advice</h2>
@@ -311,15 +319,19 @@
             </div>
         </di>
         <div class="box box-text-container about-us-container">
-            <h3>Why Choosing Us?</h3>
-            <h1>Exceeding Expectations: Precision Auto Care</h1>
-            <h4 class="mt-5">We are Perfect Solution</h4>
-            <p>We take pride in our commitment to precision in every job we undertake. Our passion for automobiles
+            <h3 data-aos="fade-up"
+            data-aos-anchor-placement="top-center" data-aos-duration="700">Why Choosing Us?</h3>
+            <h1 data-aos="fade-up"
+            data-aos-anchor-placement="top-center" data-aos-duration="700">Exceeding Expectations: Precision Auto Care</h1>
+            <h4 class="mt-5" data-aos="fade-up"
+            data-aos-anchor-placement="top-center" data-aos-duration="700">We are Perfect Solution</h4>
+            <p data-aos="fade-up"
+            data-aos-anchor-placement="top-center" data-aos-duration="700">We take pride in our commitment to precision in every job we undertake. Our passion for automobiles
                 drives us to deliver results that exceed your expectations. From diagnosing issues with accuracy to
                 employing advanced techniques, our professional approach ensures your vehicle receives the best
                 treatment possible.</p>
 
-            <button class="mt-5 btn-moreAbout"><a class="a-about" href="gallery.html">More about us</a></button>
+            <button class="mt-5 btn-moreAbout" data-aos="flip-right" data-aos-duration="1200"><a class="a-about" href="gallery.html">More about us</a></button>
         </div>
     </section>
     <!-- Begin Adventure section END -->
@@ -329,7 +341,8 @@
     <!-- Pricing section -->
     <section class="price" id="pricing">
         <div class="container">
-            <div class="title-heading animate-top">
+            <div class="title-heading animate-top" data-aos="fade-up"
+            data-aos-anchor-placement="top-center" data-aos-duration="700">
                 <h1>Discover Our <strong class="color-title-fox">Best Prices</strong> </h1>
             </div>
 
@@ -477,27 +490,31 @@
     <!-- How We do it section -->
     <section class="how-we-do-it mt-5" id="howe">
         <div class="container">
-            <div class="title-heading animate-top">
+            <div class="title-heading animate-top" data-aos="fade-up"
+            data-aos-anchor-placement="top-center">
                 <h1>how We do it</h1>
                 <p>Get to know each part of the process. </p>
             </div>
             <div class="how-we-do-it-grid">
                 <!-- Adventure grid item #1 -->
                 <div class="how-we-do-it-text animate-left">
-                    <div class="info-item">
+                    <div class="info-item" data-aos="fade-up"
+                    data-aos-anchor-placement="top-center" data-aos-duration="700">
                         <img src="images/icons/one.png" alt="First Step" class="number-image">
                         <p><strong>Estimate</strong><br>If you’ve been in an accident, or your vehicle has damage that
                             you need repaired, first contact the responsible insurance company to establish your claim.
                             Then, simply contact <strong>Fox Auto Services</strong> to schedule an estimate appointment.
                         </p>
                     </div>
-                    <div class="info-item">
+                    <div class="info-item" data-aos="fade-up"
+                    data-aos-anchor-placement="top-center" data-aos-duration="800">
                         <img src="images/icons/two.png" alt="First Step" class="number-image">
                         <p><strong>Vehicule Drop Off</strong><br>Deliver your vehicle to <strong>Fox Auto
                                 Services</strong> on your assigned drop date so we can begin the auto body repair
                             process.</p>
                     </div>
-                    <div class="info-item">
+                    <div class="info-item" data-aos="fade-up"
+                    data-aos-anchor-placement="top-center" data-aos-duration="900">
                         <img src="images/icons/three.png" alt="First Step" class="number-image">
                         <p><strong>Body Repair</strong><br>Once we receive your vehicule for repairs, we begin by
                             investigating any additional damage thah maybe hidden. If we discover additional damage, we
@@ -505,11 +522,11 @@
                     </div>
                 </div>
                 <!-- Adventure grid item #2 -->
-                <div class="how-we-do-it-image animate-right">
+                <div class="how-we-do-it-image animate-right" data-aos="fade-down-left" data-aos-duration="700">
                     <img src="images/realImages/HowWeDoIt.png" alt="">
                 </div>
             </div>
-            <div class=" animate-bottom">
+            <div class=" animate-bottom" data-aos="zoom-in" data-aos-duration="1200">
                 <a href="how-we-do-it.html" class="btn btn-moreAbout">Review whole process</a>
             </div>
         </div>
@@ -522,11 +539,15 @@
     <!-- Start of Social Contact Testimonials -->
     <section class="testimonial-section">
         <div class="title-heading col-lg-4 animate-left">
-            <h3 style="color: white;">Review us</h3>
-            <h1 class="accent-text">on social media</h1>
-            <p style="color: white;">Read what people are saying about us on the most popular social media platforms.
+            <h3 style="color: white;" data-aos="fade-up"
+            data-aos-anchor-placement="top-center" data-aos-duration="700">Review us</h3>
+            <h1 class="accent-text" data-aos="fade-up"
+            data-aos-anchor-placement="top-center" data-aos-duration="700">on social media</h1>
+            <p style="color: white;" data-aos="fade-up"
+            data-aos-anchor-placement="top-center" data-aos-duration="700">Read what people are saying about us on the most popular social media platforms.
             </p>
-            <div class="social-media-testi">
+            <div class="social-media-testi" data-aos="fade-up"
+            data-aos-anchor-placement="top-center" data-aos-duration="800">
                 <img src="images/yelp.png" href="https://www.yelp.com/biz/fox-auto-services-glen-burnie"
                     alt="yelp-image">
                 <img src="images/facebook.png" alt="yelp-image">
@@ -538,7 +559,8 @@
         </div>
         <div class="testimonials" id="testimonials">
             <div class="container">
-                <div class="title-heading animate-top">
+                <div class="title-heading animate-top" data-aos="fade-up"
+                data-aos-anchor-placement="top-center" data-aos-duration="700">
                     <h1 style="color: white;">What Our <strong class="color-title-fox">Customers Say</strong> </h1>
                 </div>
 
@@ -623,8 +645,10 @@
 
     <!-- slider -->
     <section class="section-slider-container mb-5">
-        <h2>Our Featured Car Brands</h2>
-        <p class="mb-5">Explore the top car brands we specialize in.</p>
+        <h2 data-aos="fade-up"
+        data-aos-anchor-placement="top-center" data-aos-duration="700">Our Featured Car Brands</h2>
+        <p class="mb-5" data-aos="fade-up"
+        data-aos-anchor-placement="top-center" data-aos-duration="700">Explore the top car brands we specialize in.</p>
         <div class="wrapper-slider mt-5">
             <div class="slider-images-container">
                 <div class="slider-track-custom">
@@ -701,9 +725,12 @@
         </div>
     </section>
 
-<!-- Maps -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.936460966356!2d-76.61641972307292!3d39.176165171665986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7fd40f7f97315%3A0x90a132335fd947d2!2sFox%20Auto%20Services!5e0!3m2!1ses!2ssv!4v1697073470899!5m2!1ses!2ssv" width="1920" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<!-- Maps -->
+    <!-- Maps -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.936460966356!2d-76.61641972307292!3d39.176165171665986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7fd40f7f97315%3A0x90a132335fd947d2!2sFox%20Auto%20Services!5e0!3m2!1ses!2ssv!4v1697073470899!5m2!1ses!2ssv"
+        width="1920" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Maps -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer position-relative bg-color-footer text-white-50 py-5 wow fadeIn"
@@ -873,6 +900,11 @@
                 }
             });
         });
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
     <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
         src="https://portal.autoops.com/portal-scripts.js"></script>

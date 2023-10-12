@@ -26,6 +26,8 @@
     <!-- Own styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/howe.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- icon -->
     <link rel="shortcut icon" href="images/icons/fas.ico" type="image/x-icon">
 </head>
@@ -140,7 +142,8 @@
 
     <!-- Hero Section -->
     <section class="hero-section-how-we-do-it">
-        <div class="hero-content animate-top">
+        <div class="hero-content animate-top" data-aos="fade-up" data-aos-anchor-placement="top-center"
+            data-aos-duration="700">
             <h1 class="hero-title">How we do it</h1>
             <p class="hero-description">The technical complexities of today’s vehicles makes it more critical than ever
                 to choose a body shop
@@ -471,6 +474,11 @@
                 }
             });
         });
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
     <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
         src="https://portal.autoops.com/portal-scripts.js"></script>

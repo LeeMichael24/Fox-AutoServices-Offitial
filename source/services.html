@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
     <!-- Own styles -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- icon -->
     <link rel="shortcut icon" href="images/logo/fas.ico" type="image/x-icon">
@@ -152,7 +154,8 @@
     </section> -->
 
     <section class="hero-section-services">
-        <div class="hero-content animate-top">
+        <div class="hero-content animate-top" data-aos="fade-up"
+        data-aos-anchor-placement="top-center" data-aos-duration="700">
             <h1 class="hero-title">Our Services</h1>
             <p class="hero-description">Explore our range of automative services</p>
         </div>
@@ -160,7 +163,8 @@
 
 
     <!--Start about us area-->
-    <section class="section-title-service" id="services-redic">
+    <section class="section-title-service" id="services-redic" data-aos="fade-up"
+    data-aos-anchor-placement="top-center" data-aos-duration="1000">
         <h1 class="animate-bottom text-services-1 p-1">Discover Your Vehicle's Full Potential!
             Explore Our Range of Expert Services.</h1>
     </section>
@@ -333,8 +337,10 @@
 
     <!-- slider -->
     <section class="section-slider-container mb-5">
-        <h2>Our Expertise and Knowledge</h2>
-        <p class="mb-5">Explore the top car brands we specialize in.</p>
+        <h2 data-aos="fade-up"
+        data-aos-anchor-placement="top-center" data-aos-duration="700">Our Expertise and Knowledge</h2>
+        <p class="mb-5" data-aos="fade-up"
+        data-aos-anchor-placement="top-center" data-aos-duration="700">Explore the top car brands we specialize in.</p>
         <div class="wrapper-slider mt-5">
             <div class="slider-images-container">
                 <div class="slider-track-custom">
@@ -501,6 +507,11 @@
             });
         });
     </script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
         src="https://portal.autoops.com/portal-scripts.js"></script>
 </body>

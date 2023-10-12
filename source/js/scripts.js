@@ -129,5 +129,3 @@ const typed = new Typed(".typed", {
 });
 
 /* GLide section functions */
-
-

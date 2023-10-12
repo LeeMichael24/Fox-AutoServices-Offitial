@@ -15,80 +15,83 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Own styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/requestEstimate.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- icon -->
     <link rel="shortcut icon" href="icons/fas.ico" type="image/x-icon">
 </head>
 
 <body>
     <!-- Start preload -->
-    <div class="loading-overlay text-center">
+    <!-- <div class="loading-overlay text-center">
         <div class="loader">
             <div class="loader-div">
             </div>
         </div>
-    </div>
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
-    <div class="container">
+    </div> -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container">
 
-        <!-- Logo -->
-        <a class="navbar-brand" href="index.html"><img src="images/fas_neonthorizontal.png"
-                alt="Fox Auto Services"></a>
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html"><img src="images/fas_neonthorizontal.png"
+                    alt="Fox Auto Services"></a>
 
-        <!-- Toggle BTN-->
-        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <!-- Toggle BTN-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- SideBar -->
-        <div class="sidebar-nav-header offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
+            <!-- SideBar -->
+            <div class="sidebar-nav-header offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
 
-            <!-- Sidebar Header -->
-            <div class="offcanvas-header text-white border-bottom">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
+                <!-- Sidebar Header -->
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
 
-            <!-- Sidebar Body -->
-            <div id="prueba-section" class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item mx-2 active">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item mx-2 active">
-                        <a class="nav-link" href="gallery.html">ShowCase</a>
-                    </li>
-                    <li class="nav-item mx-2 active">
-                        <a class="nav-link" href="collision-repair.html">Insurance Client</a>
-                    </li>
-                    <li class="nav-item mx-2 active">
-                        <a class="nav-link" href="request-estimate.html">Request an Estimate</a>
-                    </li>
-                    <li class="nav-item mx-2 btn-85 button-85 active">
-                        <a class="nav-link" onclick="AutoOps.show()">Book Service Today</a>
-                    </li>
-                </ul>
-                <!-- Button special -->
-                <!-- <div class="d-flex justify-content-center align-items-center gap-3 ">
+                <!-- Sidebar Body -->
+                <div id="prueba-section" class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2 active">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item mx-2 active">
+                            <a class="nav-link" href="gallery.html">ShowCase</a>
+                        </li>
+                        <li class="nav-item mx-2 active">
+                            <a class="nav-link" href="collision-repair.html">Insurance Client</a>
+                        </li>
+                        <li class="nav-item mx-2 active">
+                            <a class="nav-link" href="request-estimate.html">Request an Estimate</a>
+                        </li>
+                        <li class="nav-item mx-2 btn-85 button-85 active">
+                            <a class="nav-link" onclick="AutoOps.show()">Book Service Today</a>
+                        </li>
+                    </ul>
+                    <!-- Button special -->
+                    <!-- <div class="d-flex justify-content-center align-items-center gap-3 ">
         <a type="button" class=" text-white" role="button" onclick="AutoOps.show()">Book Service Today</a>
         <a  class=" text-white" role="button" onclick="AutoOps.show()">Book Service Today</a>
       </div> -->
+                </div>
             </div>
         </div>
-    </div>
-</nav>
-<!-- navbar NED -->
+    </nav>
+    <!-- navbar NED -->
 
     <!-- FAB -->
     <div class="fab-container">
@@ -134,9 +137,11 @@
 
     <!-- Hero Section -->
     <section class="hero-section-estimate">
-        <div class="hero-content animate-top">
+        <div class="hero-content animate-top" data-aos="fade-up" data-aos-anchor-placement="top-center"
+            data-aos-duration="700">
             <h1 class="hero-title">Request an Estimate</h1>
-            <p class="hero-description">Request an Estimate: Let Us Provide You with a Detailed Quote Tailored to Your Needs</p>
+            <p class="hero-description">Request an Estimate: Let Us Provide You with a Detailed Quote Tailored to Your
+                Needs</p>
         </div>
     </section>
 
@@ -385,7 +390,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="col-4 animate-left">
+                    <div class="col-4 animate-left" data-aos="flip-up">
                         <img src="images/damage-locations.jpg" alt="Posible Damaged Locations">
                     </div>
                 </div>
@@ -404,7 +409,7 @@
                 </div>
 
                 <div class="formulario__grupo formulario__grupo-btn-enviar animate-top">
-                    <button type="submit" name="submit" id="submit" class="cta btn btn-moreAbout">Send Request</button>
+                    <button type="submit" name="submit" id="submit" class="cta btn btn-moreAbout" data-aos="zoom-in" data-aos-duration="1000">Send Request</button>
                     <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado
                         exitosamente!
                     </p>
@@ -431,10 +436,16 @@
                     <p><i class="fa fa-envelope me-2"></i><a
                             href="mailto:admin@foxautoservices.com">admin@foxautoservices.com</a></p>
                     <div class="d-flex mt-4">
-                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.google.com/search?client=firefox-b-d&q=fox+auto+services+md#rlimm=10421666208944834514"><i class="fab fa-google"></i></a>
-                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.facebook.com/TheFOXAuto/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.yelp.com/biz/fox-auto-services-glen-burnie"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.instagram.com/foxautoservices/"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2"
+                            href="https://www.google.com/search?client=firefox-b-d&q=fox+auto+services+md#rlimm=10421666208944834514"><i
+                                class="fab fa-google"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.facebook.com/TheFOXAuto/"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2"
+                            href="https://www.yelp.com/biz/fox-auto-services-glen-burnie"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2"
+                            href="https://www.instagram.com/foxautoservices/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6 ps-lg-5">
@@ -508,6 +519,11 @@
                 }
             });
         });
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
     <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
         src="https://portal.autoops.com/portal-scripts.js"></script>
