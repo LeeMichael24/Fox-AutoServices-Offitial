@@ -25,7 +25,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- icon -->
-    <link rel="shortcut icon" href="images/logo/fas.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="images/fas_neont.png">
 </head>
 
 <body>
@@ -79,15 +79,10 @@
                         <li class="nav-item mx-2 active">
                             <a class="nav-link" href="request-estimate.html">Request an Estimate</a>
                         </li>
-                        <li class="nav-item mx-2 btn-85 button-85 active">
+                        <!-- <li class="nav-item mx-2 btn-85 button-85 active">
                             <a class="nav-link" onclick="AutoOps.show()">Book Service Today</a>
-                        </li>
+                        </li> -->
                     </ul>
-                    <!-- Button special -->
-                    <!-- <div class="d-flex justify-content-center align-items-center gap-3 ">
-        <a type="button" class=" text-white" role="button" onclick="AutoOps.show()">Book Service Today</a>
-        <a  class=" text-white" role="button" onclick="AutoOps.show()">Book Service Today</a>
-      </div> -->
                 </div>
             </div>
         </div>
@@ -98,15 +93,8 @@
     <div class="fab-container">
         <div class="main-fab fab-icon-holder">
             <a onclick="AutoOps.show()"><i class="icon ion-md-calendar"></i></a>
+            <span class="label-2"> Request Estimate</span>
         </div>
-        <!-- <ul class="fab-options">
-            <li>
-                <span class="fab-label">Make Appointment</span>
-                <div class="fab-icon-holder">
-                    <a onclick="AutoOps.show()"><i class="icon ion-md-calendar"></i></a>
-                </div>
-            </li>
-        </ul> -->
     </div>
     <div class="fab-container faq-2">
         <div class="main-fab fab-icon-holder">
@@ -117,12 +105,6 @@
                 <span class="fab-label"> Request Estimate</span>
                 <div class="fab-icon-holder">
                     <a href="request-estimate.html"><i class="icon ion-md-mail"></i></a>
-                </div>
-            </li>
-            <li>
-                <span class="fab-label">Make Appointment</span>
-                <div class="fab-icon-holder">
-                    <a onclick="AutoOps.show()"><i class="icon ion-md-calendar"></i></a>
                 </div>
             </li>
             <li>
@@ -137,25 +119,9 @@
     </div>
 
 
-    <!-- Hero Section -->
-    <!--     <section class="hero" id="hero">
-        <div class="container">
-            <div class="main-message animate-top">
-                <h3>Fox Auto Services</h3>
-                <h1 class="accent-text">services & commitment</h1>
-                <div class="cta">
-                    <a href="#first-steps" class="btn">Review our services</a>
-                </div>
-                <div class="down-icon">
-                    <i class="icon-btn icon ion-md-arrow-dropdown-circle"></i>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <section class="hero-section-services">
-        <div class="hero-content animate-top" data-aos="fade-up"
-        data-aos-anchor-placement="top-center" data-aos-duration="700">
+        <div class="hero-content animate-top" data-aos="fade-up" data-aos-anchor-placement="top-center"
+            data-aos-duration="700">
             <h1 class="hero-title">Our Services</h1>
             <p class="hero-description">Explore our range of automative services</p>
         </div>
@@ -163,8 +129,8 @@
 
 
     <!--Start about us area-->
-    <section class="section-title-service" id="services-redic" data-aos="fade-up"
-    data-aos-anchor-placement="top-center" data-aos-duration="1000">
+    <section class="section-title-service" id="services-redic" data-aos="fade-up" data-aos-anchor-placement="top-center"
+        data-aos-duration="1000">
         <h1 class="animate-bottom text-services-1 p-1">Discover Your Vehicle's Full Potential!
             Explore Our Range of Expert Services.</h1>
     </section>
@@ -246,90 +212,7 @@
     <!-- Js para dropdown menu y sidebar -->
 
     <script>
-        // Función para verificar si el dispositivo es móvil
-        function isMobile() {
-            return window.matchMedia("(max-width: 768px)").matches;
-        }
-
-        function ajustarMainContainer() {
-            // Solo ejecutar la función si el dispositivo es móvil
-            if (isMobile()) {
-                var iframeHeight = document.getElementById("iframe-servicio").contentWindow.document.body.scrollHeight;
-                var dropdownContent = document.getElementById("dropdown-content");
-                var dropdownHeight = dropdownContent.offsetHeight;
-                var maxHeight = Math.max(iframeHeight, dropdownHeight);
-                maxHeight += 175;
-                document.querySelector(".main-container").style.height = maxHeight + "px";
-            }
-        }
-
-        // Esta función se ejecuta al cargar la página para mostrar el servicio 1 por defecto
-        document.addEventListener("DOMContentLoaded", function () {
-            var dropdownButton = document.querySelector(".dropdown-button");
-            cargarServicio('service1.html');
-            ajustarMainContainer();
-        });
-
-        document.getElementById("iframe-servicio").onload = function () {
-            ajustarMainContainer(); // Ajustar la altura del main-container después de que el contenido se ha cargado
-        };
-
-        // Función para establecer el texto predeterminado del botón
-        function setDefaultButtonText() {
-            var dropdownButton = document.querySelector(".dropdown-button");
-            dropdownButton.innerHTML = 'Select a Service <i class="fas fa-chevron-down"></i>';
-        }
-
-        function toggleDropdown() {
-            var dropdownContent = document.getElementById("dropdown-content");
-            dropdownContent.classList.toggle("open");
-            ajustarMainContainer(); // Ajustar la altura del main-container al abrir o cerrar el menú desplegable
-        }
-
-        function cargarServicio(url) {
-            var contenedorInformacion = document.getElementById("iframe-servicio");
-
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", url, true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    contenedorInformacion.srcdoc = xhr.responseText;
-                    // Obtener el texto del servicio seleccionado
-                    var servicioSeleccionado = document.querySelector("#dropdown-content .active a").textContent;
-                    // Actualizar el texto del botón con el servicio seleccionado
-                    var dropdownButton = document.querySelector(".dropdown-button");
-                    dropdownButton.innerHTML = servicioSeleccionado + ' <i class="fas fa-chevron-down"></i>';
-                }
-            };
-            xhr.send();
-
-            // Remover la clase "active" de todos los elementos de la lista MOBILE
-            var listaServicios = document.querySelectorAll("#dropdown-content li");
-            listaServicios.forEach(function (servicioItem) {
-                servicioItem.classList.remove("active");
-            });
-
-            // Agregar la clase "active" al elemento seleccionado con nombre del servicio
-            var servicioItemSeleccionado = event.target.parentElement;
-            servicioItemSeleccionado.classList.add("active");
-
-            // Remover la clase "active" de todos los elementos de la lista Desktop
-            var listaServiciosDesk = document.querySelectorAll("#sidebar ul li");
-            listaServiciosDesk.forEach(function (servicioItem) {
-                servicioItem.classList.remove("activeDesk");
-            });
-
-            // Agregar la clase "activeDesk" al elemento seleccionado
-            servicioItemSeleccionado.classList.add("activeDesk");
-
-            var dropdownContent = document.getElementById("dropdown-content");
-            dropdownContent.classList.remove("open");
-
-            // Solo ajustar la altura del main-container si el dispositivo es móvil
-            if (isMobile()) {
-                ajustarMainContainer();
-            }
-        }
+        function isMobile() { return window.matchMedia("(max-width: 768px)").matches } function ajustarMainContainer() { if (isMobile()) { var e = document.getElementById("iframe-servicio").contentWindow.document.body.scrollHeight, t = document.getElementById("dropdown-content").offsetHeight, n = Math.max(e, t); n += 175, document.querySelector(".main-container").style.height = n + "px" } } function setDefaultButtonText() { document.querySelector(".dropdown-button").innerHTML = 'Select a Service <i class="fas fa-chevron-down"></i>' } function toggleDropdown() { document.getElementById("dropdown-content").classList.toggle("open"), ajustarMainContainer() } function cargarServicio(e) { var t = document.getElementById("iframe-servicio"), n = new XMLHttpRequest; n.open("GET", e, !0), n.onreadystatechange = function () { if (4 === n.readyState && 200 === n.status) { t.srcdoc = n.responseText; var e = document.querySelector("#dropdown-content .active a").textContent; document.querySelector(".dropdown-button").innerHTML = e + ' <i class="fas fa-chevron-down"></i>' } }, n.send(), document.querySelectorAll("#dropdown-content li").forEach(function (e) { e.classList.remove("active") }); var o = event.target.parentElement; o.classList.add("active"), document.querySelectorAll("#sidebar ul li").forEach(function (e) { e.classList.remove("activeDesk") }), o.classList.add("activeDesk"), document.getElementById("dropdown-content").classList.remove("open"), isMobile() && ajustarMainContainer() } document.addEventListener("DOMContentLoaded", function () { document.querySelector(".dropdown-button"); cargarServicio("service1.html"), ajustarMainContainer() }), document.getElementById("iframe-servicio").onload = function () { ajustarMainContainer() };
     </script>
     <!--End about us area-->
 
@@ -337,10 +220,10 @@
 
     <!-- slider -->
     <section class="section-slider-container mb-5">
-        <h2 data-aos="fade-up"
-        data-aos-anchor-placement="top-center" data-aos-duration="700">Our Expertise and Knowledge</h2>
-        <p class="mb-5" data-aos="fade-up"
-        data-aos-anchor-placement="top-center" data-aos-duration="700">Explore the top car brands we specialize in.</p>
+        <h2 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">Our Expertise and
+            Knowledge</h2>
+        <p class="mb-5" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">Explore the
+            top car brands we specialize in.</p>
         <div class="wrapper-slider mt-5">
             <div class="slider-images-container">
                 <div class="slider-track-custom">
@@ -406,8 +289,8 @@
         <div class="container">
             <div class="row g-5 py-5">
                 <div class="col-lg-6 pe-lg-5">
-                    <a href="index.html" class="navbar-brand">
-                        <img class="mb-0 mt-0" src="images/fas_neonthorizontal.png" alt="">
+                    <a href="index.html" class="a-footer-img">
+                        <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="">
                     </a>
                     <p class="fs-5 mb-4">Fox Auto Services - Where Expertise Meets Excellence. Your Premier Destination
                         for Automotive Solutions."</p>
@@ -479,39 +362,13 @@
     <script src="js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function () {
-            setTimeout(function () {
-                $(".loading-overlay").fadeOut(450, function () {
-                    $(this).remove();
-                });
-            }, 200); // Ajusta el tiempo de espera según tus necesidades
-        });
-
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector(".floating-header");
-            if (window.scrollY > 5) { // Ajusta el valor según sea necesario
-                header.classList.add("visible");
-            } else {
-                header.classList.remove("visible");
-            }
-        });
-
-        $(document).ready(function () {
-            // Cuando se desplaza, verifica la posición
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) { // Cambia 100 por la distancia en píxeles en la que deseas que ocurra el cambio
-                    $('#navbar').css('background', 'linear-gradient(135deg, rgba(34, 62, 122, 0.8) 0%, rgba(35, 57, 82, 0.8) 100%)'); /* Opacidad del 80% */
-                } else {
-                    $('#navbar').css('background', 'linear-gradient(135deg, rgba(34, 62, 122, 1) 0%, rgba(35, 57, 82, 1) 100%)'); /* Opacidad al 100% */
-                }
-            });
-        });
+        $(document).ready(function(){setTimeout(function(){$(".loading-overlay").fadeOut(450,function(){$(this).remove()})},200)}),window.addEventListener("scroll",function(){var n=document.querySelector(".floating-header");window.scrollY>5?n.classList.add("visible"):n.classList.remove("visible")}),$(document).ready(function(){$(window).scroll(function(){$(this).scrollTop()>100?$("#navbar").css("background","linear-gradient(135deg, rgba(34, 62, 122, 0.8) 0%, rgba(35, 57, 82, 0.8) 100%)"):$("#navbar").css("background","linear-gradient(135deg, rgba(34, 62, 122, 1) 0%, rgba(35, 57, 82, 1) 100%)")})});
     </script>
-        <!-- AOS -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
         src="https://portal.autoops.com/portal-scripts.js"></script>
 </body>

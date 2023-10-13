@@ -30,7 +30,7 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- icon -->
-    <link rel="shortcut icon" href="icons/fas.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="images/fas_neont.png">
 </head>
 
 <body>
@@ -84,15 +84,10 @@
                         <li class="nav-item mx-2 active">
                             <a class="nav-link" href="request-estimate.html">Request an Estimate</a>
                         </li>
-                        <li class="nav-item mx-2 btn-85 button-85 active">
+                        <!-- <li class="nav-item mx-2 btn-85 button-85 active">
                             <a class="nav-link" onclick="AutoOps.show()">Book Service Today</a>
-                        </li>
+                        </li> -->
                     </ul>
-                    <!-- Button special -->
-                    <!-- <div class="d-flex justify-content-center align-items-center gap-3 ">
-            <a type="button" class=" text-white" role="button" onclick="AutoOps.show()">Book Service Today</a>
-            <a  class=" text-white" role="button" onclick="AutoOps.show()">Book Service Today</a>
-          </div> -->
                 </div>
             </div>
         </div>
@@ -104,14 +99,6 @@
         <div class="main-fab fab-icon-holder">
             <a onclick="AutoOps.show()"><i class="icon ion-md-calendar"></i></a>
         </div>
-        <!-- <ul class="fab-options">
-            <li>
-                <span class="fab-label">Make Appointment</span>
-                <div class="fab-icon-holder">
-                    <a onclick="AutoOps.show()"><i class="icon ion-md-calendar"></i></a>
-                </div>
-            </li>
-        </ul> -->
     </div>
     <div class="fab-container faq-2">
         <div class="main-fab fab-icon-holder">
@@ -122,12 +109,6 @@
                 <span class="fab-label"> Request Estimate</span>
                 <div class="fab-icon-holder">
                     <a href="request-estimate.html"><i class="icon ion-md-mail"></i></a>
-                </div>
-            </li>
-            <li>
-                <span class="fab-label">Make Appointment</span>
-                <div class="fab-icon-holder">
-                    <a onclick="AutoOps.show()"><i class="icon ion-md-calendar"></i></a>
                 </div>
             </li>
             <li>
@@ -320,8 +301,8 @@
         <div class="container">
             <div class="row g-5 py-5">
                 <div class="col-lg-6 pe-lg-5">
-                    <a href="index.html" class="navbar-brand">
-                        <img class="mb-0 mt-0" src="images/fas_neonthorizontal.png" alt="">
+                    <a href="index.html" class="a-footer-img">
+                        <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="">
                     </a>
                     <p class="fs-5 mb-4">Fox Auto Services - Where Expertise Meets Excellence. Your Premier Destination
                         for Automotive Solutions."</p>
@@ -387,73 +368,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.js"></script>
     <!-- Own scripts -->
     <script src="js/scripts.js"></script>
-
     <script>
-        $(window).on("load", function () {
-            $(" .loading-overlay .loader").fadeOut(850, function () {
-                $("body").css("overflow", "auto");
-                $(this).parent().fadeOut(450,
-                    function () {
-                        $(this).remove();
-                    });
-            });
-        });
-    </script>
-
-    <script>
-        $(".gallery").magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            gallery: {
-                enabled: true
-            }
-        });
-
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector(".floating-header");
-            if (window.scrollY > 5) { // Ajusta el valor según sea necesario
-                header.classList.add("visible");
-            } else {
-                header.classList.remove("visible");
-            }
-        });
-    </script>
-    <script>
-        new Glide('.glide-testi-gallery', {
-            type: 'carousel',
-            autoplay: 2500,
-            startAt: 0,
-            perView: 1,
-            focusAt: 'center',
-            breakpoints: {
-                768: {
-                    perView: 2,
-                },
-                570: {
-                    perView: 1
-                },
-                1440: {
-                    perView: 3
-                },
-                1920: {
-                    perView: 3
-                },
-                400: {
-                    perView: 1
-                }
-            }
-        }).mount();
-
-        $(document).ready(function () {
-            // Cuando se desplaza, verifica la posición
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) { // Cambia 100 por la distancia en píxeles en la que deseas que ocurra el cambio
-                    $('#navbar').css('background', 'linear-gradient(135deg, rgba(34, 62, 122, 0.8) 0%, rgba(35, 57, 82, 0.8) 100%)'); /* Opacidad del 80% */
-                } else {
-                    $('#navbar').css('background', 'linear-gradient(135deg, rgba(34, 62, 122, 1) 0%, rgba(35, 57, 82, 1) 100%)'); /* Opacidad al 100% */
-                }
-            });
-        });
+        new Glide(".glide-testi-gallery", { type: "carousel", autoplay: 2500, startAt: 0, perView: 1, focusAt: "center", breakpoints: { 768: { perView: 2 }, 570: { perView: 1 }, 1440: { perView: 3 }, 1920: { perView: 3 }, 400: { perView: 1 } } }).mount(), $(document).ready(function () { $(window).scroll(function () { $(this).scrollTop() > 100 ? $("#navbar").css("background", "linear-gradient(135deg, rgba(34, 62, 122, 0.8) 0%, rgba(35, 57, 82, 0.8) 100%)") : $("#navbar").css("background", "linear-gradient(135deg, rgba(34, 62, 122, 1) 0%, rgba(35, 57, 82, 1) 100%)") }) }), $(".gallery").magnificPopup({ delegate: "a", type: "image", gallery: { enabled: !0 } }), window.addEventListener("scroll", function () { var e = document.querySelector(".floating-header"); window.scrollY > 5 ? e.classList.add("visible") : e.classList.remove("visible") }), $(window).on("load", function () { $(" .loading-overlay .loader").fadeOut(850, function () { $("body").css("overflow", "auto"), $(this).parent().fadeOut(450, function () { $(this).remove() }) }) });
     </script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

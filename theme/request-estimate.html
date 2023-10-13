@@ -32,17 +32,17 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- icon -->
-    <link rel="shortcut icon" href="icons/fas.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="images/fas_neont.png">
 </head>
 
 <body>
     <!-- Start preload -->
-    <!-- <div class="loading-overlay text-center">
+    <div class="loading-overlay text-center">
         <div class="loader">
             <div class="loader-div">
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
         <div class="container">
@@ -86,15 +86,10 @@
                         <li class="nav-item mx-2 active">
                             <a class="nav-link" href="request-estimate.html">Request an Estimate</a>
                         </li>
-                        <li class="nav-item mx-2 btn-85 button-85 active">
+                        <!-- <li class="nav-item mx-2 btn-85 button-85 active">
                             <a class="nav-link" onclick="AutoOps.show()">Book Service Today</a>
-                        </li>
+                        </li> -->
                     </ul>
-                    <!-- Button special -->
-                    <!-- <div class="d-flex justify-content-center align-items-center gap-3 ">
-        <a type="button" class=" text-white" role="button" onclick="AutoOps.show()">Book Service Today</a>
-        <a  class=" text-white" role="button" onclick="AutoOps.show()">Book Service Today</a>
-      </div> -->
                 </div>
             </div>
         </div>
@@ -106,14 +101,6 @@
         <div class="main-fab fab-icon-holder">
             <a onclick="AutoOps.show()"><i class="icon ion-md-calendar"></i></a>
         </div>
-        <!-- <ul class="fab-options">
-            <li>
-                <span class="fab-label">Make Appointment</span>
-                <div class="fab-icon-holder">
-                    <a onclick="AutoOps.show()"><i class="icon ion-md-calendar"></i></a>
-                </div>
-            </li>
-        </ul> -->
     </div>
     <div class="fab-container faq-2">
         <div class="main-fab fab-icon-holder">
@@ -124,12 +111,6 @@
                 <span class="fab-label"> Request Estimate</span>
                 <div class="fab-icon-holder">
                     <a href="request-estimate.html"><i class="icon ion-md-mail"></i></a>
-                </div>
-            </li>
-            <li>
-                <span class="fab-label">Make Appointment</span>
-                <div class="fab-icon-holder">
-                    <a onclick="AutoOps.show()"><i class="icon ion-md-calendar"></i></a>
                 </div>
             </li>
             <li>
@@ -165,8 +146,8 @@
                     repairs that you need so the estimate can be more precise.
                 </p>
             </div>
-            <form class="formulario" method=POST id="formulario" action="#" enctype=multipart/form-data>
-                <div class="formulario__label animate-top">
+            <form class="formulario" method=POST id="formulario" action="https://formsubmit.co/acuario2001hercules@gmail.com" enctype=multipart/form-data>
+                <div class="formulario__label animate-top" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                     <h3 class="headline-form">Customers Information</h3>
                     <div class="line-form"></div>
                 </div>
@@ -225,7 +206,7 @@
                     </div>
                 </div>
 
-                <div class="formulario__label animate-top">
+                <div class="formulario__label animate-top" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1100">
                     <h3 class="headline-form">Vehicule Information</h3>
                     <div class="line-form"></div>
                 </div>
@@ -331,7 +312,7 @@
                     </div>
                 </div>
 
-                <div class="formulario__label animate-top">
+                <div class="formulario__label animate-top" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                     <h3 class="headline-form">Dent Damage Information</h3>
                     <div class="line-form"></div>
                 </div>
@@ -349,7 +330,7 @@
                 <!-- Grupo: Approx Size -->
                 <div class="formulario__grupo animate-top" id="grupo__tamanio">
                     <div class="formulario__grupo-input">
-                        <input type="number" min="0" max="1000" class="formulario__input " name="tamanio" id="tamanio"
+                        <input type="number" min="0" max="1000" class="formulario__input " name="Dents Size in cm" id="tamanio"
                             placeholder="Approx. Size of all dents in cm*" required>
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
@@ -357,7 +338,7 @@
 
                 <div class="formulario__grupo formulario_subgrupo">
                     <div class="col-8 animate-right">
-                        <div class="formulario__label">
+                        <div class="formulario__label" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                             <h3 class="headline-form">Damaged Locations</h3>
                             <div class="line-form"></div>
                         </div>
@@ -398,7 +379,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="col-4 animate-left" data-aos="flip-up">
+                    <div class="col-4 animate-left" data-aos="flip-up" data-aos-duration="2000">
                         <img src="images/damage-locations.jpg" alt="Posible Damaged Locations">
                     </div>
                 </div>
@@ -406,7 +387,7 @@
                 <!-- Grupo: Damage Cause. -->
                 <div class="formulario__grupo cause animate-top" id="grupo__cause">
                     <div class="formulario__label">
-                        <h3 class="headline-form">Damage Cause</h3>
+                        <h3 class="headline-form" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">Damage Cause</h3>
                         <div class="line-form"></div>
                     </div>
                     <div class="formulario__grupo-input">
@@ -417,11 +398,17 @@
                 </div>
 
                 <div class="formulario__grupo formulario__grupo-btn-enviar animate-top">
-                    <button type="submit" name="submit" id="submit" class="cta btn btn-moreAbout" data-aos="zoom-in" data-aos-duration="1000">Send Request</button>
-                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado
-                        exitosamente!
+                    <button type="submit" name="submit" id="submit" class="cta btn btn-moreAbout" data-aos="zoom-in"
+                        data-aos-duration="1400">Send Request</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Your request has been sent
+                        successfully!
                     </p>
                 </div>
+
+
+
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
     </section>
@@ -432,8 +419,8 @@
         <div class="container">
             <div class="row g-5 py-5">
                 <div class="col-lg-6 pe-lg-5">
-                    <a href="index.html" class="navbar-brand">
-                        <img class="mb-0 mt-0" src="images/fas_neonthorizontal.png" alt="">
+                    <a href="index.html" class="a-footer-img">
+                        <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="">
                     </a>
                     <p class="fs-5 mb-4">Fox Auto Services - Where Expertise Meets Excellence. Your Premier Destination
                         for Automotive Solutions."</p>
