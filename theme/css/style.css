@@ -1621,7 +1621,8 @@ section{
 }
 @media (max-width: 768px) {
   .container-services h1{
-    font-size: 3rem;
+    font-size: 3rem !important;
+    padding: 1rem !important;
   }
 }
 .p-margin-section{
@@ -1765,7 +1766,7 @@ section{
 .accordion-body{
   font-size: 12px;
   margin-left: 10px;
-  overflow: auto;
+  overflow-y: auto;
 }
 @media (max-width: 768px) {
   .section-FAQ{
