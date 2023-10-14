@@ -1638,6 +1638,11 @@ section{
   position: relative;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .container-services h1{
+    font-size: 3rem;
+  }
+}
 .p-margin-section{
   margin-bottom: 50px;
 }
@@ -1776,6 +1781,7 @@ section{
 .accordion-body{
   font-size: 12px;
   margin-left: 10px;
+  overflow: auto;
 }
 @media (max-width: 768px) {
   .section-FAQ{
