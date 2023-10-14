@@ -128,7 +128,7 @@ section{
 
 /* FAB Styles */
 .fab-container{
-    position: sticky;
+    position: fixed;
     bottom: 3rem;
     right: 2.5rem !important;
     z-index: 9999;
@@ -171,7 +171,7 @@ section{
 .fab-options{
     list-style: none;
     margin: 0;
-    position: sticky;
+    position: absolute;
     bottom: 7rem;
     right: 0;
     opacity: 0;
