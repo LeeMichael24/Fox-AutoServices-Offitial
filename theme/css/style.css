@@ -161,7 +161,7 @@ section{
     align-items: center;
     justify-content: center;
     height: 100%;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #172A54;
 }
 
@@ -238,6 +238,9 @@ section{
   width: 170px;
   height: -moz-fit-content;
   height: fit-content;
+}
+.navbar-brand img{
+  width: 165px;
 }
 .navbar-nav{
   font-size: 20px;
@@ -1021,9 +1024,7 @@ section{
     font-size: 18px;
     font-weight: 600;
 }
-.navbar-brand img{
-  width: 165px;
-}
+
 .widget > img {
     width: 500px;
 }
