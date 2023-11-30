@@ -16,6 +16,7 @@ var path = {
   src: {
     html: "source/*.html",
     others: "source/*.+(php|ico|png)",
+    others2: "source/*.html",
     htminc: "source/partials/**/*.htm",
     incdir: "source/partials/",
     plugins: "source/plugins/**/*.*",
@@ -139,6 +140,11 @@ gulp.task("others:build", function () {
   return gulp.src(path.src.others).pipe(gulp.dest(path.build.dirDev));
 });
 
+// Other files like favicon, php, sourcele-icon on root directory
+gulp.task("others2:build", function () {
+  return gulp.src(path.src.others2).pipe(gulp.dest(path.build.dirDev));
+});
+
 // Clean Build Folder
 gulp.task("clean", function (cb) {
   rimraf("./theme", cb);
@@ -164,7 +170,11 @@ gulp.task("watch:build", function () {
   gulp.watch(path.src.js, gulp.series("js:build"));
   gulp.watch(path.src.images, gulp.series("images:build"));
   gulp.watch(path.src.plugins, gulp.series("plugins:build"));
+  gulp.watch(path.src.others, gulp.series("others:build")); // Agregado
+  gulp.watch(path.src.others2, gulp.series("others2:build")); // Agregado
 });
+
+
 
 // Dev Task
 gulp.task(
@@ -177,6 +187,7 @@ gulp.task(
     "images:build",
     "plugins:build",
     "others:build",
+    "others2:build",
     gulp.parallel("watch:build", function () {
       bs.init({
         server: {
@@ -195,6 +206,7 @@ gulp.task(
     "js:build",
     "css:build",
     "images:build",
-    "plugins:build"
+    "plugins:build",
+    "others2:build",
   )
 );
