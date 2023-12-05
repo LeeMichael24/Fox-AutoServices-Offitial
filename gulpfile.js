@@ -16,7 +16,7 @@ var path = {
   src: {
     html: "source/*.html",
     others: "source/*.+(php|ico|png)",
-    others2: "source/*.html",
+    others2: "source/blog/*.html",
     htminc: "source/partials/**/*.htm",
     incdir: "source/partials/",
     plugins: "source/plugins/**/*.*",
@@ -42,10 +42,10 @@ gulp.task("html:build", function () {
     )
     .pipe(
       comments(`
-    WEBSITE: https://themefisher.com
-    TWITTER: https://twitter.com/themefisher
-    FACEBOOK: https://www.facebook.com/themefisher
-    GITHUB: https://github.com/themefisher/
+    WEBSITE: https://MichaelNarvaez.com
+    TWITTER: https://twitter.com/MichaelNarvaez
+    FACEBOOK: https://www.facebook.com/MichaelNarvaez
+    GITHUB: https://github.com/MichaelNarvaez/
     `)
     )
     .pipe(gulp.dest(path.build.dirDev))
@@ -54,6 +54,15 @@ gulp.task("html:build", function () {
         stream: true,
       })
     );
+});
+
+gulp.task("others2:build", function () {
+  console.log("Copying blog files...");
+  return gulp.src(path.src.others2)
+    .pipe(gulp.dest(path.build.dirDev + "blog/")) // Cambiado
+    .on('end', function() {
+      console.log("Blog files copied successfully!");
+    });
 });
 
 // CSS
@@ -65,10 +74,10 @@ gulp.task("css:build", function () {
     .pipe(sourcemaps.write("/"))
     .pipe(
       comments(`
-    WEBSITE: https://themefisher.com
-    TWITTER: https://twitter.com/themefisher
-    FACEBOOK: https://www.facebook.com/themefisher
-    GITHUB: https://github.com/themefisher/
+    WEBSITE: https://MichaelNarvaez.com
+    TWITTER: https://twitter.com/MichaelNarvaez
+    FACEBOOK: https://www.facebook.com/MichaelNarvaez
+    GITHUB: https://github.com/MichaelNarvaez/
     `)
     )
     .pipe(gulp.dest(path.build.dirDev + "css/"))
@@ -97,10 +106,10 @@ gulp.task("js:build", function () {
     .on("error", gutil.log)
     .pipe(
       comments(`
-  WEBSITE: https://themefisher.com
-  TWITTER: https://twitter.com/themefisher
-  FACEBOOK: https://www.facebook.com/themefisher
-  GITHUB: https://github.com/themefisher/
+  WEBSITE: https://MichaelNarvaez.com
+  TWITTER: https://twitter.com/MichaelNarvaez
+  FACEBOOK: https://www.facebook.com/MichaelNarvaez
+  GITHUB: https://github.com/MichaelNarvaez/
   `)
     )
     .pipe(gulp.dest(path.build.dirDev + "js/"))
@@ -140,10 +149,6 @@ gulp.task("others:build", function () {
   return gulp.src(path.src.others).pipe(gulp.dest(path.build.dirDev));
 });
 
-// Other files like favicon, php, sourcele-icon on root directory
-gulp.task("others2:build", function () {
-  return gulp.src(path.src.others2).pipe(gulp.dest(path.build.dirDev));
-});
 
 // Clean Build Folder
 gulp.task("clean", function (cb) {

@@ -1,8 +1,8 @@
 /**
- * WEBSITE: https://themefisher.com
- * TWITTER: https://twitter.com/themefisher
- * FACEBOOK: https://www.facebook.com/themefisher
- * GITHUB: https://github.com/themefisher/
+ * WEBSITE: https://MichaelNarvaez.com
+ * TWITTER: https://twitter.com/MichaelNarvaez
+ * FACEBOOK: https://www.facebook.com/MichaelNarvaez
+ * GITHUB: https://github.com/MichaelNarvaez/
  */
 
 // Funcion expression to select elements
