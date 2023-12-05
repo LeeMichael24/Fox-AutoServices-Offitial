@@ -653,8 +653,7 @@ section{
     font-family: 'Aldrich', sans-serif;
     background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.395) 0%, rgba(35, 57, 82, 0.479) 100%) ,url('../images/coverServices.jpg'); /* Reemplaza con tu imagen de héroe */
     background-size: cover;
-    background-position: 50% 190%;
-    background-attachment: fixed;
+    background-position: 50% 50%;
     color: #fff;
     height: 47vh;
     text-align: center;
@@ -663,8 +662,7 @@ section{
     font-family: 'Aldrich', sans-serif;
     background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/gallery/gallery-section.jpg'); /* Reemplaza con tu imagen de héroe */
     background-size: cover;
-    background-position: 0% 150%;
-    background-attachment: fixed;
+    background-position: 50% 50%;
     color: #fff;
     height: 47vh;
     text-align: center;
@@ -673,8 +671,7 @@ section{
     font-family: 'Aldrich', sans-serif;
     background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.518) 0%, rgba(35, 57, 82, 0.659) 100%) ,url('../images/collisionRepairHero.jpg'); /* Reemplaza con tu imagen de héroe */
     background-size: cover;
-    background-position: 50% 10%;
-    background-attachment: fixed;
+    background-position: 50% 70%;
     color: #fff;
     height: 47vh;
     text-align: center;
@@ -683,8 +680,7 @@ section{
     font-family: 'Aldrich', sans-serif;
     background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/RequestAnEstimate.jpg'); /* Reemplaza con tu imagen de héroe */
     background-size: cover;
-    background-position: 50% 150%;
-    background-attachment: fixed;
+    background-position: 50% 90%;
     color: #fff;
     height: 47vh;
     text-align: center;
@@ -768,9 +764,6 @@ section{
     .hero-section-services {
       height: 35vh;
       padding: 60px 0; /* Espaciado superior e inferior para pantallas móviles */
-      background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.395) 0%, rgba(35, 57, 82, 0.479) 100%) ,url('../images/servicesCover.jpg');
-      background-attachment: fixed;
-      background-position: center center;
     }
     .hero-section-gallery {
       height: 35vh;
@@ -781,7 +774,7 @@ section{
       padding: 60px 0; /* Espaciado superior e inferior para pantallas de escritorio */
     }
     .hero-section-estimate {
-      height: 42vh;
+      height: 35vh;
       padding: 60px 0; /* Espaciado superior e inferior para pantallas de escritorio */
     }
     .hero-title {
@@ -1888,6 +1881,9 @@ section{
   }
 
   @media (max-width: 768px) {
+    .section-slider-container{
+      margin-top: -20px;
+    }
     .section-slider-container h2{
       font-family: 'Aldrich', sans-serif;
       font-size: 25px;
