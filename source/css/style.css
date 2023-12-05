@@ -1494,7 +1494,7 @@ section{
 @media (min-width: 1024px) and (max-width: 1650px) {
   .main-container {
     padding: 5rem 10rem 5rem 5rem;
-    height: 110vh !important;
+    height: 145vh !important;
     margin-right: 100px;
   }
 }
