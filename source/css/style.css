@@ -611,6 +611,25 @@ section{
 
 
 
+/* Cards Social start*/
+.card-social-media img{
+  width: 60px;
+}
+.card-social-media1 img{
+  width: 100px;
+}
+.color-div-card{
+  background-color: #f4f5ff !important;
+}
+.span-card-media{
+  font-size: 14px;
+}
+
+.h4-cards-media{
+  font-size: 22px !important;
+}
+/* Cards Social end*/
+
 .menu-icons i{
     font-size: 3.5rem;
     color: #fafafa;
