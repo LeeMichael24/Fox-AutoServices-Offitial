@@ -10,7 +10,7 @@
 */
 
 /* Hero styles */
-.hero{
+/* .hero{
     width: 100%;
     min-height: 65rem;
     height: 90vh;
@@ -18,7 +18,7 @@
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-}
+} */
 
 .main-message{
     transform: translateY(40%) !important;

@@ -1334,151 +1334,207 @@ section{
 /* Sidebar menu none */
 /* Desktop */
 /* Sidebar menu */
-.main-container{
-    padding: 5rem;
-    width: 100%;
-    height: auto; 
-    margin-top: -40px;
-    margin-right: 200px;
-    padding-right: 200px;
-  }
-  .desktop-menu{
-    margin-top: 15px;
-  }
-  
+.main-container {
+  width: 100%;
+  height: auto;
+  margin-right: 100px;
+  padding-right: 200px;
+}
+
+.desktop-menu {
+  margin-top: 15px;
+}
+
+#sidebar {
+  width: 500px !important;
+  background-color: #f1f1f1;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 13%;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+#sidebar li.activeDesk {
+  background: white;
+  scale: 1.05;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-weight: bolder;
+}
+
+#sidebar li.activeDesk::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #fc6701;
+  border-radius: 8px;
+}
+
+#sidebar li.activeDesk a,
+#sidebar li.activeDesk a:hover {
+  background: white;
+  border-radius: 8px;
+}
+
+#sidebar li a {
+  text-decoration: none;
+  color: #2b6cb0;
+  display: block;
+  padding: 3px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+#sidebar li:hover {
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#informacion-servicio {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#iframe-servicio {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 1920px) {
   #sidebar {
     width: 450px;
-    background-color: #f1f1f1;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 8px;
-    margin-left: 13%;
-    display: flex;
-    flex-direction: column;
   }
-  
-  #sidebar ul {
-    list-style-type: none;
-    padding: 1rem;
-  }
-  
-  #sidebar li.activeDesk {
-    background: white;
-    scale: 1.05;
-    border-radius: 8px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    font-weight:bolder
-  }
-  #sidebar li.activeDesk::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px; /* Ancho de la línea vertical */
-    height: 100%;
-    background-color: #FC6701; /* Color de la línea vertical */
-    border-radius: 8px;
-  }
-  #sidebar li.activeDesk a, #sidebar li.activeDesk a:hover {
-    background: white;
-    border-radius: 8px;
-  }
-  
-  #sidebar li a {
-    text-decoration: none;
-    color: #2b6cb0;
-    display: block;
-    padding: 3px;
-    border-radius: 5px;
-    margin-left: 10px;
-    font-size: 17px;
-    margin-bottom: 15px;
-  }
-  
-  #sidebar li:hover {
-    background-color: white;
-    border-radius: 8px;
-    cursor: pointer;
+  .main-container {
+    padding: 5rem;
+    height: 104vh;
   }
   #informacion-servicio {
-    width: 100%;
     height: 100%;
-    overflow: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-  
-  
+}
+
+@media (max-width: 768px) {
+  #sidebar li a {
+    font-size: 15px;
+  }
+  .main-container {
+    height: 120vh;
+  }
+}
+/* Ipads grandes */
+/* @media (min-width: 769px) and (max-width: 1023px){
+  .main-container {
+    padding: 5rem 10rem 5rem 5rem;
+    height: 175vh !important;
+    margin-right: 100px;
+  }
+} */
+@media (min-width: 769px) and (max-width: 869px){
+  .main-container {
+    padding: 5rem 5rem 5rem 5rem;
+    height: 160vh !important;
+  }
+  #sidebar{
+    margin-left: 0px;
+  }
   #iframe-servicio{
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: 5px;
+    margin-right: 0px !important;
   }
-  
-  @media (min-width: 768px) and (max-width: 1920px) {
-    #sidebar {
-      width: 450px; /* Ajusta el valor según tus necesidades */
-      height: auto;
-    }
-    .main-container{
-        padding: 5rem;
-        width: 100%;
-        height: 104vh; 
-    }
-    #informacion-servicio{
-        height: 100%;
-    }
+}
+@media (min-width: 869px) and (max-width: 992px){
+  .main-container {
+    padding: 5rem 5rem 5rem 5rem;
+    height: 160vh !important;
   }
-  @media (max-width: 768px){
-    #sidebar li a {
-        font-size: 15px;
-    }
-    .main-container{
-        height: 120vh;
-    }
+  #sidebar{
+    margin-left: 0px;
   }
-  /* only for 1920px */
-  @media (min-width: 1910px) {
-    .main-container{
-        margin-left: 200px;
-        height: 120vh;
-    }
-    #informacion-servicio{
-        margin-right: 300px;
-    }
-    .main-container{
-        margin-right: 200px;
-    }
-    #sidebar{
-      margin-left: 8%;
-    }
+  #iframe-servicio{
+    margin-right: 0px !important;
   }
-/* pantallas mac 1440 */
-  @media (min-width: 1024px) {
-    .main-container{
-        padding: 5rem 10rem 5rem 5rem;
-        width: 100%;
-        height: 152vh; 
-        margin-right: 100px;
-      }
+}
+@media (min-width: 992px) and (max-width: 1023px){
+  .main-container {
+    padding: 5rem 5rem 5rem 5rem;
+    height: 160vh !important;
+    margin-right: 100px;
   }
-  /* pantallas 1920 */
-  @media (min-width: 1900px) {
-    .main-container{
-        padding: 5rem;
-        width: 100%;
-        height: 102vh; 
-      }
+  #sidebar{
+    margin-left: 0px;
   }
-  @media (max-width: 968px){
-    .main-container{
-      min-height: auto;
-        height: 108vh; 
-      }
+  #iframe-servicio{
+    margin-right: 0px !important;
   }
+}
+
+/* Pantallas Mac 1440 */
+@media (min-width: 1024px) and (max-width: 1909px) {
+  .main-container {
+    padding: 5rem 10rem 5rem 5rem;
+    height: 160vh !important;
+    margin-right: 100px;
+  }
+}
+
+
+
+
+/* Pantallas 1920 */
+@media (min-width: 1900px) {
+  .main-container {
+    padding: 5rem;
+    height: 102vh;
+  }
+}
+
+/* Otras pantallas específicas */
+@media (min-width: 1910px) and (max-width: 1920px) {
+  .main-container {
+    margin-left: 200px;
+    max-height: 108vh !important;
+    height: 108vh !important;
+    margin-right: 200px;
+  }
+  #informacion-servicio {
+    margin-right: 300px;
+  }
+  #sidebar {
+    margin-left: 8%;
+  }
+}
+@media (max-width: 1920px) {
+  .main-container {
+    height: 108vh ;
+  }
+}
+
+/* @media (max-width: 968px) {
+  .main-container {
+    min-height: auto;
+    height: 108vh;
+  }
+} */
+
   
   /* END Sidebar menu */
   

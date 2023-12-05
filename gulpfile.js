@@ -17,6 +17,7 @@ var path = {
     html: "source/*.html",
     others: "source/*.+(php|ico|png)",
     others2: "source/blog/*.html",
+    others3: "source/services/*.html",
     htminc: "source/partials/**/*.htm",
     incdir: "source/partials/",
     plugins: "source/plugins/**/*.*",
@@ -62,6 +63,15 @@ gulp.task("others2:build", function () {
     .pipe(gulp.dest(path.build.dirDev + "blog/")) // Cambiado
     .on('end', function() {
       console.log("Blog files copied successfully!");
+    });
+});
+
+gulp.task("others3:build", function () {
+  console.log("Copying services files...");
+  return gulp.src(path.src.others3)
+    .pipe(gulp.dest(path.build.dirDev + "services/")) // Cambiado
+    .on('end', function() {
+      console.log("Services files copied successfully!");
     });
 });
 
@@ -177,6 +187,7 @@ gulp.task("watch:build", function () {
   gulp.watch(path.src.plugins, gulp.series("plugins:build"));
   gulp.watch(path.src.others, gulp.series("others:build")); // Agregado
   gulp.watch(path.src.others2, gulp.series("others2:build")); // Agregado
+  gulp.watch(path.src.others3, gulp.series("others3:build")); // Agregado
 });
 
 
@@ -193,6 +204,7 @@ gulp.task(
     "plugins:build",
     "others:build",
     "others2:build",
+    "others3:build",
     gulp.parallel("watch:build", function () {
       bs.init({
         server: {
@@ -213,5 +225,6 @@ gulp.task(
     "images:build",
     "plugins:build",
     "others2:build",
+    "others3:build"
   )
 );
