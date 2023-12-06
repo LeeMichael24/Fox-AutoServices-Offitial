@@ -1478,10 +1478,24 @@ section{
 }
 
 /* Pantallas Mac 1440 */
-@media (min-width: 1024px) and (max-width: 1650px) {
+/* @media (min-width: 1024px) and (max-width: 1450px) {
   .main-container {
     padding: 5rem 10rem 5rem 5rem;
-    height: 145vh !important;
+    min-height: 155vh !important;
+    margin-right: 100px;
+  }
+} */
+@media (max-width: 1440px){
+  .main-container {
+    padding: 5rem 10rem 5rem 5rem;
+    height: 145vh ;
+    margin-right: 100px;
+  }
+}
+@media (min-width: 1451px) and (max-width: 1650px) {
+  .main-container {
+    padding: 5rem 10rem 5rem 5rem;
+    height: 155vh !important;
     margin-right: 100px;
   }
 }
