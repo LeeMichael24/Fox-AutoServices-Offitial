@@ -17,14 +17,7 @@
 */
 
 /* Hero styles */
-.hero{
-    width: 100%;
-    min-height: 65rem;
-    height: 90vh;
-    background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url("../images/porshe.jpg") center no-repeat;
-    background-size: cover;
-    position: relative;
-}
+
 
 main .main-message{
     transform: translateY(20%) !important;
@@ -38,6 +31,18 @@ main .main-message{
 
 #timeline{
     font-family: 'Nunito', sans-serif;
+}
+
+.step-image {
+    width: 100%;
+    overflow: hidden; /* Asegura que la imagen no se desborde del contenedor */
+    border-radius: 5rem;
+}
+
+.step-image img {
+    width: 100%;
+    height: auto;
+    display: block; /* Evita el espacio adicional debajo de la imagen */
 }
 
 .timeline{
@@ -204,4 +209,6 @@ main .main-message{
         right: inherit !important;
     }
 }
+
+
 /*# sourceMappingURL=howe.css.map */
