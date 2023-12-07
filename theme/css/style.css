@@ -1319,8 +1319,7 @@ section{
 
 
 /* Services Tabs start */
-/* Services Tabs start */
-/* Sidebar menu none */
+/* Estilos generales */
 .main-container {
   width: 100%;
   height: auto;
@@ -1473,15 +1472,6 @@ section{
     height: auto;
   }
 }
-
-
-
-/* @media (max-width: 968px) {
-  .main-container {
-    min-height: auto;
-    height: 108vh;
-  }
-} */
 
   
   /* END Sidebar menu */
@@ -2712,16 +2702,29 @@ section{
   background-color: #fff;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+  display: flex;
+  flex-direction: column; /* Cambia la dirección de flexión a columna */
 }
+.feature-item .btn-main {
+  width: 60%;
+}
+
 .feature-item .feature-icon i {
   font-size: 50px;
   color: #223a66;
 }
+
 .feature-item h4 {
   color: #223a66;
 }
+
 .feature-item p {
   font-size: 14px;
+  flex-grow: 1; /* Hace que el texto crezca para llenar el espacio disponible */
+}
+
+.feature-item .btn {
+  margin-top: auto; /* Desplaza el botón hacia la parte inferior */
 }
 
 .feature-section.border-top {
@@ -2772,17 +2775,17 @@ section{
   border-color: #223a66;
 }
 .btn-main:hover {
-  background: #e12454;
-  border-color: #e12454;
+  background: #FC6701;
+  border-color: #FC6701;
   color: #fff;
 }
-
 .sec-scale-card{
   transition: transform 0.5s ease;
   cursor: pointer;
 }
+
 .sec-scale-card:hover {
   transform: scale(1.05);
 }
-/* Social Media Home END*/
+/* Social Media Home END */
 /*# sourceMappingURL=style.css.map */

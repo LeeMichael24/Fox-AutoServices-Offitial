@@ -11443,3 +11443,12 @@ a{
 }
 
 
+
+.section-blog-single{
+  margin-top: 12% !important;
+}
+
+.card .btn {
+  background: #fc6701;
+  border: none;
+}
