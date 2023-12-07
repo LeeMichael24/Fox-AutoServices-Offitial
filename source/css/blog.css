@@ -459,6 +459,135 @@ legend + * {
 ::-webkit-color-swatch-wrapper {
   padding: 0;
 }
+@keyframes up{
+  0%{
+      opacity: 0;
+      transform: translateY(1rem);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: translateY(-1rem);
+  }
+}
+
+@keyframes fadeUp{
+  0%{
+      transform: translateY(4rem);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0);
+
+  }
+}
+
+@keyframes fadeDown{
+  0%{
+      transform: translateY(-4rem);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0);
+
+  }
+}
+
+@keyframes rotate{
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes scaleAndFade {
+  from { 
+      scale: .5;
+      opacity: 1;
+   }
+  to   { 
+      scale: 1.8;
+      opacity: 0;
+   }
+}
+
+@keyframes grow{
+  0%{
+      width: 0;
+  }
+  100%{
+      opacity: 1;
+      width: 100%;
+
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes scaleAndFade {
+  from { scale: .5; }
+  to   { scale: 1.8; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes scaleAndFade {
+  from { scale: .5; }
+  to   { scale: 1.8; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes scaleAndFade {
+  from { scale: .5; }
+  to   { scale: 1.8; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes scaleAndFade {
+  from { scale: .5; }
+  to   { scale: 1.8; }
+}
+
+
+
+/*  Start preload */
+.loading-overlay{
+  background: linear-gradient(135deg, rgba(34, 62, 122, 1) 0%, rgba(35, 57, 82, 1) 100%);
+  color:#fff;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  z-index:99999;  	
+}
+
+.loader{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.loader-div{
+  width: 100vw;
+  height: 100vh;
+  background: url('../images/logo.png') center no-repeat;
+  background-size: contain;
+  -webkit-animation: scaleAndFade 2.3s infinite; 
+     -moz-animation: scaleAndFade 2.3s infinite; 
+      -ms-animation: scaleAndFade 2.3s infinite; 
+       -o-animation: scaleAndFade 2.3s infinite; 
+          animation: scaleAndFade 2.3s infinite;
+}
+
+
+
+
+
 
 ::file-selector-button {
   font: inherit;
@@ -11282,5 +11411,35 @@ height: 50px;
 
 
 
+
+
+/* Estilos específicos para la página de visualización de un solo post */
+.post-container {
+  margin-top: 50px;
+}
+
+.post-header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.post-content {
+  margin-top: 30px;
+}
+
+.post-footer {
+  margin-top: 30px;
+}
+
+
+a{
+  font-size: large !important;
+}
+
+.img-blogSingle-post{
+  width: 100%;
+  height: auto;
+}
 
 

@@ -13,7 +13,7 @@
 - accent color: #FC6701 rgb(252, 103, 1)
 - Light accent color: #FFBB04 rgb(255, 187, 4)
 - text color: #FAFAFA
-*/
+ */
 html {
   scroll-behavior: smooth;
 }
@@ -1058,7 +1058,7 @@ section{
   background: #efa23d;
   cursor: pointer;
   position: relative;
-  z-index: 0;
+  z-index: 1;
   border-radius: 100px;
   -moz-user-select: none;
        user-select: none;
@@ -2659,6 +2659,7 @@ section{
 
 
 
+
 .section-insta{
   display: flex;
   margin: 0 auto;
@@ -2714,9 +2715,35 @@ section{
 
 /* BLog */
 /* Blog section */
-.blog-section{
-  background: #333333;
-  padding: 4rem;
+.blog-section {
+  position: relative;
+  padding: 3rem;
+  height: 110vh;
+}
+.blog-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(23, 42, 84, 0.7), rgba(23, 42, 84, 0.7)), url('../images/gallery/ejemplo5.jpg');
+  background-position: fixed;
+  background-size: cover;
+  filter: blur(1px); /* Ajusta según sea necesario */
+  z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+.bg-card-blog{
+  background: #2D4561;
+  color: #FAFAFA;
+}
+.div-date{
+  font-size: 15px;
+  color: white;
+}
+.btn-blog-div{
+  margin-top: 20px;
 }
 /* BLog */
 
