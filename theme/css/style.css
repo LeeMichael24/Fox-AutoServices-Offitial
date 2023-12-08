@@ -2659,7 +2659,7 @@ section{
 .blog-section {
   position: relative;
   padding: 3rem;
-  height: 110vh;
+
 }
 .blog-section::before {
   content: "";
