@@ -210,5 +210,87 @@ main .main-message{
     }
 }
 
+@media (min-width: 768px) {
+    .timeline ul li .step-image {
+        position: absolute;
+        top: 70px;
+        margin: 0;
+        padding: 8px 16px;
+        color: white;
+        border-radius: 5rem;
+    }
+    
+    .timeline ul li:nth-child(odd) .step-image {
+        right: -420px;
+    }
+    
+    .timeline ul li:nth-child(even) .step-image {
+        left: -420px;
+    }
+    
+    
+    .timeline ul li:nth-child(odd) {
+        position: relative;
+        margin-bottom: 20px; /* Ajusta el espacio entre los elementos según tus necesidades */
+    }
+    
+    .timeline ul li:nth-child(even) {
+        position: relative;
+        margin-bottom: 20px; /* Ajusta el espacio entre los elementos según tus necesidades */
+    }
+    
+    /* Ajustes para el Step 2 */
+    .timeline ul li:nth-child(2) {
+        margin-top: -20px; /* Ajusta el margen superior negativo según tus necesidades */
+    }
+    /* Ajustes para el Step 4 */
+    .timeline ul li:nth-child(4) {
+        margin-top: 110px; /* Ajusta el margen superior negativo según tus necesidades */
+    }
+    /* Ajustes para el Step 5 */
+    .timeline ul li:nth-child(5) {
+        margin-top: 110px; /* Ajusta el margen superior negativo según tus necesidades */
+    }
+    /* Ajustes para el Step 6 */
+    .timeline ul li:nth-child(6) {
+        margin-top: 150px; /* Ajusta el margen superior negativo según tus necesidades */
+    }
+    /* Ajustes para el Step 7 */
+    .timeline ul li:nth-child(7) {
+        margin-top: 190px; /* Ajusta el margen superior negativo según tus necesidades */
+    }
+    /* Ajustes para el Step 8 */
+    .timeline ul li:nth-child(8) {
+        margin-top: 100px; /* Ajusta el margen superior negativo según tus necesidades */
+    }
+}
+@media (min-width: 810px) {
+    .timeline ul li:nth-child(odd) .step-image {
+        right: -450px;
+    }
+    
+    .timeline ul li:nth-child(even) .step-image {
+        left: -450px;
+    }
+}
+@media (min-width: 910px) {
+    .timeline ul li:nth-child(odd) .step-image {
+        right: -520px;
+    }
+    
+    .timeline ul li:nth-child(even) .step-image {
+        left: -520px;
+    }
+}
+@media (max-width: 767px) {
+    
+    .timeline ul li:nth-child(odd) .step-image {
+        right: -120px;
+    }
+    
+    .timeline ul li:nth-child(even) .step-image {
+        left: -120px;
+    }
+}
 
 /*# sourceMappingURL=howe.css.map */
