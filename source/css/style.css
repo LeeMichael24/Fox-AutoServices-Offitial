@@ -720,6 +720,9 @@ section{
     .hero-section-estimate {
       padding: 100px 0; /* Espaciado superior e inferior para pantallas de escritorio */
     }
+    .hero-section-how-we-do-it {
+      padding: 100px 0; /* Espaciado superior e inferior para pantallas de escritorio */
+    }
     .hero-title {
       font-size: 60px;
       margin-bottom: 20px;
@@ -745,6 +748,9 @@ section{
       padding: 80px 0; /* Espaciado superior e inferior para pantallas de escritorio */
     }
     .hero-section-estimate {
+      padding: 80px 0; /* Espaciado superior e inferior para pantallas de escritorio */
+    }
+    .hero-section-how-we-do-it {
       padding: 80px 0; /* Espaciado superior e inferior para pantallas de escritorio */
     }
     .hero-title {
@@ -773,6 +779,10 @@ section{
       padding: 60px 0; /* Espaciado superior e inferior para pantallas de escritorio */
     }
     .hero-section-estimate {
+      height: 35vh;
+      padding: 60px 0; /* Espaciado superior e inferior para pantallas de escritorio */
+    }
+    .hero-section-how-we-do-it {
       height: 35vh;
       padding: 60px 0; /* Espaciado superior e inferior para pantallas de escritorio */
     }
@@ -1066,12 +1076,14 @@ section{
   background: #efa23d;
   cursor: pointer;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   border-radius: 100px;
   user-select: none;
-  -webkit-user-select: none;
+  -webkit-user-select: none; /* Safari y Chrome */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  -moz-user-select: none; /* Firefox */
   touch-action: manipulation;
-    font-size: 10px;
+  font-size: 10px;
 }
 
 
@@ -1095,10 +1107,10 @@ section{
   left: -2px;
   background-size: 400%;
   z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
   animation: glowing-button-85 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
   border-radius: 100px;
@@ -1260,9 +1272,20 @@ section{
 }
 .dropdown-menu{
   justify-content: center;
-  background-color: #284880;
-  width: 170px;
-  height: 50px;
+  background-color: rgba(45, 62, 97, 0.9);
+  width: 122%;
+  height: auto;
+}
+@media (min-width: 769px) {
+  .dropdown-menu{
+    justify-content: center;
+    background-color: rgba(45, 62, 97, 0.9);
+    width: 200%;
+    height: auto;
+  }
+}
+.dropdown-item{
+  width: 90%;
 }
 
 
@@ -1415,11 +1438,11 @@ section{
 /* Consultas de medios */
 @media (max-width: 769px) {
   .main-container {
-    padding: 5rem;
+    padding: 0;
     height: auto;
   }
   #sidebar {
-    margin-left: 0px;
+    margin-left: 0px !important;
   }
   #iframe-servicio {
     margin-right: 0px !important;
@@ -1430,6 +1453,12 @@ section{
   .main-container {
     padding: 5rem;
     height: auto;
+  }
+  #sidebar {
+    margin-left: 0px !important;
+  }
+  #iframe-servicio {
+    margin-right: 0px !important;
   }
 }
 
@@ -1783,7 +1812,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 18vh;
+    height: 24vh;
     margin-top: 40px;
   }
 
@@ -1860,8 +1889,9 @@ section{
 /* Services section home start */
 .container-services{
   width: 100%;
-  height: 110vh;
+  height: auto;
   padding: 0 8%;
+  padding-bottom: 20px;
   text-align: center;
   padding-top: 30px;
 }
@@ -2614,18 +2644,82 @@ section{
 
 
 
-.section-insta{
+.section-insta {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 3.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-iframe-insta {
+  flex-grow: 1; /* Toma el espacio disponible */
+  max-width: 50%; /* Ajusta el ancho máximo al 100% */
+  margin-bottom: 1rem; /* Añade espacio entre los contenedores */
+}
+
+.section-insta-info {
+  flex-grow: 1; /* Toma el espacio disponible */
+  max-width: calc(50% - 1rem); /* Ajusta el ancho máximo al 50% y resta el espacio entre contenedores */
+}
+
+
+@media (min-width: 768px) {
+  .section-insta-info {
+      max-width: calc(40% - 1rem); /* Ajusta el ancho máximo cuando la pantalla es más grande */
+      text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .section-insta{
+    text-align: center;
+  }
+  .section-iframe-insta {
+    flex-grow: 1; /* Toma el espacio disponible */
+    max-width: 100%; /* Ajusta el ancho máximo al 100% */
+    margin-bottom: 1rem; /* Añade espacio entre los contenedores */
+  }
+  
+  .section-insta-info {
+    flex-grow: 1; /* Toma el espacio disponible */
+    max-width: calc(90% - 1rem); /* Ajusta el ancho máximo al 50% y resta el espacio entre contenedores */
+  }
+}
+
+
+
+/* .section-insta{
   display: flex;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
+  padding: 0 4rem 0;
   height: fit-content;
   text-align: center;
   justify-content: center;
   align-items: center;
   gap: 3rem;
   flex-wrap: wrap-reverse;
+} */
+
+/* @media (max-width: 769px) {
+  .section-insta{
+    padding: 0rem;
+  }
+  .section-iframe-insta{
+    width: 100%;
+    background: #f4f5ff;
+  }
+  .section-insta-info{
+    width: auto;
+  }
 }
-@media (min-width: 769px) {
+@media (min-width: 770px) and (max-width: 992px) {
+  .section-insta{
+    display: flex;
+    flex-wrap: wrap-reverse !important;
+  }
+}
+@media (min-width: 770px) {
   .section-insta{
     padding: 4rem;
   }
@@ -2636,7 +2730,7 @@ section{
   .section-insta-info{
     width: 40%;
   }
-}
+} */
 
 .insta-h1{
   font-size: 3.6rem;
@@ -2716,6 +2810,12 @@ section{
   box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
   display: flex;
   flex-direction: column; /* Cambia la dirección de flexión a columna */
+}
+@media (max-width: 992px) {
+  .feature-item {
+    align-items: center;
+    text-align: center;
+  }
 }
 .feature-item .btn-main {
   width: 60%;
@@ -2800,3 +2900,203 @@ section{
   transform: scale(1.05);
 }
 /* Social Media Home END */
+
+
+
+
+
+/* ABOUT SECTION */
+/*=================================================================
+  About us section
+==================================================================*/
+.about-shot-info {
+  width: 100%;
+  padding: 5rem 8rem 0 8rem;
+  margin-bottom: 5rem;
+}
+
+.about-content {
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.img-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .about-shot-info {
+      padding: 5rem 3rem 0 3rem;
+      margin-bottom: 5rem;
+  }
+}
+
+
+.h2-blog {
+  color: #007bff; /* Azul vibrante */
+  font-size: 33px !important;
+  font-family: 'Aldrich', sans-serif !important;
+}
+
+.p-blog {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.img-about {
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* MISSION AND VISSION */
+.company-mission {
+  padding: 40px 0;
+  background: #002aff0b;
+}
+
+.mission-content,
+.vision-content {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px; /* Ajustado el margen inferior */
+}
+
+.mission-content h3,
+.vision-content h3 {
+  font-family: 'Aldrich', sans-serif !important;
+  font-size: 30px;
+  color: #007bff;
+  font-size: 30px !important;
+}
+
+.img2-about {
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .company-mission {
+      padding: 50px 0;
+  }
+}
+
+/*=================================================================
+  About us 2 section
+==================================================================*/
+.about-2 {
+  background: #F7F7F7;
+}
+.about-2 .checklist {
+  padding-left: 30px;
+}
+.about-2 .checklist li {
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #777;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.about-2 .checklist li:before {
+  position: absolute;
+  margin-right: 12px;
+  margin-left: -45px;
+  content: "\f375";
+  font-family: "themefisher-font";
+  opacity: 1;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 20px;
+}
+
+/*=================================================================
+ Call To Action 1
+==================================================================*/
+.call-to-action {
+  padding: 100px 0;
+  background: url("../images/gallery/ejemplo3.jpg");
+  background-size: cover;
+  color: #fff;
+}
+.call-to-action h2 {
+  line-height: 1.5;
+}
+.call-to-action p {
+  color: #fff;
+}
+.call-to-action .btn-main {
+  margin-top: 20px;
+}
+
+
+/* About section awards */
+.awards-section {
+  padding: 80px 0;
+}
+@media (max-width: 768px) {
+  .awards-section {
+    padding: 5rem 3rem 0 3rem;
+    text-align: justify;
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.award-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.award-item img {
+  width: 100%; /* Set to 100% for responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #ddd; /* Thin gray border around the image */
+  border-radius: 5px;
+  max-width: 150px; /* Set a maximum width for larger screens */
+}
+
+.award-item p {
+  margin-top: 10px;
+  color: #333; /* Dark text color, adjust as per your preferences */
+}
+
+/* Optional: Center the text under the images */
+.award-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* About section awards */
+
+/*=================================================================
+ Call To Action 2
+==================================================================*/
+.call-to-action-2 {
+  padding: 100px 0;
+  background-image: url("../images/realImages/fondoShop.jpg");
+  background-size: cover;
+  background-position: 75% 75%;
+  color: #fc6701;
+}
+.call-to-action-2 h2 {
+  line-height: 1.5;
+}
+.call-to-action-2 p {
+  color: #fff;
+}
+.call-to-action-2 .btn-main {
+  margin-top: 20px;
+}
+/* ABOUT SECTION */
+

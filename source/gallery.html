@@ -56,7 +56,7 @@
             </button>
 
             <!-- SideBar -->
-            <div class="sidebar-nav-header offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            <div class="sidebar-nav-header offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
 
                 <!-- Sidebar Header -->
@@ -72,23 +72,33 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item mx-2 active">
-                            <a class="nav-link" href="services.html">Mechanical Services</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="aboutUs.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              About Us
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="aboutUs.html">Our History</a></li>
+                              <li><a class="dropdown-item" href="blog.html">Our Blog</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="how-we-do-it.html">How We Do It</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="services.html">Mechanical Services</a>
                         </li>
-                        <li class="nav-item mx-2 active">
-                            <a class="nav-link" href="gallery.html">Social Media</a>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="gallery.html">Social Media</a>
                         </li>
-                        <li class="nav-item mx-2 active">
-                            <a class="nav-link" href="collision-repair.html">Collision Services</a>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="collision-repair.html">Collision Services</a>
                         </li>
-                        <li class="nav-item mx-2 active">
-                            <a class="nav-link" href="request-estimate.html">Request an Estimate</a>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="request-estimate.html">Request an Estimate</a>
                         </li>
-                        <li class="nav-item mx-2 active">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <!-- <li class="nav-item mx-2 btn-85 button-85 active">
-                            <a class="nav-link" onclick="AutoOps.show()">Book Service Today</a>
+                        <!-- <li class="nav-item mx-2">
+                            <a class="nav-link active" href="blog.html">Blog</a>
                         </li> -->
                     </ul>
                 </div>
@@ -129,22 +139,21 @@
     <section class="hero-section-gallery">
         <div class="hero-content animate-top" data-aos="fade-up" data-aos-anchor-placement="top-center"
             data-aos-duration="700">
-            <h1 class="hero-title">Showcase</h1>
-            <p class="hero-description">Discover a Showcase of Our Impressive Portfolio</p>
+            <h1 class="hero-title">Social Media</h1>
+            <p class="hero-description">Explore the artistry of our work behind the scenes on our social media platforms.</p>
         </div>
     </section>
-
 
 
 
     <!-- End of Gallery  -->
 
     <section class="section-insta">
-        <div class="section-iframe-insta">
+        <div class="section-iframe-insta" data-aos="zoom-in-down" data-aos-duration="3000">
             <iframe src='https://widgets.sociablekit.com/instagram-feed/iframe/215365' frameborder='0' width='100%'
                 height='700'></iframe>
         </div>
-        <div class="section-insta-info">
+        <div class="section-insta-info" data-aos="zoom-in-up" data-aos-duration="3000">
             <h1 class="insta-h1">Technology Deals: Grab the Best Promotions!</h1>
             <h3 class="insta-h3">What Our Offers Include:</h3>
             <ul class="section-erc-list">

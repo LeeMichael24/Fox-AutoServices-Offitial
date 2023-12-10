@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Fox Auto Service</title>
+    <link rel="icon" type="image/x-icon" href="images/fas_neont.png">
+    <meta name="description"
+        content="Learn about Fox Auto Service, your trusted partner for car repair and maintenance. Meet our expert team dedicated to ensuring optimal performance for your vehicle.">
+    <meta name="keywords" content="about us, Fox Auto Service, car repair, auto maintenance">
+    <meta name="author" content="Fox Auto Service">
+
+    <!-- Open Graph (OG) meta tags for social media sharing -->
+    <meta property="og:title" content="About Us | Fox Auto Service">
+    <meta property="og:description"
+        content="Discover Fox Auto Service, your trusted partner for car repair and maintenance. Meet our expert team dedicated to ensuring optimal performance for your vehicle.">
+    <meta property="og:image" content="https://www.foxautoservices.com/about-us-image.jpg">
+    <meta property="og:url" content="https://www.foxautoservices.com/about-us">
+
+    <!-- Instagram meta tag for social media sharing -->
+    <meta property="og:instagram" content="https://www.instagram.com/foxautoservices/">
+
+    <!-- Facebook meta tags for social media sharing -->
+    <meta property="og:facebook" content="https://www.facebook.com/YourFacebookPage">
+
+    <!-- Canonical URL for search engines -->
+    <link rel="canonical" href="https://www.foxautoservices.com/about-us">
+
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Glide pricing cards-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Start preload -->
+    <!-- <div class="loading-overlay">
+        <div class="loader">
+            <div class="loader-div">
+            </div>
+        </div>
+    </div> -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html"><img src="images/fas_neonthorizontal.png"
+                    alt="Fox Auto Services"></a>
+
+            <!-- Toggle BTN-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- SideBar -->
+            <div class="sidebar-nav-header offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <!-- Sidebar Header -->
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Sidebar Body -->
+                <div id="prueba-section" class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="aboutUs.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              About Us
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="aboutUs.html">Our History</a></li>
+                              <li><a class="dropdown-item" href="blog.html">Our Blog</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="how-we-do-it.html">How We Do It</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="services.html">Mechanical Services</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="gallery.html">Social Media</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="collision-repair.html">Collision Services</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="request-estimate.html">Request an Estimate</a>
+                        </li>
+                        <!-- <li class="nav-item mx-2">
+                            <a class="nav-link active" href="blog.html">Blog</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar NED -->
+
+    <!-- FAB -->
+    <div class="fab-container">
+        <div class="main-fab fab-icon-holder button-85">
+            <a onclick="AutoOps.show()"><i class="icon ion-md-calendar"></i></a>
+        </div>
+    </div>
+    <div class="fab-container faq-2">
+        <div class="main-fab fab-icon-holder">
+            <i class="icon ion-md-help"></i>
+        </div>
+        <ul class="fab-options">
+            <li>
+                <span class="fab-label"> Request Estimate</span>
+                <div class="fab-icon-holder">
+                    <a href="request-estimate.html"><i class="icon ion-md-mail"></i></a>
+                </div>
+            </li>
+            <li>
+                <span class="fab-label">Get Directions</span>
+                <div class="fab-icon-holder">
+                    <a target="_blank"
+                        href="https://www.google.com/maps/dir//'39.1764631,-76.6135502'/@39.1764631,-76.6157389,17z/data=!4m6!4m5!1m0!1m3!2m2!1d-76.6135502!2d39.1764631"><i
+                            class="icon ion-md-navigate"></i></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero-section-gallery">
+        <div class="hero-content animate-top" data-aos="fade-up" data-aos-anchor-placement="top-center"
+            data-aos-duration="700">
+            <h1 class="hero-title">About Us</h1>
+            <p class="hero-description">Explore our captivating story and become a part of our journey</p>
+        </div>
+    </section>
+
+
+
+    <section class="about-shot-info section-lg mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="about-content">
+                        <h2 class="mb-3 h2-blog">Uncover the Story of <br><span class="font-weight-bold">Fox Auto
+                                Services</span></h2>
+                        <p class="p-blog">Fox Auto Services, strategically located near Ritchie Highway in Glen Burnie,
+                            transcends the ordinary body shop experience. In just three years, we've evolved into the
+                            Hidden Gem of Baltimore, a testament to our unwavering commitment, expertise, and the trust
+                            of our community.</p>
+                        <p class="p-blog">Meet Salvador Vega, the visionary Owner, and Operations Manager. With a rich
+                            history of managing body shops across Rockville, Gaithersburg, Beltsville, and Baltimore,
+                            Salvador's dedication to efficiency, safety, and quality defines the ethos of Fox Auto
+                            Services.</p>
+                        <p class="p-blog">Choose Fox Auto Services and be a part of a narrative that prioritizes
+                            precision, integrity, and a dedication to ensuring your journey—on the road and with us—is a
+                            seamless and secure experience.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0 div-gap-right">
+                    <div class="img-container">
+                        <img loading="lazy" class="img-fluid img-about" src="images/gallery/qualityassurance.png"
+                            alt="About Us Fox 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="company-mission section-sm bg-gray">
+        <div class="container div-blog-gap">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mission-content">
+                        <h3>Our Vision</h3>
+                        <p class="p-blog">Our vision at Fox Auto Services extends beyond being a mere automotive service
+                            provider. We aspire to be the industry's foremost trailblazer, setting new benchmarks for
+                            excellence, safety, and quality. Envision a future where Fox Auto Services stands as a
+                            symbol of innovation and reliability, recognized not only for our technical prowess but also
+                            for our unwavering commitment to customer satisfaction.</p>
+                    </div>
+                    <img loading="lazy" src="images/realImages/Vission.JPG" alt="Our Vission"
+                        class="img-fluid mt-4 img2-about">
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <div class="vision-content">
+                        <h3>Our Mission</h3>
+                        <p class="p-blog">Our mission is to redefine the automotive service industry by delivering
+                            unparalleled commitment, expertise, and community trust. We are dedicated to efficiently
+                            managing the repair process, ensuring safety, and maintaining the highest quality standards.
+                            Join us on a journey where your safety and satisfaction are our top priorities, making your
+                            experience with Fox Auto Services smooth and worry-free.</p>
+                    </div>
+                    <img loading="lazy" src="images/realImages/Mission.JPG" alt="Our Mission"
+                        class="img-fluid mt-4 img2-about">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--
+Start Call To Action
+==================================== -->
+    <section class="call-to-action-2 section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Ready to experience top-notch automotive care? Schedule your service with Fox Auto Services
+                        today and embark on a journey of precision, safety, and quality. Your satisfaction is our
+                        priority. Let's make your road ahead smooth and worry-free."</h2>
+                </div>
+            </div> <!-- End row -->
+        </div> <!-- End container -->
+    </section> <!-- End section -->
+
+
+    <!--
+Start Call To Action
+==================================== -->
+    <!--     <section class="section gallery">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="title text-center">
+                        <h2>Sneak Peak Gallery</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore numquam esse vitae
+                            recusandae qui
+                            aspernatur, blanditiis, laboriosam dignissimos dolore facere provident ex? Porro,
+                            praesentium consectetur
+                            tempore. Nulla, error eius dolorem.</p>
+                        <div class="border"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="company-gallery">
+                        <img loading="lazy" src="images/gallery/qualityassurance.png" alt="">
+                        <img loading="lazy" src="images/gallery/qualityassurance.png" alt="">
+                        <img loading="lazy" src="images/gallery/qualityassurance.png" alt="">
+                        <img loading="lazy" src="images/gallery/qualityassurance.png" alt="">
+                        <img loading="lazy" src="images/gallery/qualityassurance.png" alt="">
+                        <img loading="lazy" src="images/gallery/qualityassurance.png" alt="">
+                        <img loading="lazy" src="images/gallery/qualityassurance.png" alt="">
+                        <img loading="lazy" src="images/gallery/qualityassurance.png" alt="">
+                        <img loading="lazy" src="images/gallery/qualityassurance.png" alt="">
+                        <img loading="lazy" src="images/gallery/qualityassurance.png" alt="">
+                        <img loading="lazy" src="images/gallery/qualityassurance.png" alt="">
+                        <img loading="lazy" src="images/gallery/qualityassurance.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- Sider -->
+    <section class="awards-section">
+        <div class="container">
+            <h2 class="section-title h2-blog">Awards and Recognitions</h2>
+            <p class="section-title p-blog">Founded in 2019, our Collision Center has
+                quickly become a pillar of trust within the local community. With a track record of servicing over <strong>5,000
+                    vehicles</strong> to date, we've earned the confidence of our customers through exceptional craftsmanship and
+                dedication. Our remarkable customer ratings stand as a testament to the unwavering quality and reliability
+                of our work, meticulously delivered by a team of highly skilled <strong>ASE certified technicians</strong>. Fox Auto Services
+                proudly holds the prestigious <strong>GOLD CLASS I-CAR certification</strong>, underscoring our commitment to excellence in
+                collision repair. Your satisfaction and the safety of your vehicle remain our top priorities, ensuring that
+                every repair reflects our dedication to unparalleled service and industry-leading expertise.</p>
+
+            <div class="wrapper-slider mb-5" data-aos="zoom-in-up" data-aos-offset="100">
+                <div class="slider-images-container">
+                    <div class="slider-track-custom">
+                        <!-- image code -->
+                        <div class="slide-image">
+                            <img src="images/certifications/aseLogo.png" alt="slide-logo">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/certifications/autpCarCenter.png" alt="slide-logo">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/certifications/goldClass.jpg" alt="slide-logo">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/certifications/iCar.png" alt="slide-logo">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/certifications/jasperTransimssions.png" alt="slide-logo">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/certifications/aseLogo.png" alt="slide-logo">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/certifications/autpCarCenter.png" alt="slide-logo">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/certifications/goldClass.jpg" alt="slide-logo">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/certifications/iCar.png" alt="slide-logo">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/certifications/jasperTransimssions.png" alt="slide-logo">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/certifications/aseLogo.png" alt="slide-logo">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/certifications/autpCarCenter.png" alt="slide-logo">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/certifications/goldClass.jpg" alt="slide-logo">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/certifications/iCar.png" alt="slide-logo">
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/certifications/jasperTransimssions.png" alt="slide-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <!-- Start Our Team
+		=========================================== -->
+
+    <!-- End section -->
+
+
+    <!--
+Start Call To Action
+==================================== -->
+    <section class="call-to-action section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8 text-center">
+                    <h2>Let's Create Something Together</h2>
+                    <h2 class="br">dlkashdlkashdla</h2>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, nisi elit
+                        consequat ipsum,
+                        nesagittis sem nid elit. Duis sed odio sitain elit.</p>
+                    <a href="request-estimate.html" class="btn btn-main">Request you Estimate!</a>
+                </div>
+            </div> <!-- End row -->
+        </div> <!-- End container -->
+    </section> <!-- End section -->
+
+
+
+    <!-- Maps -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.936460966356!2d-76.61641972307292!3d39.176165171665986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7fd40f7f97315%3A0x90a132335fd947d2!2sFox%20Auto%20Services!5e0!3m2!1ses!2ssv!4v1697073470899!5m2!1ses!2ssv"
+        width="100%" height="400" style="border:0;" style="overflow: auto;" style="z-index: 1;" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Maps -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer position-relative bg-color-footer text-white-50 py-5 wow fadeIn"
+        data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5 py-5">
+                <div class="col-lg-6 pe-lg-5">
+                    <a href="index.html" class="a-footer-img">
+                        <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="">
+                    </a>
+                    <p class="fs-5 mb-4 large-content">Fox Auto Services - Where Expertise Meets Excellence. Your
+                        Premier Destination
+                        for Automotive Solutions.</p>
+                    <p><i class="fa fa-map-marker-alt me-2"></i><a
+                            href="https://www.google.com/search?client=firefox-b-d&sca_esv=565110899&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AM9HkKlhdDA5AVtqwkHUaaNFacBs18l4fA:1694654084797&q=fox+auto+services+md&rflfq=1&num=10&rllag=39170807,-76889889,23804&ved=2ahUKEwjA-va19qiBAxVXQTABHS5yDL0QtgN6BAgfEAg#rlfi=hd:;si:10421666208944834514,l,ChRmb3ggYXV0byBzZXJ2aWNlcyBtZEj93_GI57OAgAhaKBAAEAEQAhgAGAEYAhgDIhRmb3ggYXV0byBzZXJ2aWNlcyBtZDICZW6SAQ5hdXRvX2JvZHlfc2hvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VNdGJrbFFSWEIzUlJBQqoBXQoIL20vMDRycmQQASoVIhFmb3ggYXV0byBzZXJ2aWNlcygAMh4QASIaBha8UxqTVUnxj51w3Sc0kHCKN0-S-VrWSQ4yGBACIhRmb3ggYXV0byBzZXJ2aWNlcyBtZA;mv:[[39.176808099999995,-76.58071939999999],[39.1648067,-77.1990598]]">129-A
+                            Roesler, Glen Burnie, MD 21060</a></p>
+                    <p><i class="fa fa-phone-alt me-2"></i><a href="tel:410-210-5939">410-210-5939</a></p>
+                    <p><i class="fa fa-phone-alt me-2"></i><a href="tel:410-304-3109">410-304-3109</a></p>
+                    <p><i class="fa fa-envelope me-2"></i><a
+                            href="mailto:info@foxautoservices.com">info@foxautoservices.com</a></p>
+                    <p><i class="fa fa-clock me-2 mb-4"></i><a href="https://maps.app.goo.gl/QGaiibVqZ2sjneK5A">8:30 AM
+                            to 5:30 PM, Monday through Friday</a></p>
+                    <div class="d-flex mt-5 container-quick-links">
+                        <a class="btn btn-lg-square btn-primary me-2"
+                            href="https://www.google.com/search?client=firefox-b-d&q=fox+auto+services+md#rlimm=10421666208944834514"><i
+                                class="fab fa-google"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.facebook.com/TheFOXAuto/"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2"
+                            href="https://www.yelp.com/biz/fox-auto-services-glen-burnie"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2"
+                            href="https://www.instagram.com/foxautoservices/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="row g-5 container-quick-links">
+                        <div class="col-sm-6">
+                            <h4 class="text-light mb-4">Quick Links</h4>
+                            <a class="btn btn-link" href="gallery.html">About Us</a>
+                            <a class="btn btn-link" href="how-we-do-it.html">How We Do it</a>
+                            <a class="btn btn-link" href="services.html">Mechanical Services</a>
+                            <a class="btn btn-link" href="terms&conditions.html">Terms & Condition</a>
+                            <a class="btn btn-link" href="privacy-policy.html">Privacy Policy</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <h4 class="text-light mb-4">Popular Links</h4>
+                            <a class="btn btn-link" href="gallery.html">About Us</a>
+                            <a class="btn btn-link" href="collision-repair.html">Collision services</a>
+                            <a class="btn btn-link" href="services.html">Mechanical Services</a>
+                            <a class="btn btn-link" href="request-estimate.html">Request an Estimate</a>
+                            <a class="btn btn-link" href="privacy-policy.html">Privacy Policy</a>
+                        </div>
+                        <div class="col-sm-12">
+                            <h4 class="text-light mb-4">Newsletter</h4>
+                            <div class="w-100">
+                                <div class="input-group">
+                                    <input type="text" class="form-control border-0 py-3 px-4 input-container"
+                                        style="background: rgba(255, 255, 255, .1);"
+                                        placeholder="Your Email Address"><button class="btn btn-primary px-4">Sign
+                                        Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center align-items-center">
+                    <p class="mb-0">&copy; <a href="#">Fox Auto Services</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+
+
+
+    <!-- Owl Carousel -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- My Scripts -->
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/455a5a3021.js" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Animation -->
+    <script>
+        $(document).ready(function () { $(window).scroll(function () { $(this).scrollTop() > 100 ? $("#navbar").css("background", "linear-gradient(135deg, rgba(34, 62, 122, 0.8) 0%, rgba(35, 57, 82, 0.8) 100%)") : $("#navbar").css("background", "linear-gradient(135deg, rgba(34, 62, 122, 1) 0%, rgba(35, 57, 82, 1) 100%)") }) }), $(document).ready(function () { setTimeout(function () { $(".loading-overlay").fadeOut(450, function () { $(this).remove() }) }, 200) });
+    </script>
+    <script>
+        AOS.init();
+    </script>
+    <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
+        src="https://portal.autoops.com/portal-scripts.js"></script>
+
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha384-e6i7NCt7d9lVszXlK6De5z9eqI4Hbi3Udu2xuBMLDBZ0FQeUKhymBhIiBvv1Rf8B"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OMQV3mUxMuP+AMK8AF6z89pB0vl9vK45gbcEStQeFx2L0C6L2veRUE8tjF5P9/2P"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -118,14 +118,56 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//Escribir automatico en home palabra "Experience"
-const typed = new Typed(".typed", {
-  strings: ["DOCTOR", "MEDIC", "NURSE", "HEALTH"],
-  typeSpeed: 95,
-  startDelay: 300,
-  backSpeed: 95,
-  backDelay: 2000,
-  loop: true,
-});
-
 /* GLide section functions */
+
+(function ($) {
+  "use strict";
+  //Escribir automatico en home palabra "Experience"
+  const typed = new Typed(".typed", {
+    strings: ["DOCTOR", "MEDIC", "NURSE", "HEALTH"],
+    typeSpeed: 95,
+    startDelay: 300,
+    backSpeed: 95,
+    backDelay: 2000,
+    loop: true,
+  });
+
+  /* ========================================================================= */
+  /*	Company Slider Carousel
+  /* =========================================================================  */
+  $(".company-gallery").slick({
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 667,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
+  });
+})(jQuery);
