@@ -459,25 +459,33 @@
 Essential Scripts
 =====================================-->
 
-    <!-- Own scripts -->
-    <script src="../js/scripts.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () { setTimeout(function () { $(".loading-overlay").fadeOut(450, function () { $(this).remove() }) }, 200) }), window.addEventListener("scroll", function () { var n = document.querySelector(".floating-header"); window.scrollY > 5 ? n.classList.add("visible") : n.classList.remove("visible") }), $(document).ready(function () { $(window).scroll(function () { $(this).scrollTop() > 100 ? $("#navbar").css("background", "linear-gradient(135deg, rgba(34, 62, 122, 0.8) 0%, rgba(35, 57, 82, 0.8) 100%)") : $("#navbar").css("background", "linear-gradient(135deg, rgba(34, 62, 122, 1) 0%, rgba(35, 57, 82, 1) 100%)") }) });
-    </script>
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Glide -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.js"></script>
+<!-- My Scripts -->
+<script src="../js/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/455a5a3021.js" crossorigin="anonymous"></script>
+<!-- navbar -->
+<script>
+    $(document).ready(function () { setTimeout(function () { $(".loading-overlay").fadeOut(450, function () { $(this).remove() }) }, 200) }), window.addEventListener("scroll", function () { var n = document.querySelector(".floating-header"); window.scrollY > 5 ? n.classList.add("visible") : n.classList.remove("visible") }), $(document).ready(function () { $(window).scroll(function () { $(this).scrollTop() > 100 ? $("#navbar").css("background", "linear-gradient(135deg, rgba(34, 62, 122, 0.8) 0%, rgba(35, 57, 82, 0.8) 100%)") : $("#navbar").css("background", "linear-gradient(135deg, rgba(34, 62, 122, 1) 0%, rgba(35, 57, 82, 1) 100%)") }) });
+</script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
+    src="https://portal.autoops.com/portal-scripts.js"></script>
 
-    <!-- Scripts de Bootstrap y jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-        integrity="sha384-e6i7NCt7d9lVszXlK6De5z9eqI4Hbi3Udu2xuBMLDBZ0FQeUKhymBhIiBvv1Rf8B"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OMQV3mUxMuP+AMK8AF6z89pB0vl9vK45gbcEStQeFx2L0C6L2veRUE8tjF5P9/2P"
-        crossorigin="anonymous"></script>
+<!-- Scripts de Bootstrap y jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha384-e6i7NCt7d9lVszXlK6De5z9eqI4Hbi3Udu2xuBMLDBZ0FQeUKhymBhIiBvv1Rf8B"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OMQV3mUxMuP+AMK8AF6z89pB0vl9vK45gbcEStQeFx2L0C6L2veRUE8tjF5P9/2P"
+    crossorigin="anonymous"></script>
 
 </body>
 

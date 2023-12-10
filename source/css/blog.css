@@ -11048,12 +11048,16 @@ textarea.form-control-lg {
   opacity: 1;
 }
 
+/* <!-- HTML !-->
+<button class="button-85" role="button">Button 85</button> */
+
+/* CSS */
 .button-85 {
-  padding: 1em;
+  padding: 0.6em 2em;
   border: none;
   outline: none;
-  color: rgb(255, 255, 255) !important;
-  background: #efa23d;
+  color: rgb(255, 255, 255);
+  background: #111;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -11063,10 +11067,7 @@ textarea.form-control-lg {
   -ms-user-select: none; /* Internet Explorer/Edge */
   -moz-user-select: none; /* Firefox */
   touch-action: manipulation;
-  font-size: 10px;
 }
-
-
 
 .button-85:before {
   content: "";
@@ -11087,10 +11088,10 @@ textarea.form-control-lg {
   left: -2px;
   background-size: 400%;
   z-index: -1;
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
   animation: glowing-button-85 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
   border-radius: 100px;
@@ -11139,10 +11140,6 @@ textarea.form-control-lg {
 }
 .navbar-nav{
   font-size: 20px;
-}
-.button-85 a:hover {
-  color: white !important;
-  transform: none !important;
 }
 .offcanvas-body ul li a:hover{
   color: #fc6701 !important;
@@ -11295,16 +11292,27 @@ z-index: 1;
   width: 500px;
 }
 .nav-item ul li a{
-justify-content: center;
-color: white;
-margin-left: 10px;
-font-size: 17px;
+  justify-content: center;
+  color: white;
+  margin-left: 10px;
+  font-size: 17px;
 }
 .dropdown-menu{
-justify-content: center;
-background-color: #284880;
-width: 170px;
-height: 50px;
+  justify-content: center;
+  background-color: rgba(45, 62, 97, 0.9);
+  width: 122%;
+  height: auto;
+}
+@media (min-width: 769px) {
+  .dropdown-menu{
+    justify-content: center;
+    background-color: rgba(45, 62, 97, 0.9);
+    width: 200%;
+    height: auto;
+  }
+}
+.dropdown-item{
+  width: 90%;
 }
 
 
