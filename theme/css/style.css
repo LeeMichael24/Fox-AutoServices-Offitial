@@ -3008,11 +3008,15 @@ section{
 ==================================================================*/
 .call-to-action {
   padding: 100px 0;
-  background: url("../images/gallery/ejemplo3.jpg");
+  background: linear-gradient(rgba(23, 42, 84, 0.7), rgba(23, 42, 84, 0.7)), url("../images/gallery/ejemplo3.jpg");;
   background-size: cover;
   color: #fff;
 }
+
+
 .call-to-action h2 {
+  font-family: 'Aldrich', sans-serif !important;
+  color: #fc6701;
   line-height: 1.5;
 }
 .call-to-action p {
