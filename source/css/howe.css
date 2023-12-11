@@ -24,7 +24,7 @@ main .main-message{
 
 #timeline{
     font-family: 'Nunito', sans-serif;
-    width: 100% !important;
+    width: 100%;
 }
 
 .step-image {
@@ -204,7 +204,7 @@ main .main-message{
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .timeline ul li .step-image {
         position: absolute;
         top: 70px;
@@ -215,11 +215,11 @@ main .main-message{
     }
     
     .timeline ul li:nth-child(odd) .step-image {
-        right: -420px;
+        right: -220px;
     }
     
     .timeline ul li:nth-child(even) .step-image {
-        left: -420px;
+        left: -220px;
     }
     
     

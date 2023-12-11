@@ -739,7 +739,7 @@ section{
 /* Estilos comunes para tamaños de pantalla de escritorio */
 @media (min-width: 1024px) {
   .hero-section {
-    height: 45vh;
+    height: auto;
     padding: 90px 0;
   }
   .hero-title {
@@ -756,7 +756,7 @@ section{
 /* Estilos comunes para tamaños de pantalla grandes */
 @media (min-width: 1500px) {
   .hero-section {
-    height: 40vh;
+    height: auto;
     padding: 110px 0;
   }
   .hero-title{
@@ -774,7 +774,7 @@ section{
   .hero-section {
     margin-top: 20px;
     padding: 100px 0;
-    height: 38vh;
+    height: auto;
   }
   .hero-title {
     font-size: 50px;
@@ -790,8 +790,8 @@ section{
 /* Estilos comunes para tamaños de pantalla móviles */
 @media (min-width: 375px) and (max-width: 767px) {
   .hero-section {
-    height: 37vh;
-    padding: 90px 0;
+    height: 38vh;
+    padding: 100px 0;
   }
   .hero-title {
     font-size: 34px;
@@ -3236,7 +3236,7 @@ section{
 
 @media (max-width: 1000px){
   .timeline {
-      width: 100% !important;
+      width: 100%;
   } 
 }
 
