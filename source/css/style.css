@@ -2941,6 +2941,8 @@ section{
 .p-blog {
   font-size: 18px;
   line-height: 1.6;
+  color: black;
+  font-weight: 400;
 }
 
 .img-about {
@@ -2968,7 +2970,7 @@ section{
 .vision-content h3 {
   font-family: 'Aldrich', sans-serif !important;
   font-size: 30px;
-  color: #007bff;
+  color: #fc6701;
   font-size: 30px !important;
 }
 
