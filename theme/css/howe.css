@@ -19,10 +19,6 @@
 /* Hero styles */
 
 
-main .main-message{
-    transform: translateY(20%) !important;
-}
-
 /* Subtitle styles */
 .subtitle{
     position: relative;

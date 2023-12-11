@@ -699,6 +699,7 @@ section{
     text-align: center;
   }
   .hero-section-how-we-do-it{
+    max-width: 100%;
     font-family: 'Aldrich', sans-serif;
     background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/realImages/fondoShop.jpg'); /* Reemplaza con tu imagen de héroe */
     background-size: cover;
@@ -2981,7 +2982,7 @@ section{
 .vision-content h3 {
   font-family: 'Aldrich', sans-serif !important;
   font-size: 30px;
-  color: #007bff;
+  color: #fc6701;
   font-size: 30px !important;
 }
 
@@ -3113,4 +3114,278 @@ section{
 /* ABOUT SECTION */
 
 
+
+/* How We Do ir Section */
+/* Hero styles */
+
+
+/* Subtitle styles */
+.subtitle{
+  position: relative;
+  margin-bottom: -5rem;
+}
+
+#timeline{
+  font-family: 'Nunito', sans-serif;
+}
+
+.step-image {
+  width: 100%;
+  overflow: hidden; /* Asegura que la imagen no se desborde del contenedor */
+  border-radius: 5rem;
+}
+
+.step-image img {
+  width: 100%;
+  height: auto;
+  display: block; /* Evita el espacio adicional debajo de la imagen */
+}
+
+.timeline{
+  position: relative;
+  margin: 0 auto;
+  margin-top: -8rem;
+  padding: 40px 0;
+  width: 1000px;
+  box-sizing: border-box;
+}
+
+.timeline:before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #c5c5c5;
+}
+
+.timeline ul{
+  margin: 0;
+  padding: 0;
+
+}
+
+.timeline ul li{
+  list-style: none;
+  position: relative;
+  width:50%;
+  padding: 20px 40px;
+  box-shadow: border-box;
+}
+
+.timeline ul li:nth-child(odd){
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline ul li:nth-child(even){
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.content{
+  padding-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd):before{
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: rgba(252, 103, 1, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(252, 103, 1, .2);
+}
+
+.timeline ul li:nth-child(even):before{
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: rgba(252, 103, 1, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(252, 103, 1, .2);
+}
+
+.timeline ul li h3{
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 2.3rem;
+  padding-bottom: 1.3rem;
+  letter-spacing: 1.2px;
+  font-family: 'Aldrich', sans-serif;
+  color: rgba(252, 103, 1, 1);
+}
+
+.timeline ul li p{
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.timeline ul li .time h4{
+  margin: 0;
+  padding: 0;
+  font-size: 1.9rem;
+}
+
+.timeline ul li:nth-child(odd) .time{
+  position: absolute;
+  top: 12px;
+  right: -120px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgba(252, 103, 1, 1);
+  color: white;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(252, 103, 1, .3);
+}
+
+.timeline ul li:nth-child(even) .time{
+  position: absolute;
+  top: 12px;
+  left: -120px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgba(252, 103, 1, 1);
+  color: white;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(252, 103, 1, .3);
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px){
+  .timeline {
+      width: 100%;
+  } 
+}
+
+@media (max-width: 767px){
+
+  .timeline {
+      width: 100%;
+      padding-bottom: 0; 
+  } 
+
+  .timeline:before{
+      left: 20px;
+  }
+
+  .timeline ul li:nth-child(odd){
+      width: 100%;
+      text-align: left;
+      padding: 50px;
+      padding-bottom: 50px;
+  }
+  .timeline ul li:nth-child(even){
+      width: 100%;
+      text-align: left;
+      padding: 50px;
+      padding-bottom: 50px;
+  }
+
+  .timeline li:nth-child(odd):before, 
+  .timeline li:nth-child(even):before{
+      top: -18px !important;
+      left: 16px !important;  
+  }
+
+  .timeline li:nth-child(odd) .time,
+  .timeline li:nth-child(even) .time{
+      top: -30px !important;
+      left: 50px !important;
+      max-width: 100px;
+      right: inherit !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .timeline ul li .step-image {
+      position: absolute;
+      top: 70px;
+      margin: 0;
+      padding: 8px 16px;
+      color: white;
+      border-radius: 5rem;
+  }
+  
+  .timeline ul li:nth-child(odd) .step-image {
+      right: -420px;
+  }
+  
+  .timeline ul li:nth-child(even) .step-image {
+      left: -420px;
+  }
+  
+  
+  .timeline ul li:nth-child(odd) {
+      position: relative;
+      margin-bottom: 20px; /* Ajusta el espacio entre los elementos según tus necesidades */
+  }
+  
+  .timeline ul li:nth-child(even) {
+      position: relative;
+      margin-bottom: 20px; /* Ajusta el espacio entre los elementos según tus necesidades */
+  }
+  
+  /* Ajustes para el Step 2 */
+  .timeline ul li:nth-child(2) {
+      margin-top: -20px; /* Ajusta el margen superior negativo según tus necesidades */
+  }
+  /* Ajustes para el Step 4 */
+  .timeline ul li:nth-child(4) {
+      margin-top: 110px; /* Ajusta el margen superior negativo según tus necesidades */
+  }
+  /* Ajustes para el Step 5 */
+  .timeline ul li:nth-child(5) {
+      margin-top: 110px; /* Ajusta el margen superior negativo según tus necesidades */
+  }
+  /* Ajustes para el Step 6 */
+  .timeline ul li:nth-child(6) {
+      margin-top: 150px; /* Ajusta el margen superior negativo según tus necesidades */
+  }
+  /* Ajustes para el Step 7 */
+  .timeline ul li:nth-child(7) {
+      margin-top: 190px; /* Ajusta el margen superior negativo según tus necesidades */
+  }
+  /* Ajustes para el Step 8 */
+  .timeline ul li:nth-child(8) {
+      margin-top: 100px; /* Ajusta el margen superior negativo según tus necesidades */
+  }
+}
+@media (min-width: 810px) {
+  .timeline ul li:nth-child(odd) .step-image {
+      right: -450px;
+  }
+  
+  .timeline ul li:nth-child(even) .step-image {
+      left: -450px;
+  }
+}
+@media (min-width: 910px) {
+  .timeline ul li:nth-child(odd) .step-image {
+      right: -520px;
+  }
+  
+  .timeline ul li:nth-child(even) .step-image {
+      left: -520px;
+  }
+}
+@media (max-width: 767px) {
+  
+  .timeline ul li:nth-child(odd) .step-image {
+      right: -120px;
+  }
+  
+  .timeline ul li:nth-child(even) .step-image {
+      left: -120px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
