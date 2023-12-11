@@ -10,6 +10,10 @@
 html {
   scroll-behavior: smooth;
 }
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 container{
   max-width: 390px;
 }
@@ -322,12 +326,13 @@ section{
 .fab-container{
     position: fixed;
     bottom: 3rem;
-    right: 2.5rem !important;
+    right: 2rem;
     z-index: 9999;
     cursor: pointer;
+    max-width: 100%;
 }
 .faq-2{
-  bottom: 12rem !important;
+  bottom: 10.5rem !important;
 }
 
 .fab-icon-holder{
@@ -645,191 +650,158 @@ section{
 
 /* Hero style for services */
 /* Estilos generales para el hero section */
-.hero-section-services {
-    font-family: 'Aldrich', sans-serif;
-    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.395) 0%, rgba(35, 57, 82, 0.479) 100%) ,url('../images/coverServices.jpg'); /* Reemplaza con tu imagen de héroe */
-    background-size: cover;
-    background-position: 50% 50%;
-    color: #fff;
-    height: 47vh;
-    text-align: center;
-  }
+.hero-section {
+  font-family: 'Aldrich', sans-serif;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: #fff;
+  height: 50vh;
+  text-align: center;
+  padding: 60px 0; /* Espaciado superior e inferior para pantallas móviles */
+  margin-top: 30px;
+}
+.hero-title,
+.section-title,
+.insta-h1 {
+  color: #FC6701;
+  font-size: 3rem;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.hero-description,
+.insta-h3,
+.award-item p {
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.section-erc-list-item,
+.section-insta-info p,
+.award-item p {
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+  color: #333;
+  margin-top: 10px;
+}
+
 .hero-section-gallery {
-    font-family: 'Aldrich', sans-serif;
-    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/gallery/gallery-section.jpg'); /* Reemplaza con tu imagen de héroe */
-    background-size: cover;
-    background-position: 50% 50%;
-    color: #fff;
-    height: 47vh;
-    text-align: center;
-  }
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%), url('../images/gallery/gallery-section.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
 .hero-section-AboutUs {
-    font-family: 'Aldrich', sans-serif;
-    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/realImages/HowWeDoIt.png'); /* Reemplaza con tu imagen de héroe */
-    background-size: cover;
-    background-position: 50% 100%;
-    color: #fff;
-    height: 47vh;
-    text-align: center;
-  }
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%), url('../images/realImages/HowWeDoIt.png');
+  background-position: 50% 100%;
+  background-size: cover;
+}
+
 .hero-section-collision {
-    font-family: 'Aldrich', sans-serif;
-    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.518) 0%, rgba(35, 57, 82, 0.659) 100%) ,url('../images/collisionRepairHero.jpg'); /* Reemplaza con tu imagen de héroe */
-    background-size: cover;
-    background-position: 50% 70%;
-    color: #fff;
-    height: 47vh;
-    text-align: center;
-  }
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.518) 0%, rgba(35, 57, 82, 0.659) 100%), url('../images/collisionRepairHero.jpg');
+  background-position: 50% 70%;
+  background-size: cover;
+}
+
 .hero-section-estimate {
-    font-family: 'Aldrich', sans-serif;
-    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/RequestAnEstimate.jpg'); /* Reemplaza con tu imagen de héroe */
-    background-size: cover;
-    background-position: 50% 90%;
-    color: #fff;
-    height: 47vh;
-    text-align: center;
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 100%), url('../images/RequestAnEstimate.jpg');
+  background-position: 50% 90%;
+  background-size: cover;
+}
+
+.hero-section-how-we-do-it {
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 100%), url('../images/realImages/fondoShop.jpg');
+  background-size: cover;
+  background-position: 50% 70%;
+}
+.hero-section-services {
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 100%), url('../images/coverServices.jpg');
+  background-position: 50% 90%;
+  background-size: cover;
+}
+
+.hero-title {
+  color: #FC6701;
+}
+
+/* Estilos comunes para tamaños de pantalla de escritorio */
+@media (min-width: 1024px) {
+  .hero-section {
+    height: 45vh;
+    padding: 90px 0;
   }
-  .hero-section-how-we-do-it{
-    max-width: 100%;
-    font-family: 'Aldrich', sans-serif;
-    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/realImages/fondoShop.jpg'); /* Reemplaza con tu imagen de héroe */
-    background-size: cover;
-    background-position: 50% 50%;
-    color: #fff;
-    height: 47vh;
-    text-align: center;
+  .hero-title {
+    font-size: 50px;
+    margin-bottom: 20px;
   }
-  
-  .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 60px 0; /* Espaciado superior e inferior para pantallas móviles */
-    margin-top: 30px;
+  .hero-description {
+    font-size: 18px;
+    margin-bottom: 100px;
+    margin: 0 2rem 0;
+  }
+}
+
+/* Estilos comunes para tamaños de pantalla grandes */
+@media (min-width: 1500px) {
+  .hero-section {
+    height: 40vh;
+    padding: 110px 0;
   }
   .hero-title{
-    color: #FC6701;
+    font-size: 60px ;
+    margin-bottom: 35px;
   }
-  
-  /* Estilos para tamaños de pantalla de escritorio */
-  @media (min-width: 1024px) {
-    .hero-section-services {
-      height: 40vh;
-      padding: 110px 0; /* Espaciado superior e inferior para pantallas de escritorio */
+  .hero-description {
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+}
 
-    }
-    .hero-section-gallery {
-      height: 40vh;
-      padding: 110px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-collision {
-      height: 40vh;
-      padding: 110px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-estimate {
-      height: 40vh;
-      padding: 110px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-how-we-do-it {
-      height: 40vh;
-      padding: 110px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-AboutUs{
-      height: 40vh;
-      padding: 110px 0;
-    }
-    .hero-title {
-      font-size: 60px;
-      margin-bottom: 20px;
-    }
-    .hero-description {
-      font-size: 26px;
-      margin-bottom: 100px;
-    }
+/* Estilos comunes para tamaños de pantalla medianos (tabletas, etc.) */
+@media (max-width: 1023px) {
+  .hero-section {
+    margin-top: 20px;
+    padding: 100px 0;
+    height: 38vh;
+  }
+  .hero-title {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .hero-description {
+    font-size: 16px;
+    margin: 0 3rem 0;
+    margin-bottom: 20px;
+  }
+}
 
+/* Estilos comunes para tamaños de pantalla móviles */
+@media (min-width: 375px) and (max-width: 767px) {
+  .hero-section {
+    height: 37vh;
+    padding: 90px 0;
   }
-  
-  /* Estilos para tamaños de pantalla medianos (tabletas, etc.) */
-  @media (max-width: 1023px) {
-    .hero-section-services {
-      margin-top: 20px;
-      padding: 100px 0; /* Espaciado superior e inferior para pantallas medianas */
-      height: 38vh;
-    }
-    .hero-section-gallery {
-      height: 38vh;
-      padding: 100px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-collision {
-      background-position: 50% 30%;
-      padding: 100px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-      height: 38vh;
-    }
-    .hero-section-estimate {
-      padding: 100px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-      height: 38vh;
-    }
-    .hero-section-how-we-do-it {
-      height: 38vh;
-      padding: 100px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-AboutUs{
-      height: 38vh;
-      padding: 100px 0;
-    }
-    .hero-title {
-      font-size: 50px;
-      margin-bottom: 15px;
-    }
-    .hero-description {
-      font-size: 20px;
-      padding: 10px;
-      margin-bottom: 25px;
-    }
+  .hero-title {
+    font-size: 34px;
+    margin-bottom: 10px;
   }
-  
-  /* Estilos para tamaños de pantalla móviles */
-  @media (max-width: 767px) {
-    .hero-section-services {
-      height: 35vh;
-      padding: 90px 0; /* Espaciado superior e inferior para pantallas móviles */
-    }
-    .hero-section-gallery {
-      height: 35vh;
-      padding: 90px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-collision {
-      height: 35vh;
-      padding: 90px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-estimate {
-      height: 35vh;
-      padding: 90px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-how-we-do-it {
-      height: 35vh;
-      padding: 90px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-AboutUs{
-      height: 35vh;
-      padding: 90px 0;
-    }
-    .hero-title {
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
-    .hero-description {
-      font-size: 16px;
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-    .hero-content{
-        margin-top: 30px;
-    }
-    .hero-section{
-        background-position: 70% 50%;
-    }
+  .hero-description {
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 20px;
   }
+  .hero-content {
+    margin-top: 30px;
+  }
+  .hero-section {
+    background-position: 70% 50%;
+  }
+}
+
   
   /* Estilos para el botón (puedes personalizarlos más) */
   .hero-btn {
@@ -954,10 +926,12 @@ section{
     }
     
     .fab-container{
-        bottom: 5rem;
-        right: 5rem;
+        bottom: 2.5rem;
+        right: 3rem;
     }
-
+    .faq-2{
+      bottom: 10rem !important;
+    }
 
     .main-message{
         max-width: 100%;
@@ -2994,7 +2968,7 @@ section{
 .vision-content h3 {
   font-family: 'Aldrich', sans-serif !important;
   font-size: 30px;
-  color: #fc6701;
+  color: #007bff;
   font-size: 30px !important;
 }
 
@@ -3127,9 +3101,8 @@ section{
 
 
 
-/* How We Do ir Section */
-/* Hero styles */
 
+/* How We Do ir Section */
 
 /* Subtitle styles */
 .subtitle{
@@ -3158,7 +3131,7 @@ section{
   margin: 0 auto;
   margin-top: -8rem;
   padding: 40px 0;
-  width: 1000px;
+  width: 100vh;
   box-sizing: border-box;
 }
 
@@ -3275,14 +3248,14 @@ section{
 
 @media (max-width: 1000px){
   .timeline {
-      width: 100%;
+      width: 100% !important;
   } 
 }
 
 @media (max-width: 767px){
 
   .timeline {
-      width: 100%;
+      width: 100% !important;
       padding-bottom: 0; 
   } 
 
@@ -3400,3 +3373,4 @@ section{
       left: -120px;
   }
 }
+/* End how we do it */

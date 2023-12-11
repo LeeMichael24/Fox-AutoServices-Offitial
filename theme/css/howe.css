@@ -19,6 +19,10 @@
 /* Hero styles */
 
 
+main .main-message{
+    transform: translateY(20%) !important;
+}
+
 /* Subtitle styles */
 .subtitle{
     position: relative;
@@ -27,6 +31,7 @@
 
 #timeline{
     font-family: 'Nunito', sans-serif;
+    width: 100% !important;
 }
 
 .step-image {
