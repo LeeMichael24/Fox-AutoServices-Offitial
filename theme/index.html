@@ -25,7 +25,9 @@
     <meta property="og:image" content="https://www.foxautoservices.com/gallery">
     <meta property="og:url" content="https://www.foxautoservices.com">
 
-
+    <!-- Season snow -->
+    <!-- <script defer src="https://app.embed.im/snow.js"></script> -->
+    <!-- Season snow-->
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
@@ -37,6 +39,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
     <!--Our own stylesheet-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/seasonEffects.css">
     <!-- font-awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
@@ -58,8 +61,11 @@
         <div class="container">
 
             <!-- Logo -->
-            <a class="navbar-brand" href="index.html"><img src="images/fas_neonthorizontal.png"
+            <a class="navbar-brand " href="index.html"><img src="images/fas_neonthorizontal.png"
                     alt="Fox Auto Services"></a>
+            <!-- Logo Crhistmas-->
+            <!-- <a class="navbar-brand " href="index.html"><img src="images/season/christmas/foxLogoChristmas.png"
+                    alt="Fox Auto Services"></a> -->
 
             <!-- Toggle BTN-->
             <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
@@ -68,7 +74,7 @@
             </button>
 
             <!-- SideBar -->
-            <div class="sidebar-nav-header offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar"
+            <div class="sidebar-nav-header offcanvas offcanvas-end snowflake" tabIndex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
 
                 <!-- Sidebar Header -->
@@ -85,26 +91,32 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="aboutUs.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              About Us
+                            <a class="nav-link dropdown-toggle active" href="aboutUs.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="aboutUs.html">Our Story</a></li>
-                              <li><a class="dropdown-item" href="blog.html">Our Blog</a></li>
-                              <li>
-                                <hr class="dropdown-divider">
-                              </li>
-                              <li><a class="dropdown-item" href="how-we-do-it.html">How We Do It</a></li>
+                                <li><a class="dropdown-item" href="aboutUs.html">Our Story</a></li>
+                                <li><a class="dropdown-item" href="blog.html">Our Blog</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="how-we-do-it.html">How We Do It</a></li>
                             </ul>
-                          </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link active" href="services.html">Mechanical Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="services.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Automate Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services.html">Mechanical Services</a></li>
+                                <li><a class="dropdown-item" href="collision-repair.html">Collision Services</a></li>
+                                <li>
+                            </ul>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link active" href="gallery.html">Social Media</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link active" href="collision-repair.html">Collision Services</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link active" href="request-estimate.html">Request an Estimate</a>
@@ -177,63 +189,76 @@
     <!-- Cards Content Social media-->
     <section class="features">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="feature-block d-lg-flex">
-                
-                <div class="feature-item mb-5 mb-lg-0 sec-scale-card" data-aos="fade-up-right" data-aos-offset="150">
-                  <div class="feature-icon mb-4">
-                    <a class="card-social-media" href="https://www.instagram.com/foxautoservices/" target="_blank">
-                      <img src="images/instaLogo.png" alt="Fox Auto Services">
-                    </a>
-                  </div>
-                  <span class="span-card-media">Discover Our Visual Journey</span>
-                  <h4 class="mb-3 h4-cards-media">Behind the Scenes in Glen Burnie</h4>
-                  <p class="mb-4">Get an exclusive look at our services and Glen Burnie adventures. Follow us on Instagram!</p>
-                  <a href="https://www.instagram.com/foxautoservices/" class="btn btn-main btn-round-full" target="_blank">Follow Us</a>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="feature-block d-lg-flex">
+
+                        <div class="feature-item mb-5 mb-lg-0 sec-scale-card" data-aos="fade-up-right"
+                            data-aos-offset="150">
+                            <div class="feature-icon mb-4">
+                                <a class="card-social-media" href="https://www.instagram.com/foxautoservices/"
+                                    target="_blank">
+                                    <img src="images/instaLogo.png" alt="Fox Auto Services">
+                                </a>
+                            </div>
+                            <span class="span-card-media">Discover Our Visual Journey</span>
+                            <h4 class="mb-3 h4-cards-media">Behind the Scenes in Glen Burnie</h4>
+                            <p class="mb-4">Get an exclusive look at our services and Glen Burnie adventures. Follow us
+                                on Instagram!</p>
+                            <a href="https://www.instagram.com/foxautoservices/" class="btn btn-main btn-round-full"
+                                target="_blank">Follow Us</a>
+                        </div>
+
+                        <div class="feature-item mb-5 mb-lg-0 sec-scale-card" data-aos="fade-up" data-aos-offset="150">
+                            <div class="feature-icon mb-4">
+                                <a class="card-social-media" href="https://www.facebook.com/TheFOXAuto" target="_blank">
+                                    <img src="images/facebook.png" alt="Fox Auto Services">
+                                </a>
+                            </div>
+                            <span class="span-card-media">Join Our Facebook Community</span>
+                            <h4 class="mb-4 h4-cards-media">Stay Connected with Us</h4>
+                            <p class="mb-4">Discover our latest updates, promotions, and community events. Like us on
+                                Facebook!</p>
+                            <a href="https://www.facebook.com/TheFOXAuto" class="btn btn-main btn-round-full"
+                                target="_blank">Like Us</a>
+                        </div>
+
+                        <div class="feature-item mb-5 mb-lg-0 sec-scale-card" data-aos="fade-up" data-aos-offset="150">
+                            <div class="feature-icon mb-5">
+                                <a class="card-social-media1 mb-5" href="https://maps.app.goo.gl/e2cvzMuKzTeKHGfn9"
+                                    target="_blank">
+                                    <img src="images/logoGoogle.png" alt="Fox Auto Services">
+                                </a>
+                            </div>
+                            <span class="span-card-media">Explore Our Location on Google Maps</span>
+                            <h4 class="mb-3 h4-cards-media">Conveniently Located in Glen Burnie</h4>
+                            <p class="mb-4">Find us easily on Google Maps. Discover the route to ultimate relaxation and
+                                rejuvenation!</p>
+                            <a href="https://maps.app.goo.gl/e2cvzMuKzTeKHGfn9" class="btn btn-main btn-round-full"
+                                target="_blank">Get Directions</a>
+                        </div>
+
+                        <div class="feature-item mb-5 mb-lg-0 sec-scale-card" data-aos="fade-up-left"
+                            data-aos-offset="150">
+                            <div class="feature-icon mb-4">
+                                <a class="card-social-media"
+                                    href="https://www.yelp.com/biz/fox-auto-services-glen-burnie" target="_blank">
+                                    <img src="images/yelp.png" alt="Fox Auto Services">
+                                </a>
+                            </div>
+                            <span class="span-card-media">Check Out Our Reviews on Yelp</span>
+                            <h4 class="mb-3 h4-cards-media">Glen Burnie's Ultimate Relaxation Spot</h4>
+                            <p class="mb-4">See what our customers are saying on Yelp. Join the conversation and share
+                                your experience!</p>
+                            <a href="https://www.yelp.com/biz/fox-auto-services-glen-burnie"
+                                class="btn btn-main btn-round-full" target="_blank">Read Reviews</a>
+                        </div>
+
+                    </div>
                 </div>
-      
-                <div class="feature-item mb-5 mb-lg-0 sec-scale-card" data-aos="fade-up" data-aos-offset="150">
-                  <div class="feature-icon mb-4">
-                    <a class="card-social-media" href="https://www.facebook.com/TheFOXAuto" target="_blank">
-                      <img src="images/facebook.png" alt="Fox Auto Services">
-                    </a>
-                  </div>
-                  <span class="span-card-media">Join Our Facebook Community</span>
-                  <h4 class="mb-4 h4-cards-media">Stay Connected with Us</h4>
-                  <p class="mb-4">Discover our latest updates, promotions, and community events. Like us on Facebook!</p>
-                  <a href="https://www.facebook.com/TheFOXAuto" class="btn btn-main btn-round-full" target="_blank">Like Us</a>
-                </div>
-      
-                <div class="feature-item mb-5 mb-lg-0 sec-scale-card" data-aos="fade-up" data-aos-offset="150">
-                  <div class="feature-icon mb-5">
-                    <a class="card-social-media1 mb-5" href="https://maps.app.goo.gl/e2cvzMuKzTeKHGfn9" target="_blank">
-                      <img src="images/logoGoogle.png" alt="Fox Auto Services">
-                    </a>
-                  </div>
-                  <span class="span-card-media">Explore Our Location on Google Maps</span>
-                  <h4 class="mb-3 h4-cards-media">Conveniently Located in Glen Burnie</h4>
-                  <p class="mb-4">Find us easily on Google Maps. Discover the route to ultimate relaxation and rejuvenation!</p>
-                  <a href="https://maps.app.goo.gl/e2cvzMuKzTeKHGfn9" class="btn btn-main btn-round-full" target="_blank">Get Directions</a>
-                </div>
-      
-                <div class="feature-item mb-5 mb-lg-0 sec-scale-card" data-aos="fade-up-left" data-aos-offset="150">
-                  <div class="feature-icon mb-4">
-                    <a class="card-social-media" href="https://www.yelp.com/biz/fox-auto-services-glen-burnie" target="_blank">
-                      <img src="images/yelp.png" alt="Fox Auto Services">
-                    </a>
-                  </div>
-                  <span class="span-card-media">Check Out Our Reviews on Yelp</span>
-                  <h4 class="mb-3 h4-cards-media">Glen Burnie's Ultimate Relaxation Spot</h4>
-                  <p class="mb-4">See what our customers are saying on Yelp. Join the conversation and share your experience!</p>
-                  <a href="https://www.yelp.com/biz/fox-auto-services-glen-burnie" class="btn btn-main btn-round-full" target="_blank">Read Reviews</a>
-                </div>
-      
-              </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
 
 
@@ -328,7 +353,6 @@
 
     <section class="section-about-us mt-5">
         <di class="box box-image">
-            <!-- <img src="images/realImages/whyChoosingUs.png" alt="whyChoosingUs"> -->
             <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -388,6 +412,7 @@
 
             <button class="mt-5 btn-moreAbout" data-aos="flip-right" data-aos-duration="1200"><a class="a-about"
                     href="aboutUs.html">More about us</a></button>
+
         </div>
     </section>
     <!-- Begin Adventure section END -->

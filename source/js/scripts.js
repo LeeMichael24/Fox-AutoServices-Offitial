@@ -2,6 +2,23 @@
 /* const selectElement = (s) => document.querySelector(s); */
 
 //Open menu on click
+document.addEventListener("DOMContentLoaded", function () {
+  // Verificar si el ancho de la ventana es mayor que 992px (ajusta según sea necesario)
+  if (window.innerWidth > 992) {
+      var dropdowns = document.querySelectorAll('.navbar-nav .nav-item.dropdown');
+
+      dropdowns.forEach(function (dropdown) {
+          dropdown.addEventListener('mouseenter', function () {
+              this.querySelector('.dropdown-menu').classList.add('show');
+          });
+
+          dropdown.addEventListener('mouseleave', function () {
+              this.querySelector('.dropdown-menu').classList.remove('show');
+          });
+      });
+  }
+});
+
 selectElement(".open").addEventListener("click", () => {
   selectElement(".nav-list").classList.add("active");
 });
