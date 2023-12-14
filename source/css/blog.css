@@ -8096,7 +8096,7 @@ textarea.form-control-lg {
 }
 
 .fw-bolder {
-  font-weight: bolder !important;
+  font-weight: 600 !important;
 }
 
 .lh-1 {
@@ -11044,6 +11044,9 @@ textarea.form-control-lg {
 
 .header-container{
   margin-top: 100px !important;
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 20%), url('../images/blog/blogPic.jpg');
+  background-size: cover;
+  background-position: 50% 43%;
 }
 @media screen and (min-width: 950px){
   

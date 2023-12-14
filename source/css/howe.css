@@ -246,11 +246,11 @@ main .main-message{
     }
     /* Ajustes para el Step 6 */
     .timeline ul li:nth-child(6) {
-        margin-top: 150px; /* Ajusta el margen superior negativo según tus necesidades */
+        margin-top: 90px; /* Ajusta el margen superior negativo según tus necesidades */
     }
     /* Ajustes para el Step 7 */
     .timeline ul li:nth-child(7) {
-        margin-top: 190px; /* Ajusta el margen superior negativo según tus necesidades */
+        margin-top: 230px; /* Ajusta el margen superior negativo según tus necesidades */
     }
     /* Ajustes para el Step 8 */
     .timeline ul li:nth-child(8) {
@@ -273,6 +273,10 @@ main .main-message{
     
     .timeline ul li:nth-child(even) .step-image {
         left: -520px;
+    }
+    /* Ajustes para el Step 6 */
+    .timeline ul li:nth-child(6) {
+        margin-top: 150px; /* Ajusta el margen superior negativo según tus necesidades */
     }
 }
 @media (max-width: 767px) {

@@ -3128,6 +3128,9 @@ section{
   height: auto;
   display: block; /* Evita el espacio adicional debajo de la imagen */
 }
+.step-image-size img {
+  max-height: 360px;
+}
 
 .timeline{
   position: relative;
