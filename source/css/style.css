@@ -313,8 +313,8 @@ section{
 .loader-div{
     width: 100vw;
     height: 100vh;
-    background: url('../images/logo.png') center no-repeat;
-    /* background: url('../images/season/christmas/logoCrhistmas.png') center no-repeat; */
+    /* background: url('../images/logo.png') center no-repeat; */
+    background: url('../images/season/christmas/logoCrhistmas.png') center no-repeat;
     background-size: contain;
     -webkit-animation: scaleAndFade 2.3s infinite; 
        -moz-animation: scaleAndFade 2.3s infinite; 
