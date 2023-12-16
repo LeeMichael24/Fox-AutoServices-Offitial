@@ -426,7 +426,35 @@ section{
   background-color: linear-gradient(135deg, rgb(34, 62, 122, 0) 0%, rgb(34, 62, 122, 0) 100%); /* Fondo transparente con opacidad 0.7 */
   transition: background-color 0.3s; /* Transición suave al cambiar la opacidad */
 }
+@media (min-width: 1440px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1540px;
+  }
+  .offcanvas-body ul li{
+    padding: 0 0.9rem 0;
+  }
+}
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1340px;
+  }
+  .offcanvas-body ul li{
+    padding: 0 0.9rem 0;
+  }
+}
+@media (min-width: 992px) {
+  .container, .container-lg, .container-md, .container-sm {
+    max-width: 1310px;
+  }
+  .offcanvas-body ul li{
+    padding: 0 0.6rem 0;
+  }
 
+  /* Esto es para menus muy grandes automative services*/
+  .dropdown-menu-large{
+    width: 280px !important;
+  }
+}
 .navbar-brand{ /* esto es la imagen del header */
   width: 170px;
   height: fit-content;
@@ -1270,7 +1298,7 @@ section{
   justify-content: center;
   background-color: rgba(45, 62, 97, 0.9);
   width: 122%;
-  height: auto;
+  height: 200px;
 }
 @media (min-width: 769px) {
   .dropdown-menu{
@@ -1280,8 +1308,24 @@ section{
     height: auto;
   }
 }
-.dropdown-item{
-  width: 90%;
+
+@media (max-width: 992px) {
+  .dropdown-item{
+    width: 90%;
+    height: auto;
+  }
+  .dropdown-menu{
+    justify-content: center;
+    background-color: rgba(45, 62, 97, 0.9);
+    width: 122%;
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .dropdown-item{
+    width: 90%;
+    height: 40px;
+  }
 }
 
 
