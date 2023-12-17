@@ -135,3 +135,28 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
+/* SEASON CHRISTMAS */
+document.addEventListener('DOMContentLoaded', function () {
+  function toggleSeasonalImages(showChristmas) {
+      const logos = document.querySelectorAll('.logo');
+
+      logos.forEach(function (logo) {
+          logo.style.display = 'none';
+      });
+
+      const logoToShow = showChristmas ? document.querySelector('.christmas-logo') : document.querySelector('.regular-logo');
+      logoToShow.style.display = 'block';
+  }
+
+  // Llama a toggleSeasonalImages con true para mostrar la imagen de Navidad
+  // y con false para mostrar la imagen regular
+  toggleSeasonalImages(true);
+
+  // Puedes cambiar a false si deseas mostrar la imagen regular
+  // toggleSeasonalImages(false);
+});
+
+
+/* SEASON CHRISTMAS */

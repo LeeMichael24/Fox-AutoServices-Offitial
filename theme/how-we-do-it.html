@@ -26,10 +26,15 @@
     <!-- Own styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/howe.css">
+    <link rel="stylesheet" href="css/seasonEffects.css">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- icon -->
     <link rel="icon" type="image/x-icon" href="images/fas_neont.png">
+
+    <!-- Season snow -->
+    <script defer src="https://app.embed.im/snow.js"></script>
+    <!-- Season snow-->
 </head>
 
 <body>
@@ -153,6 +158,21 @@
         </div>
     </section>
 
+    <!-- Contenedor de la guirnalda (fijo en la parte superior) -->
+    <div class="guirnalda-container-hero" data-aos="fade-up"
+    data-aos-anchor-placement="center-center" data-aos-delay="500">
+        <!-- Div general para la guirnalda continua -->
+        <div class="guirnalda-hero">
+            <!-- Divs individuales para cada imagen de guirnalda -->
+            <div class="imagen-guirnalda-hero" style="background-image: url('images/season/christmas/guirnalda1.png');">
+            </div>
+            <div class="imagen-guirnalda-hero" style="background-image: url('images/season/christmas/guirnalda1.png');">
+            </div>
+            <div class="imagen-guirnalda-hero" style="background-image: url('images/season/christmas/guirnalda1.png');">
+            </div>
+        </div>
+    </div>
+
 
     <!-- First Subtitle Section -->
     <section class="subtitle" id="first-steps">
@@ -247,7 +267,7 @@
                         <h4>Step 4</h4>
                     </div>
                     <div class="step-image step-image-size" data-aos="fade-left" data-aos-duration="900">
-                        <img src="images/how-we-do-it/paintingTest2.png" alt="Step 1 Image">
+                        <img src="images/how-we-do-it/screenTestImage.png" alt="Step 1 Image">
                     </div>
                 </li>
                 <li>
@@ -283,7 +303,7 @@
                         <h4>Step 6</h4>
                     </div>
                     <div class="step-image step-image-size" data-aos="fade-left" data-aos-duration="900">
-                        <img src="images/how-we-do-it/screenTestImage.png" alt="Step 1 Image">
+                        <img src="images/how-we-do-it/paintingTest2.png" alt="Step 1 Image">
                     </div>
                 </li>
                 <li>
@@ -403,7 +423,8 @@
             <div class="row g-5 py-5">
                 <div class="col-lg-6 pe-lg-5">
                     <a href="index.html" class="a-footer-img">
-                        <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="">
+                        <!-- <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="Fox logo footer"> -->
+                        <img class="mb-0 mt-0 img-footer" src="images/season/christmas/foxLogoChristmas.png" alt="Fox logo footer christmas">
                     </a>
                     <p class="fs-5 mb-4 large-content">Fox Auto Services - Where Expertise Meets Excellence. Your
                         Premier Destination

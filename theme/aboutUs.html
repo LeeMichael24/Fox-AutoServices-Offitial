@@ -19,6 +19,10 @@
     <meta name="keywords" content="about us, Fox Auto Service, car repair, auto maintenance">
     <meta name="author" content="Fox Auto Service">
 
+    <!-- Season snow -->
+    <script defer src="https://app.embed.im/snow.js"></script>
+    <!-- Season snow-->
+
     <!-- Open Graph (OG) meta tags for social media sharing -->
     <meta property="og:title" content="About Us | Fox Auto Service">
     <meta property="og:description"
@@ -47,6 +51,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
     <!--Our own stylesheet-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/seasonEffects.css">
     <!-- font-awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
@@ -69,11 +74,11 @@
         <div class="container">
 
             <!-- Logo -->
-            <a class="navbar-brand " href="index.html"><img src="images/fas_neonthorizontal.png"
-                    alt="Fox Auto Services"></a>
-            <!-- Logo Crhistmas-->
-            <!-- <a class="navbar-brand " href="index.html"><img src="images/season/christmas/foxLogoChristmas.png"
-                    alt="Fox Auto Services"></a> -->
+            <a class="navbar-brand logo" href="index.html">
+                <!-- <img src="images/fas_neonthorizontal.png" alt="Fox Auto Services" class="regular-logo"> -->
+                <!-- Christmas Logo -->
+                <img src="images/season/christmas/foxLogoChristmas.png" alt="Fox Auto Services" class="christmas-logo">
+            </a>
 
             <!-- Toggle BTN-->
             <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
@@ -177,7 +182,20 @@
         </div>
     </section>
 
-
+    <!-- Contenedor de la guirnalda (fijo en la parte superior) -->
+    <div class="guirnalda-container-hero" data-aos="fade-up"
+    data-aos-anchor-placement="center-center" data-aos-delay="500">
+        <!-- Div general para la guirnalda continua -->
+        <div class="guirnalda-hero">
+            <!-- Divs individuales para cada imagen de guirnalda -->
+            <div class="imagen-guirnalda-hero" style="background-image: url('images/season/christmas/guirnalda1.png');">
+            </div>
+            <div class="imagen-guirnalda-hero" style="background-image: url('images/season/christmas/guirnalda1.png');">
+            </div>
+            <div class="imagen-guirnalda-hero" style="background-image: url('images/season/christmas/guirnalda1.png');">
+            </div>
+        </div>
+    </div>
 
     <section class="about-shot-info section-lg mt-5">
         <div class="container">
@@ -208,8 +226,6 @@
             </div>
         </div>
     </section>
-
-
 
 
 
@@ -254,7 +270,8 @@ Start Call To Action
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center" data-aos="fade-up">
-                    <h2 class="text-white">Ready to experience top-notch automotive care? Schedule your service with Fox Auto Services
+                    <h2 class="text-white">Ready to experience top-notch automotive care? Schedule your service with Fox
+                        Auto Services
                         today and embark on a journey of precision, safety, and quality. Your satisfaction is our
                         priority"</h2>
                 </div>
@@ -308,12 +325,18 @@ Start Call To Action
         <div class="container">
             <h2 class="section-title h2-blog" data-aos="zoom-out-down">Awards and Recognitions</h2>
             <p class="section-title p-blog" data-aos="zoom-out-down">Founded in 2019, our Collision Center has
-                quickly become a pillar of trust within the local community. With a track record of servicing over <strong>5,000
-                    vehicles</strong> to date, we've earned the confidence of our customers through exceptional craftsmanship and
-                dedication. Our remarkable customer ratings stand as a testament to the unwavering quality and reliability
-                of our work, meticulously delivered by a team of highly skilled <strong>ASE certified technicians</strong>. Fox Auto Services
-                proudly holds the prestigious <strong>GOLD CLASS I-CAR certification</strong>, underscoring our commitment to excellence in
-                collision repair. Your satisfaction and the safety of your vehicle remain our top priorities, ensuring that
+                quickly become a pillar of trust within the local community. With a track record of servicing over
+                <strong>5,000
+                    vehicles</strong> to date, we've earned the confidence of our customers through exceptional
+                craftsmanship and
+                dedication. Our remarkable customer ratings stand as a testament to the unwavering quality and
+                reliability
+                of our work, meticulously delivered by a team of highly skilled <strong>ASE certified
+                    technicians</strong>. Fox Auto Services
+                proudly holds the prestigious <strong>GOLD CLASS I-CAR certification</strong>, underscoring our
+                commitment to excellence in
+                collision repair. Your satisfaction and the safety of your vehicle remain our top priorities, ensuring
+                that
                 every repair reflects our dedication to unparalleled service and industry-leading expertise.</p>
 
             <div class="wrapper-slider mb-5" data-aos="zoom-in-up">
@@ -381,18 +404,20 @@ Start Call To Action
     <!--
 Start Call To Action
 ==================================== -->
-<section class="call-to-action section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-12 col-lg-8 text-center" data-aos="zoom-out-down">
-                <h2>Let's Create Something Together</h2>
-                <h2 class="br">Embark on a Journey with Fox Auto Services</h2>
-                <p>Our story is a testament to commitment, expertise, and community trust. Over the past three years, Fox Auto Services has become a Hidden Gem of Baltimore, earning recognition for our outstanding service and dedication to quality.</p>
-                <a href="request-estimate.html" class="btn btn-main">Request Your Estimate!</a>
-            </div>
-        </div> <!-- End row -->
-    </div> <!-- End container -->
-</section>
+    <section class="call-to-action section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-12 col-lg-8 text-center" data-aos="zoom-out-down">
+                    <h2>Let's Create Something Together</h2>
+                    <h2 class="br">Embark on a Journey with Fox Auto Services</h2>
+                    <p>Our story is a testament to commitment, expertise, and community trust. Over the past three
+                        years, Fox Auto Services has become a Hidden Gem of Baltimore, earning recognition for our
+                        outstanding service and dedication to quality.</p>
+                    <a href="request-estimate.html" class="btn btn-main">Request Your Estimate!</a>
+                </div>
+            </div> <!-- End row -->
+        </div> <!-- End container -->
+    </section>
 
 
 
@@ -410,7 +435,8 @@ Start Call To Action
             <div class="row g-5 py-5">
                 <div class="col-lg-6 pe-lg-5">
                     <a href="index.html" class="a-footer-img">
-                        <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="">
+                        <!-- <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="Fox logo footer"> -->
+                        <img class="mb-0 mt-0 img-footer" src="images/season/christmas/foxLogoChristmas.png" alt="Fox logo footer christmas">
                     </a>
                     <p class="fs-5 mb-4 large-content">Fox Auto Services - Where Expertise Meets Excellence. Your
                         Premier Destination
