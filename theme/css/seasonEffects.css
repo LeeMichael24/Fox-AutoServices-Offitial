@@ -124,6 +124,31 @@
     margin-bottom: -80px; /* para que quede justo en medio de los sections */
     margin-top: -80px; /* para que quede justo en medio de los sections */
   }
+  @media (max-width: 768px) {
+    .imagen-guirnalda-hero {
+      display: none;
+    }
+    .imagen-guirnalda-hero-blog {
+      display: none;
+    }
+    .mobile-hero-guirnalda{
+      flex-grow: 1;
+      height: 140px; /* tamanio de la imagen */
+      background-size: cover;
+      background-repeat: repeat-x;
+      z-index: 1000; /* para que quede encima de los elementos */
+    }
+    .mobile-hero-guirnalda-blog{
+      flex-grow: 1;
+      height: 140px; /* tamanio de la imagen */
+      background-size: cover;
+      background-repeat: repeat-x;
+      z-index: 1000; /* para que quede encima de los elementos */
+    }
+    .guirnalda-container-hero-blog {
+      margin-top: -100px !important; /* para que quede justo en medio de los sections */
+    }
+  }
   
   .guirnalda-hero {
     display: flex;
