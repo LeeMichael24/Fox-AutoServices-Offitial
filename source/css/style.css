@@ -2318,7 +2318,21 @@ section{
     height: 70vh !important;
   }
 }
-
+.p-discouts{
+  font-size: 18px;
+  color: white;
+  padding: 0.8rem 4rem 0;
+  justify-content: center;
+  text-align: justify;
+}
+.strong-discount{
+  color: #FC6701;
+  font-weight: 600;
+}
+.strong-discount-p{
+  text-decoration: underline;
+  font-weight: 500;
+}
 .price{
   padding: 5rem 0;
 }
@@ -2331,7 +2345,7 @@ section{
   box-shadow: 0 0 12px rgba(0,0,0,.2);
   border-radius: 20px;
   color:#333;
-  min-height: 60rem;
+  min-height: 40rem;
   margin: 1.5rem 1rem;
   transition: all 350ms ease-in;
 }
