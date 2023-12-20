@@ -2296,29 +2296,7 @@ section{
 
 
 /* Start price */
-.price-table{
-  height: 70vh !important;
-}
-@media screen and (max-width: 768px){
-  .price-table{
-    height: 60vh !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 950px){
-  .price-table{
-    height: 53vh !important;
-  }
-}
-@media screen and (max-width: 1440px){
-  .price-table{
-    height: 60vh !important;
-  }
-}
-@media screen and (min-width: 1441px){
-  .price-table{
-    height: 50vh !important;
-  }
-}
+
 .p-discouts{
   font-size: 18px;
   color: white;
@@ -2346,7 +2324,7 @@ section{
   box-shadow: 0 0 12px rgba(0,0,0,.2);
   border-radius: 20px;
   color:#333;
-  min-height: 40rem;
+  /* min-height: 40rem; */
   margin: 1.5rem 1rem;
   transition: all 350ms ease-in;
 }
@@ -2392,10 +2370,10 @@ section{
           text-decoration: double;
 }
 
-.price .price-table .price-btn button{
+.price-table .price-btn button {
   position: absolute;
   left: 43%;
-  bottom: 4em;
+  bottom: 3em;
   background-color: #FC6701;
   border-radius: 1.2rem;
   font-weight: 600;
@@ -2412,6 +2390,47 @@ section{
   color: #FC6701;
   background-color: transparent;
 }
+
+/* Responsive styles for .price-table */
+@media (max-width: 768px) {
+  .price-table {
+    height: 65vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 950px) {
+  .price-table {
+    height: 69vh;
+  }
+}
+
+@media (min-width: 951px) and (max-width: 1024px) {
+  .price-table {
+    height: 75vh;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1300px) {
+  .price-table {
+    height: 73vh;
+  }
+}
+@media (min-width: 1301px) and (max-width: 1440px) {
+  .price-table {
+    height: 63vh;
+  }
+}
+
+@media (min-width: 1441px) {
+  .price-table {
+    height: 50vh;
+  }
+}
+
+/* @media (max-width: 1440px) {
+  .price-table {
+    height: auto;
+  }
+} */
 
 .glide__arrows{
   position: relative;
