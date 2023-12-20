@@ -2313,9 +2313,24 @@ section{
 .price-table{
   height: 70vh !important;
 }
-@media screen and (max-width: 950px){
+@media screen and (max-width: 768px){
   .price-table{
-    height: 70vh !important;
+    height: 60vh !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 950px){
+  .price-table{
+    height: 53vh !important;
+  }
+}
+@media screen and (max-width: 1440px){
+  .price-table{
+    height: 60vh !important;
+  }
+}
+@media screen and (min-width: 1441px){
+  .price-table{
+    height: 50vh !important;
   }
 }
 .p-discouts{
@@ -2340,7 +2355,7 @@ section{
 
 .price .price-table{
   overflow: hidden;
-  background: linear-gradient(230deg, rgba(20, 67, 168, 0.598) 0%, rgba(49, 80, 116, 0.858) 100%);
+  background: linear-gradient(230deg, rgba(20, 67, 168, 0.753) 0%, rgba(49, 80, 116, 0.858) 100%);
   box-sizing: border-box;
   box-shadow: 0 0 12px rgba(0,0,0,.2);
   border-radius: 20px;
