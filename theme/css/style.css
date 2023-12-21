@@ -2335,7 +2335,8 @@ section{
 
 .price .price-table .price-head{
   padding: 25px 40px;
-  background: linear-gradient(135deg, rgba(20, 67, 168, 0.859) 0%, rgba(169, 76, 14, 0.696) 100%);
+    background-image: linear-gradient(135deg, rgba(20, 67, 168, 0.859) 0%, rgba(169, 76, 14, 0.696) 100%);
+    /* background-image: linear-gradient(135deg, rgba(20, 67, 168, 0.859) 0%, rgba(169, 76, 14, 0.696) 100%), url('../images/realImages/fondoShop.jpg'); */
   color: white;
   text-align: center;
 }
@@ -2344,31 +2345,17 @@ section{
   font-family: 'Aldrich', sans-serif;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 2.5rem;  
+  font-size: 2.3rem !important;  
+  margin-bottom: 11px;
 }
 
 .price .price-table .price-head h2{
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  font-size: 2.5rem;  
+  font-size: 1.6rem !important;  
 }
 
-.price .price-table .price-content ul{
-  position: relative;
-  padding: 1rem 2rem;
-  margin: 1rem auto;
-}
 
-.price .price-table .price-content ul li{
-  list-style: none;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color:rgba(255, 255, 255, 0.845);
-  text-transform: uppercase;
-  cursor: pointer;
-  -webkit-text-decoration: double;
-          text-decoration: double;
-}
 
 .price-table .price-btn button {
   position: absolute;
@@ -2394,29 +2381,34 @@ section{
 /* Responsive styles for .price-table */
 @media (max-width: 768px) {
   .price-table {
-    height: 65vh;
+    height: 43vh;
   }
 }
 
 @media (min-width: 769px) and (max-width: 950px) {
   .price-table {
-    height: 69vh;
+    height: 55vh;
   }
 }
 
 @media (min-width: 951px) and (max-width: 1024px) {
   .price-table {
-    height: 75vh;
+    height: 43vh;
   }
 }
-@media (min-width: 1025px) and (max-width: 1300px) {
+@media (min-width: 1025px) and (max-width: 1200px) {
   .price-table {
-    height: 73vh;
+    height: 56vh;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1300px) {
+  .price-table {
+    height: 50vh;
   }
 }
 @media (min-width: 1301px) and (max-width: 1440px) {
   .price-table {
-    height: 63vh;
+    height: 50vh;
   }
 }
 

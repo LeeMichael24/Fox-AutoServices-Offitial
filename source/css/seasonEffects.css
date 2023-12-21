@@ -102,7 +102,7 @@
     background-size: cover;
     background-repeat: repeat-x;
     z-index: 1000; /* para que quede encima de los elementos */
-    border-radius: 15rem; /* esto es para difuminar el corte de imagen al final */
+    border-radius: 0rem; /* esto es para difuminar el corte de imagen al final */
   }
 /* CARDS styles BLOG POST*/
 
