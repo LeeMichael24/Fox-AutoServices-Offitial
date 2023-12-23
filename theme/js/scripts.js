@@ -12,17 +12,17 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Verificar si el ancho de la ventana es mayor que 992px (ajusta según sea necesario)
   if (window.innerWidth > 992) {
-      var dropdowns = document.querySelectorAll('.navbar-nav .nav-item.dropdown');
+    var dropdowns = document.querySelectorAll(".navbar-nav .nav-item.dropdown");
 
-      dropdowns.forEach(function (dropdown) {
-          dropdown.addEventListener('mouseenter', function () {
-              this.querySelector('.dropdown-menu').classList.add('show');
-          });
-
-          dropdown.addEventListener('mouseleave', function () {
-              this.querySelector('.dropdown-menu').classList.remove('show');
-          });
+    dropdowns.forEach(function (dropdown) {
+      dropdown.addEventListener("mouseenter", function () {
+        this.querySelector(".dropdown-menu").classList.add("show");
       });
+
+      dropdown.addEventListener("mouseleave", function () {
+        this.querySelector(".dropdown-menu").classList.remove("show");
+      });
+    });
   }
 });
 
@@ -142,19 +142,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
 /* SEASON CHRISTMAS */
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   function toggleSeasonalImages(showChristmas) {
-      const logos = document.querySelectorAll('.logo');
+    const logos = document.querySelectorAll(".logo");
 
-      logos.forEach(function (logo) {
-          logo.style.display = 'none';
-      });
+    logos.forEach(function (logo) {
+      logo.style.display = "none";
+    });
 
-      const logoToShow = showChristmas ? document.querySelector('.christmas-logo') : document.querySelector('.regular-logo');
-      logoToShow.style.display = 'block';
+    const logoToShow = showChristmas
+      ? document.querySelector(".christmas-logo")
+      : document.querySelector(".regular-logo");
+    logoToShow.style.display = "block";
   }
 
   // Llama a toggleSeasonalImages con true para mostrar la imagen de Navidad
@@ -164,6 +164,5 @@ document.addEventListener('DOMContentLoaded', function () {
   // Puedes cambiar a false si deseas mostrar la imagen regular
   // toggleSeasonalImages(false);
 });
-
 
 /* SEASON CHRISTMAS */

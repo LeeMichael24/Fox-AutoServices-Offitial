@@ -102,7 +102,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="services.html">Mechanical Services</a></li>
-                                <li><a class="dropdown-item" href="collision-repair.html">Collision Services</a></li>
+                                <li><a class="dropdown-item" href="collision-repair.html">Collision Repair</a></li>
                                 <li>
                             </ul>
                         </li>
@@ -356,7 +356,7 @@
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Popular Links</h4>
                             <a class="btn btn-link" href="gallery.html">About Us</a>
-                            <a class="btn btn-link" href="collision-repair.html">Collision services</a>
+                            <a class="btn btn-link" href="collision-repair.html">Collision Repair</a>
                             <a class="btn btn-link" href="services.html">Mechanical Services</a>
                             <a class="btn btn-link" href="request-estimate.html">Request an Estimate</a>
                             <a class="btn btn-link" href="privacy-policy.html">Privacy Policy</a>
@@ -400,8 +400,28 @@
     <!-- Own scripts -->
     <script src="js/scripts.js"></script>
     <script>
-        new Glide(".glide-testi-gallery", { type: "carousel", autoplay: 2500, startAt: 0, perView: 1, focusAt: "center", breakpoints: { 768: { perView: 1 }, 900: {perView: 1}, 800: {perView: 1}, 570: { perView: 1 }, 1440: { perView: 2 }, 1920: { perView: 3 }, 400: { perView: 1 } } }).mount(), $(document).ready(function () { $(window).scroll(function () { $(this).scrollTop() > 100 ? $("#navbar").css("background", "linear-gradient(135deg, rgba(34, 62, 122, 0.8) 0%, rgba(35, 57, 82, 0.8) 100%)") : $("#navbar").css("background", "linear-gradient(135deg, rgba(34, 62, 122, 1) 0%, rgba(35, 57, 82, 1) 100%)") }) }), $(".gallery").magnificPopup({ delegate: "a", type: "image", gallery: { enabled: !0 } }), window.addEventListener("scroll", function () { var e = document.querySelector(".floating-header"); window.scrollY > 5 ? e.classList.add("visible") : e.classList.remove("visible") }), $(window).on("load", function () { $(" .loading-overlay .loader").fadeOut(850, function () { $("body").css("overflow", "auto"), $(this).parent().fadeOut(450, function () { $(this).remove() }) }) });
+        new Glide(".glide-testi-gallery", { type: "carousel", autoplay: 2500, startAt: 0, perView: 1, focusAt: "center", breakpoints: { 768: { perView: 1 }, 900: {perView: 1}, 800: {perView: 1}, 570: { perView: 1 }, 1440: { perView: 2 }, 1920: { perView: 3 }, 400: { perView: 1 } } }).mount(), $(".gallery").magnificPopup({ delegate: "a", type: "image", gallery: { enabled: !0 } }), window.addEventListener("scroll", function () { var e = document.querySelector(".floating-header"); window.scrollY > 5 ? e.classList.add("visible") : e.classList.remove("visible") }), $(window).on("load", function () { $(" .loading-overlay .loader").fadeOut(850, function () { $("body").css("overflow", "auto"), $(this).parent().fadeOut(450, function () { $(this).remove() }) }) });
     </script>
+
+    <!-- Narvbar desapear -->
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function () {
+            var scrollTop = window.scrollY || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                navbar.style.transition = "top 1s ease"; // Agregar transición al ocultar
+                navbar.style.top = "-120px";
+            } else {
+                navbar.style.transition = "top 1s ease"; // Agregar transición al mostrar
+                navbar.style.top = "0";
+            }
+            lastScrollTop = scrollTop;
+        })
+    </script>
+    <!-- Narvbar desapear -->
+
+    
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

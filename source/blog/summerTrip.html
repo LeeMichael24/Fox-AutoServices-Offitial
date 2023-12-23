@@ -112,7 +112,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="../services.html">Mechanical Services</a></li>
-                                <li><a class="dropdown-item" href="../collision-repair.html">Collision Services</a></li>
+                                <li><a class="dropdown-item" href="../collision-repair.html">Collision Repair</a></li>
                                 <li>
                             </ul>
                         </li>
@@ -453,7 +453,7 @@
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Popular Links</h4>
                             <a class="btn btn-link" href="gallery.html">About Us</a>
-                            <a class="btn btn-link" href="collision-repair.html">Collision services</a>
+                            <a class="btn btn-link" href="collision-repair.html">Collision Repair</a>
                             <a class="btn btn-link" href="services.html">Mechanical Services</a>
                             <a class="btn btn-link" href="request-estimate.html">Request an Estimate</a>
                             <a class="btn btn-link" href="privacy-policy.html">Privacy Policy</a>
@@ -505,8 +505,28 @@ Essential Scripts
     <script src="https://kit.fontawesome.com/455a5a3021.js" crossorigin="anonymous"></script>
     <!-- navbar -->
     <script>
-        $(document).ready(function () { setTimeout(function () { $(".loading-overlay").fadeOut(450, function () { $(this).remove() }) }, 200) }), window.addEventListener("scroll", function () { var n = document.querySelector(".floating-header"); window.scrollY > 5 ? n.classList.add("visible") : n.classList.remove("visible") }), $(document).ready(function () { $(window).scroll(function () { $(this).scrollTop() > 100 ? $("#navbar").css("background", "linear-gradient(135deg, rgba(34, 62, 122, 0.8) 0%, rgba(35, 57, 82, 0.8) 100%)") : $("#navbar").css("background", "linear-gradient(135deg, rgba(34, 62, 122, 1) 0%, rgba(35, 57, 82, 1) 100%)") }) });
+        $(document).ready(function () { setTimeout(function () { $(".loading-overlay").fadeOut(450, function () { $(this).remove() }) }, 200) }), window.addEventListener("scroll", function () { var n = document.querySelector(".floating-header"); window.scrollY > 5 ? n.classList.add("visible") : n.classList.remove("visible") });
     </script>
+
+    <!-- Narvbar desapear -->
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function () {
+            var scrollTop = window.scrollY || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                navbar.style.transition = "top 0.8s ease"; // Agregar transición al ocultar
+                navbar.style.top = "-120px";
+            } else {
+                navbar.style.transition = "top 0.8s ease"; // Agregar transición al mostrar
+                navbar.style.top = "0";
+            }
+            lastScrollTop = scrollTop;
+        })
+    </script>
+    <!-- Narvbar desapear -->
+
+    
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

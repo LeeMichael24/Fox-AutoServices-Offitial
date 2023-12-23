@@ -425,6 +425,7 @@ section{
 #navbar {
   background-color: linear-gradient(135deg, rgb(34, 62, 122, 0) 0%, rgb(34, 62, 122, 0) 100%); /* Fondo transparente con opacidad 0.7 */
   transition: background-color 0.3s; /* Transición suave al cambiar la opacidad */
+  position: fixed;
 }
 @media (min-width: 1440px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -627,8 +628,8 @@ section{
   .hero-video-home{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(12, 3, 51, 0.518), rgba(12, 3, 51, 0.136)), url(../images/gallery/homePhotoBg.jpg);
-    background-position: 50% 100%;
+    background-image: linear-gradient(rgba(12, 3, 51, 0.518), rgba(12, 3, 51, 0.136)), url(../images/gallery/homeImagePhone.png);
+    background-position: 60% 50%;
     background-size: cover;
     padding: 0 5%;
     display: flex;
@@ -1099,6 +1100,32 @@ section{
 
 
 /* CSS */
+.btn-85-cta{
+  font-size: 16px;
+  border-radius: 8px !important;
+}
+.btn-85-cta:hover{
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .btn-85-cta{
+    font-size: 15px;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 992px) {
+  .btn-85-cta{
+    font-size: 15px;
+    border-radius: 8px;
+  }
+}
+.btn-85-cta:before {
+  border-radius: 8px !important;
+}
+.btn-85-cta:after {
+  border-radius: 8px !important;
+}
+
 .button-85 {
   padding: 0.6em 2em;
   border: none;
@@ -1940,15 +1967,15 @@ section{
 }
 .container-services h3 {
   font-family: 'Aldrich', sans-serif;
-  font-size: 2rem;
-  color: #fc6701;
+  font-size: 2rem !important;
   position: relative;
 }
 .container-services h1{
   font-family: 'Aldrich', sans-serif;
-  font-size: 4rem;
+  font-size: 3rem !important;
   position: relative;
   font-weight: 500;
+  margin-top: 1rem !important;
 }
 @media (max-width: 768px) {
   .container-services h1{
@@ -2067,7 +2094,61 @@ section{
     margin-top: 60px;
   }
 }
-/* Services section home start end */
+/* Services section home end */
+
+/* list 2 columnas */
+.CTA-index-image-bg{
+  background: linear-gradient(135deg, rgba(55, 57, 59, 0.9) 0%, rgba(27, 28, 28, 0.8) 100%), url(../images/realImages/Vission.png) !important;
+  background-size: cover !important;
+  background-position: 50% 40% !important;
+}
+.collision-image-bg{
+  background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url(../images/gallery/ejemplo4.jpg) center no-repeat !important;
+}
+
+.two-line-list li {
+  padding: 10px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 100px;
+  text-align: start;
+}
+
+@media (max-width: 768px) {
+  .content-list-collision{
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-list-collision{
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 996px) {
+  .content-list-collision{
+    margin-top: calc(20% - 15px);
+  }
+  .two-line-list li {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 996px) and  (max-width: 1024px) {
+  .content-list-collision{
+    margin-top: calc(20% - 65px) ;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .content-list-collision{
+    margin-top: calc(20% - 130px); /* this one */
+  }
+}
+@media (min-width: 1441px) {
+  .content-list-collision{
+    margin-top: calc(20% - 140px);
+  }
+}
 
 @media (max-width: 768px) {
   .mobile-section-flex{
@@ -2077,6 +2158,34 @@ section{
   }
   
 }
+
+.ul-div-columns{
+  padding: 0;
+  margin: 0;
+  gap: 3rem;
+}
+.ul-div-columns li{
+  white-space: nowrap; /* Evita el salto de línea */
+  font-family: 'Aldrich', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+.div-columns{
+  flex: 0 0 auto;
+  width: 35%;
+}
+@media (max-width:768px) {
+  .div-columns{
+    flex: 0 0 auto;
+    width: 45%;
+  }
+  .ul-div-columns li{
+    white-space: nowrap; /* Evita el salto de línea */
+    font-size: 18px;
+  }
+}
+
 .section-FAQ{
   width: 100%;
   padding: 10rem;
@@ -2836,6 +2945,10 @@ section{
 .h1-carousell{
   font-size: 40px !important;
 }
+.h1-carousell-collision{
+  font-family: 'Aldrich', sans-serif !important;
+  font-size: 32px !important;
+}
 
 
 /* BLog */
@@ -3047,6 +3160,13 @@ section{
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 10px; /* Ajustado el margen inferior */
+}
+.vision-content-index {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px; /* Ajustado el margen inferior */
+  text-align: center;
+  align-items: center;
 }
 
 .mission-content h3,
