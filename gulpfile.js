@@ -18,6 +18,7 @@ var path = {
     others: "source/*.+(php|ico|png)",
     others2: "source/blog/*.html",
     others3: "source/services/*.html",
+    others4: "source/blogPage/*.html",
     htminc: "source/partials/**/*.htm",
     incdir: "source/partials/",
     plugins: "source/plugins/**/*.*",
@@ -56,6 +57,30 @@ gulp.task("html:build", function () {
       })
     );
 });
+gulp.task("others4:build", function () {
+  return gulp
+    .src(path.src.others4)
+    .pipe(customPlumber("Error Running html-include"))
+    .pipe(
+      fileinclude({
+        basepath: path.src.others4,
+      })
+    )
+    .pipe(
+      comments(`
+    WEBSITE: https://MichaelNarvaez.com
+    TWITTER: https://twitter.com/MichaelNarvaez
+    FACEBOOK: https://www.facebook.com/MichaelNarvaez
+    GITHUB: https://github.com/MichaelNarvaez/
+    `)
+    )
+    .pipe(gulp.dest(path.build.dirDev + "blogPage/"))
+    .pipe(
+      bs.reload({
+        stream: true,
+      })
+    );
+});
 
 gulp.task("others2:build", function () {
   console.log("Copying blog files...");
@@ -74,6 +99,16 @@ gulp.task("others3:build", function () {
       console.log("Services files copied successfully!");
     });
 });
+
+gulp.task("others4:build", function () {
+  console.log("Copying blogPage files...");
+  return gulp.src(path.src.others4)
+    .pipe(gulp.dest(path.build.dirDev + "blogPage/")) // Cambiado
+    .on('end', function() {
+      console.log("BlogPage files copied successfully!");
+    });
+});
+
 
 // CSS
 gulp.task("css:build", function () {
@@ -188,6 +223,7 @@ gulp.task("watch:build", function () {
   gulp.watch(path.src.others, gulp.series("others:build")); // Agregado
   gulp.watch(path.src.others2, gulp.series("others2:build")); // Agregado
   gulp.watch(path.src.others3, gulp.series("others3:build")); // Agregado
+  gulp.watch(path.src.others3, gulp.series("others4:build")); // Agregado
 });
 
 
@@ -205,6 +241,7 @@ gulp.task(
     "others:build",
     "others2:build",
     "others3:build",
+    "others4:build",
     gulp.parallel("watch:build", function () {
       bs.init({
         server: {
@@ -225,6 +262,7 @@ gulp.task(
     "images:build",
     "plugins:build",
     "others2:build",
-    "others3:build"
+    "others3:build",
+    "others4:build"
   )
 );
