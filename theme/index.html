@@ -138,7 +138,11 @@
     </nav>
     <!-- navbar NED -->
 
-    <button id="showNavbarButton">Show Navbar</button>
+    <button id="showNavbarButton" class="btn">
+        <span class="fa fa-bars"></span>
+      </button>
+      
+      
 
     <!-- FAB -->
     <div class="fab-container">
@@ -1058,11 +1062,6 @@
         new Glide(".glide", { type: "carousel", autoplay: 2500, startAt: 0, perView: 3, focusAt: "center", breakpoints: { 768: { perView: 1 }, 800: { perView: 1 }, 900: { perView: 2 }, 570: { perView: 1 }, 1024: { perView: 2 }, 1440: { perView: 3 }, 1920: { perView: 3 }, 390: { perView: 1 } } }).mount(), new Glide(".glide-testi", { type: "carousel", autoplay: 2500, startAt: 0, perView: 1, focusAt: "center", breakpoints: { 768: { perView: 1 }, 570: { perView: 1 }, 1440: { perView: 1 }, 1920: { perView: 3 }, 400: { perView: 1 } } }).mount(), $(document).ready(function () { setTimeout(function () { $(".loading-overlay").fadeOut(450, function () { $(this).remove() }) }, 200) });
     </script>
     <!-- Narvbar desapear -->
-    <!-- Agrega el botón y el estilo para posicionarlo debajo del navbar -->
-    <button id="showNavbarButton"
-        style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">Show
-        Navbar</button>
-
     <script type="text/javascript">
         var isNavbarVisible = true;
         var navbar = document.getElementById("navbar");
@@ -1098,10 +1097,9 @@
             showNavbarButton.style.display = "none";
         });
     </script>
-
-
-
     <!-- Narvbar desapear -->
+
+    
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

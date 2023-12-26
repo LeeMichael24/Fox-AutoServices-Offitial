@@ -238,21 +238,6 @@
 
 
 
-
-
-
-#showNavbarButton {
-    position: fixed;
-    bottom: 98%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    display: none;
-    z-index: 1000;
-    border: none;
-    color: black;
-    padding: 2rem;
-    border-radius: 10rem;
-  }
   
   #carouselExampleInterval{
     margin-bottom: 50px;

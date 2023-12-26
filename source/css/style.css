@@ -3588,3 +3588,28 @@ section{
 /* CARDS NUEVAS */
 
 /* CARDS NUEVAS */
+
+
+
+#showNavbarButton {
+  position: fixed;
+  bottom: 98%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: none;
+  z-index: 1000;
+  border: none;
+  background: linear-gradient(135deg, rgb(34, 62, 122) 0%, rgb(35, 57, 82) 100%);
+  color: white;
+  width: 100%;
+  padding: 1.8rem;
+  display: flex; /* Usar flexbox para alinear el contenido */
+  justify-content: flex-end; /* Alinear el contenido al final del botón */
+  align-items: center; /* Centrar verticalmente el contenido */
+}
+
+#showNavbarButton > span {
+  font-size: 20px;
+  width: 100%; /* Ocupar todo el ancho del contenedor */
+  text-align: right; /* Alinear el texto (icono) a la derecha */
+}

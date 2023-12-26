@@ -70,7 +70,8 @@
             <a class="navbar-brand logo" href="../index.html">
                 <!-- <img src="images/fas_neonthorizontal.png" alt="Fox Auto Services" class="regular-logo"> -->
                 <!-- Christmas Logo -->
-                <img src="../images/season/christmas/foxLogoChristmas.png" alt="Fox Auto Services" class="christmas-logo">
+                <img src="../images/season/christmas/foxLogoChristmas.png" alt="Fox Auto Services"
+                    class="christmas-logo">
             </a>
 
             <!-- Toggle BTN-->
@@ -136,6 +137,12 @@
         </div>
     </nav>
     <!-- navbar NED -->
+
+    <button id="showNavbarButton" class="btn">
+        <span class="fa fa-bars"></span>
+    </button>
+
+
 
     <!-- FAB -->
     <div class="fab-container">
@@ -222,7 +229,9 @@
                     <div class="card-body">
                         <div class="small text-muted">December 23, 2023</div>
                         <h2 class="card-title">Top 10 Signs Your Car Needs Immediate Attention</h2>
-                        <p class="card-text">Being proactive about these warning signs can save you time, money, and ensure the safety of your vehicle. If you notice any of these indicators, consult with a professional mechanic to diagnose and address the issue promptly...</p>
+                        <p class="card-text">Being proactive about these warning signs can save you time, money, and
+                            ensure the safety of your vehicle. If you notice any of these indicators, consult with a
+                            professional mechanic to diagnose and address the issue promptly...</p>
                         <a class="btn btn-primary" href="../blog/top10Sings.html">Read more →</a>
                     </div>
                 </div>
@@ -238,13 +247,15 @@
                                 <div class="guirnalda-card-post">
                                     <!-- Divs individuales para cada imagen de guirnalda -->
                                     <div class="imagen-guirnalda-card-post"
-                                        style="background-image: url('../images/season/christmas/guirnalda4.png');"></div>
+                                        style="background-image: url('../images/season/christmas/guirnalda4.png');">
+                                    </div>
                                 </div>
                             </div>
                             <div class="card-body">
                                 <div class="small text-muted">December 23, 2023</div>
                                 <h2 class="card-title h4">How to Choose the Right Mechanic in Glen Burnie</h2>
-                                <p class="card-text">Discover the key factors to consider when selecting the right mechanic for your vehicle in Glen Burnie...</p>
+                                <p class="card-text">Discover the key factors to consider when selecting the right
+                                    mechanic for your vehicle in Glen Burnie...</p>
                                 <a class="btn btn-primary" href="../blog/chooseMechanic.html">Read more →</a>
                             </div>
                         </div>
@@ -265,8 +276,10 @@
                     <div class="card-body">
                         <ul class="list-unstyled mb-0">
                             <li><a href="../blog/carWinterTips.html">Essential Winter Car Care Tips</a></li>
-                            <li><a href="../blog/diyCarCleaning.html">10 DIY Car Cleaning Hacks You Need to Know</a></li>
-                            <li><a href="../blog/avoidCommonCarMain.html">Avoiding Common Car Maintenance Mistakes</a></li>
+                            <li><a href="../blog/diyCarCleaning.html">10 DIY Car Cleaning Hacks You Need to Know</a>
+                            </li>
+                            <li><a href="../blog/avoidCommonCarMain.html">Avoiding Common Car Maintenance Mistakes</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -307,8 +320,7 @@
                 <ul class="pagination justify-content-center my-4">
                     <li class="page-item disabled"><a class="page-link" href="blogPage2.html" tabindex="-1"
                             aria-disabled="true">Newer</a></li>
-                    <li class="page-item" aria-current="page"><a class="page-link"
-                            href="../blog.html">1</a></li>
+                    <li class="page-item" aria-current="page"><a class="page-link" href="../blog.html">1</a></li>
                     <li class="page-item pagination-color-fox"><a class="page-link" href="blogPage2.html">2</a></li>
                     <!-- <li class="page-item"><a class="page-link" href="#!">3</a></li>
                     <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
@@ -428,23 +440,43 @@
         $(document).ready(function () { setTimeout(function () { $(".loading-overlay").fadeOut(450, function () { $(this).remove() }) }, 200) }), window.addEventListener("scroll", function () { var n = document.querySelector(".floating-header"); window.scrollY > 5 ? n.classList.add("visible") : n.classList.remove("visible") });
     </script>
 
-    <!-- Narvbar desapear -->
-    <script type="text/javascript">
-        var lastScrollTop = 0;
-        navbar = document.getElementById("navbar");
-        window.addEventListener("scroll", function () {
-            var scrollTop = window.scrollY || document.documentElement.scrollTop;
-            if (scrollTop > lastScrollTop) {
-                navbar.style.transition = "top 1s ease"; // Agregar transición al ocultar
-                navbar.style.top = "-120px";
-            } else {
-                navbar.style.transition = "top 1s ease"; // Agregar transición al mostrar
+        <!-- Narvbar desapear -->
+        <script type="text/javascript">
+            var isNavbarVisible = true;
+            var navbar = document.getElementById("navbar");
+            var showNavbarButton = document.getElementById("showNavbarButton");
+    
+            window.addEventListener("scroll", function () {
+                var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    
+                if (scrollTop > 100) {
+                    // Ocultar la barra de navegación y mostrar el botón flotante
+                    if (isNavbarVisible) {
+                        navbar.style.transition = "top 1s ease";
+                        navbar.style.top = "-108px";
+                        isNavbarVisible = false;
+                        showNavbarButton.style.display = "block";
+                    }
+                } else {
+                    // Mostrar la barra de navegación solo si el usuario no ha ocultado manualmente y ocultar el botón flotante
+                    if (!isNavbarVisible) {
+                        navbar.style.transition = "top 1s ease";
+                        navbar.style.top = "0";
+                        isNavbarVisible = true;
+                        showNavbarButton.style.display = "none";
+                    }
+                }
+            });
+    
+            showNavbarButton.addEventListener("click", function () {
+                // Mostrar la barra de navegación cuando se hace clic en el botón flotante y ocultar el botón flotante
+                navbar.style.transition = "top 1s ease";
                 navbar.style.top = "0";
-            }
-            lastScrollTop = scrollTop;
-        })
-    </script>
-    <!-- Narvbar desapear -->
+                isNavbarVisible = true;
+                showNavbarButton.style.display = "none";
+            });
+        </script>
+        <!-- Narvbar desapear -->
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

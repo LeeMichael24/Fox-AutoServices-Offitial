@@ -115,6 +115,10 @@
     </nav>
     <!-- navbar NED -->
 
+    <button id="showNavbarButton" class="btn">
+        <span class="fa fa-bars"></span>
+      </button>
+
     <!-- FAB -->
     <div class="fab-container">
         <div class="main-fab fab-icon-holder button-85">
@@ -549,23 +553,43 @@
         });
     </script>
 
-    <!-- Narvbar desapear -->
-    <script type="text/javascript">
-        var lastScrollTop = 0;
-        navbar = document.getElementById("navbar");
-        window.addEventListener("scroll", function () {
-            var scrollTop = window.scrollY || document.documentElement.scrollTop;
-            if (scrollTop > lastScrollTop) {
-                navbar.style.transition = "top 1s ease"; // Agregar transición al ocultar
-                navbar.style.top = "-120px";
-            } else {
-                navbar.style.transition = "top 1s ease"; // Agregar transición al mostrar
+        <!-- Narvbar desapear -->
+        <script type="text/javascript">
+            var isNavbarVisible = true;
+            var navbar = document.getElementById("navbar");
+            var showNavbarButton = document.getElementById("showNavbarButton");
+    
+            window.addEventListener("scroll", function () {
+                var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    
+                if (scrollTop > 100) {
+                    // Ocultar la barra de navegación y mostrar el botón flotante
+                    if (isNavbarVisible) {
+                        navbar.style.transition = "top 1s ease";
+                        navbar.style.top = "-108px";
+                        isNavbarVisible = false;
+                        showNavbarButton.style.display = "block";
+                    }
+                } else {
+                    // Mostrar la barra de navegación solo si el usuario no ha ocultado manualmente y ocultar el botón flotante
+                    if (!isNavbarVisible) {
+                        navbar.style.transition = "top 1s ease";
+                        navbar.style.top = "0";
+                        isNavbarVisible = true;
+                        showNavbarButton.style.display = "none";
+                    }
+                }
+            });
+    
+            showNavbarButton.addEventListener("click", function () {
+                // Mostrar la barra de navegación cuando se hace clic en el botón flotante y ocultar el botón flotante
+                navbar.style.transition = "top 1s ease";
                 navbar.style.top = "0";
-            }
-            lastScrollTop = scrollTop;
-        })
-    </script>
-    <!-- Narvbar desapear -->
+                isNavbarVisible = true;
+                showNavbarButton.style.display = "none";
+            });
+        </script>
+        <!-- Narvbar desapear -->
 
     
     <!-- AOS -->
