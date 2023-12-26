@@ -225,3 +225,84 @@
 }
 
 /* Add more styles as needed for specific elements within your footer */
+
+
+
+
+
+
+
+#showNavbarButton {
+    position: fixed;
+    bottom: 98%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: none;
+    z-index: 1000;
+    border: none;
+    color: black;
+    padding: 2rem;
+    border-radius: 10rem;
+  }
+  
+  #carouselExampleInterval{
+    margin-bottom: 50px;
+  }
+  #carouselExampleInterval2{
+    margin-bottom: 60px;
+  }
+  
+  .carousel-item > div > div img{
+    margin: 0 auto;
+    width: 300px !important;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #fc6701; /* Cambia este valor al color que desees */
+    padding: 2rem;
+    border-radius: 8px;
+  }
+
+  .container-images-carousel{
+    height: 20vh;
+  }
+
+  .carousel{
+    width: 70%;
+    margin: 0 auto;
+  }
+  @media (max-width: 1440px) {
+    .carousel{
+        width: 90%;
+      }
+  }
+  @media (max-width: 992px) {
+    .carousel{
+        width: 90%;
+      }
+      .carousel-item > div > div img{
+        margin: 0 auto;
+        width: 190px !important;
+      }
+  }
+
+  /* Ajustes para dispositivos pequeños */
+@media (max-width: 768px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #fc6701; /* Cambia este valor al color que desees */
+      padding: 1.5rem;
+    }
+    
+    .container-images-carousel {
+      height: auto; /* Ajusta la altura según sea necesario para dispositivos pequeños */
+    }
+    .carousel{
+        width: 100%;
+      }
+      .carousel-item > div > div img{
+        margin: 0 auto;
+        width: 120px !important;
+      }
+  }

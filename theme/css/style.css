@@ -2150,10 +2150,10 @@ section{
 }
 .ul-div-columns li{
   white-space: nowrap; /* Evita el salto de línea */
-  font-family: 'Aldrich', sans-serif;
   font-size: 25px;
   text-align: center;
   color: white;
+  margin-bottom: 20px;
 }
 .div-columns{
   flex: 0 0 auto;
@@ -2490,7 +2490,8 @@ section{
 /* Responsive styles for .price-table */
 @media (max-width: 768px) {
   .price-table {
-    height: 43vh;
+    height: 65vh;
+    max-height: 65vh;
   }
 }
 
@@ -3574,4 +3575,5 @@ section{
 /* CARDS NUEVAS */
 
 /* CARDS NUEVAS */
+
 /*# sourceMappingURL=style.css.map */

@@ -138,6 +138,8 @@
     </nav>
     <!-- navbar NED -->
 
+    <button id="showNavbarButton">Show Navbar</button>
+
     <!-- FAB -->
     <div class="fab-container">
         <div class="main-fab fab-icon-holder button-85">
@@ -883,7 +885,8 @@
                         <div class="card-body">
                             <div class=" text-muted div-date">December 23, 2023</div>
                             <h2 class="card-title h4">Top 10 Signs Your Car Needs Immediate Attention</h2>
-                            <p class="card-text">Being proactive about these warning signs can save you time, money, and ensure the safety of your vehicle...</p>
+                            <p class="card-text">Being proactive about these warning signs can save you time, money, and
+                                ensure the safety of your vehicle...</p>
                             <a class="btn btn-primary" href="blog/top10Sings.html">Read more →</a>
                         </div>
                     </div>
@@ -904,7 +907,8 @@
                         <div class="card-body">
                             <div class="div-date text-muted">December 23, 2023</div>
                             <h2 class="card-title h4">How to Choose the Right Mechanic in Glen Burnie</h2>
-                            <p class="card-text">Choosing the right mechanic is crucial for the well-being of your vehicle and your peace of mind. With numerous options ...</p>
+                            <p class="card-text">Choosing the right mechanic is crucial for the well-being of your
+                                vehicle and your peace of mind. With numerous options ...</p>
                             <a class="btn btn-primary" href="blog/chooseMechanic.html">Read more →</a>
                         </div>
                     </div>
@@ -925,7 +929,8 @@
                         <div class="card-body">
                             <div class="div-date text-muted">December 1, 2023</div>
                             <h2 class="card-title h4">Avoiding Common Car Maintenance Mistakes</h2>
-                            <p class="card-text">Proper car maintenance is crucial for the longevity and performance of your
+                            <p class="card-text">Proper car maintenance is crucial for the longevity and performance of
+                                your
                                 vehicle. By avoiding these common mistakes, you can save time, money, and ensure
                                 a smoother...</p>
                             <a class="btn btn-primary" href="../blog/avoidCommonCarMain.html">Read more →</a>
@@ -944,7 +949,6 @@
         </div>
     </section>
     <!-- Blog end -->
-
 
 
     <!-- Maps -->
@@ -1054,21 +1058,49 @@
         new Glide(".glide", { type: "carousel", autoplay: 2500, startAt: 0, perView: 3, focusAt: "center", breakpoints: { 768: { perView: 1 }, 800: { perView: 1 }, 900: { perView: 2 }, 570: { perView: 1 }, 1024: { perView: 2 }, 1440: { perView: 3 }, 1920: { perView: 3 }, 390: { perView: 1 } } }).mount(), new Glide(".glide-testi", { type: "carousel", autoplay: 2500, startAt: 0, perView: 1, focusAt: "center", breakpoints: { 768: { perView: 1 }, 570: { perView: 1 }, 1440: { perView: 1 }, 1920: { perView: 3 }, 400: { perView: 1 } } }).mount(), $(document).ready(function () { setTimeout(function () { $(".loading-overlay").fadeOut(450, function () { $(this).remove() }) }, 200) });
     </script>
     <!-- Narvbar desapear -->
+    <!-- Agrega el botón y el estilo para posicionarlo debajo del navbar -->
+    <button id="showNavbarButton"
+        style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none;">Show
+        Navbar</button>
+
     <script type="text/javascript">
-        var lastScrollTop = 0;
-        navbar = document.getElementById("navbar");
+        var isNavbarVisible = true;
+        var navbar = document.getElementById("navbar");
+        var showNavbarButton = document.getElementById("showNavbarButton");
+
         window.addEventListener("scroll", function () {
             var scrollTop = window.scrollY || document.documentElement.scrollTop;
-            if (scrollTop > lastScrollTop) {
-                navbar.style.transition = "top 1s ease"; // Agregar transición al ocultar
-                navbar.style.top = "-108px";
+
+            if (scrollTop > 100) {
+                // Ocultar la barra de navegación y mostrar el botón flotante
+                if (isNavbarVisible) {
+                    navbar.style.transition = "top 1s ease";
+                    navbar.style.top = "-108px";
+                    isNavbarVisible = false;
+                    showNavbarButton.style.display = "block";
+                }
             } else {
-                navbar.style.transition = "top 1s ease"; // Agregar transición al mostrar
-                navbar.style.top = "0";
+                // Mostrar la barra de navegación solo si el usuario no ha ocultado manualmente y ocultar el botón flotante
+                if (!isNavbarVisible) {
+                    navbar.style.transition = "top 1s ease";
+                    navbar.style.top = "0";
+                    isNavbarVisible = true;
+                    showNavbarButton.style.display = "none";
+                }
             }
-            lastScrollTop = scrollTop;
-        })
+        });
+
+        showNavbarButton.addEventListener("click", function () {
+            // Mostrar la barra de navegación cuando se hace clic en el botón flotante y ocultar el botón flotante
+            navbar.style.transition = "top 1s ease";
+            navbar.style.top = "0";
+            isNavbarVisible = true;
+            showNavbarButton.style.display = "none";
+        });
     </script>
+
+
+
     <!-- Narvbar desapear -->
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
