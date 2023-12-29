@@ -109,12 +109,13 @@
                                 About Us
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="aboutUs.html">Our Story</a></li>
-                                <li><a class="dropdown-item" href="blog.html">Our Blog</a></li>
+                                <li><a class="dropdown-item pt-3 pb-1 px-4" href="aboutUs.html">Our Story</a></li>
+                                <li><a class="dropdown-item px-4" href="blog.html">Our Blog</a></li>
+                                <li><a class="dropdown-item px-4" href="certifications.html">Our Certifications</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="how-we-do-it.html">How We Do It</a></li>
+                                <li><a class="dropdown-item px-4" href="how-we-do-it.html">How We Do It</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -146,7 +147,7 @@
 
     <button id="showNavbarButton" class="btn">
         <span class="fa fa-bars"></span>
-      </button>
+    </button>
 
     <!-- FAB -->
     <div class="fab-container">
@@ -187,8 +188,8 @@
     </section>
 
     <!-- Contenedor de la guirnalda (fijo en la parte superior) -->
-    <div class="guirnalda-container-hero" data-aos="fade-up"
-    data-aos-anchor-placement="center-center" data-aos-delay="500">
+    <div class="guirnalda-container-hero" data-aos="fade-up" data-aos-anchor-placement="center-center"
+        data-aos-delay="500">
         <!-- Div general para la guirnalda continua -->
         <div class="guirnalda-hero">
             <!-- Divs individuales para cada imagen de guirnalda -->
@@ -203,7 +204,7 @@
         </div>
     </div>
 
-    <section class="about-shot-info section-lg mt-5">
+    <section class="about-shot-info mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-down-right" data-aos-duration="1500">
@@ -267,6 +268,19 @@
     </section>
 
 
+    <!-- Video -->
+    <section class="container section-insta" style="background: #fff;">
+        <div data-aos="zoom-in-down" data-aos-duration="3000">
+            <video controls autoplay muted loop id="myVideo">
+                <source src="images/video/aboutUsVideo.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="sec-insta-about-video" data-aos="zoom-in-up" data-aos-duration="3000">
+            <h1 class="insta-h1 h2-certi" style="color: #FC6701;">Salvador Vega's Journey: Fox Auto Services Unveiled</h1>
+            <p>Discover the extraordinary tale of Salvador Vega, the visionary behind Fox Auto Services. Hailing from El Salvador, Salvador's journey unfolds as a testament to determination and dreams. At 18, he ventured to the USA, and by 23, he founded his inaugural auto shop. Join us in celebrating Salvador's remarkable story, where resilience, passion, and a commitment to excellence converge in the heart of Fox Auto Services."</p>
+        </div>
+    </section>
+
 
 
     <!--
@@ -304,7 +318,8 @@ Start Call To Action
                 commitment to excellence in
                 collision repair. Your satisfaction and the safety of your vehicle remain our top priorities, ensuring
                 that
-                every repair reflects our dedication to unparalleled service and industry-leading expertise.</p>
+                every repair reflects our dedication to unparalleled service and industry-leading expertise.
+            </p>
 
             <div class="wrapper-slider mb-5" data-aos="zoom-in-up">
                 <div class="slider-images-container">
@@ -403,7 +418,8 @@ Start Call To Action
                 <div class="col-lg-6 pe-lg-5">
                     <a href="index.html" class="a-footer-img">
                         <!-- <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="Fox logo footer"> -->
-                        <img class="mb-0 mt-0 img-footer" src="images/season/christmas/foxLogoChristmas.png" alt="Fox logo footer christmas">
+                        <img class="mb-0 mt-0 img-footer" src="images/season/christmas/foxLogoChristmas.png"
+                            alt="Fox logo footer christmas">
                     </a>
                     <p class="fs-5 mb-4 large-content">Fox Auto Services - Where Expertise Meets Excellence. Your
                         Premier Destination
@@ -493,45 +509,45 @@ Start Call To Action
     <script src="https://kit.fontawesome.com/455a5a3021.js" crossorigin="anonymous"></script>
     <!-- Animation -->
     <script>
-         $(document).ready(function () { setTimeout(function () { $(".loading-overlay").fadeOut(450, function () { $(this).remove() }) }, 200) });
+        $(document).ready(function () { setTimeout(function () { $(".loading-overlay").fadeOut(450, function () { $(this).remove() }) }, 200) });
     </script>
-        <!-- Narvbar desapear -->
-        <script type="text/javascript">
-            var isNavbarVisible = true;
-            var navbar = document.getElementById("navbar");
-            var showNavbarButton = document.getElementById("showNavbarButton");
-    
-            window.addEventListener("scroll", function () {
-                var scrollTop = window.scrollY || document.documentElement.scrollTop;
-    
-                if (scrollTop > 100) {
-                    // Ocultar la barra de navegación y mostrar el botón flotante
-                    if (isNavbarVisible) {
-                        navbar.style.transition = "top 1s ease";
-                        navbar.style.top = "-108px";
-                        isNavbarVisible = false;
-                        showNavbarButton.style.display = "block";
-                    }
-                } else {
-                    // Mostrar la barra de navegación solo si el usuario no ha ocultado manualmente y ocultar el botón flotante
-                    if (!isNavbarVisible) {
-                        navbar.style.transition = "top 1s ease";
-                        navbar.style.top = "0";
-                        isNavbarVisible = true;
-                        showNavbarButton.style.display = "none";
-                    }
+    <!-- Narvbar desapear -->
+    <script type="text/javascript">
+        var isNavbarVisible = true;
+        var navbar = document.getElementById("navbar");
+        var showNavbarButton = document.getElementById("showNavbarButton");
+
+        window.addEventListener("scroll", function () {
+            var scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+            if (scrollTop > 100) {
+                // Ocultar la barra de navegación y mostrar el botón flotante
+                if (isNavbarVisible) {
+                    navbar.style.transition = "top 1s ease";
+                    navbar.style.top = "-108px";
+                    isNavbarVisible = false;
+                    showNavbarButton.style.display = "block";
                 }
-            });
-    
-            showNavbarButton.addEventListener("click", function () {
-                // Mostrar la barra de navegación cuando se hace clic en el botón flotante y ocultar el botón flotante
-                navbar.style.transition = "top 1s ease";
-                navbar.style.top = "0";
-                isNavbarVisible = true;
-                showNavbarButton.style.display = "none";
-            });
-        </script>
-        <!-- Narvbar desapear -->
+            } else {
+                // Mostrar la barra de navegación solo si el usuario no ha ocultado manualmente y ocultar el botón flotante
+                if (!isNavbarVisible) {
+                    navbar.style.transition = "top 1s ease";
+                    navbar.style.top = "0";
+                    isNavbarVisible = true;
+                    showNavbarButton.style.display = "none";
+                }
+            }
+        });
+
+        showNavbarButton.addEventListener("click", function () {
+            // Mostrar la barra de navegación cuando se hace clic en el botón flotante y ocultar el botón flotante
+            navbar.style.transition = "top 1s ease";
+            navbar.style.top = "0";
+            isNavbarVisible = true;
+            showNavbarButton.style.display = "none";
+        });
+    </script>
+    <!-- Narvbar desapear -->
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
