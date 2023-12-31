@@ -3727,3 +3727,96 @@ section{
   width: 100%; /* Ocupar todo el ancho del contenedor */
   text-align: right; /* Alinear el texto (icono) a la derecha */
 }
+
+
+
+/* Assuming each slide has a fixed width, adjust this value accordingly */
+.glide__slides-disc {
+  display: flex;
+  overflow: hidden;
+}
+
+.glide-container-disc {
+  position: relative;
+}
+
+.glide__arrow-disc {
+  position: absolute;
+  top: 50%;
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #000; /* Adjust the color as needed */
+  background-color: #fc6701; /* Adjust the background color as needed */
+  border: none; /* Adjust the border properties as needed */
+  padding: 5px; /* Adjust the padding as needed */
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 15%;
+  color: #ffffff;
+  outline: none;
+  margin-right: 15px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.glide__arrow--left-disc {
+  left: -20px; /* Adjust the negative margin as needed */
+}
+
+.glide__arrow--right-disc {
+  right: -35px; /* Adjust the negative margin as needed */
+}
+@media (max-width: 768px) {
+  .glide__arrow--left-disc {
+    left: 0px; /* Adjust the negative margin as needed */
+  }
+  
+  .glide__arrow--right-disc {
+    right: -20px; /* Adjust the negative margin as needed */
+  }
+}
+@media (max-width: 992px) {
+  .glide__arrow--left-disc {
+    left: -35px; /* Adjust the negative margin as needed */
+  }
+  
+  .glide__arrow--right-disc {
+    right: -50px; /* Adjust the negative margin as needed */
+  }
+}
+
+/* Center the arrows vertically within the container */
+.glide__arrows-disc {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+
+
+/* Your existing styles for .glide__slides and other elements */
+.glide__bullets {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px; /* Add some space between cards and dots */
+}
+
+.glide__bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.glide__bullet.glide__bullet--active {
+  background-color: #333;
+}
+
