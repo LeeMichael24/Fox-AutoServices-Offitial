@@ -3121,6 +3121,10 @@ section{
 .h2-about-equip-bg{
   background: #f4f5ff !important;
 }
+.h2-about-equip-title{
+  margin-bottom: -80px;
+  margin-top: -40px;
+}
 .wrap-reverse{
   flex-wrap: wrap-reverse;
 }
