@@ -2565,6 +2565,11 @@ section{
     height: 50vh;
   }
 }
+@media (min-width: 1400px) and (max-width: 1440px) {
+  .price-table {
+    height: 62vh;
+  }
+}
 
 @media (min-width: 1441px) {
   .price-table {
@@ -3768,6 +3773,15 @@ section{
 .glide__arrow--right-disc {
   right: -35px; /* Adjust the negative margin as needed */
 }
+@media (max-width: 767px) {
+  .glide__arrow--left-disc {
+    left: -7px !important; /* Adjust the negative margin as needed */
+  }
+  
+  .glide__arrow--right-disc {
+    right: -20px !important; /* Adjust the negative margin as needed */
+  }
+}
 @media (max-width: 768px) {
   .glide__arrow--left-disc {
     left: 0px; /* Adjust the negative margin as needed */
@@ -3779,11 +3793,11 @@ section{
 }
 @media (max-width: 992px) {
   .glide__arrow--left-disc {
-    left: -35px; /* Adjust the negative margin as needed */
+    left: -40px; /* Adjust the negative margin as needed */
   }
   
   .glide__arrow--right-disc {
-    right: -50px; /* Adjust the negative margin as needed */
+    right: -55px; /* Adjust the negative margin as needed */
   }
 }
 
