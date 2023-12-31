@@ -237,13 +237,9 @@
 
 
 
-
   
   #carouselExampleInterval{
     margin-bottom: 50px;
-  }
-  #carouselExampleInterval2{
-    margin-bottom: 60px;
   }
   
   .carousel-item > div > div img{
@@ -258,26 +254,14 @@
     border-radius: 8px;
   }
 
-  .container-images-carousel{
-    height: 20vh;
-  }
-
   .carousel{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
-  }
-  @media (max-width: 1440px) {
-    .carousel{
-        width: 90%;
-      }
+    text-align: center;
   }
   @media (max-width: 992px) {
     .carousel{
         width: 90%;
-      }
-      .carousel-item > div > div img{
-        margin: 0 auto;
-        width: 190px !important;
       }
   }
 
@@ -295,9 +279,27 @@
     .carousel{
         width: 100%;
       }
-      .carousel-item > div > div img{
+      .carousel-item > img{
         margin: 0 auto;
-        width: 120px !important;
+        width: 90%;
+      }
+  }
+@media (min-width: 768px) {
+      .carousel-item > img{
+        margin: 0 auto;
+        width: 90% !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+        align-items: center !important;
+      }
+  }
+@media (min-width: 1440px) {
+      .carousel-item > img{
+        margin: 0 auto;
+        width: 85% !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+        align-items: center !important;
       }
   }
 /*# sourceMappingURL=collisionRepair.css.map */
