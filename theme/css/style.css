@@ -3792,6 +3792,15 @@ section{
     right: -55px; /* Adjust the negative margin as needed */
   }
 }
+@media (min-width: 993px) and (max-width: 1350px) {
+  .glide__arrow--left-disc {
+    left: -0px; /* Adjust the negative margin as needed */
+  }
+  
+  .glide__arrow--right-disc {
+    right: -15px; /* Adjust the negative margin as needed */
+  }
+}
 
 /* Center the arrows vertically within the container */
 .glide__arrows-disc {
