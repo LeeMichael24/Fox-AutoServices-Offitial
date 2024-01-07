@@ -2864,10 +2864,6 @@ section{
 
 
 
-
-
-
-
 .section-insta {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -2928,7 +2924,7 @@ section{
   }
 }
 /* tablets small */
-/* @media (min-width: 431px) and (max-width: 768px){
+@media (min-width: 431px) and (max-width: 760px){
   .section-iframe-insta{
     position: relative;
     overflow: hidden;
@@ -2938,14 +2934,29 @@ section{
   }
   .section-iframe-insta > iframe {
     border-radius: 5rem;
-    width: 81% !important;
-    height: 670px;
+    width: 97% !important;
+    height: 650px;
     margin-top: 40px;
   }
-} */
+}
+@media (min-width: 761px) and (max-width: 768px){
+  .section-iframe-insta{
+    position: relative;
+    overflow: hidden;
+    background: url('../images/frames/tableFrame4.png') center no-repeat;
+    background-size: cover;
+    height: 730px;
+  }
+  .section-iframe-insta > iframe {
+    border-radius: 5rem;
+    width: 73% !important;
+    height: 670px;
+    margin-top: 30px;
+  }
+}
 
 /* ipads grandes */
-@media (min-width: 769px) and (max-width: 810px){
+@media (min-width: 769px) and (max-width: 990px){
   .section-iframe-insta{
     position: relative;
     overflow: hidden;
@@ -2961,27 +2972,41 @@ section{
     margin-left: 12px;
   }
 }
-/* @media (max-width: 992px){
+/* monitores small*/
+@media (min-width: 1024px) and (max-width: 1118px){
   .section-iframe-insta{
     position: relative;
     overflow: hidden;
-    background: url('../images/frames/phoneFrame.png') center no-repeat;
+    background: url('../images/frames/tableFrame4.png') center no-repeat;
     background-size: cover;
     height: 730px;
   }
   .section-iframe-insta > iframe {
-    border-radius: 5rem;
-    width: 94%;
-    height: 670px;
-    margin-top: 40px;
-    margin-left: 12px;
+    width: 93% !important;
+    height: 675px;
+    margin-top: 27px;
+    margin-left: 20px;
+    border-radius: 1rem;
   }
-} */
-/* .section-iframe-insta > iframe {
-  margin-top: 60px;
-  border-radius: 1rem;
-  margin-left: 15px;
-} */
+}
+/* monitores grandes*/
+@media (min-width: 1119px) and (max-width: 1920px){
+  .section-iframe-insta{
+    position: relative;
+    overflow: hidden;
+    background: url('../images/frames/tableFrame4.png') center no-repeat;
+    background-size: cover;
+    height: 730px;
+  }
+  .section-iframe-insta > iframe {
+    width: 81% !important;
+    height: 675px;
+    margin-top: 27px;
+    margin-left: 62px;
+    border-radius: 2rem;
+  }
+}
+
 
 .section-insta-info {
   flex-grow: 1; /* Toma el espacio disponible */
