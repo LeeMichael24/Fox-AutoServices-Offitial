@@ -12,7 +12,7 @@
     <meta name="author" content="Fox Auto Service">
 
     <!-- Season snow -->
-    <script defer src="https://app.embed.im/snow.js"></script>
+    <!-- <script defer src="https://app.embed.im/snow.js"></script> -->
     <!-- Season snow-->
 
     <!-- Open Graph (OG) meta tags for social media sharing -->
@@ -53,6 +53,17 @@
 
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FP72DFM2LZ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FP72DFM2LZ');
+</script>
+
+
 <body>
     <!-- Start preload -->
     <div class="loading-overlay">
@@ -67,9 +78,12 @@
 
             <!-- Logo -->
             <a class="navbar-brand logo" href="index.html">
+                <img src="images/fas_neonthorizontal.png" alt="Fox Auto Services" class="regular-logo">
                 <!-- <img src="images/fas_neonthorizontal.png" alt="Fox Auto Services" class="regular-logo"> -->
                 <!-- Christmas Logo -->
-                <img src="images/season/christmas/foxLogoChristmas.png" alt="Fox Auto Services" class="christmas-logo">
+                <!-- <img src="images/season/christmas/foxLogoChristmas.png" alt="Fox Auto Services" class="christmas-logo xmast"> -->
+                <!-- <img src="images/season/valentines/logoValentines.png" alt="Fox Auto Services"
+                    class="christmas-logo xmast"> -->
             </a>
 
             <!-- Toggle BTN-->
@@ -180,21 +194,23 @@
     </section>
 
     <!-- Contenedor de la guirnalda (fijo en la parte superior) -->
-    <div class="guirnalda-container-hero" data-aos="fade-up" data-aos-anchor-placement="center-center"
+    <!-- <div class="guirnalda-container-hero" data-aos="fade-up" data-aos-anchor-placement="center-center"
         data-aos-delay="500">
-        <!-- Div general para la guirnalda continua -->
         <div class="guirnalda-hero">
-            <!-- Divs individuales para cada imagen de guirnalda -->
-            <div class="imagen-guirnalda-hero" style="background-image: url('images/season/christmas/guirnalda1.png');">
+            <div class="imagen-guirnalda-hero"
+                style="background-image: url('images/season/valentines/valentinesObject.png');">
             </div>
-            <div class="imagen-guirnalda-hero" style="background-image: url('images/season/christmas/guirnalda1.png');">
+            <div class="imagen-guirnalda-hero"
+                style="background-image: url('images/season/valentines/valentinesObject.png');">
             </div>
-            <div class="imagen-guirnalda-hero" style="background-image: url('images/season/christmas/guirnalda1.png');">
+            <div class="imagen-guirnalda-hero"
+                style="background-image: url('images/season/valentines/valentinesObject.png');">
             </div>
-            <div class="mobile-hero-guirnalda" style="background-image: url('images/season/christmas/guirnalda1.png');">
+            <div class="mobile-hero-guirnalda"
+                style="background-image: url('images/season/valentines/valentinesObject.png');">
             </div>
         </div>
-    </div>
+    </div> -->
 
     <section class="about-shot-info mt-5">
         <div class="container">
@@ -264,19 +280,26 @@
     <section class="container section-insta" style="position: relative; overflow: hidden;">
         <div data-aos="zoom-in-down" data-aos-duration="3000">
             <!-- Background for the video -->
-            <div class="video-background" style="background: url('images/frames/phoneFrame23.png') center center no-repeat; background-size: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 2rem;"></div>
-            
+            <div class="video-background"
+                style="background: url('images/frames/phoneFrame23.png') center center no-repeat; background-size: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 2rem;">
+            </div>
+
             <!-- Video tag -->
             <video controls autoplay muted loop id="myVideo">
                 <source src="images/video/aboutUsVideo.mp4" type="video/mp4">
             </video>
         </div>
         <div class="sec-insta-about-video" data-aos="zoom-in-up" data-aos-duration="3000">
-            <h1 class="insta-h1 h2-certi" style="color: #FC6701;">Salvador Vega's Journey: Fox Auto Services Unveiled</h1>
-            <p>Discover the extraordinary tale of Salvador Vega, the visionary behind Fox Auto Services. Hailing from El Salvador, Salvador's journey unfolds as a testament to determination and dreams. At 18, he ventured to the USA, and by 23, he founded his inaugural auto shop. Join us in celebrating Salvador's remarkable story, where resilience, passion, and a commitment to excellence converge in the heart of Fox Auto Services.</p>
+            <h1 class="insta-h1 h2-certi" style="color: #FC6701;">Salvador Vega's Journey: Fox Auto Services Unveiled
+            </h1>
+            <p>Discover the extraordinary tale of Salvador Vega, the visionary behind Fox Auto Services. Hailing from El
+                Salvador, Salvador's journey unfolds as a testament to determination and dreams. At 18, he ventured to
+                the USA, and by 23, he founded his inaugural auto shop. Join us in celebrating Salvador's remarkable
+                story, where resilience, passion, and a commitment to excellence converge in the heart of Fox Auto
+                Services.</p>
         </div>
     </section>
-    
+
 
 
 
@@ -377,7 +400,8 @@ Start Call To Action
 
     <section class="awards-section h2-about-equip-bg h2-about-equip-title">
         <div class="container">
-            <h2 class="section-title h2-blog" data-aos="zoom-out-down">We excel by using <span style="color: black;">top-notch <br>market-leading equipment.</span></h2>
+            <h2 class="section-title h2-blog" data-aos="zoom-out-down">We excel by using <span
+                    style="color: black;">top-notch <br>market-leading equipment.</span></h2>
     </section>
     <section class="about-equipment mb-5">
         <div class="container">
@@ -385,13 +409,16 @@ Start Call To Action
                 <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-down-right" data-aos-duration="1500">
                     <div class="about-content about-content-bg">
                         <h2 class="mb-3 h2-blog">THB Main Line Filter</h2>
-                        <p class="p-blog">The 5μ filter element removes oil, condensed water, and particles >5μ. The 0.01μ filter element removes 99.99% particles and oil>0.01μ. The active charcoal filter element absorbs oil of vapors and harmful gases. Desiccant beads change color from blue to pink when they need to be changed or reactivated.</p>
+                        <p class="p-blog">The 5μ filter element removes oil, condensed water, and particles >5μ. The
+                            0.01μ filter element removes 99.99% particles and oil>0.01μ. The active charcoal filter
+                            element absorbs oil of vapors and harmful gases. Desiccant beads change color from blue to
+                            pink when they need to be changed or reactivated.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-4 mt-lg-0 div-gap-right" data-aos="fade-down-left" data-aos-duration="1500">
                     <div class="img-container">
-                        <img loading="lazy" class="img-fluid img-about img-about-equip" src="images/equipment/filter.png"
-                            alt="About Us Fox 1">
+                        <img loading="lazy" class="img-fluid img-about img-about-equip"
+                            src="images/equipment/filter.png" alt="About Us Fox 1">
                     </div>
                 </div>
             </div>
@@ -400,14 +427,17 @@ Start Call To Action
             <div class="row wrap-reverse">
                 <div class="col-lg-6 mt-4 mt-lg-0 div-gap-right" data-aos="fade-down-left" data-aos-duration="1500">
                     <div class="img-container">
-                        <img loading="lazy" class="img-fluid img-about img-about-equip" src="images/equipment/airEquop.png"
-                            alt="About Us Fox 1">
+                        <img loading="lazy" class="img-fluid img-about img-about-equip"
+                            src="images/equipment/airEquop.png" alt="About Us Fox 1">
                     </div>
                 </div>
                 <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-down-right" data-aos-duration="1500">
                     <div class="about-content about-content-bg">
                         <h2 class="mb-3 h2-blog">ltec Non-Cycling Air Dryer</h2>
-                        <p class="p-blog">Altec AIR Refrigerated Air Dryers for compressed air applications use a heat exchange system to effectively cool incoming hot air, reducing the amount of necessary compression. The process also conditions outgoing air to a warmer temperature, which reduces the presence of re-condensation.</p>
+                        <p class="p-blog">Altec AIR Refrigerated Air Dryers for compressed air applications use a heat
+                            exchange system to effectively cool incoming hot air, reducing the amount of necessary
+                            compression. The process also conditions outgoing air to a warmer temperature, which reduces
+                            the presence of re-condensation.</p>
                     </div>
                 </div>
             </div>
@@ -417,7 +447,12 @@ Start Call To Action
                 <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-down-right" data-aos-duration="1500">
                     <div class="about-content about-content-bg">
                         <h2 class="mb-3 h2-blog">Snap On ZEUS ADAS System</h2>
-                        <p class="p-blog">Commonly referred to as drivers’ aids or safety systems, Advanced Driver Assistance Systems (ADAS) create a better driving experience by helping drivers navigate challenges as well as protect them and others from harmful actions and collisions. These systems include, but are not limited to, lane departure warning, collision warning, adaptive cruise control, adaptive light control, automatic braking, automatic parking, and blind spot detection.</p>
+                        <p class="p-blog">Commonly referred to as drivers’ aids or safety systems, Advanced Driver
+                            Assistance Systems (ADAS) create a better driving experience by helping drivers navigate
+                            challenges as well as protect them and others from harmful actions and collisions. These
+                            systems include, but are not limited to, lane departure warning, collision warning, adaptive
+                            cruise control, adaptive light control, automatic braking, automatic parking, and blind spot
+                            detection.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-4 mt-lg-0 div-gap-right" data-aos="fade-down-left" data-aos-duration="1500">
@@ -439,7 +474,9 @@ Start Call To Action
                 <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-down-right" data-aos-duration="1500">
                     <div class="about-content about-content-bg">
                         <h2 class="mb-3 h2-blog">Lincoln Electric 110v Welding Machine</h2>
-                        <p class="p-blog">Embracing versatility, the welding machine supports multiple welding processes, including MIG (Metal Inert Gas) and Flux-Cored welding. The seamless transition between welding modes enhances flexibility for different welding tasks.</p>
+                        <p class="p-blog">Embracing versatility, the welding machine supports multiple welding
+                            processes, including MIG (Metal Inert Gas) and Flux-Cored welding. The seamless transition
+                            between welding modes enhances flexibility for different welding tasks.</p>
                     </div>
                 </div>
             </div>
@@ -448,13 +485,16 @@ Start Call To Action
                     <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-down-right" data-aos-duration="1500">
                         <div class="about-content about-content-bg">
                             <h2 class="mb-3 h2-blog">Snap-on 220 A Workhorse MIG Welder</h2>
-                            <p class="p-blog">Designed with precision and durability in mind, the Snap-on 220 A Workhorse MIG Welder offers users the flexibility to handle various welding tasks with ease. The generous amperage allows for welding on a wide range of materials and thicknesses, providing versatility for different projects.</p>
+                            <p class="p-blog">Designed with precision and durability in mind, the Snap-on 220 A
+                                Workhorse MIG Welder offers users the flexibility to handle various welding tasks with
+                                ease. The generous amperage allows for welding on a wide range of materials and
+                                thicknesses, providing versatility for different projects.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0 div-gap-right" data-aos="fade-down-left" data-aos-duration="1500">
                         <div class="img-container">
-                            <img loading="lazy" class="img-fluid img-about img-about-equip" src="images/equipment/220.png"
-                                alt="About Us Fox 1">
+                            <img loading="lazy" class="img-fluid img-about img-about-equip"
+                                src="images/equipment/220.png" alt="About Us Fox 1">
                         </div>
                     </div>
                 </div>
@@ -463,14 +503,17 @@ Start Call To Action
                 <div class="row wrap-reverse">
                     <div class="col-lg-6 mt-4 mt-lg-0 div-gap-right" data-aos="fade-down-left" data-aos-duration="1500">
                         <div class="img-container">
-                            <img loading="lazy" class="img-fluid img-about img-about-equip" src="images/gallery/ejemplo13.jpg"
-                                alt="About Us Fox 1">
+                            <img loading="lazy" class="img-fluid img-about img-about-equip"
+                                src="images/gallery/ejemplo13.jpg" alt="About Us Fox 1">
                         </div>
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-down-right" data-aos-duration="1500">
                         <div class="about-content about-content-bg">
                             <h2 class="mb-3 h2-blog">Brewco Body Builder 360 Frame Machine With 3 Towers</h2>
-                            <p class="p-blog">Featuring a 360-degree rotating frame, this machine facilitates easy access to different areas of the vehicle, streamlining the straightening process. The user-friendly design and controls make it a valuable asset for automotive technicians seeking efficiency and precision in frame repair work.</p>
+                            <p class="p-blog">Featuring a 360-degree rotating frame, this machine facilitates easy
+                                access to different areas of the vehicle, streamlining the straightening process. The
+                                user-friendly design and controls make it a valuable asset for automotive technicians
+                                seeking efficiency and precision in frame repair work.</p>
                         </div>
                     </div>
                 </div>
@@ -480,13 +523,17 @@ Start Call To Action
                     <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-down-right" data-aos-duration="1500">
                         <div class="about-content about-content-bg">
                             <h2 class="mb-3 h2-blog">SNAP-ON Battery Charger PlusTM LiFePO4</h2>
-                            <p class="p-blog">The SNAP-ON Battery Charger PlusTM LiFePO4 is an advanced and efficient charging solution designed to provide reliable and effective charging for LiFePO4 batteries. Offering cutting-edge technology, this charger ensures optimal performance and longevity for your batteries. With the SNAP-ON brand backing it, you can trust in the quality and precision of this charging solution for your LiFePO4 batteries.</p>
+                            <p class="p-blog">The SNAP-ON Battery Charger PlusTM LiFePO4 is an advanced and efficient
+                                charging solution designed to provide reliable and effective charging for LiFePO4
+                                batteries. Offering cutting-edge technology, this charger ensures optimal performance
+                                and longevity for your batteries. With the SNAP-ON brand backing it, you can trust in
+                                the quality and precision of this charging solution for your LiFePO4 batteries.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0 div-gap-right" data-aos="fade-down-left" data-aos-duration="1500">
                         <div class="img-container">
-                            <img loading="lazy" class="img-fluid img-about img-about-equip" src="images/equipment/life04.png"
-                                alt="About Us Fox 1">
+                            <img loading="lazy" class="img-fluid img-about img-about-equip"
+                                src="images/equipment/life04.png" alt="About Us Fox 1">
                         </div>
                     </div>
                 </div>
@@ -495,15 +542,20 @@ Start Call To Action
                 <div class="row wrap-reverse">
                     <div class="col-lg-6 mt-4 mt-lg-0 div-gap-right" data-aos="fade-down-left" data-aos-duration="1500">
                         <div class="img-container">
-                            <img loading="lazy" class="img-fluid img-about img-about-equip" src="images/equipment/hybrid.png"
-                                alt="About Us Fox 1">
+                            <img loading="lazy" class="img-fluid img-about img-about-equip"
+                                src="images/equipment/hybrid.png" alt="About Us Fox 1">
                         </div>
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-down-right" data-aos-duration="1500">
                         <div class="about-content about-content-bg">
                             <h2 class="mb-3 h2-blog">AIM Hybrid Welding Solutions
                                 Squeeze Type Resistance Spot Welder (STRSW)</h2>
-                            <p class="p-blog">The AIM Hybrid Welding Solutions Squeeze Type Resistance Spot Welder (STRSW) stands as a high-performance welding solution, combining precision and versatility. Specifically designed for spot welding applications, this welder delivers efficient and reliable results. The innovative hybrid technology sets it apart, making it a top choice for professionals seeking superior welding capabilities. Trust in AIM Hybrid Welding Solutions for cutting-edge welding technology.</p>
+                            <p class="p-blog">The AIM Hybrid Welding Solutions Squeeze Type Resistance Spot Welder
+                                (STRSW) stands as a high-performance welding solution, combining precision and
+                                versatility. Specifically designed for spot welding applications, this welder delivers
+                                efficient and reliable results. The innovative hybrid technology sets it apart, making
+                                it a top choice for professionals seeking superior welding capabilities. Trust in AIM
+                                Hybrid Welding Solutions for cutting-edge welding technology.</p>
                         </div>
                     </div>
                 </div>
@@ -514,13 +566,16 @@ Start Call To Action
                         <div class="about-content about-content-bg">
                             <h2 class="mb-3 h2-blog">PR-2 Multi-task welder</h2>
                             <p class="p-blog">
-                                The PR-2 Welder is a highly versatile system that allows the user to weld multiple fasteners from theOEM. The PR-2 is also able to perform many single-sided welding functions such as stitch welding, washer welding, nut and bolt welding, nail welding, moulding clip rivet welding, and Pro Pull dent pulling.</p>
+                                The PR-2 Welder is a highly versatile system that allows the user to weld multiple
+                                fasteners from theOEM. The PR-2 is also able to perform many single-sided welding
+                                functions such as stitch welding, washer welding, nut and bolt welding, nail welding,
+                                moulding clip rivet welding, and Pro Pull dent pulling.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0 div-gap-right" data-aos="fade-down-left" data-aos-duration="1500">
                         <div class="img-container">
-                            <img loading="lazy" class="img-fluid img-about img-about-equip" src="images/equipment/pr2.png"
-                                alt="About Us Fox 1">
+                            <img loading="lazy" class="img-fluid img-about img-about-equip"
+                                src="images/equipment/pr2.png" alt="About Us Fox 1">
                         </div>
                     </div>
                 </div>
@@ -529,14 +584,16 @@ Start Call To Action
                 <div class="row wrap-reverse">
                     <div class="col-lg-6 mt-4 mt-lg-0 div-gap-right" data-aos="fade-down-left" data-aos-duration="1500">
                         <div class="img-container">
-                            <img loading="lazy" class="img-fluid img-about img-about-equip" src="images/equipment/snap.png"
-                                alt="About Us Fox 1">
+                            <img loading="lazy" class="img-fluid img-about img-about-equip"
+                                src="images/equipment/snap.png" alt="About Us Fox 1">
                         </div>
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-down-right" data-aos-duration="1500">
                         <div class="about-content about-content-bg">
                             <h2 class="mb-3 h2-blog">Snap-On Portable Dent Pulling System</h2>
-                            <p class="p-blog">Easily pulls dents on vehicle roofs, hoods, and side panels. System features star tip design for welding directly to cleaned work piece, eliminating the need to drill holes or cut pin heads.</p>
+                            <p class="p-blog">Easily pulls dents on vehicle roofs, hoods, and side panels. System
+                                features star tip design for welding directly to cleaned work piece, eliminating the
+                                need to drill holes or cut pin heads.</p>
                         </div>
                     </div>
                 </div>
@@ -547,13 +604,14 @@ Start Call To Action
                         <div class="about-content about-content-bg">
                             <h2 class="mb-3 h2-blog">SPANNESSI Q5.2 Inverter
                             </h2>
-                            <p class="p-blog">Q5.2 is a multi-function inverter welding machine with 3 torches: steel, silicon bronze and aluminum. The Q5.2 uses a single-phase 208-220V power supply.</p>
+                            <p class="p-blog">Q5.2 is a multi-function inverter welding machine with 3 torches: steel,
+                                silicon bronze and aluminum. The Q5.2 uses a single-phase 208-220V power supply.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0 div-gap-right" data-aos="fade-down-left" data-aos-duration="1500">
                         <div class="img-container">
-                            <img loading="lazy" class="img-fluid img-about img-about-equip" src="images/equipment/spanni.png"
-                                alt="About Us Fox 1">
+                            <img loading="lazy" class="img-fluid img-about img-about-equip"
+                                src="images/equipment/spanni.png" alt="About Us Fox 1">
                         </div>
                     </div>
                 </div>
@@ -562,14 +620,17 @@ Start Call To Action
                 <div class="row wrap-reverse">
                     <div class="col-lg-6 mt-4 mt-lg-0 div-gap-right" data-aos="fade-down-left" data-aos-duration="1500">
                         <div class="img-container">
-                            <img loading="lazy" class="img-fluid img-about img-about-equip" src="images/equipment/nitro.png"
-                                alt="About Us Fox 1">
+                            <img loading="lazy" class="img-fluid img-about img-about-equip"
+                                src="images/equipment/nitro.png" alt="About Us Fox 1">
                         </div>
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-down-right" data-aos-duration="1500">
                         <div class="about-content about-content-bg">
                             <h2 class="mb-3 h2-blog">POLYVANCE 8203 Nitrogen Plastic Welder</h2>
-                            <p class="p-blog">The 8203 Nitro-Fuzer® combines Polyvance's most advanced plastic welding equipment with the state-of-the-art Nitrocell nitrogen generator. The system includes everything needed to become immediately productive making strong and fast plastic repairs on virtually any type of plastic</p>
+                            <p class="p-blog">The 8203 Nitro-Fuzer® combines Polyvance's most advanced plastic welding
+                                equipment with the state-of-the-art Nitrocell nitrogen generator. The system includes
+                                everything needed to become immediately productive making strong and fast plastic
+                                repairs on virtually any type of plastic</p>
                         </div>
                     </div>
                 </div>
@@ -579,13 +640,18 @@ Start Call To Action
                     <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-down-right" data-aos-duration="1500">
                         <div class="about-content about-content-bg">
                             <h2 class="mb-3 h2-blog">Polyvance Hot Spot Cordless Plastic Stapler 6204</h2>
-                            <p class="p-blog">The Polyvance Hot Spot Cordless Plastic Stapler 6204 is an advanced and convenient tool designed for plastic repair applications. Offering cordless functionality, this stapler provides flexibility and ease of use. Manufactured by Polyvance, a trusted name in the industry, this tool ensures efficient and precise plastic repairs. The Hot Spot Cordless Plastic Stapler 6204 is the go-to choice for professionals seeking a reliable and versatile solution for plastic repair tasks.</p>
+                            <p class="p-blog">The Polyvance Hot Spot Cordless Plastic Stapler 6204 is an advanced and
+                                convenient tool designed for plastic repair applications. Offering cordless
+                                functionality, this stapler provides flexibility and ease of use. Manufactured by
+                                Polyvance, a trusted name in the industry, this tool ensures efficient and precise
+                                plastic repairs. The Hot Spot Cordless Plastic Stapler 6204 is the go-to choice for
+                                professionals seeking a reliable and versatile solution for plastic repair tasks.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0 div-gap-right" data-aos="fade-down-left" data-aos-duration="1500">
                         <div class="img-container">
-                            <img loading="lazy" class="img-fluid img-about img-about-equip" src="images/equipment/hotSpot.png"
-                                alt="About Us Fox 1">
+                            <img loading="lazy" class="img-fluid img-about img-about-equip"
+                                src="images/equipment/hotSpot.png" alt="About Us Fox 1">
                         </div>
                     </div>
                 </div>
@@ -594,14 +660,17 @@ Start Call To Action
                 <div class="row wrap-reverse">
                     <div class="col-lg-6 mt-4 mt-lg-0 div-gap-right" data-aos="fade-down-left" data-aos-duration="1500">
                         <div class="img-container">
-                            <img loading="lazy" class="img-fluid img-about img-about-equip" src="images/equipment/polarTeck.png"
-                                alt="About Us Fox 1">
+                            <img loading="lazy" class="img-fluid img-about img-about-equip"
+                                src="images/equipment/polarTeck.png" alt="About Us Fox 1">
                         </div>
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-down-right" data-aos-duration="1500">
                         <div class="about-content about-content-bg">
-                            <h2 class="mb-3 h2-blog">Snap-on climate solutions: Polartek plus r134a / polartek r1234yf</h2>
-                            <p class="p-blog">Snap-on Climate Solutions introduces Polartek Plus R134a and Polartek R1234yf, setting a new standard in climate control technology. Trust Snap-on for cutting-edge solutions in automotive climate systems.</p>
+                            <h2 class="mb-3 h2-blog">Snap-on climate solutions: Polartek plus r134a / polartek r1234yf
+                            </h2>
+                            <p class="p-blog">Snap-on Climate Solutions introduces Polartek Plus R134a and Polartek
+                                R1234yf, setting a new standard in climate control technology. Trust Snap-on for
+                                cutting-edge solutions in automotive climate systems.</p>
                         </div>
                     </div>
                 </div>
@@ -611,13 +680,17 @@ Start Call To Action
                     <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-down-right" data-aos-duration="1500">
                         <div class="about-content about-content-bg">
                             <h2 class="mb-3 h2-blog">Auto Lift 12,000 lb. Asymmetric 2 Post Car Lift</h2>
-                            <p class="p-blog">The Auto Lift 12,000 lb. Asymmetric 2 Post Car Lift is a powerful and efficient lifting solution for vehicles. With its 12,000-pound capacity and asymmetric design, this lift provides stability and versatility for various automotive applications. Trust in the reliability and performance of Auto Lift for your car lifting needs.</p>
+                            <p class="p-blog">The Auto Lift 12,000 lb. Asymmetric 2 Post Car Lift is a powerful and
+                                efficient lifting solution for vehicles. With its 12,000-pound capacity and asymmetric
+                                design, this lift provides stability and versatility for various automotive
+                                applications. Trust in the reliability and performance of Auto Lift for your car lifting
+                                needs.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0 div-gap-right" data-aos="fade-down-left" data-aos-duration="1500">
                         <div class="img-container">
-                            <img loading="lazy" class="img-fluid img-about img-about-equip" src="images/gallery/ejemplo2.jpg"
-                                alt="About Us Fox 1">
+                            <img loading="lazy" class="img-fluid img-about img-about-equip"
+                                src="images/gallery/ejemplo2.jpg" alt="About Us Fox 1">
                         </div>
                     </div>
                 </div>
@@ -660,9 +733,9 @@ Start Call To Action
             <div class="row g-5 py-5">
                 <div class="col-lg-6 pe-lg-5">
                     <a href="index.html" class="a-footer-img">
-                        <!-- <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="Fox logo footer"> -->
-                        <img class="mb-0 mt-0 img-footer" src="images/season/christmas/foxLogoChristmas.png"
-                            alt="Fox logo footer christmas">
+                        <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="Fox logo footer">
+                        <!-- <img class="mb-0 mt-0 img-footer" src="images/season/christmas/foxLogoChristmas.png"
+                            alt="Fox logo footer christmas"> -->
                     </a>
                     <p class="fs-5 mb-4 large-content">Fox Auto Services - Where Expertise Meets Excellence. Your
                         Premier Destination

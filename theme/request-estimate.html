@@ -36,9 +36,21 @@
     <link rel="icon" type="image/x-icon" href="images/fas_neont.png">
 
     <!-- Season snow -->
-    <script defer src="https://app.embed.im/snow.js"></script>
+    <!-- <script defer src="https://app.embed.im/snow.js"></script> -->
     <!-- Season snow-->
 </head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FP72DFM2LZ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FP72DFM2LZ');
+</script>
+
 
 <body>
     <!-- Start preload -->
@@ -54,9 +66,9 @@
 
             <!-- Logo -->
             <a class="navbar-brand logo" href="index.html">
-                <!-- <img src="images/fas_neonthorizontal.png" alt="Fox Auto Services" class="regular-logo"> -->
+                <img src="images/fas_neonthorizontal.png" alt="Fox Auto Services" class="regular-logo">
                 <!-- Christmas Logo -->
-                <img src="images/season/christmas/foxLogoChristmas.png" alt="Fox Auto Services" class="christmas-logo">
+                <!-- <img src="images/season/valentines/logoValentines.png" alt="Fox Auto Services" class="christmas-logo"> -->
             </a>
 
             <!-- Toggle BTN-->
@@ -126,7 +138,7 @@
 
     <button id="showNavbarButton" class="btn">
         <span class="fa fa-bars"></span>
-      </button>
+    </button>
 
     <!-- FAB -->
     <div class="fab-container">
@@ -164,23 +176,25 @@
                 Needs</p>
         </div>
     </section>
-    
+
     <!-- Contenedor de la guirnalda (fijo en la parte superior) -->
-    <div class="guirnalda-container-hero" data-aos="fade-up"
-    data-aos-anchor-placement="center-center" data-aos-delay="500">
-        <!-- Div general para la guirnalda continua -->
+    <!-- <div class="guirnalda-container-hero" data-aos="fade-up" data-aos-anchor-placement="center-center"
+        data-aos-delay="500">
         <div class="guirnalda-hero">
-            <!-- Divs individuales para cada imagen de guirnalda -->
-            <div class="imagen-guirnalda-hero" style="background-image: url('images/season/christmas/guirnalda1.png');">
+            <div class="imagen-guirnalda-hero"
+                style="background-image: url('images/season/valentines/valentinesObject.png');">
             </div>
-            <div class="imagen-guirnalda-hero" style="background-image: url('images/season/christmas/guirnalda1.png');">
+            <div class="imagen-guirnalda-hero"
+                style="background-image: url('images/season/valentines/valentinesObject.png');">
             </div>
-            <div class="imagen-guirnalda-hero" style="background-image: url('images/season/christmas/guirnalda1.png');">
+            <div class="imagen-guirnalda-hero"
+                style="background-image: url('images/season/valentines/valentinesObject.png');">
             </div>
-            <div class="mobile-hero-guirnalda" style="background-image: url('images/season/christmas/guirnalda1.png');">
+            <div class="mobile-hero-guirnalda"
+                style="background-image: url('images/season/valentines/valentinesObject.png');">
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -194,8 +208,10 @@
                     repairs that you need so the estimate can be more precise.
                 </p>
             </div>
-            <form class="formulario" method=POST id="formulario" action="https://formsubmit.co/info@foxautoservices.com" enctype=multipart/form-data>
-                <div class="formulario__label animate-top" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+            <form class="formulario" method=POST id="formulario" action="https://formsubmit.co/info@foxautoservices.com"
+                enctype=multipart/form-data>
+                <div class="formulario__label animate-top" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" data-aos-duration="1000">
                     <h3 class="headline-form">Customers Information</h3>
                     <div class="line-form"></div>
                 </div>
@@ -254,7 +270,8 @@
                     </div>
                 </div>
 
-                <div class="formulario__label animate-top" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1100">
+                <div class="formulario__label animate-top" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" data-aos-duration="1100">
                     <h3 class="headline-form">Vehicule Information</h3>
                     <div class="line-form"></div>
                 </div>
@@ -360,7 +377,8 @@
                     </div>
                 </div>
 
-                <div class="formulario__label animate-top" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+                <div class="formulario__label animate-top" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" data-aos-duration="1000">
                     <h3 class="headline-form">Dent Damage Information</h3>
                     <div class="line-form"></div>
                 </div>
@@ -378,15 +396,16 @@
                 <!-- Grupo: Approx Size -->
                 <div class="formulario__grupo animate-top" id="grupo__tamanio">
                     <div class="formulario__grupo-input">
-                        <input type="number" min="0" max="1000" class="formulario__input " name="Dents Size in cm" id="tamanio"
-                            placeholder="Approx. Size of all dents in cm*" required>
+                        <input type="number" min="0" max="1000" class="formulario__input " name="Dents Size in cm"
+                            id="tamanio" placeholder="Approx. Size of all dents in cm*" required>
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
                 </div>
 
                 <div class="formulario__grupo formulario_subgrupo">
                     <div class="col-8 animate-right">
-                        <div class="formulario__label" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+                        <div class="formulario__label" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" data-aos-duration="1000">
                             <h3 class="headline-form">Damaged Locations</h3>
                             <div class="line-form"></div>
                         </div>
@@ -435,7 +454,8 @@
                 <!-- Grupo: Damage Cause. -->
                 <div class="formulario__grupo cause animate-top" id="grupo__cause">
                     <div class="formulario__label">
-                        <h3 class="headline-form" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">Damage Cause</h3>
+                        <h3 class="headline-form" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" data-aos-duration="1000">Damage Cause</h3>
                         <div class="line-form"></div>
                     </div>
                     <div class="formulario__grupo-input">
@@ -464,8 +484,8 @@
     <!-- Maps -->
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.936460966356!2d-76.61641972307292!3d39.176165171665986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7fd40f7f97315%3A0x90a132335fd947d2!2sFox%20Auto%20Services!5e0!3m2!1ses!2ssv!4v1697073470899!5m2!1ses!2ssv"
-        width="100%" height="400" style="border:0;" style="overflow: auto;" style="z-index: 1;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        width="100%" height="400" style="border:0;" style="overflow: auto;" style="z-index: 1;" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <!-- Maps -->
 
     <!-- Footer Start -->
@@ -475,8 +495,8 @@
             <div class="row g-5 py-5">
                 <div class="col-lg-6 pe-lg-5">
                     <a href="index.html" class="a-footer-img">
-                        <!-- <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="Fox logo footer"> -->
-                        <img class="mb-0 mt-0 img-footer" src="images/season/christmas/foxLogoChristmas.png" alt="Fox logo footer christmas">
+                        <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="Fox logo footer">
+                        <!-- <img class="mb-0 mt-0 img-footer" src="images/season/christmas/foxLogoChristmas.png" alt="Fox logo footer christmas"> -->
                     </a>
                     <p class="fs-5 mb-4">Fox Auto Services - Where Expertise Meets Excellence. Your Premier Destination
                         for Automotive Solutions.</p>
@@ -562,45 +582,45 @@
         });
     </script>
 
-        <!-- Narvbar desapear -->
-        <script type="text/javascript">
-            var isNavbarVisible = true;
-            var navbar = document.getElementById("navbar");
-            var showNavbarButton = document.getElementById("showNavbarButton");
-    
-            window.addEventListener("scroll", function () {
-                var scrollTop = window.scrollY || document.documentElement.scrollTop;
-    
-                if (scrollTop > 100) {
-                    // Ocultar la barra de navegación y mostrar el botón flotante
-                    if (isNavbarVisible) {
-                        navbar.style.transition = "top 1s ease";
-                        navbar.style.top = "-108px";
-                        isNavbarVisible = false;
-                        showNavbarButton.style.display = "block";
-                    }
-                } else {
-                    // Mostrar la barra de navegación solo si el usuario no ha ocultado manualmente y ocultar el botón flotante
-                    if (!isNavbarVisible) {
-                        navbar.style.transition = "top 1s ease";
-                        navbar.style.top = "0";
-                        isNavbarVisible = true;
-                        showNavbarButton.style.display = "none";
-                    }
-                }
-            });
-    
-            showNavbarButton.addEventListener("click", function () {
-                // Mostrar la barra de navegación cuando se hace clic en el botón flotante y ocultar el botón flotante
-                navbar.style.transition = "top 1s ease";
-                navbar.style.top = "0";
-                isNavbarVisible = true;
-                showNavbarButton.style.display = "none";
-            });
-        </script>
-        <!-- Narvbar desapear -->
+    <!-- Narvbar desapear -->
+    <script type="text/javascript">
+        var isNavbarVisible = true;
+        var navbar = document.getElementById("navbar");
+        var showNavbarButton = document.getElementById("showNavbarButton");
 
-    
+        window.addEventListener("scroll", function () {
+            var scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+            if (scrollTop > 100) {
+                // Ocultar la barra de navegación y mostrar el botón flotante
+                if (isNavbarVisible) {
+                    navbar.style.transition = "top 1s ease";
+                    navbar.style.top = "-108px";
+                    isNavbarVisible = false;
+                    showNavbarButton.style.display = "block";
+                }
+            } else {
+                // Mostrar la barra de navegación solo si el usuario no ha ocultado manualmente y ocultar el botón flotante
+                if (!isNavbarVisible) {
+                    navbar.style.transition = "top 1s ease";
+                    navbar.style.top = "0";
+                    isNavbarVisible = true;
+                    showNavbarButton.style.display = "none";
+                }
+            }
+        });
+
+        showNavbarButton.addEventListener("click", function () {
+            // Mostrar la barra de navegación cuando se hace clic en el botón flotante y ocultar el botón flotante
+            navbar.style.transition = "top 1s ease";
+            navbar.style.top = "0";
+            isNavbarVisible = true;
+            showNavbarButton.style.display = "none";
+        });
+    </script>
+    <!-- Narvbar desapear -->
+
+
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

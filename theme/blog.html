@@ -20,7 +20,7 @@
     <meta name="author" content="Fox Auto Service">
 
     <!-- Season snow -->
-    <script defer src="https://app.embed.im/snow.js"></script>
+    <!-- <script defer src="https://app.embed.im/snow.js"></script> -->
     <!-- Season snow-->
 
     <!-- Open Graph (OG) meta tags for social media sharing -->
@@ -61,6 +61,18 @@
 
 </head>
 
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FP72DFM2LZ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FP72DFM2LZ');
+</script>
+
+
 <body>
 
     <!-- Start preload -->
@@ -76,9 +88,9 @@
 
             <!-- Logo -->
             <a class="navbar-brand logo" href="index.html">
-                <!-- <img src="images/fas_neonthorizontal.png" alt="Fox Auto Services" class="regular-logo"> -->
+                <img src="images/fas_neonthorizontal.png" alt="Fox Auto Services" class="regular-logo">
                 <!-- Christmas Logo -->
-                <img src="images/season/christmas/foxLogoChristmas.png" alt="Fox Auto Services" class="christmas-logo">
+                <!-- <img src="images/season/christmas/foxLogoChristmas.png" alt="Fox Auto Services" class="christmas-logo"> -->
             </a>
 
             <!-- Toggle BTN-->
@@ -148,9 +160,9 @@
 
     <button id="showNavbarButton" class="btn">
         <span class="fa fa-bars"></span>
-      </button>
+    </button>
 
-      
+
 
     <!-- FAB -->
     <div class="fab-container">
@@ -196,11 +208,9 @@
     </header>
 
     <!-- Contenedor de la guirnalda (fijo en la parte superior) -->
-    <div class="guirnalda-container-hero-blog" data-aos="fade-up" data-aos-anchor-placement="center-center"
+    <!-- <div class="guirnalda-container-hero-blog" data-aos="fade-up" data-aos-anchor-placement="center-center"
         data-aos-delay="500">
-        <!-- Div general para la guirnalda continua -->
         <div class="guirnalda-hero-blog">
-            <!-- Divs individuales para cada imagen de guirnalda -->
             <div class="imagen-guirnalda-hero-blog"
                 style="background-image: url('images/season/christmas/guirnalda1.png');">
             </div>
@@ -214,7 +224,7 @@
                 style="background-image: url('images/season/christmas/guirnalda1.png');">
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Page content-->
@@ -222,117 +232,89 @@
         <div class="row">
             <!-- Blog entries-->
             <div class="col-lg-8">
-                <!-- Featured blog post-->
+                <!-- Featured blog post -->
                 <div class="card mb-4" data-aos="zoom-out-down">
-                    <a href="../blog/top10Sings.html"><img class="card-img-top img-blogSingle-post"
-                            src="../images/blog/top10Signs.jpg" alt="Car winter" /></a>
-                    <div class="guirnalda-container-card-post">
-                        <!-- Div general para la guirnalda continua -->
-                        <div class="guirnalda-card-post">
-                            <!-- Divs individuales para cada imagen de guirnalda -->
-                            <div class="imagen-guirnalda-card-post"
-                                style="background-image: url('../images/season/christmas/guirnalda4.png');"></div>
-                        </div>
-                    </div>
+                    <a href="blog/batteryCheck.html"><img class="card-img-top img-blogSingle-post" src="images/blog/batteryCheck.png" alt="Car winter" /></a>
                     <div class="card-body">
-                        <div class="small text-muted">December 23, 2023</div>
-                        <h2 class="card-title">Top 10 Signs Your Car Needs Immediate Attention</h2>
-                        <p class="card-text">Being proactive about these warning signs can save you time, money, and
-                            ensure the safety of your vehicle. If you notice any of these indicators, consult with a
-                            professional mechanic to diagnose and address the issue promptly...</p>
-                        <a class="btn btn-primary" href="../blog/top10Sings.html">Read more →</a>
+                        <div class="small text-muted">April 7, 2024</div>
+                        <h2 class="card-title">Having trouble starting your car? It’s time to check the battery!</h2>
+                        <p class="card-text">"Explore common issues with car batteries and how to troubleshoot them..."</p>
+                        <a class="btn btn-primary" href="blog/batteryCheck.html">Read more →</a>
                     </div>
                 </div>
-                <!-- Nested row for non-featured blog posts-->
+                <!-- Nested row for non-featured blog posts -->
                 <div class="row mb-5">
+                    <!-- Right column -->
                     <div class="col-lg-6">
-                        <!-- Blog post-->
+                        <!-- Blog post -->
                         <div class="card mb-4" data-aos="fade-right">
-                            <a href="../blog/chooseMechanic.html"><img class="card-img-top"
-                                    src="../images/blog/chooseMechanic.jpg" alt="Fuel Efficiency Gas" /></a>
-                            <div class="guirnalda-container-card-post">
-                                <!-- Div general para la guirnalda continua -->
-                                <div class="guirnalda-card-post">
-                                    <!-- Divs individuales para cada imagen de guirnalda -->
-                                    <div class="imagen-guirnalda-card-post"
-                                        style="background-image: url('../images/season/christmas/guirnalda4.png');">
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="blog/checkEngine.html"><img class="card-img-top img-blogSingle-post" src="images/blog/checkEngine.png" alt="Car winter" /></a>
                             <div class="card-body">
-                                <div class="small text-muted">December 23, 2023</div>
-                                <h2 class="card-title h4">How to Choose the Right Mechanic in Glen Burnie</h2>
-                                <p class="card-text">Discover the key factors to consider when selecting the right
-                                    mechanic for your vehicle in Glen Burnie...</p>
-                                <a class="btn btn-primary" href="../blog/chooseMechanic.html">Read more →</a>
+                                <div class="small text-muted">March 22, 2024</div>
+                                <h2 class="card-title h4">Dashboard Lights: Understanding the Check Engine Light</h2>
+                                <p class="card-text">"Understanding the check engine light can help you avoid potential problems and keep your car running smoothly..."</p>
+                                <a class="btn btn-primary" href="blog/checkEngine.html">Read more →</a>
                             </div>
                         </div>
-                        <!-- Blog post-->
-                        <div class="card mb-4" data-aos="fade-left">
-                            <a href="blog/summerTrip.html"><img class="card-img-top" src="images/blog/summerTrip1.jpg"
-                                    alt="Summer Trip" /></a>
-                            <div class="guirnalda-container-card-post">
-                                <!-- Div general para la guirnalda continua -->
-                                <div class="guirnalda-card-post">
-                                    <!-- Divs individuales para cada imagen de guirnalda -->
-                                    <div class="imagen-guirnalda-card-post"
-                                        style="background-image: url('images/season/christmas/guirnalda4.png');"></div>
-                                </div>
+                        <!-- Blog post -->
+                        <div class="card mb-4" data-aos="fade-right">
+                            <a href="blog/top10Sings.html"><img class="card-img-top" src="images/blog/top102.jpg" alt="Fuel Efficiency Gas" /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">December 25, 2023</div>
+                                <h2 class="card-title h4">Top 10 Signs Your Car Needs Immediate Attention</h2>
+                                <p class="card-text">Being proactive about these warning signs can save you time, money, and ensure the safety ...</p>
+                                <a class="btn btn-primary" href="blog/top10Sings.html">Read more →</a>
                             </div>
+                        </div>
+                        <!-- Blog post -->
+                        <div class="card mb-4" data-aos="fade-right">
+                            <a href="blog/safeBreaks.html"><img class="card-img-top" style="height: 210px;" src="images/blog/breaks.png" alt="Fuel Efficiency Gas" /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">January 15, 2024</div>
+                                <h2 class="card-title h4">Brake Health Guide: Signs and Signals for Timely Replacement</h2>
+                                <p class="card-text">Being proactive about these warning signs can save you time, money, and ensure the safety...</p>
+                                <a class="btn btn-primary" href="blog/safeBreaks.html">Read more →</a>
+                            </div>
+                        </div>
+                        <!-- Blog post -->
+                        
+                    </div>
+                    <!-- Left column -->
+                    <div class="col-lg-6">
+                        <!-- Blog post -->
+                        <div class="card mb-4" data-aos="fade-left">
+                            <a href="blog/tpmsLight.html"><img class="card-img-top" style="height: 210px;" src="images/blog/tmpsLight.png" alt="..." /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">March 7, 2024</div>
+                                <h2 class="card-title h4">TPMS Light: Understanding and Troubleshooting</h2>
+                                <p class="card-text">Your car's dashboard is a crucial information center, and the TPMS (Tire Pressure Monitoring System) light is one of the signals you shouldn't ignore...</p>
+                                <a class="btn btn-primary" href="blog/tpmsLight.html">Read more →</a>
+                            </div>
+                        </div>
+                        <!-- Blog post -->
+                        <div class="card mb-4" data-aos="fade-left">
+                            <a href="blog/glenBurnie-repair.html"><img class="card-img-top" style="height: 210px;" src="images/blog/glenBurnieChoose.jpg" alt="..." /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">February 20, 2024</div>
+                                <h2 class="card-title h4">The Premier Car Workshop in Glen Burnie: Why Choose Us?</h2>
+                                <p class="card-text">Discover why Fox Auto Service is your top choice for car maintenance and repair in Glen Burnie...</p>
+                                <a class="btn btn-primary" href="blog/glenBurnie-repair.html">Read more →</a>
+                            </div>
+                        </div>
+                        <!-- Blog post -->
+                        <div class="card mb-4" data-aos="fade-right">
+                            <a href="blog/summerTrip.html"><img class="card-img-top" src="images/blog/summerTrip1.jpg" alt="Summer Trip" /></a>
                             <div class="card-body">
                                 <div class="small text-muted">December 6, 2023</div>
                                 <h2 class="card-title h4">Summer Road Trip: Preparing Your Car for the Journey</h2>
-                                <p class="card-text">Ensure a smooth and enjoyable summer road trip by preparing your
-                                    car for the adventure...</p>
+                                <p class="card-text">Ensure a smooth and enjoyable summer road trip by preparing your car for the adventure...</p>
                                 <a class="btn btn-primary" href="blog/summerTrip.html">Read more →</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <!-- Blog post-->
-                        <div class="card mb-4" data-aos="fade-right">
-                            <a href="blog/fuelEfficiency.html"><img class="card-img-top"
-                                    src="images/blog/fuelEfficiency.jpg" alt="Fuel Efficiency Gas" /></a>
-                            <div class="guirnalda-container-card-post">
-                                <!-- Div general para la guirnalda continua -->
-                                <div class="guirnalda-card-post">
-                                    <!-- Divs individuales para cada imagen de guirnalda -->
-                                    <div class="imagen-guirnalda-card-post"
-                                        style="background-image: url('images/season/christmas/guirnalda4.png');"></div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="small text-muted">December 8, 2023</div>
-                                <h2 class="card-title h4">Fuel Efficiency 101: Tips to Save Gas and Money</h2>
-                                <p class="card-text">Saving gas not only benefits your wallet but also contributes to a
-                                    greener planet...</p>
-                                <a class="btn btn-primary" href="blog/fuelEfficiency.html">Read more →</a>
-                            </div>
-                        </div>
-                        <!-- Blog post-->
-                        <div class="card mb-4" data-aos="fade-right">
-                            <a href="blog/avoidCommonCarMain.html"><img class="card-img-top"
-                                    src="images/blog/commonMaintaincae.jpg" alt="Fuel Efficient Gas" /></a>
-                            <div class="guirnalda-container-card-post">
-                                <!-- Div general para la guirnalda continua -->
-                                <div class="guirnalda-card-post">
-                                    <!-- Divs individuales para cada imagen de guirnalda -->
-                                    <div class="imagen-guirnalda-card-post"
-                                        style="background-image: url('../images/season/christmas/guirnalda4.png');"></div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="small text-muted">December 5, 2023</div>
-                                <h2 class="card-title h4">Avoiding Common Car Maintenance Mistakes</h2>
-                                <p class="card-text">Learn about the common car maintenance mistakes to avoid. Proper
-                                    care ensures your vehicle...</p>
-                                <a class="btn btn-primary" href="blog/avoidCommonCarMain.html">Read more →</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-
             </div>
+            
             <!-- Side widgets-->
             <div class="col-lg-4">
                 <!-- Search widget-->
@@ -340,7 +322,8 @@
                     <div class="card-header">Recent Posts</div>
                     <div class="card-body">
                         <ul class="list-unstyled mb-0">
-                            <li><a href="blog/chooseMechanic.html">How to Choose the Right Mechanic in Glen Burnie</a></li>
+                            <li><a href="blog/chooseMechanic.html">How to Choose the Right Mechanic in Glen Burnie</a>
+                            </li>
                             <li><a href="blog/top10Sings.html">Top 10 Signs Your Car Needs Immediate Attention</a></li>
                             <li><a href="blog/avoidCommonCarMain.html">Avoiding Common Car Maintenance Mistakes</a></li>
                         </ul>
@@ -351,10 +334,10 @@
                     <div class="card-body">
                         <i class="fa fa-globe fa-2x p-2 bg-primary"></i>
                         <div class="mt-2 lead">Customers Views Last Month</div>
-                        <h2 class="card-title" style="font-size:1.8em;">5.7k</h2>
-                        <p class="small text-muted">Nov 1 - Dec 23, <i class="fa fa-globe"></i> Worldwide</p>
+                        <h2 class="card-title" style="font-size:1.8em;">4k</h2>
+                        <p class="small text-muted">March 22 - April 7, <i class="fa fa-globe"></i> Worldwide</p>
                         <p class="text-success">
-                            <i class="fa fa-angle-up"></i> 30.8%
+                            <i class="fa fa-angle-up"></i> 45.8%
                             <span style="font-size: 0.9em" class="ms-2 text-muted">Since last quarter</span>
                         </p>
                     </div>
@@ -397,8 +380,7 @@
 
 
 
-
-
+    
 
 
     <!-- Footer Start -->
@@ -408,9 +390,9 @@
             <div class="row g-5 py-5">
                 <div class="col-lg-6 pe-lg-5">
                     <a href="index.html" class="a-footer-img">
-                        <!-- <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="Fox logo footer"> -->
-                        <img class="mb-0 mt-0 img-footer" src="images/season/christmas/foxLogoChristmas.png"
-                            alt="Fox logo footer christmas">
+                        <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="Fox logo footer">
+                        <!-- <img class="mb-0 mt-0 img-footer" src="images/season/christmas/foxLogoChristmas.png"
+                            alt="Fox logo footer christmas"> -->
                     </a>
                     <p class="fs-5 mb-4 large-content">Fox Auto Services - Where Expertise Meets Excellence. Your
                         Premier Destination
@@ -504,43 +486,43 @@
         $(document).ready(function () { setTimeout(function () { $(".loading-overlay").fadeOut(450, function () { $(this).remove() }) }, 200) }), window.addEventListener("scroll", function () { var n = document.querySelector(".floating-header"); window.scrollY > 5 ? n.classList.add("visible") : n.classList.remove("visible") });
     </script>
 
-        <!-- Narvbar desapear -->
-        <script type="text/javascript">
-            var isNavbarVisible = true;
-            var navbar = document.getElementById("navbar");
-            var showNavbarButton = document.getElementById("showNavbarButton");
-    
-            window.addEventListener("scroll", function () {
-                var scrollTop = window.scrollY || document.documentElement.scrollTop;
-    
-                if (scrollTop > 100) {
-                    // Ocultar la barra de navegación y mostrar el botón flotante
-                    if (isNavbarVisible) {
-                        navbar.style.transition = "top 1s ease";
-                        navbar.style.top = "-108px";
-                        isNavbarVisible = false;
-                        showNavbarButton.style.display = "block";
-                    }
-                } else {
-                    // Mostrar la barra de navegación solo si el usuario no ha ocultado manualmente y ocultar el botón flotante
-                    if (!isNavbarVisible) {
-                        navbar.style.transition = "top 1s ease";
-                        navbar.style.top = "0";
-                        isNavbarVisible = true;
-                        showNavbarButton.style.display = "none";
-                    }
+    <!-- Narvbar desapear -->
+    <script type="text/javascript">
+        var isNavbarVisible = true;
+        var navbar = document.getElementById("navbar");
+        var showNavbarButton = document.getElementById("showNavbarButton");
+
+        window.addEventListener("scroll", function () {
+            var scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+            if (scrollTop > 100) {
+                // Ocultar la barra de navegación y mostrar el botón flotante
+                if (isNavbarVisible) {
+                    navbar.style.transition = "top 1s ease";
+                    navbar.style.top = "-120px";
+                    isNavbarVisible = false;
+                    showNavbarButton.style.display = "block";
                 }
-            });
-    
-            showNavbarButton.addEventListener("click", function () {
-                // Mostrar la barra de navegación cuando se hace clic en el botón flotante y ocultar el botón flotante
-                navbar.style.transition = "top 1s ease";
-                navbar.style.top = "0";
-                isNavbarVisible = true;
-                showNavbarButton.style.display = "none";
-            });
-        </script>
-        <!-- Narvbar desapear -->
+            } else {
+                // Mostrar la barra de navegación solo si el usuario no ha ocultado manualmente y ocultar el botón flotante
+                if (!isNavbarVisible) {
+                    navbar.style.transition = "top 1s ease";
+                    navbar.style.top = "0";
+                    isNavbarVisible = true;
+                    showNavbarButton.style.display = "none";
+                }
+            }
+        });
+
+        showNavbarButton.addEventListener("click", function () {
+            // Mostrar la barra de navegación cuando se hace clic en el botón flotante y ocultar el botón flotante
+            navbar.style.transition = "top 1s ease";
+            navbar.style.top = "0";
+            isNavbarVisible = true;
+            showNavbarButton.style.display = "none";
+        });
+    </script>
+    <!-- Narvbar desapear -->
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

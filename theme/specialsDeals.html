@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://MichaelNarvaez.com
+ // TWITTER: https://twitter.com/MichaelNarvaez
+ // FACEBOOK: https://www.facebook.com/MichaelNarvaez
+ // GITHUB: https://github.com/MichaelNarvaez/
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox Auto Service | Social Media</title>
+
+
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Glide pricing cards-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+    <!--Scroll reveal CDN-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <!-- Own styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/seasonEffects.css">
+
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- icon -->
+    <link rel="icon" type="image/x-icon" href="images/fas_neont.png">
+
+    <!-- Season snow -->
+    <!-- <script defer src="https://app.embed.im/snow.js"></script> -->
+    <!-- Season snow-->
+</head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FP72DFM2LZ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FP72DFM2LZ');
+</script>
+
+
+<body>
+    <!-- Start preload -->
+    <div class="loading-overlay text-center">
+        <div class="loader">
+            <div class="loader-div">
+            </div>
+        </div>
+    </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand logo" href="index.html">
+                <img src="images/fas_neonthorizontal.png" alt="Fox Auto Services" class="regular-logo">
+                <!-- Christmas Logo -->
+                <!-- <img src="images/season/christmas/foxLogoChristmas.png" alt="Fox Auto Services" class="christmas-logo"> -->
+            </a>
+
+            <!-- Toggle BTN-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- SideBar -->
+            <div class="sidebar-nav-header offcanvas offcanvas-end snowflake" tabIndex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <!-- Sidebar Header -->
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <!-- Sidebar Body -->
+                <div id="prueba-section" class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="aboutUs.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item pt-3 pb-1 px-4" href="aboutUs.html">Our Story</a></li>
+                                <li><a class="dropdown-item px-4" href="blog.html">Our Blog</a></li>
+                                <li><a class="dropdown-item px-4" href="certifications.html">Our Certifications</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item px-4" href="how-we-do-it.html">How We Do It</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="services.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Automotive Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services.html">Mechanical Services</a></li>
+                                <li><a class="dropdown-item" href="collision-repair.html">Collision Repair</a></li>
+                                <li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="gallery.html">Social Media</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="request-estimate.html">Request an Estimate</a>
+                        </li>
+                        <!-- <li class="nav-item mx-2">
+                            <a class="nav-link active" href="blog.html">Blog</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar NED -->
+
+    <button id="showNavbarButton" class="btn">
+        <span class="fa fa-bars"></span>
+    </button>
+
+
+
+    <!-- FAB -->
+    <div class="fab-container">
+        <div class="main-fab fab-icon-holder button-85">
+            <a onclick="AutoOps.show()"><i class="icon ion-md-calendar"></i></a>
+        </div>
+    </div>
+    <div class="fab-container faq-2">
+        <div class="main-fab fab-icon-holder">
+            <i class="icon ion-md-help"></i>
+        </div>
+        <ul class="fab-options">
+            <li>
+                <span class="fab-label"> Request Estimate</span>
+                <div class="fab-icon-holder">
+                    <a href="request-estimate.html"><i class="icon ion-md-mail"></i></a>
+                </div>
+            </li>
+            <li>
+                <span class="fab-label">Get Directions</span>
+                <div class="fab-icon-holder">
+                    <a target="_blank"
+                        href="https://www.google.com/maps/dir//'39.1764631,-76.6135502'/@39.1764631,-76.6157389,17z/data=!4m6!4m5!1m0!1m3!2m2!1d-76.6135502!2d39.1764631"><i
+                            class="icon ion-md-navigate"></i></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section hero-section-gallery text-center">
+        <div class="hero-content animate-top" data-aos="zoom-in-up" data-aos-offset="550">
+            <h1 class="hero-title">Social Media</h1>
+            <p class="hero-description">Explore the artistry of our work behind the scenes on our social media platforms
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- Begin Adventure section -->
+    <section class="section-about-us mt-5">
+        <div class="box box-image">
+            <div id="carouselExampleCaptions" class="carousel carousel-home slide" data-bs-ride="carousel"
+                data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="images/realImages/whyChoosingUs.png" class="d-block w-100" alt="whyChossingUs">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Our Story</h5>
+                            <p>Discover our journey and how we started.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="images/gallery/ejemplo5.jpg" class="d-block w-100" alt="ejemplo5.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Our Team</h5>
+                            <p>Meet the amazing behind our success.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="images/gallery/ejemplo6.jpg" class="d-block w-100" alt="ejemplo6.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Our Values</h5>
+                            <p>Learn about our core values and principles.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="box box-text-container about-us-container">
+            <h3 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">Why Choosing Us?</h3>
+            <h1 class="h1-carousell" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">
+                Exceeding
+                Expectations: Precision Auto Care</h1>
+            <h4 class="mt-5" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">We are
+                Perfect Solution</h4>
+            <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">We take pride in our
+                commitment to precision in every job we undertake. Our passion for automobiles
+                drives us to deliver results that exceed your expectations. From diagnosing issues with accuracy to
+                employing advanced techniques, our professional approach ensures your vehicle receives the best
+                treatment possible.</p>
+
+            <button class="mt-5 btn-moreAbout" data-aos="flip-right" data-aos-duration="1200"><a class="a-about"
+                    href="aboutUs.html">More about us</a></button>
+
+        </div>
+    </section>
+    <!-- Begin Adventure section END -->
+
+
+
+
+    <!-- Maps -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.936460966356!2d-76.61641972307292!3d39.176165171665986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7fd40f7f97315%3A0x90a132335fd947d2!2sFox%20Auto%20Services!5e0!3m2!1ses!2ssv!4v1697073470899!5m2!1ses!2ssv"
+        width="100%" height="400" style="border:0;" style="overflow: auto;" style="z-index: 1;" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Maps -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer position-relative bg-color-footer text-white-50 py-5 wow fadeIn"
+        data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5 py-5">
+                <div class="col-lg-6 pe-lg-5">
+                    <a href="index.html" class="a-footer-img">
+                        <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="Fox logo footer">
+                        <!-- <img class="mb-0 mt-0 img-footer" src="images/season/christmas/foxLogoChristmas.png"
+                            alt="Fox logo footer christmas"> -->
+                    </a>
+                    <p class="fs-5 mb-4 large-content">Fox Auto Services - Where Expertise Meets Excellence. Your
+                        Premier Destination
+                        for Automotive Solutions.</p>
+                    <p><i class="fa fa-map-marker-alt me-2"></i><a
+                            href="https://www.google.com/search?client=firefox-b-d&sca_esv=565110899&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AM9HkKlhdDA5AVtqwkHUaaNFacBs18l4fA:1694654084797&q=fox+auto+services+md&rflfq=1&num=10&rllag=39170807,-76889889,23804&ved=2ahUKEwjA-va19qiBAxVXQTABHS5yDL0QtgN6BAgfEAg#rlfi=hd:;si:10421666208944834514,l,ChRmb3ggYXV0byBzZXJ2aWNlcyBtZEj93_GI57OAgAhaKBAAEAEQAhgAGAEYAhgDIhRmb3ggYXV0byBzZXJ2aWNlcyBtZDICZW6SAQ5hdXRvX2JvZHlfc2hvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VNdGJrbFFSWEIzUlJBQqoBXQoIL20vMDRycmQQASoVIhFmb3ggYXV0byBzZXJ2aWNlcygAMh4QASIaBha8UxqTVUnxj51w3Sc0kHCKN0-S-VrWSQ4yGBACIhRmb3ggYXV0byBzZXJ2aWNlcyBtZA;mv:[[39.176808099999995,-76.58071939999999],[39.1648067,-77.1990598]]">129-A
+                            Roesler, Glen Burnie, MD 21060</a></p>
+                    <p><i class="fa fa-phone-alt me-2"></i><a href="tel:410-210-5939">410-210-5939</a></p>
+                    <p><i class="fa fa-phone-alt me-2"></i><a href="tel:410-304-3109">410-304-3109</a></p>
+                    <p><i class="fa fa-envelope me-2"></i><a
+                            href="mailto:info@foxautoservices.com">info@foxautoservices.com</a></p>
+                    <p><i class="fa fa-clock me-2 mb-4"></i><a href="https://maps.app.goo.gl/QGaiibVqZ2sjneK5A">8:30 AM
+                            to 5:30 PM, Monday through Friday</a></p>
+                    <div class="d-flex mt-5 container-quick-links">
+                        <a class="btn btn-lg-square btn-primary me-2"
+                            href="https://www.google.com/search?client=firefox-b-d&q=fox+auto+services+md#rlimm=10421666208944834514"><i
+                                class="fab fa-google"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="https://www.facebook.com/TheFOXAuto/"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2"
+                            href="https://www.yelp.com/biz/fox-auto-services-glen-burnie"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2"
+                            href="https://www.instagram.com/foxautoservices/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="row g-5 container-quick-links">
+                        <div class="col-sm-6">
+                            <h4 class="text-light mb-4">Quick Links</h4>
+                            <a class="btn btn-link" href="gallery.html">About Us</a>
+                            <a class="btn btn-link" href="how-we-do-it.html">How We Do it</a>
+                            <a class="btn btn-link" href="services.html">Mechanical Services</a>
+                            <a class="btn btn-link" href="terms&conditions.html">Terms & Condition</a>
+                            <a class="btn btn-link" href="privacy-policy.html">Privacy Policy</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <h4 class="text-light mb-4">Popular Links</h4>
+                            <a class="btn btn-link" href="gallery.html">About Us</a>
+                            <a class="btn btn-link" href="collision-repair.html">Collision Repair</a>
+                            <a class="btn btn-link" href="services.html">Mechanical Services</a>
+                            <a class="btn btn-link" href="request-estimate.html">Request an Estimate</a>
+                            <a class="btn btn-link" href="privacy-policy.html">Privacy Policy</a>
+                        </div>
+                        <div class="col-sm-12">
+                            <h4 class="text-light mb-4">Newsletter</h4>
+                            <div class="w-100">
+                                <div class="input-group">
+                                    <input type="text" class="form-control border-0 py-3 px-4 input-container"
+                                        style="background: rgba(255, 255, 255, .1);"
+                                        placeholder="Your Email Address"><button class="btn btn-primary px-4">Sign
+                                        Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center align-items-center">
+                    <p class="mb-0">&copy; <a href="#">Fox Auto Services</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.js"></script>
+    <!-- Own scripts -->
+    <script src="js/scripts.js"></script>
+    <script>
+        new Glide(".glide-testi-gallery", { type: "carousel", autoplay: 2500, startAt: 0, perView: 1, focusAt: "center", breakpoints: { 768: { perView: 1 }, 900: { perView: 1 }, 800: { perView: 1 }, 570: { perView: 1 }, 1440: { perView: 2 }, 1920: { perView: 3 }, 400: { perView: 1 } } }).mount(), $(".gallery").magnificPopup({ delegate: "a", type: "image", gallery: { enabled: !0 } }), window.addEventListener("scroll", function () { var e = document.querySelector(".floating-header"); window.scrollY > 5 ? e.classList.add("visible") : e.classList.remove("visible") }), $(window).on("load", function () { $(" .loading-overlay .loader").fadeOut(850, function () { $("body").css("overflow", "auto"), $(this).parent().fadeOut(450, function () { $(this).remove() }) }) });
+    </script>
+
+    <!-- Narvbar desapear -->
+    <script type="text/javascript">
+        var isNavbarVisible = true;
+        var navbar = document.getElementById("navbar");
+        var showNavbarButton = document.getElementById("showNavbarButton");
+
+        window.addEventListener("scroll", function () {
+            var scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+            if (scrollTop > 100) {
+                // Ocultar la barra de navegación y mostrar el botón flotante
+                if (isNavbarVisible) {
+                    navbar.style.transition = "top 1s ease";
+                    navbar.style.top = "-108px";
+                    isNavbarVisible = false;
+                    showNavbarButton.style.display = "block";
+                }
+            } else {
+                // Mostrar la barra de navegación solo si el usuario no ha ocultado manualmente y ocultar el botón flotante
+                if (!isNavbarVisible) {
+                    navbar.style.transition = "top 1s ease";
+                    navbar.style.top = "0";
+                    isNavbarVisible = true;
+                    showNavbarButton.style.display = "none";
+                }
+            }
+        });
+
+        showNavbarButton.addEventListener("click", function () {
+            // Mostrar la barra de navegación cuando se hace clic en el botón flotante y ocultar el botón flotante
+            navbar.style.transition = "top 1s ease";
+            navbar.style.top = "0";
+            isNavbarVisible = true;
+            showNavbarButton.style.display = "none";
+        });
+    </script>
+    <!-- Narvbar desapear -->
+
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
+        src="https://portal.autoops.com/portal-scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

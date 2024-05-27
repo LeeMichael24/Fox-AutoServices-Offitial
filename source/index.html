@@ -4,21 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fox Auto Service Home</title>
+    <title>Glen Burnie Auto Repair: Home</title>
     <link rel="icon" type="image/x-icon" href="images/fas_neont.png">
     <meta name="description"
         content="Fox Auto Services offers top-quality auto repair and maintenance services. Our skilled team ensures your vehicle runs smoothly. Contact us today for expert car care.">
-    <meta name="keywords" content="auto repair, car maintenance, vehicle service, Fox Auto Services">
+    <meta name="keywords"
+        content="Glen Burnie, car maintenance, auto repair, oil change, crash repair, vehicle service, Fox Auto Services">
     <meta name="author" content="Fox Auto Services">
 
     <meta property="og:title" content="Fox Auto Services - Your Trusted Auto Repair Shop">
     <meta property="og:description"
         content="Fox Auto Services offers top-quality auto repair and maintenance services. Our skilled team ensures your vehicle runs smoothly. Contact us today for expert car care.">
-    <meta property="og:image" content="https://www.foxautoservices.com/gallery">
+    <meta property="og:image" content="https://www.foxautoservices.com">
     <meta property="og:url" content="https://www.foxautoservices.com">
 
+
     <!-- Season snow -->
-    <script defer src="https://app.embed.im/snow.js"></script>
+    <!-- <script defer src="https://app.embed.im/snow.js"></script> -->
     <!-- Season snow-->
 
     <!-- Google Fonts -->
@@ -37,17 +39,44 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/scripts.js"></script>
 
     <!-- POPUP NEWSLETTER server-->
     <script
         id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/f61136b8ac5868e89d391e130/492e68fca7e0bb6813bf6d7fd.js");</script>
     <!-- POPUP NEWSLETTER -->
     <!-- POPUP NEWSLETTER live-->
-    <script
-        id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/f61136b8ac5868e89d391e130/ffa67de25ca088522395bff41.js");</script>
+    <script id="mcjs">
+        function loadPopupScript() {
+            (function (c, h, i, m, p) { 
+                m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) 
+            })(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/f61136b8ac5868e89d391e130/ffa67de25ca088522395bff41.js");
+        }
+
+        window.addEventListener('load', function() {
+            loadPopupScript();
+        });
+
+        /* its for the video */
+        var videoPlayer = document.getElementById('videoPlayer');
+        videoPlayer.addEventListener('canplaythrough', function() {
+            loadPopupScript();
+        });
+    </script>
     <!-- POPUP NEWSLETTER -->
 
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FP72DFM2LZ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FP72DFM2LZ');
+</script>
+
 
 <body>
     <!-- Start preload -->
@@ -63,9 +92,11 @@
 
             <!-- Logo -->
             <a class="navbar-brand logo" href="index.html">
-                <!-- <img src="images/fas_neonthorizontal.png" alt="Fox Auto Services" class="regular-logo"> -->
+                <img src="images/fas_neonthorizontal.png" alt="Fox Auto Services" class="regular-logo">
                 <!-- Christmas Logo -->
-                <img src="images/season/christmas/foxLogoChristmas.png" alt="Fox Auto Services" class="christmas-logo">
+                <!-- <img src="images/season/christmas/foxLogoChristmas.png" alt="Fox Auto Services" class="christmas-logo xmast"> -->
+                <!-- <img src="images/season/valentines/logoValentines.png" alt="Fox Auto Services"
+                    class="christmas-logo xmast"> -->
             </a>
 
             <!-- Toggle BTN-->
@@ -180,16 +211,16 @@
 
         <div class="content-hero-home animate-bottom">
             <h1 class="h1-carousell" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                EXPERT CAR REPAIRS
+                GLEN BURNIE EXPERT CAR REPAIRS
                 AND
-                SERVICES | YOUR TRUSTED CAR DOCTOR</h1>
+                SERVICES| YOUR TRUSTED CAR DOCTOR</h1>
             <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="2500">We
-                specialize in
-                diagnosing and healing all your car woes, ensuring your vehicle
-                runs smoothly on the road. Quality repairs, affordable prices, and unparalleled expertise. Book an
-                appointment now and experience the precision care your car deserves!</p>
+                We specialize in diagnosing and healing all your car woes, ensuring your vehicle
+                runs smoothly on the road. Quality repairs, affordable prices, and unparalleled expertise.
+                Book an appointment now and experience the precision care your car deserves!
+                Specializing in Glen Burnie, we offer top-quality auto repair and maintenance services.</p>
             <button onclick="AutoOps.show()" data-aos="fade-up" data-aos-duration="3000">Book Our
-                Services Today</button>
+                Book Our Services Today</button>
         </div>
     </section>
     <!-- hero end video -->
@@ -204,14 +235,15 @@
                         <div class="feature-item mb-5 mb-lg-0 sec-scale-card" data-aos="fade-up-right"
                             data-aos-offset="150">
                             <!-- guirnalda -->
-                            <div class="guirnalda-container-card">
-                                <!-- Div general para la guirnalda continua -->
+                            <!-- <div class="guirnalda-container-card">
                                 <div class="guirnalda-card">
-                                    <!-- Divs individuales para cada imagen de guirnalda -->
                                     <div class="imagen-guirnalda-card"
                                         style="background-image: url('images/season/christmas/guirnalda1.png');"></div>
+                                    <div class="imagen-guirnalda-card"
+                                        style="background-image: url('images/season/valentines/valentinesObject.png');">
+                                    </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- guirnalda -->
                             <div class="feature-icon mb-4">
                                 <a class="card-social-media" href="https://www.instagram.com/foxautoservices/"
@@ -229,14 +261,15 @@
 
                         <div class="feature-item mb-5 mb-lg-0 sec-scale-card" data-aos="fade-up" data-aos-offset="150">
                             <!-- guirnalda -->
-                            <div class="guirnalda-container-card">
-                                <!-- Div general para la guirnalda continua -->
+                            <!-- <div class="guirnalda-container-card">
                                 <div class="guirnalda-card">
-                                    <!-- Divs individuales para cada imagen de guirnalda -->
                                     <div class="imagen-guirnalda-card"
                                         style="background-image: url('images/season/christmas/guirnalda1.png');"></div>
+                                    <div class="imagen-guirnalda-card"
+                                        style="background-image: url('images/season/valentines/valentinesObject.png');">
+                                    </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- guirnalda -->
                             <div class="feature-icon mb-4">
                                 <a class="card-social-media" href="https://www.facebook.com/TheFOXAuto" target="_blank">
@@ -253,14 +286,15 @@
 
                         <div class="feature-item mb-5 mb-lg-0 sec-scale-card" data-aos="fade-up" data-aos-offset="150">
                             <!-- guirnalda -->
-                            <div class="guirnalda-container-card">
-                                <!-- Div general para la guirnalda continua -->
+                            <!-- <div class="guirnalda-container-card">
                                 <div class="guirnalda-card">
-                                    <!-- Divs individuales para cada imagen de guirnalda -->
                                     <div class="imagen-guirnalda-card"
                                         style="background-image: url('images/season/christmas/guirnalda1.png');"></div>
+                                    <div class="imagen-guirnalda-card"
+                                        style="background-image: url('images/season/valentines/valentinesObject.png');">
+                                    </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- guirnalda -->
                             <div class="feature-icon mb-5">
                                 <a class="card-social-media1 mb-5" href="https://maps.app.goo.gl/e2cvzMuKzTeKHGfn9"
@@ -279,14 +313,16 @@
                         <div class="feature-item mb-5 mb-lg-0 sec-scale-card" data-aos="fade-up-left"
                             data-aos-offset="150">
                             <!-- guirnalda -->
-                            <div class="guirnalda-container-card">
-                                <!-- Div general para la guirnalda continua -->
+                            <!-- <div class="guirnalda-container-card">
                                 <div class="guirnalda-card">
-                                    <!-- Divs individuales para cada imagen de guirnalda -->
                                     <div class="imagen-guirnalda-card"
                                         style="background-image: url('images/season/christmas/guirnalda1.png');"></div>
+                                    <div class="imagen-guirnalda-card"
+                                        style="background-image: url('images/season/valentines/valentinesObject.png');">
+                                    </div>
                                 </div>
-                            </div>
+                            </div> -->
+                            <!-- guirnalda -->
                             <div class="feature-icon mb-4">
                                 <a class="card-social-media"
                                     href="https://www.yelp.com/biz/fox-auto-services-glen-burnie" target="_blank">
@@ -307,7 +343,32 @@
         </div>
     </section>
 
-
+    <!-- Specials section -->
+    <section class="section-specials mt-5">
+        <div class="row section-reverse-div">
+            <div class="col-lg-6 w-90" data-aos="fade-up-right" data-aos-duration="1800">
+                <img src="images/Specials/militaryHonor.png" alt="Military Special" class="img-fluid specials-image">
+            </div>
+            <div class="col-lg-6 section-desctip-specials" data-aos="fade-up-left" data-aos-duration="1800">
+                <h2 class="display-4 h1-carousell specials-h1 text-white">HONORING OUR HEROES: EXCLUSIVE $300 OFF & 5% OFF FOR MILITARY PERSONNEL!</h2>
+                <p class="specials-p text-white">We are proud to support our military heroes with an exclusive offer! Enjoy a $300 deductible waiver and 5% off on all repairs for military personnel. Schedule your appointment today and take advantage of these special discounts as a token of our gratitude for your service.</p>
+    
+                <ul class="">
+                    <li class="specias-list-li text-white" data-aos="flip-right" data-aos-duration="2900"><i class="fas fa-check icon-row"></i> $300 off deductible waiver</li>
+                    <li class="specias-list-li text-white" data-aos="flip-right" data-aos-duration="2900"><i class="fas fa-check icon-row"></i> 5% off on all repairs for military personnel</li>
+                    <li class="specias-list-li text-white" data-aos="flip-right" data-aos-duration="2900"><i class="fas fa-check icon-row"></i> Comprehensive repair services</li>
+                    <li class="specias-list-li text-white" data-aos="flip-right" data-aos-duration="2900"><i class="fas fa-check icon-row"></i> Experienced and dedicated technicians</li>
+                    <!-- Add more benefits as needed -->
+                </ul>
+    
+                <p class="specials-p text-white">Book your appointment now to honor our heroes and take advantage of these exclusive offers. Thank you for your service! Offer valid until May 31</p>
+    
+                <button class="btn-moreAbout specials-btn" role="button" onclick="AutoOps.show()" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">Claim Your Discount!</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Specials section END -->
 
 
     <!-- Services -->
@@ -357,7 +418,8 @@
                         problems in your vehicle.</p>
                 </a>
             </div>
-            <div class="services-home sec-scale-card-home  card-maelodia" data-aos="zoom-in-right" data-aos-offset="350">
+            <div class="services-home sec-scale-card-home  card-maelodia" data-aos="zoom-in-right"
+                data-aos-offset="350">
                 <a style="color: inherit;" href="services.html">
                     <i class="fa-solid fa-truck-monster"></i>
                     <h2>Wheel Alignment</h2>
@@ -397,11 +459,10 @@
 
 
     <!-- Begin Adventure section -->
-
     <section class="section-about-us mt-5">
-        <di class="box box-image">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up"
-            data-aos-anchor-placement="top-center" data-aos-duration="1000">
+        <div class="box box-image">
+            <div id="carouselExampleCaptions" class="carousel carousel-home slide" data-bs-ride="carousel"
+                data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -412,7 +473,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="5000">
-                        <img src="images/realImages/whyChoosingUs.png" class="d-block w-100" alt="...">
+                        <img src="images/realImages/whyChoosingUs.png" class="d-block w-100" alt="whyChossingUs">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Our Story</h5>
                             <p>Discover our journey and how we started.</p>
@@ -444,22 +505,22 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </di>
+        </div>
         <div class="box box-text-container about-us-container">
-            <h3 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">Why Choosing Us?</h3>
+            <h3 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">Why Choose Us for Auto
+                Care in Glen Burnie?</h3>
             <h1 class="h1-carousell" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">
-                Exceeding
-                Expectations: Precision Auto Care</h1>
+                Exceeding Expectations: Precision Auto Care</h1>
             <h4 class="mt-5" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">We are
-                Perfect Solution</h4>
+                the Perfect Solution for Auto Repair in Glen Burnie</h4>
             <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">We take pride in our
-                commitment to precision in every job we undertake. Our passion for automobiles
-                drives us to deliver results that exceed your expectations. From diagnosing issues with accuracy to
-                employing advanced techniques, our professional approach ensures your vehicle receives the best
-                treatment possible.</p>
+                commitment to precision in every job we undertake. Our passion for automobiles drives us to deliver
+                results that exceed your expectations. From diagnosing issues with accuracy to employing advanced
+                techniques, our professional approach ensures your vehicle receives the best treatment possible.</p>
 
             <button class="mt-5 btn-moreAbout" data-aos="flip-right" data-aos-duration="1200"><a class="a-about"
-                    href="aboutUs.html">More about us</a></button>
+                    href="aboutUs.html">Learn More About Our Auto Repair Services</a></button>
+
 
         </div>
     </section>
@@ -487,15 +548,18 @@
                                     <h2>Honoring Our Heroes: Exclusive <strong class="strong-discount">5%
                                             Discount</strong> for Military Personnel! 💪</h2>
                                 </div>
-                                <div class="guirnalda-container-card-post">
-                                    <!-- Div general para la guirnalda continua -->
+                                <!-- Guirnaldas -->
+                                <!-- <div class="guirnalda-container-card-post">
                                     <div class="guirnalda-card-post">
-                                        <!-- Divs individuales para cada imagen de guirnalda -->
                                         <div class="imagen-guirnalda-card-post"
                                             style="background-image: url('images/season/christmas/guirnalda1.png');">
                                         </div>
+                                        <div class="imagen-guirnalda-card-post"
+                                            style="background-image: url('images/season/valentines/valentinesObject.png');">
+                                        </div>
                                     </div>
-                                </div>
+                                </div> -->
+                                <!-- Guirnaldas -->
                                 <div class="price-content">
                                     <p class="p-discouts">
                                         As a token of gratitude for your selfless service, we proudly offer a <strong
@@ -516,15 +580,18 @@
                                     <h2>Student Savings: <strong class="strong-discount">10% Off</strong> Car Repairs!
                                         📚</h2>
                                 </div>
-                                <div class="guirnalda-container-card-post">
-                                    <!-- Div general para la guirnalda continua -->
+                                <!-- Guirnaldas -->
+                                <!-- <div class="guirnalda-container-card-post">
                                     <div class="guirnalda-card-post">
-                                        <!-- Divs individuales para cada imagen de guirnalda -->
                                         <div class="imagen-guirnalda-card-post"
                                             style="background-image: url('images/season/christmas/guirnalda1.png');">
                                         </div>
+                                        <div class="imagen-guirnalda-card-post"
+                                            style="background-image: url('images/season/valentines/valentinesObject.png');">
+                                        </div>
                                     </div>
-                                </div>
+                                </div> -->
+                                <!-- Guirnaldas -->
                                 <div class="price-content">
                                     <p class="p-discouts">
                                         We know that student life can be tough on the wallet, so we're offering a
@@ -545,15 +612,18 @@
                                     <h2>We've Got Your Back: <strong class="strong-discount">Up to $200 Deductible
                                             Assistance!</strong> 👊</h2>
                                 </div>
-                                <div class="guirnalda-container-card-post">
-                                    <!-- Div general para la guirnalda continua -->
+                                <!-- Guirnaldas -->
+                                <!-- <div class="guirnalda-container-card-post">
                                     <div class="guirnalda-card-post">
-                                        <!-- Divs individuales para cada imagen de guirnalda -->
                                         <div class="imagen-guirnalda-card-post"
                                             style="background-image: url('images/season/christmas/guirnalda1.png');">
                                         </div>
+                                        <div class="imagen-guirnalda-card-post"
+                                            style="background-image: url('images/season/valentines/valentinesObject.png');">
+                                        </div>
                                     </div>
-                                </div>
+                                </div> -->
+                                <!-- Guirnaldas -->
                                 <div class="price-content">
                                     <p class="p-discouts">
                                         Accidents are stressful enough without worrying about the bill. That's why we
@@ -574,15 +644,18 @@
                                     <h2>Peace of Mind for Life: Lifetime Warranty on <strong class="strong-discount">All
                                             Repairs!</strong> 🔒</h2>
                                 </div>
-                                <div class="guirnalda-container-card-post">
-                                    <!-- Div general para la guirnalda continua -->
+                                <!-- Guirnaldas -->
+                                <!-- <div class="guirnalda-container-card-post">
                                     <div class="guirnalda-card-post">
-                                        <!-- Divs individuales para cada imagen de guirnalda -->
                                         <div class="imagen-guirnalda-card-post"
                                             style="background-image: url('images/season/christmas/guirnalda1.png');">
                                         </div>
+                                        <div class="imagen-guirnalda-card-post"
+                                            style="background-image: url('images/season/valentines/valentinesObject.png');">
+                                        </div>
                                     </div>
-                                </div>
+                                </div> -->
+                                <!-- Guirnaldas -->
                                 <div class="price-content">
                                     <p class="p-discouts">
                                         At Fox Auto Services, we stand behind our work and want you to drive away with
@@ -624,18 +697,16 @@
                 <div class="col-md-6 mt-md-0 justify-content-center">
                     <div class="mission-content vision-content-index" data-aos="fade-down-right"
                         data-aos-duration="1000" data-aos-offset="150">
-                        <h3>Don't Settle for Ordinary, Experience Extraordinary</h3>
+                        <h3>Experience Extraordinary Auto Care in Glen Burnie</h3>
                         <p class="p-blog text-white">Discover the extraordinary at Fox Auto Services. Elevate your
                             driving experience with exceptional automotive care. Choose excellence – schedule your
                             appointment now!</p>
                     </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center align-items-center">
-                    <div class="vision-content-index" data-aos="fade-down-left" data-aos-duration="1000"
-                        data-aos-offset="350">
-                        <button class="button-85 btn-85-cta sec-scale-card" role="button" onclick="AutoOps.show()">Make
-                            an Appointment
-                            Today!!</button>
+                    <div class="vision-content-index" data-aos="fade-down-left" data-aos-duration="1300">
+                        <button class="button-85 btn-85-cta sec-scale-card" role="button"
+                            onclick="AutoOps.show()">Schedule Your Appointment Today!</button>
                     </div>
                 </div>
             </div>
@@ -644,12 +715,13 @@
 
 
 
+
     <!-- How We do it section -->
     <section class="how-we-do-it mt-5" id="howe">
         <div class="container">
             <div class="title-heading animate-top" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                <h1 class="h1-carousell">how We do it</h1>
-                <p>Get to know each part of the process. </p>
+                <h1 class="h1-carousell">How We Do It in Glen Burnie</h1>
+                <p>Get to know each part of the process.</p>
             </div>
             <div class="how-we-do-it-grid">
                 <!-- Adventure grid item #1 -->
@@ -659,21 +731,21 @@
                         <img src="images/icons/one.png" alt="First Step" class="number-image">
                         <p><strong>Estimate</strong><br>If you’ve been in an accident, or your vehicle has damage that
                             you need repaired, first contact the responsible insurance company to establish your claim.
-                            Then, simply contact <strong>Fox Auto Services</strong> to schedule an estimate appointment.
-                        </p>
+                            Then, simply contact <strong>Fox Auto Services</strong> in Glen Burnie to schedule an
+                            estimate appointment.</p>
                     </div>
                     <div class="info-item" data-aos="fade-up" data-aos-anchor-placement="top-center"
                         data-aos-duration="800">
                         <img src="images/icons/two.png" alt="First Step" class="number-image">
-                        <p><strong>Vehicule Drop Off</strong><br>Deliver your vehicle to <strong>Fox Auto
-                                Services</strong> on your assigned drop date so we can begin the auto body repair
-                            process.</p>
+                        <p><strong>Vehicle Drop Off</strong><br>Deliver your vehicle to <strong>Fox Auto
+                                Services</strong> in Glen Burnie on your assigned drop date so we can begin the auto
+                            body repair process.</p>
                     </div>
                     <div class="info-item" data-aos="fade-up" data-aos-anchor-placement="top-center"
                         data-aos-duration="900">
                         <img src="images/icons/three.png" alt="First Step" class="number-image">
-                        <p><strong>Body Repair</strong><br>Once we receive your vehicule for repairs, we begin by
-                            investigating any additional damage thah maybe hidden. If we discover additional damage, we
+                        <p><strong>Body Repair</strong><br>Once we receive your vehicle for repairs, we begin by
+                            investigating any additional damage that may be hidden. If we discover additional damage, we
                             will notify both the insurance company and the customer.</p>
                     </div>
                 </div>
@@ -683,10 +755,11 @@
                 </div>
             </div>
             <div class=" animate-bottom" data-aos="zoom-in" data-aos-duration="1200">
-                <a href="how-we-do-it.html" class="btn btn-moreAbout">Review whole process</a>
+                <a href="how-we-do-it.html" class="btn btn-moreAbout">Review the Whole Process</a>
             </div>
         </div>
     </section>
+
 
 
 
@@ -699,17 +772,16 @@
                 Review us</h3>
             <h1 class="accent-text h1-carousell" data-aos="fade-up" data-aos-anchor-placement="top-center">on
                 social media</h1>
-            <p style="color: white;" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="100">
+            <p style="color: white;" data-aos="fade-up" data-aos-anchor-placement="top-center">
                 Read what people are saying about us on the most popular social media platforms.
             </p>
             <div class="social-media-testi" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                <img src="images/yelp.png" href="https://www.yelp.com/biz/fox-auto-services-glen-burnie"
-                    alt="yelp-image">
-                <img src="images/facebook.png" alt="yelp-image">
-                <img src="images/logoGoogle.png"
-                    href="https://www.google.com/maps/place/Fox+Auto+Services/@39.1761652,-76.6164144,17z/data=!4m8!3m7!1s0x89b7fd40f7f97315:0x90a132335fd947d2!8m2!3d39.1761652!4d-76.6138448!9m1!1b1!16s%2Fg%2F11mtsksw_y?hl=es-419&entry=ttu"
-                    alt="yelp-image">
-                <img src="images/instaLogo.png" alt="yelp-image">
+                <img src="images/yelp.png" alt="Yelp - car workshop - Glen Burnie"
+                    href="https://www.yelp.com/biz/fox-auto-services-glen-burnie">
+                <img src="images/facebook.png" alt="Facebook - car workshop - Glen Burnie">
+                <img src="images/logoGoogle.png" alt="Google Maps - car workshop - Glen Burnie"
+                    href="https://www.google.com/maps/place/Fox+Auto+Services/@39.1761652,-76.6164144,17z/data=!4m8!3m7!1s0x89b7fd40f7f97315:0x90a132335fd947d2!8m2!3d39.1761652!4d-76.6138448!9m1!1b1!16s%2Fg%2F11mtsksw_y?hl=es-419&entry=ttu">
+                <img src="images/instaLogo.png" alt="Instagram - car workshop - Glen Burnie">
             </div>
         </div>
         <div class="testimonials" id="testimonials">
@@ -792,11 +864,22 @@
                             <!-- Agrega más testimonios aquí -->
                         </ul>
                     </div>
-                    <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                    <div class="glide__arrows glide__arrows-review" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left-review" data-glide-dir="<"><i
                                 class="fa fa-angle-left"></i></button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                        <button class="glide__arrow glide__arrow--right-review" data-glide-dir=">"><i
                                 class="fa fa-angle-right"></i></button>
+                    </div>
+                    <div class="glide__bullets glide__bullets-review" data-glide-el="controls[nav]">
+                        <li class="glide__bullet" data-glide-dir="=0"></li>
+                        <li class="glide__bullet" data-glide-dir="=1"></li>
+                        <li class="glide__bullet" data-glide-dir="=2"></li>
+                        <li class="glide__bullet" data-glide-dir="=3"></li>
+                        <li class="glide__bullet" data-glide-dir="=4"></li>
+                        <li class="glide__bullet" data-glide-dir="=5"></li>
+                        <li class="glide__bullet" data-glide-dir="=6"></li>
+                        <li class="glide__bullet" data-glide-dir="=7"></li>
+                        <!-- Add more bullets as needed -->
                     </div>
                 </div>
             </div>
@@ -810,8 +893,9 @@
         <h1 class="h1-carousell" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">Our
             Featured Car Brands
         </h1>
-        <p class="mb-5" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">Explore the
-            top car brands we specialize in.</p>
+        <p class="mb-5" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="700">
+            Explore the top car brands we specialize in for our Glen Burnie car workshop.
+        </p>
         <div class="wrapper-slider mt-5" data-aos="fade-up" data-aos-offset="350">
             <div class="slider-images-container">
                 <div class="slider-track-custom">
@@ -877,91 +961,88 @@
     <section class="blog-section text-center mt-5">
         <div class="container">
             <h1 class="mb-4 text-white h1-carousell mt-5" data-aos="zoom-in">Discover Our Latest Posts</h1>
-            <p class="text-white" data-aos="zoom-in">Explore the latest news, posts, tips, and more that we have to
-                offer to our customers.
-            </p>
-
+            <p class="text-white" data-aos="zoom-in">Explore the latest news, posts, tips, and more that we have to offer to our customers.</p>
+    
             <!-- Tarjetas (cards) -->
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5">
                 <!-- Card 1 -->
                 <div class="col" data-aos="fade-right">
                     <div class="card mb-4">
-                        <a href="blog/top10Sings.html"><img class="card-img-top" src="images/blog/top102.jpg"
-                                alt="Summer Trip" /></a>
-                        <!-- guirnalda -->
-                        <div class="guirnalda-container-card-post">
-                            <!-- Div general para la guirnalda continua -->
+                        <a href="blog/batteryCheck.html"><img class="card-img-top img-blogSingle-post" src="images/blog/batteryCheck.png" alt="Car winter" /></a>
+                        <!-- Guirnaldas -->
+                        <!-- <div class="guirnalda-container-card-post">
                             <div class="guirnalda-card-post">
-                                <!-- Divs individuales para cada imagen de guirnalda -->
                                 <div class="imagen-guirnalda-card-post"
                                     style="background-image: url('images/season/christmas/guirnalda4.png');"></div>
+                                <div class="imagen-guirnalda-card-post"
+                                    style="background-image: url('images/season/valentines/valentinesObject.png');">
+                                </div>
                             </div>
-                        </div>
+                        </div> -->
+                        <!-- Guirnaldas -->
                         <div class="card-body">
-                            <div class=" text-muted div-date">December 23, 2023</div>
-                            <h2 class="card-title h4">Top 10 Signs Your Car Needs Immediate Attention</h2>
-                            <p class="card-text">Being proactive about these warning signs can save you time, money, and
-                                ensure the safety of your vehicle...</p>
-                            <a class="btn btn-primary" href="blog/top10Sings.html">Read more →</a>
+                            <div class="div-date text-muted">April 7, 2024</div>
+                            <h2 class="card-title">Having trouble starting your car? It’s time to check the battery!</h2>
+                            <p class="card-text">Experiencing difficulty starting your car can be frustrating, especially when you're in a hurry or stuck in an inconvenient location...</p>
+                            <a class="btn btn-primary" href="blog/batteryCheck.html">Read more →</a>
                         </div>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="col">
                     <div class="card mb-4" data-aos="fade-up">
-                        <a href="blog/chooseMechanic.html"><img class="card-img-top"
-                                src="images/blog/chooseMechanic.jpg" alt="Fuel Efficiency Gas" /></a>
-                        <div class="guirnalda-container-card-post">
-                            <!-- Div general para la guirnalda continua -->
+                        <a href="blog/checkEngine.html"><img class="card-img-top" src="images/blog/checkEngine.png" alt="Car winter" /></a>
+                        <!-- Guirnaldas -->
+                        <!-- <div class="guirnalda-container-card-post">
                             <div class="guirnalda-card-post">
-                                <!-- Divs individuales para cada imagen de guirnalda -->
                                 <div class="imagen-guirnalda-card-post"
                                     style="background-image: url('images/season/christmas/guirnalda4.png');"></div>
+                                <div class="imagen-guirnalda-card-post"
+                                    style="background-image: url('images/season/valentines/valentinesObject.png');">
+                                </div>
                             </div>
-                        </div>
+                        </div> -->
+                        <!-- Guirnaldas -->
                         <div class="card-body">
-                            <div class="div-date text-muted">December 23, 2023</div>
-                            <h2 class="card-title h4">How to Choose the Right Mechanic in <br>Glen Burnie</h2>
-                            <p class="card-text">Choosing the right mechanic is crucial for the well-being of your
-                                vehicle and your peace of mind. With numerous options ...</p>
-                            <a class="btn btn-primary" href="blog/chooseMechanic.html">Read more →</a>
+                            <div class="div-date text-muted">March 22, 2024</div>
+                            <h2 class="card-title">Dashboard Lights: Understanding the Check Engine Light</h2>
+                            <p class="card-text">Understanding the check engine light can help you avoid potential problems and keep your car running smoothly...</p>
+                            <a class="btn btn-primary" href="blog/checkEngine.html">Read more →</a>
                         </div>
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="col">
-                    <div class="card mb-4" data-aos="fade-left">
-                        <a href="../blog/avoidCommonCarMain.html"><img class="card-img-top"
-                                src="images/blog/commonMaintaincae.jpg" alt="Fuel Efficient Gas" /></a>
-                        <div class="guirnalda-container-card-post">
-                            <!-- Div general para la guirnalda continua -->
+                <div class="col" data-aos="fade-right">
+                    <div class="card mb-4">
+                        <a href="blog/tpmsLight.html"><img class="card-img-top img-blogSingle-post" src="images/blog/tmpsLight.png" alt="Car winter" /></a>
+                        <!-- Guirnaldas -->
+                        <!-- <div class="guirnalda-container-card-post">
                             <div class="guirnalda-card-post">
-                                <!-- Divs individuales para cada imagen de guirnalda -->
                                 <div class="imagen-guirnalda-card-post"
                                     style="background-image: url('images/season/christmas/guirnalda4.png');"></div>
+                                <div class="imagen-guirnalda-card-post"
+                                    style="background-image: url('images/season/valentines/valentinesObject.png');">
+                                </div>
                             </div>
-                        </div>
+                        </div> -->
+                        <!-- Guirnaldas -->
                         <div class="card-body">
-                            <div class="div-date text-muted">December 1, 2023</div>
-                            <h2 class="card-title h4">Avoiding Common Car Maintenance <br>Mistakes</h2>
-                            <p class="card-text">Proper car maintenance is crucial for the longevity and performance of
-                                your
-                                vehicle. By avoiding these common mistakes, you can save time, money ...</p>
-                            <a class="btn btn-primary" href="../blog/avoidCommonCarMain.html">Read more →</a>
+                            <div class="div-date text-muted">March 7, 2024</div>
+                            <h2 class="card-title">TPMS Light: Understanding and Troubleshooting</h2>
+                            <p class="card-text">Your car's dashboard is a crucial information center, and the TPMS (Tire Pressure Monitoring System) light is one of the signals...</p>
+                            <a class="btn btn-primary" href="blog/tpmsLight.html">Read more →</a>
                         </div>
                     </div>
                 </div>
-
             </div>
-
+    
             <!-- Botón "Learn More" -->
             <div class="mt-5 mb-5" data-aos="fade-up">
-                <a href="blog.html" class="btn btn-blog text-white btn-blog-div" style="background: #FC6701;">Learn More
-                    About Our
-                    Blog</a>
+                <a href="blog.html" class="btn btn-blog text-white btn-blog-div" style="background: #FC6701;">Learn More About Our Blog</a>
             </div>
         </div>
     </section>
+    
     <!-- Blog end -->
 
 
@@ -979,9 +1060,10 @@
             <div class="row g-5 py-5">
                 <div class="col-lg-6 pe-lg-5">
                     <a href="index.html" class="a-footer-img">
-                        <!-- <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="Fox logo footer"> -->
-                        <img class="mb-0 mt-0 img-footer" src="images/season/christmas/foxLogoChristmas.png"
-                            alt="Fox logo footer christmas">
+                        <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="Fox logo footer">
+                        <!-- Christmas -->
+                        <!-- <img class="mb-0 mt-0 img-footer" src="images/season/christmas/foxLogoChristmas.png"
+                            alt="Fox logo footer christmas"> -->
                     </a>
                     <p class="fs-5 mb-4 large-content">Fox Auto Services - Where Expertise Meets Excellence. Your
                         Premier Destination
@@ -1080,11 +1162,11 @@
         window.addEventListener("scroll", function () {
             var scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-            if (scrollTop > 100) {
+            if (scrollTop > 5) {
                 // Ocultar la barra de navegación y mostrar el botón flotante
                 if (isNavbarVisible) {
                     navbar.style.transition = "top 1s ease";
-                    navbar.style.top = "-108px";
+                    navbar.style.top = "-110px";
                     isNavbarVisible = false;
                     showNavbarButton.style.display = "block";
                 }
@@ -1128,32 +1210,32 @@
 
 
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                glide.mount();
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            glide.mount();
 
-                glide.on('run.after', function () {
-                    updateDotIndicators(glide);
+            glide.on('run.after', function () {
+                updateDotIndicators(glide);
+            });
+
+            function updateDotIndicators(glide) {
+                var bulletsContainer = document.querySelector('.glide__bullets');
+                var bullets = bulletsContainer.querySelectorAll('.glide__bullet');
+
+                bullets.forEach(function (bullet, index) {
+                    bullet.classList.toggle('glide__bullet--active', index === glide.index);
                 });
+            }
 
-                function updateDotIndicators(glide) {
-                    var bulletsContainer = document.querySelector('.glide__bullets');
-                    var bullets = bulletsContainer.querySelectorAll('.glide__bullet');
+            var dotButtons = document.querySelectorAll('.glide__bullet');
 
-                    bullets.forEach(function (bullet, index) {
-                        bullet.classList.toggle('glide__bullet--active', index === glide.index);
-                    });
-                }
-
-                var dotButtons = document.querySelectorAll('.glide__bullet');
-
-                dotButtons.forEach(function (button, index) {
-                    button.addEventListener('click', function () {
-                        glide.go('=' + button.getAttribute('data-glide-dir'));
-                    });
+            dotButtons.forEach(function (button, index) {
+                button.addEventListener('click', function () {
+                    glide.go('=' + button.getAttribute('data-glide-dir'));
                 });
             });
-        </script>
+        });
+    </script>
 
 </body>
 
