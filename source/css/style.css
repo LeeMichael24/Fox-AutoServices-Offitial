@@ -4050,3 +4050,105 @@ section{
   background-color: #333;
 }
 
+
+/* MAILCHIMP */
+
+@media (min-width: 1920px) {
+  .sectionMailchimp{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 800px;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 768px) {
+  .sectionMailchimp{
+    width: 100%;
+    height: calc(100vh + 400px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sectionMailchimp{
+    min-width: 300px;
+    height: calc(100vh + 4.5rem);
+    margin-top: 50px;
+  }
+
+  #mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  #mc_embed_signup {
+      width: 100%;
+      padding: 10px;
+  }
+
+  #mc_embed_signup h2 {
+      font-size: 1.5em;
+  }
+
+  #mc_embed_signup .mc-field-group label,
+  #mc_embed_signup .mc-field-group input {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  #mc_embed_signup .mc-field-group input {
+      padding: 10px;
+      font-size: 1em;
+  }
+
+  #mc_embed_signup .button {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+  }
+
+  .refferal_badge {
+      width: 100%;
+      height: auto;
+  }
+
+  .btnMailchimp{
+    justify-items: center;
+    margin-top: 25px;
+    margin-bottom: -20px;
+  }
+}
+
+
+
+
+/* MAILCHIMP */
