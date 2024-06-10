@@ -56,18 +56,18 @@
     <!-- POPUP NEWSLETTER live-->
     <script id="mcjs">
         function loadPopupScript() {
-            (function (c, h, i, m, p) { 
-                m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) 
+            (function (c, h, i, m, p) {
+                m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
             })(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/f61136b8ac5868e89d391e130/ffa67de25ca088522395bff41.js");
         }
 
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             loadPopupScript();
         });
 
         /* its for the video */
         var videoPlayer = document.getElementById('videoPlayer');
-        videoPlayer.addEventListener('canplaythrough', function() {
+        videoPlayer.addEventListener('canplaythrough', function () {
             loadPopupScript();
         });
     </script>
@@ -219,16 +219,11 @@
 
         <div class="content-hero-home animate-bottom">
             <h1 class="h1-carousell" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                GLEN BURNIE EXPERT CAR REPAIRS
-                AND
-                SERVICES| YOUR TRUSTED CAR DOCTOR</h1>
-            <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="2500">We
-                We specialize in diagnosing and healing all your car woes, ensuring your vehicle
-                runs smoothly on the road. Quality repairs, affordable prices, and unparalleled expertise.
-                Book an appointment now and experience the precision care your car deserves!
-                Specializing in Glen Burnie, we offer top-quality auto repair and maintenance services.</p>
-            <button onclick="AutoOps.show()" data-aos="fade-up" data-aos-duration="3000">Book Our
-                Book Our Services Today</button>
+                GLEN BURNIE'S BEST COLLISION AND AUTO REPAIR SERVICES</h1>
+            <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="2500">Specializing in collision repair and auto maintenance in Glen Burnie, we ensure your vehicle runs smoothly. Experience top-quality repairs, affordable prices, and unmatched expertise.</p>
+            <button id="typingButton" onclick="AutoOps.show()" data-aos="fade-up" data-aos-duration="3000">
+                <span id="buttonText">Get Free Estimate Now!</span>
+            </button>
         </div>
     </section>
     <!-- hero end video -->
@@ -352,7 +347,7 @@
     </section>
 
     <!-- Specials section -->
-<!--     <section class="section-specials mt-5">
+    <!--     <section class="section-specials mt-5">
         <div class="row section-reverse-div">
             <div class="col-lg-6 w-90" data-aos="fade-up-right" data-aos-duration="1800">
                 <img src="images/Specials/militaryHonor.png" alt="Military Special" class="img-fluid specials-image">
@@ -373,7 +368,7 @@
             </div>
         </div>
     </section> -->
-    
+
     <!-- Specials section END -->
 
 
@@ -967,14 +962,16 @@
     <section class="blog-section text-center mt-5">
         <div class="container container-blogPost">
             <h1 class="mb-4 text-white h1-carousell mt-5" data-aos="zoom-in">Discover Our Latest Posts</h1>
-            <p class="text-white" data-aos="zoom-in">Explore the latest news, posts, tips, and more that we have to offer to our customers.</p>
-    
+            <p class="text-white" data-aos="zoom-in">Explore the latest news, posts, tips, and more that we have to
+                offer to our customers.</p>
+
             <!-- Tarjetas (cards) -->
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5 container-blogPost">
                 <!-- Card 1 -->
                 <div class="col" data-aos="fade-right">
                     <div class="card mb-4">
-                        <a href="blog/summerGuide.html"><img class="card-img-top img-blogSingle-post" src="images/blog/summerGuide.png" alt="Summer Guide" /></a>
+                        <a href="blog/summerGuide.html"><img class="card-img-top img-blogSingle-post"
+                                src="images/blog/summerGuide.png" alt="Summer Guide" /></a>
                         <!-- Guirnaldas -->
                         <!-- <div class="guirnalda-container-card-post">
                             <div class="guirnalda-card-post">
@@ -989,7 +986,8 @@
                         <div class="card-body">
                             <div class="div-date text-muted">June 7, 2024</div>
                             <h2 class="card-title">Complete Guide to Summer Vehicle Maintenance</h2>
-                            <p class="card-text">Summer is the perfect time for road trips and outdoor adventures, but the heat can take a toll on your vehicle. To ensure your...</p>
+                            <p class="card-text">Summer is the perfect time for road trips and outdoor adventures, but
+                                the heat can take a toll on your vehicle. To ensure your...</p>
                             <a class="btn btn-primary" href="blog/summerGuide.html">Read more →</a>
                         </div>
                     </div>
@@ -998,7 +996,8 @@
                 <!-- Card 2 -->
                 <div class="col" data-aos="fade-right">
                     <div class="card mb-4">
-                        <a href="blog/batteryCheck.html"><img class="card-img-top img-blogSingle-post" src="images/blog/batteryCheck.png" alt="Car winter" /></a>
+                        <a href="blog/batteryCheck.html"><img class="card-img-top img-blogSingle-post"
+                                src="images/blog/batteryCheck.png" alt="Car winter" /></a>
                         <!-- Guirnaldas -->
                         <!-- <div class="guirnalda-container-card-post">
                             <div class="guirnalda-card-post">
@@ -1012,8 +1011,10 @@
                         <!-- Guirnaldas -->
                         <div class="card-body">
                             <div class="div-date text-muted">April 7, 2024</div>
-                            <h2 class="card-title">Having trouble starting your car? It’s time to check the battery!</h2>
-                            <p class="card-text">Experiencing difficulty starting your car can be frustrating, especially when you're in a hurry or stuck in an inconvenient location...</p>
+                            <h2 class="card-title">Having trouble starting your car? It’s time to check the battery!
+                            </h2>
+                            <p class="card-text">Experiencing difficulty starting your car can be frustrating,
+                                especially when you're in a hurry or stuck in an inconvenient location...</p>
                             <a class="btn btn-primary" href="blog/batteryCheck.html">Read more →</a>
                         </div>
                     </div>
@@ -1021,7 +1022,8 @@
                 <!-- Card 3 -->
                 <div class="col">
                     <div class="card mb-4" data-aos="fade-up">
-                        <a href="blog/checkEngine.html"><img class="card-img-top" src="images/blog/checkEngine.png" alt="Car winter" /></a>
+                        <a href="blog/checkEngine.html"><img class="card-img-top" src="images/blog/checkEngine.png"
+                                alt="Car winter" /></a>
                         <!-- Guirnaldas -->
                         <!-- <div class="guirnalda-container-card-post">
                             <div class="guirnalda-card-post">
@@ -1036,20 +1038,22 @@
                         <div class="card-body">
                             <div class="div-date text-muted">March 22, 2024</div>
                             <h2 class="card-title">Dashboard Lights: Understanding the Check Engine Light</h2>
-                            <p class="card-text">Understanding the check engine light can help you avoid potential problems and keep your car running smoothly...</p>
+                            <p class="card-text">Understanding the check engine light can help you avoid potential
+                                problems and keep your car running smoothly...</p>
                             <a class="btn btn-primary" href="blog/checkEngine.html">Read more →</a>
                         </div>
                     </div>
                 </div>
 
-    
-            <!-- Botón "Learn More" -->
-            <div class="mt-5 mb-5 btn-blog-div" data-aos="fade-up">
-                <a href="blog.html" class="btn btn-blog text-white" style="background: #FC6701;">Learn More About Our Blog</a>
+
+                <!-- Botón "Learn More" -->
+                <div class="mt-5 mb-5 btn-blog-div" data-aos="fade-up">
+                    <a href="blog.html" class="btn btn-blog text-white" style="background: #FC6701;">Learn More About
+                        Our Blog</a>
+                </div>
             </div>
-        </div>
     </section>
-    
+
     <!-- Blog end -->
 
 
@@ -1243,6 +1247,20 @@
             });
         });
     </script>
+
+    <!-- TYPING EFFECT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttonText = document.getElementById('buttonText');
+
+            // Delay typing effect to allow page and video to load
+            setTimeout(() => {
+                buttonText.style.width = buttonText.scrollWidth + 'px';
+            }, 1500); // Adjust delay as necessary
+        });
+
+    </script>
+    <!-- TYPING EFFECT -->
 
 </body>
 
