@@ -8,58 +8,51 @@
 -->
 
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fox Auto Service | Request Estimate</title>
-    <!--Ion Icons-->
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
-    <!--Font awesome CDN-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Own styles -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/requestEstimate.css">
-    <link rel="stylesheet" href="css/seasonEffects.css">
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- icon -->
-    <link rel="icon" type="image/x-icon" href="images/fas_neont.png">
+    <title>Estimation Form</title>
 
-    <!-- Season snow -->
-    <!-- <script defer src="https://app.embed.im/snow.js"></script> -->
-    <!-- Season snow-->
+    <meta name="description" content="Fox Auto Services in Glen Burnie, MD offers top-notch collision repair and comprehensive auto repair services. Trust our expert technicians to restore your vehicle to its prime condition.">
+    <meta name="keywords" content="collision repair, auto repair, car workshop, Glen Burnie MD, vehicle maintenance, auto body shop, Fox Auto Services">
+    <meta name="author" content="Fox Auto Services">
+
+    <meta property="og:title" content="Fox Auto Services - Expert Collision Repair in Glen Burnie, MD">
+    <meta property="og:description" content="Discover expert collision repair services at Fox Auto Services in Glen Burnie, MD. Our skilled technicians provide reliable and efficient auto repairs to get your vehicle back on the road.">
+    <meta property="og:image" content="https://www.foxautoservices.com">
+    <meta property="og:url" content="https://www.foxautoservices.com/">
+    <meta property="og:type" content="website">
+
+
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+     <!-- Bootstrap CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- Glide pricing cards-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+     <!--Our own stylesheet-->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/seasonEffects.css">
+     <!-- font-awesome icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+     <!-- AOS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="js/scripts.js"></script>
+
+
+
 </head>
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FP72DFM2LZ"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-FP72DFM2LZ');
-</script>
-
-
 <body>
     <!-- Start preload -->
-    <div class="loading-overlay text-center">
+    <!-- <div class="loading-overlay">
         <div class="loader">
             <div class="loader-div">
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
         <div class="container">
@@ -68,7 +61,9 @@
             <a class="navbar-brand logo" href="index.html">
                 <img src="images/fas_neonthorizontal.png" alt="Fox Auto Services" class="regular-logo">
                 <!-- Christmas Logo -->
-                <!-- <img src="images/season/valentines/logoValentines.png" alt="Fox Auto Services" class="christmas-logo"> -->
+                <!-- <img src="images/season/christmas/foxLogoChristmas.png" alt="Fox Auto Services" class="christmas-logo xmast"> -->
+                <!-- <img src="images/season/valentines/logoValentines.png" alt="Fox Auto Services"
+                    class="christmas-logo xmast"> -->
             </a>
 
             <!-- Toggle BTN-->
@@ -92,7 +87,7 @@
                 <div id="prueba-section" class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="aboutUs.html" role="button"
@@ -114,9 +109,11 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Automotive Services
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="services.html">Mechanical Services</a></li>
-                                <li><a class="dropdown-item" href="collision-repair.html">Collision Repair</a></li>
+                            <ul class="dropdown-menu dropdown-menu-large">
+                                <li><a class="dropdown-item pt-3 pb-2 px-4" href="services.html">Mechanical Services</a>
+                                </li>
+                                <li><a class="dropdown-item px-4 pb-2" href="collision-repair.html">Collision
+                                        Services</a></li>
                                 <li>
                             </ul>
                         </li>
@@ -124,7 +121,7 @@
                             <a class="nav-link" href="gallery.html">Social Media</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a class="nav-link active" href="request-estimate.html">Request an Estimate</a>
+                            <a class="nav-link" href="request-estimate.html">Request an Estimate</a>
                         </li>
                         <!-- <li class="nav-item mx-2">
                             <a class="nav-link active" href="blog.html">Blog</a>
@@ -139,6 +136,8 @@
     <button id="showNavbarButton" class="btn">
         <span class="fa fa-bars"></span>
     </button>
+
+
 
     <!-- FAB -->
     <div class="fab-container">
@@ -168,318 +167,72 @@
         </ul>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero-section hero-section-estimate text-center">
-        <div class="hero-content animate-top" data-aos="zoom-in-up" data-aos-offset="550">
-            <h1 class="hero-title">Request an Estimate</h1>
-            <p class="hero-description">Request an Estimate: Let Us Provide You with a Detailed Quote Tailored to Your
-                Needs</p>
-        </div>
-    </section>
-
-    <!-- Contenedor de la guirnalda (fijo en la parte superior) -->
-    <!-- <div class="guirnalda-container-hero" data-aos="fade-up" data-aos-anchor-placement="center-center"
-        data-aos-delay="500">
-        <div class="guirnalda-hero">
-            <div class="imagen-guirnalda-hero"
-                style="background-image: url('images/season/valentines/valentinesObject.png');">
-            </div>
-            <div class="imagen-guirnalda-hero"
-                style="background-image: url('images/season/valentines/valentinesObject.png');">
-            </div>
-            <div class="imagen-guirnalda-hero"
-                style="background-image: url('images/season/valentines/valentinesObject.png');">
-            </div>
-            <div class="mobile-hero-guirnalda"
-                style="background-image: url('images/season/valentines/valentinesObject.png');">
-            </div>
-        </div>
-    </div> -->
 
 
-
-    <!-- Form -->
-    <section class="form" id="first-steps">
-        <div class="container">
-            <div class="title-heading animate-top">
-                <h1>Auto body Repairs estimate form</h1>
-                <p>Our specialized staff will review your repairs and contact you with a detailed estimate based on
-                    the information entered below, so plpease make sure to be the most accurate posible with all the
-                    repairs that you need so the estimate can be more precise.
-                </p>
-            </div>
-            <form class="formulario" method=POST id="formulario" action="https://formsubmit.co/info@foxautoservices.com"
-                enctype=multipart/form-data>
-                <div class="formulario__label animate-top" data-aos="fade-right" data-aos-offset="300"
-                    data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                    <h3 class="headline-form">Customers Information</h3>
-                    <div class="line-form"></div>
-                </div>
-                <div class="space"></div>
-                <!-- Grupo: First Name -->
-                <div class="formulario__grupo animate-top" id="grupo__usuario">
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input " name="First name" id="nombre"
-                            placeholder="First Name*" required>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                </div>
-
-                <!-- Grupo: Last Name -->
-                <div class="formulario__grupo animate-top" id="grupo__nombre">
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input " name="Last Name" id="apellido"
-                            placeholder="Last Name*">
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                </div>
-
-                <!-- Grupo: Email -->
-                <div class="formulario__grupo animate-top" id="grupo__correo">
-                    <div class="formulario__grupo-input">
-                        <input type="email" class="formulario__input " name="Email" id="correo"
-                            placeholder="Your Email*" required>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                </div>
-
-                <!-- Grupo: Phone Number -->
-                <div class="formulario__grupo animate-top" id="grupo__telefono">
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input " name="Phone Number" id="telefono"
-                            placeholder="Phone Number*" required>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                </div>
-
-                <!-- Grupo: Street Address -->
-                <div class="formulario__grupo animate-top" id="grupo__direccion">
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input " name="Address" id="direccion"
-                            placeholder="Street Address*">
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                </div>
-
-                <!-- Grupo: zip-code -->
-                <div class="formulario__grupo animate-top" id="grupo__zip">
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input " name="zip-code" id="zip-code"
-                            placeholder="ZIP Code*" required>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                </div>
-
-                <div class="formulario__label animate-top" data-aos="fade-right" data-aos-offset="300"
-                    data-aos-easing="ease-in-sine" data-aos-duration="1100">
-                    <h3 class="headline-form">Vehicule Information</h3>
-                    <div class="line-form"></div>
-                </div>
-                <div class="space"></div>
-
-                <!-- Grupo: Select Year -->
-                <div class="formulario__grupo animate-top" id="grupo__anio">
-                    <div class="formulario__grupo-input">
-                        <select id="anio" name="Year" class="formulario__input ">
-                            <option value="null">- Select year -</option>
-                            <option value="2021">2021</option>
-                            <option value="2020">2020</option>
-                            <option value="2019">2019</option>
-                            <option value="2018">2018</option>
-                            <option value="2017">2017</option>
-                            <option value="2016">2016</option>
-                            <option value="2015">2015</option>
-                            <option value="2014">2014</option>
-                            <option value="2014">2013</option>
-                            <option value="2014">2012</option>
-                            <option value="2014">2011</option>
-                            <option value="2001 - 2010">2001 - 2010</option>
-                            <option value="1991 - 2000">1991 - 2000</option>
-                            <option value="1981 - 1990">1981 - 1990</option>
-                            <option value="1971 - 1980">1971 - 1980</option>
-                            <option value="1961 - 1970">1961 - 1970</option>
-                            <option value="1950 - 1960">1950 - 1960</option>
-
-                            <option value="other">Other</option>
-                        </select>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                </div>
-
-                <!-- Grupo: Select Make -->
-                <div class="formulario__grupo animate-top" id="grupo__marca">
-                    <div class="formulario__grupo-input">
-                        <select id="make" name="Make" class="formulario__input ">
-                            <option value="null">- Select Make -</option>
-                            <option value="Acura">Acura</option>
-                            <option value="Audi">Audi</option>
-                            <option value="BMW">BMW</option>
-                            <option value="Buick">Buick</option>
-                            <option value="Cadillac">Cadillac</option>
-                            <option value="Chevrolet">Chevrolet</option>
-                            <option value="Chrysler">Chrysler</option>
-                            <option value="Dodge">Dodge</option>
-                            <option value="Eagle">Eagle</option>
-                            <option value="Ferrari">Ferrari</option>
-                            <option value="Ford">Ford</option>
-                            <option value="Geo">Geo</option>
-                            <option value="GMC">GMC</option>
-                            <option value="Honda">Honda</option>
-                            <option value="Hummer">Hummer</option>
-                            <option value="Hyundai">Hyundai</option>
-                            <option value="Infiniti">Infiniti</option>
-                            <option value="Isuzu">Isuzu</option>
-                            <option value="Jaguar">Jaguar</option>
-                            <option value="Jeep">Jeep</option>
-                            <option value="Kia">Kia</option>
-                            <option value="Lamborghini">Lamborghini</option>
-                            <option value="Land Rover">Land Rover</option>
-                            <option value="Lexus">Lexus</option>
-                            <option value="Lincoln">Lincoln</option>
-                            <option value="Lotus">Lotus</option>
-                            <option value="Mazda">Mazda</option>
-                            <option value="Mercedes-Benz">Mercedes-Benz</option>
-                            <option value="Mercury">Mercury</option>
-                            <option value="Mitsubishi">Mitsubishi</option>
-                            <option value="Nissan USA">Nissan USA</option>
-                            <option value="Oldsmobile">Oldsmobile</option>
-                            <option value="Peugeot">Peugeot</option>
-                            <option value="Pontiac">Pontiac</option>
-                            <option value="Porsche">Porsche</option>
-                            <option value="Saab">Saab</option>
-                            <option value="Saturn">Saturn</option>
-                            <option value="Subaru">Subaru</option>
-                            <option value="Suzuki">Suzuki</option>
-                            <option value="Toyota (USA)">Toyota (USA)</option>
-                            <option value="Volkswagen">Volkswagen</option>
-                            <option value="Volvo">Volvo</option>
-                            <option value="other">other</option>
-                        </select>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                </div>
-
-                <!-- Grupo: Select Model -->
-                <div class="formulario__grupo animate-top" id="grupo__modelo">
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input " name="Brand" id="modelo"
-                            placeholder="Enter Model*" required>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                </div>
-
-                <!-- Grupo: VIN -->
-                <div class="formulario__grupo animate-top" id="grupo__vin">
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input " name="Vin" id="vin"
-                            placeholder="Vehicule Identification Number (VIN)*" required>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                </div>
-
-                <div class="formulario__label animate-top" data-aos="fade-right" data-aos-offset="300"
-                    data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                    <h3 class="headline-form">Dent Damage Information</h3>
-                    <div class="line-form"></div>
-                </div>
-                <div class="space"></div>
-
-                <!-- Grupo: Number of Dent -->
-                <div class="formulario__grupo animate-top" id="grupo__dents">
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input " name="dents" id="dents"
-                            placeholder="Enter number of Dents*" required>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                </div>
-
-                <!-- Grupo: Approx Size -->
-                <div class="formulario__grupo animate-top" id="grupo__tamanio">
-                    <div class="formulario__grupo-input">
-                        <input type="number" min="0" max="1000" class="formulario__input " name="Dents Size in cm"
-                            id="tamanio" placeholder="Approx. Size of all dents in cm*" required>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                </div>
-
-                <div class="formulario__grupo formulario_subgrupo">
-                    <div class="col-8 animate-right">
-                        <div class="formulario__label" data-aos="fade-right" data-aos-offset="300"
-                            data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                            <h3 class="headline-form">Damaged Locations</h3>
-                            <div class="line-form"></div>
+    <!-- FORM MAILCHIMP -->
+    <section class="sectionMailchimp">
+        <div id="mc_embed_shell">
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+            <div id="mc_embed_signup">
+                <form action="https://foxautoservices.us13.list-manage.com/subscribe/post?u=f61136b8ac5868e89d391e130&amp;id=4b61ce15c2&amp;f_id=009e8beaf0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                    <div id="mc_embed_signup_scroll">
+                        <h2>Free Estimation Form</h2>
+                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                            <span id="mce-EMAIL-HELPERTEXT" class="helper_text">Sample: abc@abc.com</span>
                         </div>
-                        <!-- Grupo: Damaged Locations -->
-                        <div class="formulario__partes" id="grupo__partes">
-                            <label class="formulario__label">
-                                <input class="formulario__checkbox" type="checkbox" name="frontBumber" id="frontBumber">
-                                <p>A. Front Bumper.</p>
-                            </label>
-                            <label class="formulario__label">
-                                <input class="formulario__checkbox" type="checkbox" name="hood" id="hood">
-                                <p>B. Hood.</p>
-                            </label>
-                            <label class="formulario__label">
-                                <input class="formulario__checkbox" type="checkbox" name="fender" id="fender">
-                                <p>C. Fender.</p>
-                            </label>
-                            <label class="formulario__label">
-                                <input class="formulario__checkbox" type="checkbox" name="roof" id="roof">
-                                <p>D. Roof.</p>
-                            </label>
-                            <label class="formulario__label">
-                                <input class="formulario__checkbox" type="checkbox" name="door" id="door">
-                                <p>E. Door.</p>
-                            </label>
-                            <label class="formulario__label">
-                                <input class="formulario__checkbox" type="checkbox" name="quarterPanel"
-                                    id="quarterPanel">
-                                <p>F. Quarter Panel.</p>
-                            </label>
-                            <label class="formulario__label">
-                                <input class="formulario__checkbox" type="checkbox" name="trunk" id="trunk">
-                                <p>G. Trunk / Liftgate.</p>
-                            </label>
-                            <label class="formulario__label">
-                                <input class="formulario__checkbox" type="checkbox" name="rearBumper" id="rearBumper">
-                                <p>H. Rear Bumper.</p>
-                            </label>
+                        <div class="mc-field-group">
+                            <label for="mce-FNAME">Name &amp; last name <span class="asterisk">*</span></label>
+                            <input type="text" name="FNAME" class="required text" id="mce-FNAME" required="" value="">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-LNAME">Year/Make/Model <span class="asterisk">*</span></label>
+                            <input type="text" name="LNAME" class="required text" id="mce-LNAME" required="" value="">
+                            <span id="mce-LNAME-HELPERTEXT" class="helper_text">Sample: 2018 Honda Accord</span>
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-PHONE">(VIN) Number <span class="asterisk">*</span></label>
+                            <input type="text" name="PHONE" class="REQ_CSS" id="mce-PHONE" value="">
+                            <span id="mce-PHONE-HELPERTEXT" class="helper_text">Sample: 4T1BF1FK4JU000000</span>
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-MMERGE6">Message</label>
+                            <input type="text" name="MMERGE6" class="text" id="mce-MMERGE6" value="">
+                            <span id="mce-MMERGE6-HELPERTEXT" class="helper_text">Optional*</span>
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-MMERGE7">Phone Number</label>
+                            <input type="text" name="MMERGE7" class="text" id="mce-MMERGE7" value="">
+                            <span id="mce-MMERGE7-HELPERTEXT" class="helper_text">Optional*</span>
+                        </div>
+                        <div hidden="">
+                            <input type="hidden" name="tags" value="7206734,7072854">
+                        </div>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                            <div class="response" id="mce-success-response" style="display: none;"></div>
+                        </div>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_f61136b8ac5868e89d391e130_4b61ce15c2" tabindex="-1" value="">
+                        </div>
+                        <div class="optionalParent">
+                            <div class="clear foot btnMailchimp">
+                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe"> 
+                            </div>
                         </div>
                     </div>
-                    <div class="col-4 animate-left" data-aos="flip-up" data-aos-duration="2000">
-                        <img src="images/damage-locations.jpg" alt="Posible Damaged Locations">
-                    </div>
-                </div>
-
-                <!-- Grupo: Damage Cause. -->
-                <div class="formulario__grupo cause animate-top" id="grupo__cause">
-                    <div class="formulario__label">
-                        <h3 class="headline-form" data-aos="fade-right" data-aos-offset="300"
-                            data-aos-easing="ease-in-sine" data-aos-duration="1000">Damage Cause</h3>
-                        <div class="line-form"></div>
-                    </div>
-                    <div class="formulario__grupo-input">
-                        <textarea class="formulario__input " id="cause" name="Description Cause"
-                            placeholder="Damage Cause."></textarea>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                    </div>
-                </div>
-
-                <div class="formulario__grupo formulario__grupo-btn-enviar animate-top">
-                    <button type="submit" name="submit" id="submit" class="cta btn btn-moreAbout" data-aos="zoom-in"
-                        data-aos-duration="1400">Send Request</button>
-                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Your request has been sent
-                        successfully!
-                    </p>
-                </div>
-
-
-
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-            </form>
+                </form>
+            </div>
         </div>
     </section>
+    
+  
+  
+
+
+
 
     <!-- Maps -->
     <iframe
@@ -496,9 +249,12 @@
                 <div class="col-lg-6 pe-lg-5">
                     <a href="index.html" class="a-footer-img">
                         <img class="mb-0 mt-0 img-footer" src="images/fas_neonthorizontal.png" alt="Fox logo footer">
-                        <!-- <img class="mb-0 mt-0 img-footer" src="images/season/christmas/foxLogoChristmas.png" alt="Fox logo footer christmas"> -->
+                        <!-- Christmas -->
+                        <!-- <img class="mb-0 mt-0 img-footer" src="images/season/christmas/foxLogoChristmas.png"
+                            alt="Fox logo footer christmas"> -->
                     </a>
-                    <p class="fs-5 mb-4">Fox Auto Services - Where Expertise Meets Excellence. Your Premier Destination
+                    <p class="fs-5 mb-4 large-content">Fox Auto Services - Where Expertise Meets Excellence. Your
+                        Premier Destination
                         for Automotive Solutions.</p>
                     <p><i class="fa fa-map-marker-alt me-2"></i><a
                             href="https://www.google.com/search?client=firefox-b-d&sca_esv=565110899&tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=AM9HkKlhdDA5AVtqwkHUaaNFacBs18l4fA:1694654084797&q=fox+auto+services+md&rflfq=1&num=10&rllag=39170807,-76889889,23804&ved=2ahUKEwjA-va19qiBAxVXQTABHS5yDL0QtgN6BAgfEAg#rlfi=hd:;si:10421666208944834514,l,ChRmb3ggYXV0byBzZXJ2aWNlcyBtZEj93_GI57OAgAhaKBAAEAEQAhgAGAEYAhgDIhRmb3ggYXV0byBzZXJ2aWNlcyBtZDICZW6SAQ5hdXRvX2JvZHlfc2hvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VNdGJrbFFSWEIzUlJBQqoBXQoIL20vMDRycmQQASoVIhFmb3ggYXV0byBzZXJ2aWNlcygAMh4QASIaBha8UxqTVUnxj51w3Sc0kHCKN0-S-VrWSQ4yGBACIhRmb3ggYXV0byBzZXJ2aWNlcyBtZA;mv:[[39.176808099999995,-76.58071939999999],[39.1648067,-77.1990598]]">129-A
@@ -507,7 +263,9 @@
                     <p><i class="fa fa-phone-alt me-2"></i><a href="tel:410-304-3109">410-304-3109</a></p>
                     <p><i class="fa fa-envelope me-2"></i><a
                             href="mailto:info@foxautoservices.com">info@foxautoservices.com</a></p>
-                    <div class="d-flex mt-4">
+                    <p><i class="fa fa-clock me-2 mb-4"></i><a href="https://maps.app.goo.gl/QGaiibVqZ2sjneK5A">8:30 AM
+                            to 5:30 PM, Monday through Friday</a></p>
+                    <div class="d-flex mt-5 container-quick-links">
                         <a class="btn btn-lg-square btn-primary me-2"
                             href="https://www.google.com/search?client=firefox-b-d&q=fox+auto+services+md#rlimm=10421666208944834514"><i
                                 class="fab fa-google"></i></a>
@@ -521,7 +279,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 ps-lg-5">
-                    <div class="row g-5">
+                    <div class="row g-5 container-quick-links">
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Quick Links</h4>
                             <a class="btn btn-link" href="gallery.html">About Us</a>
@@ -557,31 +315,40 @@
     <!-- Footer End -->
 
 
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center align-items-center">
+                    <p class="mb-0">&copy; <a href="#">Fox Auto Services</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
 
-    <!-- Scrollreveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- Own scripts -->
-    <script src="js/scripts.js"></script>
+
+
+
+
+
+
+    <!-- mailCHimo -->
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[4]='PHONE';ftypes[4]='phone';fnames[6]='MMERGE6';ftypes[6]='text';fnames[7]='MMERGE7';ftypes[7]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+    <!-- mailCHimo -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Glide -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.js"></script>
+    <!-- My Scripts -->
+    <script src="js/scripts.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/455a5a3021.js" crossorigin="anonymous"></script>
+    <!-- glide -->
     <script>
-        $(document).ready(function () {
-            setTimeout(function () {
-                $(".loading-overlay").fadeOut(450, function () {
-                    $(this).remove();
-                });
-            }, 200); // Ajusta el tiempo de espera según tus necesidades
-        });
-
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector(".floating-header");
-            if (window.scrollY > 5) { // Ajusta el valor según sea necesario
-                header.classList.add("visible");
-            } else {
-                header.classList.remove("visible");
-            }
-        });
+        new Glide(".glide", { type: "carousel", autoplay: 2500, startAt: 0, perView: 3, focusAt: "center", breakpoints: { 768: { perView: 1 }, 800: { perView: 1 }, 900: { perView: 2 }, 570: { perView: 1 }, 1024: { perView: 2 }, 1440: { perView: 3 }, 1920: { perView: 3 }, 390: { perView: 1 } } }).mount(), new Glide(".glide-testi", { type: "carousel", autoplay: 2500, startAt: 0, perView: 1, focusAt: "center", breakpoints: { 768: { perView: 1 }, 570: { perView: 1 }, 1440: { perView: 1 }, 1920: { perView: 3 }, 400: { perView: 1 } } }).mount(), $(document).ready(function () { setTimeout(function () { $(".loading-overlay").fadeOut(450, function () { $(this).remove() }) }, 200) });
     </script>
-
     <!-- Narvbar desapear -->
     <script type="text/javascript">
         var isNavbarVisible = true;
@@ -591,11 +358,11 @@
         window.addEventListener("scroll", function () {
             var scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-            if (scrollTop > 100) {
+            if (scrollTop > 5) {
                 // Ocultar la barra de navegación y mostrar el botón flotante
                 if (isNavbarVisible) {
                     navbar.style.transition = "top 1s ease";
-                    navbar.style.top = "-108px";
+                    navbar.style.top = "-110px";
                     isNavbarVisible = false;
                     showNavbarButton.style.display = "block";
                 }
@@ -628,6 +395,48 @@
     </script>
     <script id="portal-scripts" data-api-key="256eb1b6ed504a439853cfe34dc6cde3"
         src="https://portal.autoops.com/portal-scripts.js"></script>
-</body>
 
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha384-e6i7NCt7d9lVszXlK6De5z9eqI4Hbi3Udu2xuBMLDBZ0FQeUKhymBhIiBvv1Rf8B"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OMQV3mUxMuP+AMK8AF6z89pB0vl9vK45gbcEStQeFx2L0C6L2veRUE8tjF5P9/2P"
+        crossorigin="anonymous"></script>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            glide.mount();
+
+            glide.on('run.after', function () {
+                updateDotIndicators(glide);
+            });
+
+            function updateDotIndicators(glide) {
+                var bulletsContainer = document.querySelector('.glide__bullets');
+                var bullets = bulletsContainer.querySelectorAll('.glide__bullet');
+
+                bullets.forEach(function (bullet, index) {
+                    bullet.classList.toggle('glide__bullet--active', index === glide.index);
+                });
+            }
+
+            var dotButtons = document.querySelectorAll('.glide__bullet');
+
+            dotButtons.forEach(function (button, index) {
+                button.addEventListener('click', function () {
+                    glide.go('=' + button.getAttribute('data-glide-dir'));
+                });
+            });
+        });
+    </script>
+
+
+
+
+
+    
+</body>
 </html>

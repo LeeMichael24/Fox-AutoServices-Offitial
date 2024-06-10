@@ -3160,12 +3160,12 @@ section{
   background: #2D4561;
   color: #FAFAFA;
 }
-.div-date{
-  font-size: 15px;
-  color: white;
-}
 .btn-blog-div{
   margin-top: 20px;
+}
+
+.container-blogPost{
+  justify-content: center;
 }
 /* BLog */
 

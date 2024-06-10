@@ -352,7 +352,7 @@
     </section>
 
     <!-- Specials section -->
-    <section class="section-specials mt-5">
+<!--     <section class="section-specials mt-5">
         <div class="row section-reverse-div">
             <div class="col-lg-6 w-90" data-aos="fade-up-right" data-aos-duration="1800">
                 <img src="images/Specials/militaryHonor.png" alt="Military Special" class="img-fluid specials-image">
@@ -365,8 +365,6 @@
                     <li class="specias-list-li text-white" data-aos="flip-right" data-aos-duration="2900"><i class="fas fa-check icon-row"></i> $300 off deductible waiver</li>
                     <li class="specias-list-li text-white" data-aos="flip-right" data-aos-duration="2900"><i class="fas fa-check icon-row"></i> 5% off on all repairs for military personnel</li>
                     <li class="specias-list-li text-white" data-aos="flip-right" data-aos-duration="2900"><i class="fas fa-check icon-row"></i> Comprehensive repair services</li>
-                    <li class="specias-list-li text-white" data-aos="flip-right" data-aos-duration="2900"><i class="fas fa-check icon-row"></i> Experienced and dedicated technicians</li>
-                    <!-- Add more benefits as needed -->
                 </ul>
     
                 <p class="specials-p text-white">Book your appointment now to honor our heroes and take advantage of these exclusive offers. Thank you for your service! Offer valid until May 31</p>
@@ -374,7 +372,7 @@
                 <button class="btn-moreAbout specials-btn" role="button" onclick="AutoOps.show()" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">Claim Your Discount!</button>
             </div>
         </div>
-    </section>
+    </section> -->
     
     <!-- Specials section END -->
 
@@ -967,13 +965,37 @@
     <!-- Blog start -->
     <!-- Sección de Blog con Fondo de Imagen -->
     <section class="blog-section text-center mt-5">
-        <div class="container">
+        <div class="container container-blogPost">
             <h1 class="mb-4 text-white h1-carousell mt-5" data-aos="zoom-in">Discover Our Latest Posts</h1>
             <p class="text-white" data-aos="zoom-in">Explore the latest news, posts, tips, and more that we have to offer to our customers.</p>
     
             <!-- Tarjetas (cards) -->
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5 container-blogPost">
                 <!-- Card 1 -->
+                <div class="col" data-aos="fade-right">
+                    <div class="card mb-4">
+                        <a href="blog/summerGuide.html"><img class="card-img-top img-blogSingle-post" src="images/blog/summerGuide.png" alt="Summer Guide" /></a>
+                        <!-- Guirnaldas -->
+                        <!-- <div class="guirnalda-container-card-post">
+                            <div class="guirnalda-card-post">
+                                <div class="imagen-guirnalda-card-post"
+                                    style="background-image: url('images/season/christmas/guirnalda4.png');"></div>
+                                <div class="imagen-guirnalda-card-post"
+                                    style="background-image: url('images/season/valentines/valentinesObject.png');">
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- Guirnaldas -->
+                        <div class="card-body">
+                            <div class="div-date text-muted">June 7, 2024</div>
+                            <h2 class="card-title">Complete Guide to Summer Vehicle Maintenance</h2>
+                            <p class="card-text">Summer is the perfect time for road trips and outdoor adventures, but the heat can take a toll on your vehicle. To ensure your...</p>
+                            <a class="btn btn-primary" href="blog/summerGuide.html">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
                 <div class="col" data-aos="fade-right">
                     <div class="card mb-4">
                         <a href="blog/batteryCheck.html"><img class="card-img-top img-blogSingle-post" src="images/blog/batteryCheck.png" alt="Car winter" /></a>
@@ -996,7 +1018,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 2 -->
+                <!-- Card 3 -->
                 <div class="col">
                     <div class="card mb-4" data-aos="fade-up">
                         <a href="blog/checkEngine.html"><img class="card-img-top" src="images/blog/checkEngine.png" alt="Car winter" /></a>
@@ -1019,34 +1041,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 3 -->
-                <div class="col" data-aos="fade-right">
-                    <div class="card mb-4">
-                        <a href="blog/tpmsLight.html"><img class="card-img-top img-blogSingle-post" src="images/blog/tmpsLight.png" alt="Car winter" /></a>
-                        <!-- Guirnaldas -->
-                        <!-- <div class="guirnalda-container-card-post">
-                            <div class="guirnalda-card-post">
-                                <div class="imagen-guirnalda-card-post"
-                                    style="background-image: url('images/season/christmas/guirnalda4.png');"></div>
-                                <div class="imagen-guirnalda-card-post"
-                                    style="background-image: url('images/season/valentines/valentinesObject.png');">
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- Guirnaldas -->
-                        <div class="card-body">
-                            <div class="div-date text-muted">March 7, 2024</div>
-                            <h2 class="card-title">TPMS Light: Understanding and Troubleshooting</h2>
-                            <p class="card-text">Your car's dashboard is a crucial information center, and the TPMS (Tire Pressure Monitoring System) light is one of the signals...</p>
-                            <a class="btn btn-primary" href="blog/tpmsLight.html">Read more →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
     
             <!-- Botón "Learn More" -->
-            <div class="mt-5 mb-5" data-aos="fade-up">
-                <a href="blog.html" class="btn btn-blog text-white btn-blog-div" style="background: #FC6701;">Learn More About Our Blog</a>
+            <div class="mt-5 mb-5 btn-blog-div" data-aos="fade-up">
+                <a href="blog.html" class="btn btn-blog text-white" style="background: #FC6701;">Learn More About Our Blog</a>
             </div>
         </div>
     </section>
