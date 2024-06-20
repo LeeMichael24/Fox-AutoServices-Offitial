@@ -1787,8 +1787,7 @@ section{
   background-color: transparent;
 }
 /* Service carousell end */
-
-/* bg Why Choosing US */
+/* Specials and Promos */
 
 
 .section-about-us{
@@ -1813,6 +1812,12 @@ section{
   background: linear-gradient(135deg, rgba(55, 57, 59, 0.9) 0%, rgba(27, 28, 28, 0.8) 100%), url(../images/how-we-do-it/paintingTest2.png);
   background-position: 50% 50%;
   background-size: cover !important;
+}
+/* Ajustes para la imagen del carrusel */
+.carousel-item-promos img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 .section-desctip-specials{
   padding: 4rem 4rem;
