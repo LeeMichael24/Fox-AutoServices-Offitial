@@ -556,7 +556,7 @@ section{
   font-weight: 400;
   margin-bottom: 1rem;
 }
-.content-hero-home button{
+.button-a{
   padding: 1rem 2rem;
   margin-top: 25px;
   border: none;
@@ -623,7 +623,7 @@ section{
     font-weight: 400;
     margin-bottom: 1rem;
   }
-  .content-hero-home button{
+  .button-a{
     padding: 2rem 2rem;
     margin-top: 25px;
     border: none;
@@ -4165,6 +4165,7 @@ section{
 
 
 /* TYPING EFFECT */
+/* TYPING EFFECT */
 #typingButton {
   position: relative;
   cursor: pointer;
@@ -4174,9 +4175,9 @@ section{
   border: none;
   background: #FC6701;
   border-radius: 8px;
-  font-size: 1.5rem;
   color: #fff;
-
+  display: inline-block;  /* Asegura que el enlace se comporte como un botón */
+  text-decoration: none;  /* Remueve el subrayado del enlace */
 }
 
 #typingButton span {
@@ -4187,26 +4188,30 @@ section{
   font-weight: 500 !important;
   border-right: 2px solid #fff;
   box-sizing: border-box;
+  font-size: 1.5rem;
   animation: typing 3s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
 }
 
+/* Typing effect */
 @keyframes typing {
   from {
-      width: 0;
+    width: 0;
   }
   to {
-      width: 100%;
+    width: 100%;
   }
 }
 
+/* Blinking caret effect */
 @keyframes blink-caret {
   from,
   to {
-      border-color: transparent;
+    border-color: transparent;
   }
   50% {
-      border-color: #fff;
+    border-color: #fff;
   }
 }
+
 
 /* TYPING EFFECT */
