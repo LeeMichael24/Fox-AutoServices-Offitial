@@ -1845,7 +1845,10 @@ section{
 .specials-p{
   font-size: 20px;
 }
-.specials-btn{
+.ul-special{
+  margin-bottom: 32px;
+}
+#specials-btn{
   padding: 1rem 2rem;
   color: white;
   background-color: #FC6701;
@@ -1854,7 +1857,6 @@ section{
   font-size: 17px !important;
   border: none;
   margin: 0 auto;
-  margin-top: 22px;
 }
 .about-us-container{
   align-items: center;
