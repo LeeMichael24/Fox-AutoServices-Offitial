@@ -156,3 +156,6 @@ function toggleImages(xmast, show) {
 }
 
 /* SEASON CHRISTMAS */
+
+
+/* BLOG POST */

@@ -56,6 +56,9 @@
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/seasonEffects.css">
 
+    <script src="js/blogData.js" defer></script>
+    <script src="js/scripts.js"></script>
+
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -231,78 +234,10 @@
     <div class="container">
         <div class="row">
             <!-- Blog entries-->
-            <div class="col-lg-8">
-                <!-- Featured blog post -->
-                <div class="card mb-4" data-aos="zoom-out-down">
-                    <a href="blog/summerGuide.html"><img class="card-img-top img-blogSingle-post" src="images/blog/summerGuide.png" alt="Car winter" /></a>
-                    <div class="card-body">
-                        <div class="small text-muted">June 7, 2024</div>
-                        <h2 class="card-title">Complete Guide to Summer Vehicle Maintenance!</h2>
-                        <p class="card-text">Summer is the perfect time for road trips and outdoor adventures, but the heat can take a toll on your vehicle. To ensure your...</p>
-                        <a class="btn btn-primary" href="blog/summerGuide.html">Read more →</a>
-                    </div>
-                </div>
-                <!-- Nested row for non-featured blog posts -->
-                <div class="row mb-5">
-                    <!-- Right column -->
-                    <div class="col-lg-6">
-                        <!-- Blog post 1 -->
-                        <div class="card mb-4" data-aos="fade-right">
-                            <a href="blog/batteryCheck.html"><img class="card-img-top" src="images/blog/batteryCheck.png" alt="Fuel Efficiency Gas" /></a>
-                            <div class="card-body">
-                                <div class="small text-muted">April 7, 2024</div>
-                                <h2 class="card-title h4">Having trouble starting your car? It’s time to check the battery!</h2>
-                                <p class="card-text">Explore common issues with car batteries and how to troubleshoot them...</p>
-                                <a class="btn btn-primary" href="blog/batteryCheck.html">Read more →</a>
-                            </div>
-                        </div>
-                        <!-- Blog post 2 -->
-                        <div class="card mb-4" data-aos="fade-right">
-                            <a href="blog/checkEngine.html"><img class="card-img-top img-blogSingle-post" src="images/blog/checkEngine.png" alt="Car winter" /></a>
-                            <div class="card-body">
-                                <div class="small text-muted">March 22, 2024</div>
-                                <h2 class="card-title h4">Dashboard Lights: Understanding the Check Engine Light</h2>
-                                <p class="card-text">Understanding the check engine light can help you avoid potential problems and keep your car running smoothly...</p>
-                                <a class="btn btn-primary" href="blog/checkEngine.html">Read more →</a>
-                            </div>
-                        </div>
-                        <!-- Blog post 3 -->
-                        <div class="card mb-4" data-aos="fade-right">
-                            <a href="blog/top10Sings.html"><img class="card-img-top" src="images/blog/top102.jpg" alt="Fuel Efficiency Gas" /></a>
-                            <div class="card-body">
-                                <div class="small text-muted">December 25, 2023</div>
-                                <h2 class="card-title h4">Top 10 Signs Your Car Needs Immediate Attention</h2>
-                                <p class="card-text">Being proactive about these warning signs can save you time, money, and ensure the safety ...</p>
-                                <a class="btn btn-primary" href="blog/top10Sings.html">Read more →</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Left column -->
-                    <div class="col-lg-6">
-                        <!-- Blog post 1 -->
-                        <div class="card mb-4" data-aos="fade-left">
-                            <a href="blog/tpmsLight.html"><img class="card-img-top" style="height: 210px;" src="images/blog/tmpsLight.png" alt="..." /></a>
-                            <div class="card-body">
-                                <div class="small text-muted">March 7, 2024</div>
-                                <h2 class="card-title h4">TPMS Light: Understanding and Troubleshooting</h2>
-                                <p class="card-text">Your car's dashboard is a crucial information center, and the TPMS (Tire Pressure Monitoring System) light is one of the signals you shouldn't ignore...</p>
-                                <a class="btn btn-primary" href="blog/tpmsLight.html">Read more →</a>
-                            </div>
-                        </div>
-                        <!-- Blog post 2 -->
-                        <div class="card mb-4" data-aos="fade-left">
-                            <a href="blog/glenBurnie-repair.html"><img class="card-img-top" style="height: 210px;" src="images/blog/glenBurnieChoose.jpg" alt="..." /></a>
-                            <div class="card-body">
-                                <div class="small text-muted">February 20, 2024</div>
-                                <h2 class="card-title h4">The Premier Car Workshop in Glen Burnie: Why Choose Us?</h2>
-                                <p class="card-text">Discover why Fox Auto Service is your top choice for car maintenance and repair in Glen Burnie...</p>
-                                <a class="btn btn-primary" href="blog/glenBurnie-repair.html">Read more →</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-lg-8" id="blog-container">
+                <!-- Aquí se insertarán dinámicamente las publicaciones de blog -->
             </div>
-    
+
             <!-- Side widgets-->
             <div class="col-lg-4">
                 <!-- Search widget-->
@@ -310,13 +245,14 @@
                     <div class="card-header">Recent Posts</div>
                     <div class="card-body">
                         <ul class="list-unstyled mb-0">
-                            <li><a href="blog/chooseMechanic.html">How to Choose the Right Mechanic in Glen Burnie</a></li>
+                            <li><a href="blog/chooseMechanic.html">How to Choose the Right Mechanic in Glen Burnie</a>
+                            </li>
                             <li><a href="blog/top10Sings.html">Top 10 Signs Your Car Needs Immediate Attention</a></li>
                             <li><a href="blog/avoidCommonCarMain.html">Avoiding Common Car Maintenance Mistakes</a></li>
                         </ul>
                     </div>
                 </div>
-    
+
                 <div class="card mb-4" data-aos="zoom-out-left" data-aos-duration="3000">
                     <div class="card-body">
                         <i class="fa fa-globe fa-2x p-2 bg-primary"></i>
@@ -333,32 +269,34 @@
                     <div class="card-header">Social Media</div>
                     <div class="card-body">
                         <ul class="list-unstyled mb-0">
-                            <li><a href="https://www.facebook.com/TheFOXAuto/"><i class="fab fa-facebook"></i> Facebook</a></li>
-                            <li><a href="https://www.google.com/search?client=firefox-b-d&q=fox+auto+services+md#rlimm=10421666208944834514"><i class="fab fa-google"></i> Google</a></li>
-                            <li><a href="https://www.instagram.com/foxautoservices/"><i class="fab fa-instagram"></i> Instagram</a></li>
-                            <li><a href="https://www.yelp.com/biz/fox-auto-services-glen-burnie"><i class="fab fa-yelp"></i> Yelp</a></li>
+                            <li><a href="https://www.facebook.com/TheFOXAuto/"><i class="fab fa-facebook"></i>
+                                    Facebook</a></li>
+                            <li><a
+                                    href="https://www.google.com/search?client=firefox-b-d&q=fox+auto+services+md#rlimm=10421666208944834514"><i
+                                        class="fab fa-google"></i> Google</a></li>
+                            <li><a href="https://www.instagram.com/foxautoservices/"><i class="fab fa-instagram"></i>
+                                    Instagram</a></li>
+                            <li><a href="https://www.yelp.com/biz/fox-auto-services-glen-burnie"><i
+                                        class="fab fa-yelp"></i> Yelp</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Pagination-->
             <nav aria-label="Pagination" class="pagination-container mb-5">
                 <hr class="my-0" />
                 <ul class="pagination justify-content-center my-4">
-                    <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a></li>
-                    <li class="page-item active pagination-color-fox" aria-current="page"><a class="page-link" href="blog.html">1</a></li>
-                    <li class="page-item"><a class="page-link" href="blogPage/blogPage2.html">2</a></li>
-                    <li class="page-item"><a class="page-link" href="blogPage/blogPage2.html">Older</a></li>
+                    <!-- Aquí se insertará dinámicamente la paginación -->
                 </ul>
             </nav>
         </div>
     </div>
-    
 
 
 
-    
+
+
 
 
     <!-- Footer Start -->
@@ -454,8 +392,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Glide -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.js"></script>
-    <!-- My Scripts -->
-    <script src="js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/455a5a3021.js" crossorigin="anonymous"></script>
@@ -517,6 +453,134 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OMQV3mUxMuP+AMK8AF6z89pB0vl9vK45gbcEStQeFx2L0C6L2veRUE8tjF5P9/2P"
         crossorigin="anonymous"></script>
+
+
+
+
+    <script>
+        /* BLOG POST */
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("DOMContentLoaded event disparado");
+
+            const blogContainer = document.getElementById("blog-container");
+
+            if (!blogContainer) {
+                console.error("No se encontró el contenedor del blog.");
+                return;
+            }
+
+            if (typeof blogPosts === 'undefined') {
+                console.error("No se encontró la variable 'blogPosts'.");
+                return;
+            }
+
+            // Función para convertir una fecha en formato legible a un objeto Date
+            function parseDate(dateStr) {
+                return new Date(dateStr);
+            }
+
+            // Función para ordenar los posts por fecha (de más reciente a más antiguo)
+            blogPosts.sort((a, b) => parseDate(b.date) - parseDate(a.date));
+
+            const postsPerPage = 5;
+            const urlParams = new URLSearchParams(window.location.search);
+            const page = parseInt(urlParams.get('page')) || 1;
+            const startIndex = (page - 1) * postsPerPage;
+            const endIndex = page * postsPerPage;
+
+            const paginatedPosts = blogPosts.slice(startIndex, endIndex);
+            const featuredPost = paginatedPosts.find(post => post.featured);
+            const nonFeaturedPosts = paginatedPosts.filter(post => !post.featured);
+
+            // Función para truncar descripciones
+            function truncateText(text, maxLength) {
+                return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
+            }
+
+            const featuredDescriptionLength = 200; // Longitud máxima para post destacado
+            const nonFeaturedDescriptionLength = 100; // Longitud máxima para posts no destacados
+
+            // Renderizar el post destacado
+            if (featuredPost) {
+                const featuredPostElement = document.createElement("div");
+                featuredPostElement.className = "card mb-4";
+                featuredPostElement.setAttribute("data-aos", "zoom-out-down");
+
+                featuredPostElement.innerHTML = `
+                    <a href="${featuredPost.link}"><img class="card-img-feature img-blogSingle-post" src="${featuredPost.image}" alt="${featuredPost.title}" /></a>
+                    <div class="card-body">
+                        <div class="small text-muted">${featuredPost.date}</div>
+                        <h2 class="card-title">${featuredPost.title}</h2>
+                        <p class="card-text">${truncateText(featuredPost.description, featuredDescriptionLength)}</p>
+                        <a class="btn btn-primary" href="${featuredPost.link}">Read more →</a>
+                    </div>
+                    `;
+
+                blogContainer.appendChild(featuredPostElement);
+            }
+
+            // Crear contenedor para los posts no destacados
+            const rowElement = document.createElement("div");
+            rowElement.className = "row mb-5";
+            blogContainer.appendChild(rowElement);
+
+            // Renderizar los posts no destacados en una cuadrícula de dos columnas
+            nonFeaturedPosts.forEach((post, index) => {
+                const colElement = document.createElement("div");
+                colElement.className = `col-lg-6`;
+                if (index % 2 === 0) {
+                    colElement.setAttribute("data-aos", "fade-right");
+                } else {
+                    colElement.setAttribute("data-aos", "fade-left");
+                }
+
+                const postElement = document.createElement("div");
+                postElement.className = "card mb-4";
+
+                postElement.innerHTML = `
+                    <a href="${post.link}"><img class="card-img-top img-blogSingle-post" src="${post.image}" alt="${post.title}" /></a>
+                    <div class="card-body">
+                        <div class="small text-muted">${post.date}</div>
+                        <h2 class="card-title h4">${post.title}</h2>
+                        <p class="card-text">${truncateText(post.description, nonFeaturedDescriptionLength)}</p>
+                        <a class="btn btn-primary" href="${post.link}">Read more →</a>
+                    </div>
+                    `;
+
+                colElement.appendChild(postElement);
+                rowElement.appendChild(colElement);
+            });
+
+            // Renderizar la paginación
+            const paginationContainer = document.querySelector('.pagination');
+            if (paginationContainer) {
+                const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+
+                let paginationHTML = `
+                    <li class="page-item ${page === 1 ? 'disabled' : ''}">
+                        <a class="page-link" href="?page=${page - 1}" tabindex="-1" aria-disabled="${page === 1}">Newer</a>
+                    </li>
+                    `;
+
+                for (let i = 1; i <= totalPages; i++) {
+                    paginationHTML += `
+                        <li class="page-item ${page === i ? 'active' : ''}">
+                        <a class="page-link" href="?page=${i}">${i}</a>
+                        </li>
+                    `;
+                }
+
+                paginationHTML += `
+                    <li class="page-item ${page === totalPages ? 'disabled' : ''}">
+                        <a class="page-link" href="?page=${page + 1}">Older</a>
+                    </li>
+                    `;
+
+                paginationContainer.innerHTML = paginationHTML;
+            }
+        });
+
+    </script>
 </body>
 
 </html>
