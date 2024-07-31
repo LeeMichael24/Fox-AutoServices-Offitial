@@ -722,4 +722,12 @@ a{
   color: #fff;
 }
 
+
+/* Carousel Blog */
+.carousel-item img {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*# sourceMappingURL=blog.css.map */

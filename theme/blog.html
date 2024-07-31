@@ -242,14 +242,50 @@
             <div class="col-lg-4">
                 <!-- Search widget-->
                 <div class="card mb-4" data-aos="zoom-out-left" data-aos-duration="3000">
-                    <div class="card-header">Recent Posts</div>
+                    <div class="card-header">Our Discounts</div>
                     <div class="card-body">
-                        <ul class="list-unstyled mb-0">
-                            <li><a href="blog/chooseMechanic.html">How to Choose the Right Mechanic in Glen Burnie</a>
-                            </li>
-                            <li><a href="blog/top10Sings.html">Top 10 Signs Your Car Needs Immediate Attention</a></li>
-                            <li><a href="blog/avoidCommonCarMain.html">Avoiding Common Car Maintenance Mistakes</a></li>
-                        </ul>
+                        <div id="carouselBlog" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/Discounts/student.png" class="d-block w-100" alt="Discount 1">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>Save 10%: Car Repais! 📚</p>
+                                        <a href="your-link.html" class="btn btn-primary">Get a Discount</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Discounts/deductible.png" class="d-block w-100" alt="Discount 2">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>Up to $200 Deductible Assistance! 👊</p>
+                                        <a href="your-link.html" class="btn btn-primary">Get a Discount</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Discounts/military.png" class="d-block w-100" alt="Discount 3">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>5% Discount in all repairs 💪</p>
+                                        <a href="your-link.html" class="btn btn-primary">Get a Discount</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Discounts/lifetime.png" class="d-block w-100" alt="Discount 3">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>Lifetime Warranty on All Repairs! 🔒</p>
+                                        <a href="your-link.html" class="btn btn-primary">Get a Discount</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBlog"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselBlog"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -507,14 +543,14 @@
                 featuredPostElement.setAttribute("data-aos", "zoom-out-down");
 
                 featuredPostElement.innerHTML = `
-                    <a href="${featuredPost.link}"><img class="card-img-feature img-blogSingle-post" src="${featuredPost.image}" alt="${featuredPost.title}" /></a>
-                    <div class="card-body">
-                        <div class="small text-muted">${featuredPost.date}</div>
-                        <h2 class="card-title">${featuredPost.title}</h2>
-                        <p class="card-text">${truncateText(featuredPost.description, featuredDescriptionLength)}</p>
-                        <a class="btn btn-primary" href="${featuredPost.link}">Read more →</a>
-                    </div>
-                    `;
+                        <a href="${featuredPost.link}"><img class="card-img-feature img-blogSingle-post" src="${featuredPost.image}" alt="${featuredPost.title}" /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">${featuredPost.date}</div>
+                            <h2 class="card-title">${featuredPost.title}</h2>
+                            <p class="card-text">${truncateText(featuredPost.description, featuredDescriptionLength)}</p>
+                            <a class="btn btn-primary" href="${featuredPost.link}">Read more →</a>
+                        </div>
+                        `;
 
                 blogContainer.appendChild(featuredPostElement);
             }
@@ -538,14 +574,14 @@
                 postElement.className = "card mb-4";
 
                 postElement.innerHTML = `
-                    <a href="${post.link}"><img class="card-img-top img-blogSingle-post" src="${post.image}" alt="${post.title}" /></a>
-                    <div class="card-body">
-                        <div class="small text-muted">${post.date}</div>
-                        <h2 class="card-title h4">${post.title}</h2>
-                        <p class="card-text">${truncateText(post.description, nonFeaturedDescriptionLength)}</p>
-                        <a class="btn btn-primary" href="${post.link}">Read more →</a>
-                    </div>
-                    `;
+                        <a href="${post.link}"><img class="card-img-top img-blogSingle-post" src="${post.image}" alt="${post.title}" /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">${post.date}</div>
+                            <h2 class="card-title h4">${post.title}</h2>
+                            <p class="card-text">${truncateText(post.description, nonFeaturedDescriptionLength)}</p>
+                            <a class="btn btn-primary" href="${post.link}">Read more →</a>
+                        </div>
+                        `;
 
                 colElement.appendChild(postElement);
                 rowElement.appendChild(colElement);
@@ -557,24 +593,24 @@
                 const totalPages = Math.ceil(blogPosts.length / postsPerPage);
 
                 let paginationHTML = `
-                    <li class="page-item ${page === 1 ? 'disabled' : ''}">
-                        <a class="page-link" href="?page=${page - 1}" tabindex="-1" aria-disabled="${page === 1}">Newer</a>
-                    </li>
-                    `;
+                        <li class="page-item ${page === 1 ? 'disabled' : ''}">
+                            <a class="page-link" href="?page=${page - 1}" tabindex="-1" aria-disabled="${page === 1}">Newer</a>
+                        </li>
+                        `;
 
                 for (let i = 1; i <= totalPages; i++) {
                     paginationHTML += `
-                        <li class="page-item ${page === i ? 'active' : ''}">
-                        <a class="page-link" href="?page=${i}">${i}</a>
-                        </li>
-                    `;
+                            <li class="page-item ${page === i ? 'active' : ''}">
+                            <a class="page-link" href="?page=${i}">${i}</a>
+                            </li>
+                        `;
                 }
 
                 paginationHTML += `
-                    <li class="page-item ${page === totalPages ? 'disabled' : ''}">
-                        <a class="page-link" href="?page=${page + 1}">Older</a>
-                    </li>
-                    `;
+                        <li class="page-item ${page === totalPages ? 'disabled' : ''}">
+                            <a class="page-link" href="?page=${page + 1}">Older</a>
+                        </li>
+                        `;
 
                 paginationContainer.innerHTML = paginationHTML;
             }
