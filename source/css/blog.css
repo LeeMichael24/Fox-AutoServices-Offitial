@@ -655,6 +655,13 @@ a{
   flex-direction: column;
   justify-content: space-between;
 }
+.card-header {
+  background-color: #1c587b;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.75rem 1rem;
+}
 
 /* Estilo para imágenes dentro de las cards */
 .card-img-top {
@@ -712,4 +719,30 @@ a{
 .carousel-item img {
   height: 350px;
   object-fit: cover;
+}
+
+
+.social-media-list {
+  padding-left: 0;
+}
+
+.social-media-list li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.social-media-list a {
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.social-media-list i {
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.social-media-list a:hover i {
+  transform: scale(1.2);
 }

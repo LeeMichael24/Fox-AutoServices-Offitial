@@ -5,8 +5,6 @@
  * GITHUB: https://github.com/MichaelNarvaez/
  */
 
-console.log("blogData.js cargado correctamente");
-
 window.blogPosts = [
   {
     title: "Complete Guide to Summer Vehicle Maintenance!",
