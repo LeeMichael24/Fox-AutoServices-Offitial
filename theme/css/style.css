@@ -2585,56 +2585,29 @@ section{
 }
 
 /* Responsive styles for .price-table */
+.price-table{
+  min-height: 410px;
+  max-height: 400px;
+}
+
+@media (max-width: 1180px) {
+  .price-table {
+    min-height: 485px;
+    max-height: 485px;
+  }
+}
 @media (max-width: 768px) {
   .price-table {
-    height: 65vh;
-    max-height: 65vh;
+    min-height: 390px;
+    max-height: 390px;
   }
 }
-
-@media (min-width: 769px) and (max-width: 950px) {
+@media (max-width: 590px) {
   .price-table {
-    height: 55vh;
+    min-height: 460PX;
+    max-height: 460px;
   }
 }
-
-@media (min-width: 951px) and (max-width: 1024px) {
-  .price-table {
-    height: 43vh;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1200px) {
-  .price-table {
-    height: 56vh;
-  }
-}
-@media (min-width: 1201px) and (max-width: 1300px) {
-  .price-table {
-    height: 50vh;
-  }
-}
-@media (min-width: 1301px) and (max-width: 1440px) {
-  .price-table {
-    height: 50vh;
-  }
-}
-@media (min-width: 1400px) and (max-width: 1440px) {
-  .price-table {
-    height: 62vh;
-  }
-}
-
-@media (min-width: 1441px) {
-  .price-table {
-    height: 50vh;
-  }
-}
-
-/* @media (max-width: 1440px) {
-  .price-table {
-    height: auto;
-  }
-} */
 
 .glide__arrows{
   position: relative;
@@ -2701,6 +2674,10 @@ section{
   margin-bottom: 10px;
 }
 /* end pricing */
+
+
+
+
 
 /* How we do it */
 .how-we-do-it{
