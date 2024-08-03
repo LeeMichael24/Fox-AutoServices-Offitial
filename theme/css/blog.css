@@ -5,7 +5,15 @@
  * GITHUB: https://github.com/MichaelNarvaez/
  */
 
+/* Prevent horizontal scrolling on the entire document */
+body {
+  overflow-x: hidden;
+}
 
+/* Optional: Prevent horizontal scrolling on all HTML elements */
+* {
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
 
 /*  Start preload */
 .loading-overlay{
@@ -126,9 +134,9 @@
 
 .header-container{
   margin-top: 100px !important;
-  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 20%), url('../images/blog/blogPic.jpg');
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 20%), url('../images/blog/blogBg2.png');
   background-size: cover;
-  background-position: 50% 43%;
+  background-position: 50% 45%;
 }
 @media screen and (min-width: 950px){
   
@@ -763,4 +771,28 @@ a{
   transform: scale(1.2);
 }
 
+/* CTA BLOG */
+.CTA-index-image-blog{
+  background: linear-gradient(135deg, rgba(55, 57, 59, 0.9) 0%, rgba(27, 28, 28, 0.8) 100%), url(../images/realImages/Vission.png) !important;
+  background-size: cover !important;
+  background-position: 50% 40% !important;
+}
+.company-mission {
+  padding: 40px 0;
+  background: #002aff0b;
+}
+
+@media (max-width: 768px) {
+  .company-mission {
+      padding: 50px 0;
+  }
+}
+
+.mission-content h3 {
+  font-family: 'Aldrich', sans-serif !important;
+  font-size: 30px;
+  color: #fc6701;
+  font-size: 30px !important;
+}
+/* CTA BLOG */
 /*# sourceMappingURL=blog.css.map */

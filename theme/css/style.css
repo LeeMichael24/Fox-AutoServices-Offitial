@@ -13,13 +13,14 @@
 - accent color: #FC6701 rgb(252, 103, 1)
 - Light accent color: #FFBB04 rgb(255, 187, 4)
 - text color: #FAFAFA
- */
- html {
-  scroll-behavior: smooth;
-}
+
+/* Optional: Prevent horizontal scrolling on all HTML elements */
 body, html {
     max-width: 100%;
     overflow-x: hidden;
+    overscroll-behavior: auto; /* Allow default scrolling behavior */
+    scroll-behavior: smooth;
+    touch-action: auto; /* Allow touch actions */
 }
 container{
   max-width: 390px;
@@ -30,6 +31,7 @@ container{
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
 }
 
 
@@ -334,10 +336,16 @@ section{
     right: 2rem;
     z-index: 9999;
     cursor: pointer;
-    max-width: 100%;
+    max-width: 80px;
+}
+.fab-container:hover .fade-effect {
+  opacity: 1;
 }
 .faq-2{
   bottom: 10.5rem !important;
+}
+.fab-container, .fab-icon-holder {
+  pointer-events: auto; /* Allow interactions */
 }
 
 .fab-icon-holder{
@@ -464,8 +472,7 @@ section{
 }
 .navbar-brand{ /* esto es la imagen del header */
   width: 170px;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
 }
 .navbar-brand img{
   width: 165px;
@@ -1265,9 +1272,6 @@ section{
 }
 
 /* Mostrar el elemento al hacer hover en el contenedor */
-.fab-container:hover .fade-effect {
-    opacity: 1;
-}
   
   .img-footer{
     width: 210px !important;
