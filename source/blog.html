@@ -55,19 +55,17 @@
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E90CYY0716"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-E90CYY0716');
+    </script>
 
 </head>
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FP72DFM2LZ"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-FP72DFM2LZ');
-</script>
 
 
 <body>
@@ -87,7 +85,9 @@
             <a class="navbar-brand logo" href="index.html">
                 <img src="images/fas_neonthorizontal.png" alt="Fox Auto Services" class="regular-logo">
                 <!-- Christmas Logo -->
-                <!-- <img src="images/season/christmas/foxLogoChristmas.png" alt="Fox Auto Services" class="christmas-logo"> -->
+                <!-- <img src="images/season/christmas/foxLogoChristmas.png" alt="Fox Auto Services" class="christmas-logo xmast"> -->
+                <!-- <img src="images/season/valentines/logoValentines.png" alt="Fox Auto Services"
+                    class="christmas-logo xmast"> -->
             </a>
 
             <!-- Toggle BTN-->
@@ -111,10 +111,10 @@
                 <div id="prueba-section" class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="aboutUs.html" role="button"
+                            <a class="nav-link dropdown-toggle" href="aboutUs.html" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 About Us
                             </a>
@@ -133,9 +133,11 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Automotive Services
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="services.html">Mechanical Services</a></li>
-                                <li><a class="dropdown-item" href="collision-repair.html">Collision Repair</a></li>
+                            <ul class="dropdown-menu dropdown-menu-large">
+                                <li><a class="dropdown-item pt-3 pb-2 px-4" href="services.html">Mechanical Services</a>
+                                </li>
+                                <li><a class="dropdown-item px-4 pb-2" href="collision-repair.html">Collision
+                                        Services</a></li>
                                 <li>
                             </ul>
                         </li>
@@ -194,7 +196,7 @@
 
 
 
-    <header class="py-5 bg-dark text-white border-bottom mb-4 mt-5 header-container">
+    <header class="py-5 bg-dark text-white border-bottom mb-4 header-container">
         <div class="container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
             <div class="text-center my-5">
                 <h1 class="fw-bolder" style="color: #FC6701;">Welcome to Fox Blog!</h1>
@@ -547,11 +549,11 @@
         window.addEventListener("scroll", function () {
             var scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-            if (scrollTop > 100) {
+            if (scrollTop > 5) {
                 // Ocultar la barra de navegación y mostrar el botón flotante
                 if (isNavbarVisible) {
                     navbar.style.transition = "top 1s ease";
-                    navbar.style.top = "-120px";
+                    navbar.style.top = "-110px";
                     isNavbarVisible = false;
                     showNavbarButton.style.display = "block";
                 }
@@ -630,13 +632,14 @@
             const featuredPost = paginatedPosts.find(post => post.featured);
             const nonFeaturedPosts = paginatedPosts.filter(post => !post.featured);
 
-            // Función para truncar descripciones
+            // Función para truncar texto
             function truncateText(text, maxLength) {
                 return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
             }
 
             const featuredDescriptionLength = 200; // Longitud máxima para post destacado
-            const nonFeaturedDescriptionLength = 100; // Longitud máxima para posts no destacados
+            const nonFeaturedDescriptionLength = 80; // Longitud máxima para posts no destacados
+            const maxTitleLength = 40; // Longitud máxima para títulos
 
             // Renderizar el post destacado
             if (featuredPost) {
@@ -648,11 +651,11 @@
                         <a href="${featuredPost.link}"><img class="card-img-feature img-blogSingle-post" src="${featuredPost.image}" alt="${featuredPost.title}" /></a>
                         <div class="card-body">
                             <div class="small text-muted">${featuredPost.date}</div>
-                            <h2 class="card-title">${featuredPost.title}</h2>
+                            <h2 class="card-title">${truncateText(featuredPost.title, maxTitleLength)}</h2>
                             <p class="card-text">${truncateText(featuredPost.description, featuredDescriptionLength)}</p>
                             <a class="btn btn-primary" href="${featuredPost.link}">Read more →</a>
                         </div>
-                        `;
+                    `;
 
                 blogContainer.appendChild(featuredPostElement);
             }
@@ -679,11 +682,11 @@
                         <a href="${post.link}"><img class="card-img-top img-blogSingle-post" src="${post.image}" alt="${post.title}" /></a>
                         <div class="card-body">
                             <div class="small text-muted">${post.date}</div>
-                            <h2 class="card-title h4">${post.title}</h2>
+                            <h2 class="card-title h4">${truncateText(post.title, maxTitleLength)}</h2>
                             <p class="card-text">${truncateText(post.description, nonFeaturedDescriptionLength)}</p>
                             <a class="btn btn-primary" href="${post.link}">Read more →</a>
                         </div>
-                        `;
+                    `;
 
                 colElement.appendChild(postElement);
                 rowElement.appendChild(colElement);
@@ -698,12 +701,12 @@
                         <li class="page-item ${page === 1 ? 'disabled' : ''}">
                             <a class="page-link" href="?page=${page - 1}" tabindex="-1" aria-disabled="${page === 1}">Newer</a>
                         </li>
-                        `;
+                    `;
 
                 for (let i = 1; i <= totalPages; i++) {
                     paginationHTML += `
                             <li class="page-item ${page === i ? 'active' : ''}">
-                            <a class="page-link" href="?page=${i}">${i}</a>
+                                <a class="page-link" href="?page=${i}">${i}</a>
                             </li>
                         `;
                 }
@@ -712,13 +715,13 @@
                         <li class="page-item ${page === totalPages ? 'disabled' : ''}">
                             <a class="page-link" href="?page=${page + 1}">Older</a>
                         </li>
-                        `;
+                    `;
 
                 paginationContainer.innerHTML = paginationHTML;
             }
         });
-
     </script>
+
 
     <!-- TYPING EFFECT -->
     <script>

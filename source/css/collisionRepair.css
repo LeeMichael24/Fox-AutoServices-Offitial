@@ -232,12 +232,12 @@
   #carouselExampleInterval{
     margin-bottom: 50px;
   }
-  
-  .carousel-item > div > div img{
-    margin: 0 auto;
-    width: 300px !important;
-  }
-  
+
+  .carousel-item img {
+    object-fit: cover;
+    height: auto; /* Puedes cambiar esto según sea necesario */
+}
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     background-color: #fc6701; /* Cambia este valor al color que desees */
