@@ -1,12 +1,22 @@
 window.blogPosts = [
   {
+    title:
+      "Had an Accident? Let Us Handle the Issues. We Arrange a Rental Car for You While Your Vehicle is Being Repaired.",
+    description:
+      "After an accident, the last thing you want to worry about is finding transportation while your car is being repaired. Let Fox Auto Service handle everything for you, including arranging a rental car.",
+    date: "August 20, 2024",
+    link: "blog/insuranceRentalCar.html",
+    image: "images/blog/rentalCarFox.png",
+    featured: true,
+  },
+  {
     title: "Waiting on a Back Order? What is That?",
     date: "August 5, 2024",
     description:
       "When it comes to auto repairs, waiting on a back order can be a frustrating experience. But what exactly does it mean when your repair parts are on back order? Simply put, a back order occurs when demand exceeds supply",
     link: "blog/backOrder.html",
     image: "images/blog/backOrder.png",
-    featured: true,
+    featured: false,
   },
   {
     title: "Complete Guide to Summer Vehicle Maintenance!",
