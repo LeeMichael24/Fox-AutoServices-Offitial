@@ -1,5 +1,14 @@
 window.blogPosts = [
   {
+    title: "Optimize Your Fleet with Our Comprehensive Fleet Management Services",
+    description:
+      "Managing a fleet of vehicles can be complex, but Fox Auto Services offers tailored fleet management solutions that ensure your vehicles are always ready for the road. From maintenance to repairs, we handle everything so you can focus on running your business.",
+    date: "September 1, 2024",
+    link: "blog/fleetManagement.html",
+    image: "images/blog/fleetManagement.png",
+    featured: true,
+  },
+  {
     title:
       "Had an Accident? Let Us Handle the Issues. We Arrange a Rental Car for You While Your Vehicle is Being Repaired.",
     description:
