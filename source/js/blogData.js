@@ -1,12 +1,66 @@
 window.blogPosts = [
   {
+    title: "Your Trusted Auto Repair Experts in Glen Burnie!",
+    description:
+      "Looking for the best auto repair shop in Glen Burnie?, Whether you need a quick oil change near Ritchie Highway, brake repair in Glen Burnie...",
+    date: "February 28, 2025",
+    link: "blog/trustAutoRepair.html",
+    image: "images/blog/trustAutoRepair.png",
+    featured: true,
+  },
+  {
+    title: "Valentine’s Month: Show Your Car Some Love with Fox Auto Services",
+    description:
+      "Looking for the perfect Valentine's Day gift? Fox Auto Services offers $250 off collision repair, a FREE loaner car, and an exclusive Valentine’s surprise gift. Show your love with safety and savings this February!",
+    date: "February 21, 2025",
+    link: "blog/valentinesMonth2025.html",
+    image: "images/blog/ValentinesMonth.png",
+    featured: false,
+  },
+  {
+    title: "The Ultimate Valentine’s Gift: Safety & Savings | Fox Auto Services",
+    description:
+      "Looking for the perfect Valentine's Day gift? Fox Auto Services offers $250 off collision repair, a FREE loaner car, and an exclusive Valentine’s surprise gift. Show your love with safety and savings this February!",
+    date: "February 14, 2025",
+    link: "blog/valentinesDay2025.html",
+    image: "images/blog/valentinesDay2025.png",
+    featured: false,
+  },
+  {
+    title: "Insurance Claim Auto Repair & $250 Assistance | Fox Auto Services",
+    description:
+      "Get $250 off your deductible and a FREE loaner car with insurance-approved auto repair in Glen Burnie, MD. Fox Auto Services provides hassle-free collision repair and works with all insurance companies.",
+    date: "February 6, 2025",
+    link: "blog/fightForYou.html",
+    image: "images/blog/FightForYou.png",
+    featured: false,
+  },
+  {
+    title: "Top 10 Study Tips to Boost Your Learning Efficiency",
+    description:
+      "Discover the best study tips to improve your focus, retention, and productivity. Learn how to study smarter, not harder, with our top 10 proven strategies for effective learning.",
+    date: "November 19, 2024",
+    link: "blog/tipsToStudy.html",
+    image: "images/blog/tipsToStudy.png",
+    featured: false,
+  }, 
+  {
+    title: "Creekside Village Residents: Free Water Damage and Mold Inspection",
+    description:
+      "We’ve detected water damage and mold in Creekside Village due to HVAC leaks. 1-800 WATER DAMAGE of Greater Anne Arundel County offers FREE inspections to protect your home. Contact Fox Auto Services for more information.",
+    date: "September 19, 2024",
+    link: "blog/waterdamage.html",
+    image: "images/blog/waterdamage.png",
+    featured: false,
+  },  
+  {
     title: "Optimize Your Fleet with Our Comprehensive Fleet Management Services",
     description:
       "Managing a fleet of vehicles can be complex, but Fox Auto Services offers tailored fleet management solutions that ensure your vehicles are always ready for the road. From maintenance to repairs, we handle everything so you can focus on running your business.",
-    date: "September 1, 2024",
-    link: "blog/fleetManagement.html",
+    date: "September 4, 2024",
+    link: "blog/fleetmanagement.html",
     image: "images/blog/fleetManagement.png",
-    featured: true,
+    featured: false,
   },
   {
     title:
@@ -16,7 +70,7 @@ window.blogPosts = [
     date: "August 20, 2024",
     link: "blog/insuranceRentalCar.html",
     image: "images/blog/rentalCarFox.png",
-    featured: true,
+    featured: false,
   },
   {
     title: "Waiting on a Back Order? What is That?",
